@@ -1,0 +1,15 @@
+# Dependency directory
+node_modules
+package-lock.json
+prepros.config
+base
+
+
+#Webstorm metadata
+.idea
+
+#vscode
+.vscode/
+
+# Mac files
+.DS_Store

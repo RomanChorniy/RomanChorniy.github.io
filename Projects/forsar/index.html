@@ -4,12 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta id="dynamicViewport" name="viewport" content="width=1140, user-scalable=1">
+    <script src="styles/js/jquery.min.js"></script>
+    <script>
+        function changeViewport() {
+            var mvp = document.getElementById("dynamicViewport");
+
+            if (screen.width < 576) {
+                mvp.setAttribute("content", "width=device-width, initial-scale=1, user-scalable=1");
+            } else {
+                mvp.setAttribute("content", "width=1140, user-scalable=1");
+            }
+        }
+
+        changeViewport();
+
+        window.onresize = function (event) {
+            changeViewport();
+        };
+    </script>
+    <script async src="styles/js/index.js"></script>
+    <title>Forsar</title>
+    <link rel="stylesheet" href="styles/css/style.css">
 </head>
 
 <body>
-    <h1>hello Roman</h1>
-    <h2>test repo</h2>
+    <header id="header" class="main__header">
+        <div class="menu" id="menuBtn">
+            <div class="menuX" id="menuXBtn">
+                <div class="menuX__line1 menuLine"></div>
+                <div class="menuX__line2 menuLine"></div>
+                <div class="menuX__line3 menuLine"></div>
+            </div>
+            <ul class="menu__links font-regular">
+                <li class="linkItem"><a class="linkItem__link" href="http://">Главная</a></li>
+                <li class="linkItem"><a class="linkItem__link" href="http://">О Компании</a></li>
+                <li class="linkItem"><a class="linkItem__link" href="http://">Сотрудничество</a></li>
+                <li class="linkItem"><a class="linkItem__link" href="http://">Продукция</a></li>
+                <li class="linkItem"><a class="linkItem__link" href="http://">Вакансии</a></li>
+                <li class="linkItem"><a class="linkItem__link" href="http://">Новости</a></li>
+                <li class="linkItem"><a class="linkItem__link" href="http://">Отзывы</a></li>
+            </ul>
+        </div>
+        <img class="header__logo" src="image/forsar_logo.png" alt="forsar">
+        <div class="lenguageMenu" id="lenguageBtn">
+            <ul class="lenguageMenu__links">
+                <li class="linkItem vubrana"><a class="linkItem__link" href="#">RU</a></li>
+                <li class="linkItem"><a class="linkItem__link" href="#">UA</a></li>
+                <li class="linkItem"><a class="linkItem__link " href="#">EN</a></li>
+            </ul>
+            <div class="lenguageMenu__linkOff"></div>
+        </div>
+        <div class="header__contentBlock"></div>
+        <button class="header__btn btn">каталог</button>
+    </header>
+    <main id="main">
+        <div class="components">
+            <div id="component-1" class="component">
+                <div class="proezvoditelPovnogoCikla">
+                    <div class="proezvoditelPovnogoCikla__container">
+                        <div class="container__textBox font-regular">
+                            <p class="textBox__text_big font-bold">Единственный<br>
+                                <span class="text_bigger">в Украине</span></p>
+                            <p class="textBox__text_red ">производитель<br>
+                                полного цикла</p>
+                            <p class="textBox__text"><span class="text__uppercase">поршневых групп</span> и<br>
+                                <span class="text__uppercase">водяных насосов</span></p>
+                            <button class="textBox__btn btn">Узнать больше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-2" class="component">
+                <div class="motoristPlus">
+                    <div class="motoristPlus__container">
+                        <div class="container__textBox font-bold">
+                            <p class="textBox__text font-regular">Премиум серия</p>
+                            <p class="textBox__text_big">уникальных<br>
+                                продуктов</p>
+                            <p class="textBox__text_red">Моторист+</p>
+                            <button class="textBox__btn btn">Узнать больше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-3" class="component">
+                <div class="provereno">
+                    <div class="provereno__container">
+                        <div class="container__textBox font-bold">
+                            <p class="textBox__text_red">Проверено</p>
+                            <p class="textBox__text_big">собственным<br> полем, техникой<br> и урожаем
+                            </p>
+                            <button class="textBox__btn btn">Узнать больше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-4" class="component">
+                <div class="forsiryem">
+                    <div class="forsiryem__container">
+                        <div class="container__textBox font-regular">
+                            <p class="textBox__text_red">Форсируем<br> технику —</p>
+                            <p class="textBox__text_big font-bold">собираем<br>
+                                <span class="textBox__text_smaller font-regular">максимальный</span><br>
+                                урожай
+                            </p>
+                            <button class="textBox__btn btn">Узнать больше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-5" class="component">
+                <div class="lichulnik">
+                    <div class="lichulnik__container">
+                        <div class="container__textBox font-regular">
+                            <div class="texBox__tablo">
+                                <p class="tablo__number">1 000 001</p>
+                            </div>
+                            <p class="textBox__text">единиц техники</p>
+                            <p class="textBox__text_red">отлично работают на</p>
+                            <p class="texBox__text_bigger font-bold">нашей</p>
+                            <p class="textBox__text__big">продукции</p>
+                            <p class="textBox__update">Счетчик обновляется каждый месяц</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-6" class="component">
+                <div class="contacts">
+                    <div class="contacts__container">
+                        <div class="container__newPartnerBox">
+                            <p class="textBox__text__big font-bold">Станьте</p>
+                            <p class="textBox__text__bigger font-bold">новым</p>
+                            <p class="textBox__text font-regular">Партнером</p>
+                            <button class="textBox__btn btn">Партнерам</button>
+                        </div>
+                        <div class="container__toKlientsBox font-regular">
+                            <p class="textBox__text">Купить</p>
+                            <p class="textBox__text__big font-bold">Быстро</p>
+                            <p class="textBox__text ">и ЛЕГКО</p>
+                            <button class="textBox__btn btn">Клиентам</button>
+                        </div>
+                        <div class="container__callBackBox font-regular">
+                            <p class="textBox__text__big font-bold">Есть вопросы или предложения?</p>
+                            <p class="textBox__text font-regular">Мы Вам перезвоним<br>в ближайшее время!</p>
+                            <button class="textBox__btn btn">Перезвонить мне</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer__container">
+            <div class="container__logo"><a href="#"><img src="image/footer_logo.png" alt="Forsar"></a></div>
+            <div class="container__telephone"><a href="tel:(067) 41 75 455">+380 67 417 54 55</a><br><a
+                    href="tel:(050) 74 52 804">+380 50 745 28 04</a></div>
+            <div class="container__adress">ул. Северный переезд, 1/33<br>с. Семе новка, Запорожская область<br>72355,
+                Украина
+            </div>
+            <ul class="container__navigation">
+                <li class="navigation__link"><a href="http://">О компании</a></li>
+                <li class="navigation__link"><a href="http://">Сотрудничество</a> </li>
+                <li class="navigation__link"><a href="http://">Продукция</a></li>
+                <li class="navigation__link"><a href="http://">Вакансии</a></li>
+                <li class="navigation__link"><a href="http://">Новости / Блог</a></li>
+                <li class="navigation__link"><a href="http://">Отзывы</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 
 </html>

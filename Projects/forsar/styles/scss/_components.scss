@@ -1,0 +1,315 @@
+.components{
+    .container__textBox{
+        font-size: 60px;
+        color: #000;
+        display: inline-block;
+    }
+    .textBox__text{
+        font-size: 45px;
+    }
+    .textBox__text_red{
+        color: #b80326;
+    }
+    & p:nth-last-child(2){
+        padding-bottom: 59px;
+    }
+}
+
+#component-1{
+    .proezvoditelPovnogoCikla{
+        background: url(../../image/proezvoditelPovnogoCikla_bg.jpg) center / cover no-repeat;
+        padding: 175px 15px 177px;
+    }
+    .proezvoditelPovnogoCikla__container{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1110px;
+        text-align: right;
+    }
+    .container__textBox{
+        color: #fff;
+        font-size: 45px;
+        text-align: left;
+        .textBox__text_big{
+            .text_bigger{
+                font-size: 60px;
+            }
+        }
+        .textBox__text_red{
+            color: #b80326;
+        }
+        .text__uppercase{
+            text-transform: uppercase;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .container__textBox{
+            font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+            text-align: right;
+            .textBox__text{
+                font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+            }
+            .textBox__text_big{
+                .text_bigger{
+                    font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+                }
+            }
+        }
+    }
+}
+
+#component-2{
+    .motoristPlus{
+        background: url(../../image/motoristPlus_bg1.jpg) center / cover no-repeat;
+        padding: 223px 15px 227px;
+    }
+    .motoristPlus__container{
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+    .container__textBox{
+        padding-right: 156px;
+    }
+    .textBox__text_red{
+        text-transform: uppercase;
+    }
+    & p:nth-last-child(2){
+        padding-bottom: 59px;
+    }
+    @media screen and (max-width: 575px) {
+        .container__textBox{
+            padding-right: 0;
+            font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+            .textBox__text{
+                font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+            }
+        }
+    }
+}
+
+#component-3{
+    .provereno{
+        background: url(../../image/provereno_bg.jpg) center / cover no-repeat;
+        padding: 218px 15px;
+        .provereno__container{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1110px;
+            text-align: right;
+        }
+    }
+    .container__textBox{
+        text-align: left;
+    }
+    .textBox__text_red{
+        text-transform: uppercase;
+    }
+    @media screen and (max-width: 575px) {
+        .container__textBox{
+            font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+        }
+    }
+}
+
+#component-4{
+    .forsiryem{
+        background: url(../../image/forsing_bg.jpg) center / cover no-repeat;
+        padding: 193px 15px;
+    }
+    .forsiryem__container{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1110px;
+    }
+    .container__textBox{
+        color: #fff;
+    }
+    .textBox__text_smaller{
+        font-size: 45px;
+    }
+    @media screen and (max-width: 575px) {
+        .container__textBox{
+            font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+            .textBox__text_smaller{
+                font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+            }
+        }
+    }
+}
+
+#component-5{
+    .lichulnik{
+        background: url(../../image/lichulnuk_bg.jpg) center / cover no-repeat;
+        padding: 231px 15px 52px;
+    }
+    .lichulnik__container{
+        text-align: center;
+        .container__textBox{
+            color: #fff;
+            text-transform: uppercase;
+            .texBox__tablo{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 410px;
+                height: 80px;
+                border: 3px solid #564f50;
+                border-radius: 17px;
+                background-color: #000;
+                font-size: 36px;
+                font-family: 'Exo', sans-serif;
+                margin-bottom: 36px;
+            }
+            .textBox__text{
+                font-size: 30px;
+                padding-bottom: 11px;
+            }
+            .textBox__text_red{
+                font-size: 30px;
+                text-transform: lowercase;
+                padding-bottom: 13px;
+            }
+            .texBox__text_bigger{
+                font-size: 61px;
+            }
+            .textBox__text__big{
+                font-size: 45px;
+                padding-bottom: 177px;
+            }
+            .textBox__update{
+                font-size: 14px;
+                color: #554d4f;
+                text-transform: none;
+            }
+        }
+        
+    }
+    @media screen and (max-width:575px) {
+        .lichulnik{
+            padding-top: 104px;
+        }
+        .lichulnik__container{
+            .container__textBox{
+                .texBox__tablo{
+                    width: 100%;
+                    font-size: calc(25px + 21 * ((100vw - 300px) / (575 - 300)));;
+                }
+                .textBox__text{
+                    font-size: calc(19px + 21 * ((100vw - 300px) / (575 - 300)));;
+                }
+                .textBox__text_red{
+                    font-size: calc(19px + 21 * ((100vw - 300px) / (575 - 300)));;
+                }
+                .texBox__text_bigger{
+                    font-size: calc(40px + 21 * ((100vw - 300px) / (575 - 300)));;
+                }
+                .textBox__text__big{
+                    font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));;
+                }
+                .textBox__update{
+                    font-size: 14px;
+                }
+            }
+            
+        }
+    }
+}
+
+#component-6{
+    .contacts{
+        background: url(../../image/contacts_bg.jpg) center / cover no-repeat;
+        padding: 122px 15px 58px;
+    }
+    .contacts__container{
+        display: flex;
+        max-width: 1110px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        line-height: 1;
+        color: #fff;
+    }
+    .container__newPartnerBox{
+        text-align: right;
+        font-size: 45px;
+        padding-bottom: 86px;
+        .textBox__text__big{
+            padding: 0;
+        }
+        .textBox__text__bigger{
+            font-size: 60px;
+            text-transform: uppercase;
+            padding: 0;
+        }
+        .textBox__text{
+            padding: 0 0 36px;
+            text-transform: uppercase;
+        }
+    }
+    .container__toKlientsBox{
+        font-size: 45px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 86px;
+        .textBox__text:first-child{
+            font-size: 60px;
+            text-transform: none;
+            flex: 0;
+        }
+        .textBox__text__big{
+            padding: 0;
+            text-transform: uppercase;
+        }
+        .textBox__text{
+            padding: 0;
+            flex: 1;
+        }
+    }
+    .container__callBackBox{
+        text-align: center;
+        width: 730px;
+        height: 300px;
+        background-color: #b80326;
+        padding: 46px 0 43px;
+        .textBox__text__big{
+            font-size: 26px;
+        }
+        .textBox__text{
+            font-size: 45px;
+        }
+    }
+    @media screen and (max-width: 575px){
+        .textBox__text{
+            font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+        }
+        .container__callBackBox{
+            height: auto;
+            .textBox__text__big{
+                font-size: calc(14px + 21 * ((100vw - 300px) / (575 - 300)));
+            }
+            .textBox__text{
+                font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+            }
+        }
+        .contacts .contacts__container{
+            .container__newPartnerBox, .container__toKlientsBox{
+            font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+            text-align: center;
+            .textBox__text__bigger, .textBox__text:first-child{
+                font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+            }
+        }
+        .container__textBox{
+            font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+            .textBox__text_smaller{
+                font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+            }
+        }
+    }
+    .container__toKlientsBox .textBox__text:nth-child(3){
+        padding-bottom: 36px;
+    }
+}
+}

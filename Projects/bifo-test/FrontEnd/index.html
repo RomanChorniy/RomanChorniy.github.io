@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="dynamicViewport" name="viewport" content="width=1140, user-scalable=1">
+    <title>Бесплатное тестирование для бизнесменов, директоров, владельцев бизнеса (Украина)</title>
+    <script>
+        function changeViewport() {
+            var mvp = document.getElementById("dynamicViewport");
+
+            if (screen.width < 576) {
+                mvp.setAttribute("content", "width=device-width, initial-scale=1, user-scalable=1");
+            } else {
+                mvp.setAttribute("content", "width=1140, user-scalable=1");
+            }
+        }
+
+        changeViewport();
+
+        window.onresize = function (event) {
+            changeViewport();
+        };
+    </script>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <script async src="styles/js/formValidation.js"></script>
+    <script async src="styles/js/popupOpen.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <img class="header__logo" src="image/header_title.jpg" alt="матриця стратегии развития бизнеса">
+    </header>
+    <main id="main">
+        <div class="components">
+            <div id="component-1" class="component">
+                <div class="questionsBlock font-light">
+                    <div class="wrapper-size">
+                        <div class="questionsContainer">
+                            <p class="questions1 questions">ВЫ ХОТИТЕ иметь эффективную стратегию развития бизнеса?</p>
+                            <p class="questions2 questions">ВЫ ХОТИТЕ, чтобы  Ваш план развития бизнеса или бизнес-план
+                                был
+                                воплощен в
+                                жизнь, а не остался просто планом?</p>
+                            <p class="questions3 questions">ВАМ было бы ИНТЕРЕСНО оптимизировать бизнес-стратегию Вашей
+                                компании или
+                                взглянуть на нее под новым углом зрения?</p>
+                            <p class="questions4 questions">ВСЁ ВАШЕ ВРЕМЯ поглощают производство и продажи, хотя ВЫ
+                                ХОТЕЛИ
+                                бы
+                                высвободить время для стратегического бизнес-планирования или для создания новых идей
+                                развития компании?</p>
+                            <p class="questions5 questions">ВЫ бы ХОТЕЛИ разработать эталонную стратегию бизнеса, но
+                                руки
+                                никак не
+                                доходят до этого?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-2" class="component">
+                <div class="textinFrame">
+                    <div class="wrapper-size">
+                        <div class="textinFrameContainer">
+                            <p class="text font-regular">Есть несколько факторов, которые создают эти ситуации или
+                                трудности с
+                                планированием, делают планирование неэффективным или вообще невозможным. Если
+                                рассмотреть эти факторы и улучшить их, то Вы сможете не только высвободить время для
+                                стратегического планирования, но и создать по настоящему эффективный план развития
+                                компании.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-3" class="component">
+                <div class="testButtonBlock">
+                    <div class="wrapper-size">
+                        <div class="testButtonContainer">
+                            <p class="testButton__title font-regular">Пройдите специальный тест, который поможет Вам
+                                лучше
+                                рассмотреть эти факторы, упорядочить дела в компании и высвободить Ваше время для
+                                планирования и расширения.</p>
+                            <a href="#" class="testButton__btn btn">пройти тест
+                                бесплатно</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-4" class="component">
+                <div class="reviewsBlock">
+                    <div class="wrapper-size">
+                        <div class="reviewsContainer font-regular">
+                            <h3 class="reviews__title font-regular">отзывы</h3>
+                            <p class="reviews__subtitle">от использования матрицы стратегии развития бизнеса</p>
+                            <div class="reviewBox">
+                                <div class="review">
+                                    <p class="review__userName font-light">Виктор</p>
+                                    <p class="review__text">Пройдите специальный тест, который поможет Вам лучше
+                                        рассмотреть эти факторы, упорядочить дела в компании и высвободить Ваше время
+                                        для планирования и расширения.</p>
+                                </div>
+                                <div class="review">
+                                    <p class="review__userName font-light">Александра</p>
+                                    <p class="review__text">Пройдите специальный тест, который поможет Вам лучше
+                                        рассмотреть эти факторы, упорядочить дела в компании и высвободить Ваше время
+                                        для планирования и расширения.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-5" class="component">
+                <div class="testButtonBlock">
+                    <div class="wrapper-size">
+                        <div class="testButtonContainer font-regular">
+                            <p class="testButton__title">Как сделать Ваше стратегическое планирование более эффективным
+                                или вообще возможным? Заполните тест "Матрица стратегии развития бизнеса".</p>
+                            <a href="#" class="testButton__btn btn btnDown">пройти тест
+                                бесплатно</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="component-6" class="component">
+                <div class="testPage__popup">
+                    <div class="testPageContainer">
+                        <div class="testPage__title ">
+                            <h2 class="title__text wrapper-size font-bold">тест</h2>
+                        </div>
+                        <form class="testPage__form" action="#" method="POST" id="testPage__form">
+                            <button class="form__btn_close" type="button">
+                                <div class="closeBtn__line line1"></div>
+                                <div class="closeBtn__line line2"></div>
+                            </button>
+                            <div class="form__questionsBlock font-bold">
+                                <div class="questionBox questionBox1">
+                                    <p class="questionBox__text"><span class="text__number">1. </span>Есть ли четко
+                                        сформулированная цель у Вашей компании?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question1">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question1">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-1">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox2">
+                                    <p class="questionBox__text"><span class="text__number">2. </span>Знают ли
+                                        сотрудники эту цель?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question2">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question2">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-2">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox3">
+                                    <p class="questionBox__text"><span class="text__number">3. </span>Могут ли
+                                        покупатели Ваших товаров (услуг) легко увидеть ценность этих товаров или услуг?
+                                    </p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question3">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question3">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-3">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox4">
+                                    <p class="questionBox__text"><span class="text__number">4. </span>Знает ли Ваш
+                                        персонал сильные и слабые стороны товаров (услуг), выпускаемых Вашей компанией?
+                                    </p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question4">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question4">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-4">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox5">
+                                    <p class="questionBox__text"><span class="text__number">5. </span>Приносит ли
+                                        деятельность Вашей компании пользу не только отдельным людям, но и обществу в
+                                        целом?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question5">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question5">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-5">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox6">
+                                    <p class="questionBox__text"><span class="text__number">6. </span>Считаете ли Вы
+                                        технологию в Вашей компании современной и эффективной?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question6">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question6">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-6">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox7">
+                                    <p class="questionBox__text"><span class="text__number">7. </span>Следит ли кто-то в
+                                        Вашей компании за тем, чтобы эта технология использовалась стандартно?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question7">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question7">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-7">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox8">
+                                    <p class="questionBox__text"><span class="text__number">8. </span>Отслеживаете ли Вы
+                                        тенденции развития технологий в Вашей сфере деятельности?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question8">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question8">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-8">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox9">
+                                    <p class="questionBox__text"><span class="text__number">9. </span>Проводится ли
+                                        контроль качества выпускаемой продукции или услуг в Вашей компании?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question9">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question9">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-9">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox10">
+                                    <p class="questionBox__text"><span class="text__number">10. </span>Редко ли Ваши
+                                        клиенты жалуются на плохое качество товаров (услуг) Вашей компании?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question10">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question10">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-10">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox11">
+                                    <p class="questionBox__text"><span class="text__number">11. </span>Собираете ли Вы
+                                        отзывы от клиентов о Ваших товарах (услугах)?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question11">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question11">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-11">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox12">
+                                    <p class="questionBox__text"><span class="text__number">12. </span>Есть ли у Вас
+                                        система отслеживания результатов Вашей компании?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question12">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question12">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-12">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox13">
+                                    <p class="questionBox__text"><span class="text__number">13. </span>Публикуете ли Вы
+                                        или делаете широко известными хорошие результаты Вашей компании?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question13">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question13">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-13">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox14">
+                                    <p class="questionBox__text"><span class="text__number">14. </span>Есть ли у Вашей
+                                        компании какие-то выдающиеся достижения или награды?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question14">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question14">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-14">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox15">
+                                    <p class="questionBox__text"><span class="text__number">15. </span>Реализует ли Ваша
+                                        компания какие-то социальные проекты?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question15">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question15">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-15">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox16">
+                                    <p class="questionBox__text"><span class="text__number">16. </span>Используете ли Вы
+                                        сеть Интернет для продвижения своих товаров (услуг)?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question16">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question16">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-16">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox17">
+                                    <p class="questionBox__text"><span class="text__number">17. </span>Есть ли у Вас
+                                        план продвижения в сети Интернет на полгода и более?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question17">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question17">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-17">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox18">
+                                    <p class="questionBox__text"><span class="text__number">18. </span>Отслеживает ли
+                                        Ваша компания источники входящих обращений?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question18">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question18">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-18">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox19">
+                                    <p class="questionBox__text"><span class="text__number">19. </span>Есть ли кто-то в
+                                        компании, кто делает еженедельный анализ этих источников?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question19">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question19">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-19">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                                <div class="questionBox questionBox20">
+                                    <p class="questionBox__text"><span class="text__number">20. </span>Предпринимаются
+                                        ли действия в отношении продвижения на основе этого анализа?</p>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question20">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Да</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="radio__icon" type="radio" name="question20">
+                                        <div class="radio__btn"></div>
+                                        <span class="radio__text">Нет</span>
+                                    </label>
+                                    <p class="questionBox__errorMessage error-message-20">Выберите один из предложенных
+                                        вариантов.</p>
+                                </div>
+                            </div>
+                            <div class="form__contact">
+                                <div class="contact__box">
+                                    <p class="contact__name inputName">Имя</p>
+                                    <input class="contact__name_input box__input" name="userName" type="text"
+                                        placeholder="Как к Вам обращатьса?">
+                                    <p class="box__errorEmptyinput font-bold">Заполните это поле</p>
+                                </div>
+                                <div class="contact__box">
+                                    <p class="contact__phone inputName">Контактный телефон</p>
+                                    <input class="contact__phone_input box__input" name="userPhone" type="tel"
+                                        placeholder="+38 (___) ___ __ __">
+                                    <p class="box__errorEmptyinput font-bold">Заполните это поле</p>
+                                    <p class="box__errorIncorectInput font-bold">Введите корректный номер</p>
+                                </div>
+                                <div class="contact__box">
+                                    <p class="contact__email inputName">E-mail</p>
+                                    <input class="contact__email_input box__input" name="userEmail" type="text"
+                                        placeholder="info@com.ua">
+                                    <p class="box__errorEmptyinput font-bold">Заполните это поле</p>
+                                    <p class="box__errorIncorectInput font-bold">Введите корректный E-mail</p>
+                                </div>
+                                <div class="contact__box">
+                                    <p class="contact__position inputName">Должность</p>
+                                    <input class="contact__position_input box__input" name="userPosition" type="text"
+                                        placeholder="Ваша должность">
+                                    <p class="box__errorEmptyinput font-bold">Заполните это поле</p>
+                                </div>
+                            </div>
+                            <button class="form__btn btn" type="submit">отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="component-7" class="component">
+                <div class="finishPage__popup">
+                    <div class="wrapper-size">
+                        <div class="finishPageContainer font-regular">
+                            <h3 class="container__title font-regular">форма отправлена</h3>
+                            <p class="container__text">Спасибо, что заполнили тест.<br>
+                                Информация принята.<br>
+                                Наш консультант свяжется с Вами в ближайшее время.</p>
+                            <a class="container__link submitBtn" href="#">Вернуться на сайт</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

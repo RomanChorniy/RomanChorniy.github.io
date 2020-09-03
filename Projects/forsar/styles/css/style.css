@@ -86,6 +86,18 @@
   color: #fff;
   font-size: 18px;
 }
+@media screen and (max-width: 575px) {
+  .main__header .menu {
+    height: 56px;
+    width: 72px;
+    top: 5%;
+  }
+  .main__header .menu .menuX {
+    height: 56px;
+    width: 72px;
+    padding: 23px 0 23px 20px;
+  }
+}
 .main__header .open {
   width: 293px;
   padding-bottom: 29px;
@@ -148,6 +160,16 @@
 .main__header .lenguageMenu .lenguageMenu__links .linkItem:hover .linkItem__link {
   color: #b80326;
   font-weight: bold;
+}
+@media screen and (max-width: 575px) {
+  .main__header .lenguageMenu {
+    height: 56px;
+    width: 72px;
+    top: 5%;
+  }
+  .main__header .lenguageMenu .lenguageMenu__links {
+    padding: 11px 0 16px 0;
+  }
 }
 .main__header .showMenu {
   height: auto;
@@ -536,7 +558,7 @@ ul {
   font-size: 26px;
 }
 #component-6 .container__callBackBox .textBox__text {
-  font-size: 45px;
+  font-size: 46px;
 }
 @media screen and (max-width: 575px) {
   #component-6 .textBox__text {

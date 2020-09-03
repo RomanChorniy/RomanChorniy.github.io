@@ -379,14 +379,13 @@ ul {
   #component-2 .container__textBox .textBox__text {
     font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
   }
-  #component-2 .container__textBox::after {
+  #component-2 .motoristPlus__container::after {
     content: "";
     display: block;
     position: relative;
-    left: calc(0px + 148 * ((100vw - 300px) / (575 - 300)));
     margin-top: 20px;
     width: 100%;
-    height: calc(276px + 130 * ((100vw - 300px) / (575 - 300)));
+    height: calc(293px + 298 * ((100vw - 300px) / (575 - 300)));
     background: url(../../image/motoristPlus.png) 0 0/cover no-repeat;
   }
 }

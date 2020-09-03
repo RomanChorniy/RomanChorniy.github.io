@@ -43,6 +43,9 @@
         }
     }
     @media screen and (max-width: 575px) {
+        .proezvoditelPovnogoCikla{
+            background: #000;
+        }
         .container__textBox{
             font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
             text-align: right;
@@ -54,6 +57,17 @@
                     font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
                 }
             }
+        }
+        .container__textBox::before{
+            content: '';
+            display: block;
+            position: relative;
+            width: 100%;
+            height: calc(212px + 188 * ((100vw - 300px) / (575 - 300)));
+            background: url(../../image/proezvoditelPovnogoCikla_bg.jpg) 0px 0px / cover no-repeat;
+            top: -175px;
+            left: -30px;
+            margin-bottom: -150px;
         }
     }
 }
@@ -78,12 +92,26 @@
         padding-bottom: 59px;
     }
     @media screen and (max-width: 575px) {
+        .motoristPlus{
+            background: url(../../image/motoristPlus_bg.jpg) center / cover no-repeat; 
+            padding: 100px 15px;
+        }
         .container__textBox{
             padding-right: 0;
             font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
             .textBox__text{
                 font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
             }
+        }
+        .container__textBox::after{
+            content: '';
+            display: block;
+            position: relative;
+            left: calc(0px + 148 * ((100vw - 300px) / (575 - 300)));
+            margin-top: 20px;
+            width: 100%;
+            height: calc(276px + 130 * ((100vw - 300px) / (575 - 300)));
+            background: url(../../image/motoristPlus.png) 0 0 / cover no-repeat;
         }
     }
 }
@@ -106,8 +134,20 @@
         text-transform: uppercase;
     }
     @media screen and (max-width: 575px) {
+        .provereno{
+            background: url(../../image/provereno_smallBg.jpg) center / cover no-repeat;
+            padding-top: calc(309px + 237 * ((100vw - 300px) / (575 - 300)));
+            padding-bottom: 10px;
+            .provereno__container{
+                text-align: center;
+            }
+        }
         .container__textBox{
-            font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+            font-size: calc(18px + 16 * ((100vw - 300px) / (575 - 300)));
+            text-align: center;
+            .textBox__text_big{
+                padding-bottom: 19px;
+            }
         }
     }
 }
@@ -129,11 +169,25 @@
         font-size: 45px;
     }
     @media screen and (max-width: 575px) {
+        .forsiryem{
+            padding: 0px 15px 90px;
+            background: #000;
+        }
         .container__textBox{
+            width: 100%;
             font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+            text-align: center;
             .textBox__text_smaller{
                 font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
             }
+        }
+        .container__textBox::before{
+            content: '';
+            display: block;
+            position: relative;
+            width: 100%;
+            height: calc(284px + 216 * ((100vw - 300px) / (575 - 300)));
+            background: url(../../image/forsing_bg.jpg) 78% / cover no-repeat;
         }
     }
 }

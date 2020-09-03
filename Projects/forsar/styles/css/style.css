@@ -15,6 +15,7 @@
   border-radius: 0 13px 13px 0;
   cursor: pointer;
   overflow: hidden;
+  z-index: 2;
 }
 .main__header .menu .menuX {
   height: 70px;
@@ -115,6 +116,7 @@
   width: 89px;
   background-color: #fff;
   position: fixed;
+  z-index: 2;
   top: 19%;
   right: 0;
   border-radius: 13px 0 0 13px;
@@ -321,6 +323,9 @@ ul {
   text-transform: uppercase;
 }
 @media screen and (max-width: 575px) {
+  #component-1 .proezvoditelPovnogoCikla {
+    background: #000;
+  }
   #component-1 .container__textBox {
     font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
     text-align: right;
@@ -330,6 +335,17 @@ ul {
   }
   #component-1 .container__textBox .textBox__text_big .text_bigger {
     font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+  }
+  #component-1 .container__textBox::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: calc(212px + 188 * ((100vw - 300px) / (575 - 300)));
+    background: url(../../image/proezvoditelPovnogoCikla_bg.jpg) 0px 0px/cover no-repeat;
+    top: -175px;
+    left: -30px;
+    margin-bottom: -150px;
   }
 }
 
@@ -352,12 +368,26 @@ ul {
   padding-bottom: 59px;
 }
 @media screen and (max-width: 575px) {
+  #component-2 .motoristPlus {
+    background: url(../../image/motoristPlus_bg.jpg) center/cover no-repeat;
+    padding: 100px 15px;
+  }
   #component-2 .container__textBox {
     padding-right: 0;
     font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
   }
   #component-2 .container__textBox .textBox__text {
     font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+  }
+  #component-2 .container__textBox::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: calc(0px + 148 * ((100vw - 300px) / (575 - 300)));
+    margin-top: 20px;
+    width: 100%;
+    height: calc(276px + 130 * ((100vw - 300px) / (575 - 300)));
+    background: url(../../image/motoristPlus.png) 0 0/cover no-repeat;
   }
 }
 
@@ -378,8 +408,20 @@ ul {
   text-transform: uppercase;
 }
 @media screen and (max-width: 575px) {
+  #component-3 .provereno {
+    background: url(../../image/provereno_smallBg.jpg) center/cover no-repeat;
+    padding-top: calc(309px + 237 * ((100vw - 300px) / (575 - 300)));
+    padding-bottom: 10px;
+  }
+  #component-3 .provereno .provereno__container {
+    text-align: center;
+  }
   #component-3 .container__textBox {
-    font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+    font-size: calc(18px + 16 * ((100vw - 300px) / (575 - 300)));
+    text-align: center;
+  }
+  #component-3 .container__textBox .textBox__text_big {
+    padding-bottom: 19px;
   }
 }
 
@@ -399,11 +441,25 @@ ul {
   font-size: 45px;
 }
 @media screen and (max-width: 575px) {
+  #component-4 .forsiryem {
+    padding: 0px 15px 90px;
+    background: #000;
+  }
   #component-4 .container__textBox {
+    width: 100%;
     font-size: calc(39px + 21 * ((100vw - 300px) / (575 - 300)));
+    text-align: center;
   }
   #component-4 .container__textBox .textBox__text_smaller {
     font-size: calc(24px + 21 * ((100vw - 300px) / (575 - 300)));
+  }
+  #component-4 .container__textBox::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: calc(284px + 216 * ((100vw - 300px) / (575 - 300)));
+    background: url(../../image/forsing_bg.jpg) 78%/cover no-repeat;
   }
 }
 

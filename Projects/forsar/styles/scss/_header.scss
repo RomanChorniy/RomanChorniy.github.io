@@ -12,7 +12,8 @@
         left: 1px;
         border-radius: 0 13px 13px 0;
         cursor: pointer;
-        overflow: hidden;   
+        overflow: hidden;
+        z-index: 2;  
         .menuX{
             height: 70px;
             width: 90px;
@@ -102,6 +103,7 @@
         width: 89px;
         background-color: #fff;
         position: fixed;
+        z-index: 2;
         top: 19%;
         right: 0;
         border-radius:13px 0 0 13px;

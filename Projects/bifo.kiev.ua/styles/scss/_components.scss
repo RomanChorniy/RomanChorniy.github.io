@@ -1,325 +1,65 @@
-.questionsContainer{
+.header{
+    max-width: 1140px;
     width: 100%;
-    max-width: 730px;
+    height: 311px;
     margin: 0 auto;
-    padding-bottom: 43px;
-    color: $mainColor1;
-    font-size: 18px;
-    p[class^="question"]{
-        padding-bottom: 20px;
-        line-height: 1.45;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__orangeText{
+        color: $orange;
+        font-size: 40px;
+        flex: 0 1 570px;
+        padding: 0 15px;
     }
-    @media screen and (max-width: 575px){
-        font-size: calc(12px + 6 * ((100vw - 300px) / (575 - 300)));
-    }
-}
-.textinFrameContainer{
-    border: 5px solid $mainColor1;
-    padding: 52px 91px 49px;
-    margin-bottom: 59px;
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.7;
-    @media screen and (max-width: 576px) {
-        padding: 15px;
+    .header__motto{
+        font-size: 30px;
+        flex: 0 1 475px;
+        padding: 0 15px;
     }
 }
-.testButtonContainer{
-    width: 100%;
-    max-width: 540px;
-    text-align: center;
-    margin: 0 auto;
-    color: #fff;
-    padding-bottom: 55px;
-    .testButton__title{
-        padding-bottom: 30px;
-        font-size: 18px;
-    }
-}
-.reviewsContainer{
-    color: $mainColor1;
-    text-align: center;
-    padding-bottom: 60px;
+.reviews{
+    background-color: #f5f5f5;
+    padding: 40px 15px 57px;
     .reviews__title{
-        text-transform: uppercase;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+.pr_page{
+    position: relative;
+    padding: 90px 0px 62px;
+    &__orangeLineBackgraound{
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $orange;
+    }
+    &__box{
+        display: flex;
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+    }
+    &__questiontext{
+        display: block;
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto 105px;
         font-size: 24px;
     }
-    .reviews__subtitle{
-        font-size: 18px;
-        padding-bottom: 6px;
-    }
-    .review{
-        padding: 20px 0 24px;
-        border-bottom: 1px solid $mainColor2;
-        width: 100%;
-        max-width: 730px;
-        margin: 0 auto;
-        text-align: start;
-        &__userName{
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        &__text{
-            color: #fff;
-            font-size: 16px  ;
+    &__title{
+        color: #fff;
+        font-size: 30px;
+        &_big{
+            font-size: 40px;
         }
     }
 }
-.testPage__popup{
-    position: absolute;
-    left: 50%;
-    top: 386px;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto 50px;
-    overflow: hidden;
-    background-color: #000;
-    display: none;
-    .testPageContainer{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .testPage__title{
-        color: $mainColor2;
-        padding: 30px 0 25px;
-        .title__text{
-            display: block;
-            font-size: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-align: center;
-            width: 100%;
-        }
-    }
-    .testPage__form{
-        padding: 51px 0 79px;
-        text-align: center;
-        background-color: #fff;
-        border-radius: 20px;
-        position: relative;
-        .form__btn_close{
-            height: 45px;
-            width: 45px;
-            border-radius: 50%;
-            position: absolute;
-            top: 11px;
-            right: 15px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            background-color: $mainColor2;
-            &:hover{
-                background-color: $mainColor1;
-              }
-            &:active{
-                background-color: $mainColor2;
-            }
-            .closeBtn__line{
-                position: absolute;
-                width: 50%;
-                height: 4px;
-                background-color: #fff;
-                left: 50%;
-                top: 50%;
-                border-radius: 30%;
-            }
-            .line1{
-                transform: translate(-50%, -50%) rotate(45deg);
-            }
-            .line2{
-                transform: translate(-50%, -50%) rotate(-45deg);
-            }
-        }
-    }
-    .form__questionsBlock{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0px 0 45px;
-        .questionBox{
-            padding: 0 0 48px 8px;
-            text-align: start;
-            width: 50%;
-            max-width: 490px;
-            &__text{
-                font-size: 18px;
-                padding-bottom: 11px;
-                max-width: 411px;
-                width: 100%;
-                .text__number{
-                    color: $mainColor2;
-                }
-            }
-            .radio{
-                display: flex;
-                align-items: center;
-                padding-bottom: 14px;
-                &__icon{
-                    display: none;
-                }
-                &__btn{
-                    border-radius: 50%;
-                    border: 1px solid #707070;
-                    width: 25px;
-                    height: 25px;
-                    display: inline-block;
-                    margin-right: 19px;
-                }
-                .radio__icon:checked + .radio__btn{
-                    background-color: $mainColor1;
-                }
-            }
-            &:nth-child(even){
-                border-left: 1px solid $mainColor1;
-                padding-left: 79px;
-            }
-            &:nth-last-child(2), &:last-child{
-                padding-bottom: 3px;
-            }
-            &__errorMessage{
-                color: #ff5400;
-                font-size: 12px;
-                display: none;
-            }
-        }
-        .errorMessageShow{
-                .questionBox__errorMessage{
-                    display: block;
-                }
-            }
-    }
-    .form__contact{
-        margin: 0 auto;
-        text-align: start;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 820px;
-        padding-bottom: 25px;
-        .contact__box{
-            width: 50%;
-            padding: 0 15px 20px;
-            font-size: 12px;
-            .inputName{
-                padding-bottom: 4px;
-            }
-            .box__input{
-                width: 100%;
-                border: 1px solid $mainColor1;
-                border-radius: 3px;
-                padding: 8px 15px;
-                font-size: 15px;
-                outline: none;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: normal;
-            }
-        }
-        .errorBorder_empty{
-            .box__input{
-                border: 1px solid #ff5400;
-            }
-            .box__errorEmptyinput{
-                display: block;
-            }
-        }
-        .errorBorder_incorect{
-            .box__input{
-                border: 1px solid #ff5400;
-            }
-            .box__errorIncorectInput{
-                display: block;
-            }
-        }
-        .box__errorEmptyinput{
-            color: #ff5400;
-            font-size: 12px;
-            margin-top: 10px;
-            display: none;
-        }
-        .box__errorIncorectInput{
-            color: #ff5400;
-            font-size: 12px;
-            margin-top: 10px;
-            display: none;
-        }
-    }
-    @media screen and (max-width: 575px){
-        top: calc(89px + 101 * ((100vw - 300px) / (575 - 300)));
-        .testPageContainer{
-            .title__text{
-            font-size: 22px;
-            }
-        }
-        .form__questionsBlock{
-            flex-direction: column;
-            align-items: center;
-            .questionBox{
-                padding: 0;
-                width: 90%;
-                padding: 0 0 20px;
-                &:nth-child(even){
-                    border-left: none;
-                    padding-left: 0;
-                }
-                &:nth-last-child(2), &:last-child{
-                    padding: 0 0 20px;
-                }
-            }
-        }
-        .testPage__form{
-            padding: 51px 15px 79px;
-        }
-        .form__contact{
-            flex-direction: column;
-            align-items: center;
-            .contact__box{
-                width: 90%;
-                padding: 0 0px 20px;
-            }
-        }
-    }
-}
-.finishPage__popup{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #000;
-    min-height: 100vh;
-    width: 100%;
-    color: $mainColor1;
-    padding: 221px 15px;
-    display: none;
-    .finishPageContainer{
-        border: 5px solid $mainColor1;
-        margin: 0 auto;
-        padding: 46px 85px 55px;
-        text-align: center;
-        max-width: 920px;
-        width: 100%;
-        .container__title{
-            text-transform: uppercase;
-            padding-bottom: 23px;
-            font-size: 24px;
-        }
-        .container__text{
-            color: #fff;
-            padding-bottom: 36px;
-            font-size: 16px;
-        }
-        .container__link{
-            color: $mainColor1;
-            font-size: 14px;
-        }
-    }
-    @media screen and (max-width: 575px) {
-        padding: 100px 15px;
-        .finishPageContainer{
-            padding: 46px 25px 55px;
-        }
-    }
-}
-.openFinishPage{
-        display: block;
-    }

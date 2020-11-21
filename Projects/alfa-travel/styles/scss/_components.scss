@@ -20,6 +20,7 @@
         flex-wrap: wrap;
     }
     .katalogPropozbciiBox__propozucia{
+        position: relative;
         margin: 15px;
         display: flex;
         flex-direction: column;
@@ -29,7 +30,7 @@
         transition: background-color .3s ease-in-out;
         &:hover{
             background-color: $mainColor2;
-            .propozuciaLinkBox__lookMoreLink{
+            .propozuciaLinkBox__lookMore{
                 color: $textColor2;
             }
         }
@@ -53,12 +54,19 @@
             padding-bottom: 10px;
             flex: auto;
         }
-        .propozuciaLinkBox__lookMoreLink{
+        .propozuciaLinkBox__lookMore{
             display: block;
             text-align: right;
             color: #a2fdbb;
             font-size: 13px;
             font-weight: normal;
+        }
+        .propozuciaLinkBox__lookMoreLink{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     }
 }

@@ -231,6 +231,7 @@ h2, h6 {
       flex-wrap: wrap;
 }
 .katalogPropozucii .katalogPropozbciiBox__propozucia {
+  position: relative;
   margin: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,7 +250,7 @@ h2, h6 {
 .katalogPropozucii .katalogPropozbciiBox__propozucia:hover {
   background-color: #fe631a;
 }
-.katalogPropozucii .katalogPropozbciiBox__propozucia:hover .propozuciaLinkBox__lookMoreLink {
+.katalogPropozucii .katalogPropozbciiBox__propozucia:hover .propozuciaLinkBox__lookMore {
   color: #fefefe;
 }
 .katalogPropozucii .katalogPropozbciiBox__propozucia .propozuciaLinkBox__description {
@@ -281,12 +282,19 @@ h2, h6 {
       -ms-flex: auto;
           flex: auto;
 }
-.katalogPropozucii .katalogPropozbciiBox__propozucia .propozuciaLinkBox__lookMoreLink {
+.katalogPropozucii .katalogPropozbciiBox__propozucia .propozuciaLinkBox__lookMore {
   display: block;
   text-align: right;
   color: #a2fdbb;
   font-size: 13px;
   font-weight: normal;
+}
+.katalogPropozucii .katalogPropozbciiBox__propozucia .propozuciaLinkBox__lookMoreLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .newsAndEvents .newsAndEvents__title {

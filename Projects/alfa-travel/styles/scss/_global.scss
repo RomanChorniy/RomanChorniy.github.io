@@ -1,0 +1,52 @@
+$mainColor1: #3cad5e;
+$mainColor2: #fe631a;
+$textColor1: #373737;
+$textColor2: #fefefe;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 21px 15px 0;
+}
+.font-regular {
+    font-weight: normal !important;
+  }
+
+  .font-bold {
+    font-weight: bold !important;
+  }
+
+a{
+    text-decoration: none;
+    color:$textColor1;
+}
+a.active{
+    color: #d1bca9;
+}
+li{
+    list-style: none;
+}
+h2,h6{
+    font-weight: normal;
+}
+.component{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+// Botton style
+.btn{
+    width: 40px;
+    height: 35px;
+    background-color: $mainColor1;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    
+}

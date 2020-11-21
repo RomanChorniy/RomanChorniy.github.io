@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="dynamicViewport" name="viewport" content="width=1140, user-scalable=1">
+
+    <title>Comfort design. Кухня</title>
+    <!-- <link rel="stylesheet" href="styles/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="styles/css/style.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script> -->
+    <script src="styles/js/bootstrap.min.js"></script>
+    <script>
+        function changeViewport() {
+            var mvp = document.getElementById("dynamicViewport");
+
+            if (screen.width < 576) {
+                mvp.setAttribute("content", "width=device-width, initial-scale=1, user-scalable=1");
+            } else {
+                mvp.setAttribute("content", "width=1140, user-scalable=1");
+            }
+        }
+
+        changeViewport();
+
+        window.onresize = function (event) {
+            changeViewport();
+        };
+    </script>
+    <script>
+        function dropdownMenu() {
+            var dropdown = $('.nav-item.dropdown');
+            var dropdownToggle = $('.nav-link.dropdown-toggle');
+            var navItemDropdown = '.nav-item.dropdown';
+            var dropdownMenu = '.dropdown-menu';
+            $('.dropdown-arrow', navItemDropdown).on('click', function (e) {
+                $(this).parent(navItemDropdown).toggleClass('show');
+                $(this).siblings(dropdownMenu).toggleClass('show');
+            });
+
+            function dropdownMenuMobile() {
+                if ($(window).width() > 576) {
+                    $(dropdownToggle, dropdown).hover(function () {
+                        $(this).parent(navItemDropdown).addClass('show');
+                        $(this).siblings(dropdownMenu).addClass('show');
+                    });
+
+                    dropdown.mouseleave(function () {
+                        $(dropdownToggle, this).parent(navItemDropdown).removeClass('show');
+                        $(dropdownToggle, this).siblings(dropdownMenu).removeClass('show');
+                    });
+                } else {
+                    $(dropdownToggle, dropdown).unbind();
+                    dropdown.unbind();
+                }
+            }
+
+            dropdownMenuMobile();
+
+            window.addEventListener('resize', dropdownMenuMobile);
+
+            $('button.navbar-toggler').on('click', function () {
+                var idMenu = $(this).data('target');
+                var menu = $(idMenu);
+                if (menu.first().is(':hidden')) {
+                    menu.show('slow');
+                } else {
+                    menu.slideUp();
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header id="header" class="kitchens__header">
+        <div class="headerMenu__container">
+            <nav class="navbar navbar-expand-lg navbar-light header__menu">
+                <a class="navbar-brand menu__logo pt-0 pb-0" href="#">
+                    <img class="logo__image" src="image/logo.png" alt="comfort design">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item link__item"><a class="nav-link" href="http://">портфолио</a></li>
+                        <li class="nav-item link__item"><a class="nav-link" href="http://">как сделать заказ</a></li>
+                        <li class="nav-item link__item"><a class="nav-link" href="http://">контакты</a></li>
+                    </ul>
+                    <div class="menu__telephone m-auto">
+                        <a href="tel:(063) 236 01 92" class="telephone font-regular">+38 (063) 236 01 92</a>
+                        <a href="tel:(097) 832 35 36" class="telephone font-regular">+38 (097) 832 35 36</a>
+                    </div>
+                    <div class="menu__instagramLenguageBox ml-auto">
+                        <a class="menu__instagramLink" href="#"><svg height="512pt" viewBox="0 0 512 512.00006"
+                                width="512pt" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m261.039062 512c-1.695312 0-3.390624 0-5.097656-.007812-40.132812.097656-77.214844-.921876-113.277344-3.117188-33.0625-2.011719-63.242187-13.4375-87.28125-33.039062-23.195312-18.914063-39.035156-44.488282-47.078124-76.003907-7-27.4375-7.371094-54.371093-7.726563-80.421875-.257813-18.691406-.5234375-40.839844-.578125-63.363281.0546875-22.617187.320312-44.765625.578125-63.457031.355469-26.046875.726563-52.980469 7.726563-80.421875 8.042968-31.515625 23.882812-57.089844 47.078124-76.003907 24.039063-19.601562 54.21875-31.027343 87.285157-33.039062 36.0625-2.191406 73.152343-3.2148438 113.371093-3.1171875 40.144532-.0859375 77.214844.9257815 113.277344 3.1171875 33.0625 2.011719 63.242188 13.4375 87.28125 33.039062 23.199219 18.914063 39.035156 44.488282 47.078125 76.003907 7 27.4375 7.371094 54.375 7.726563 80.421875.257812 18.691406.527344 40.839844.578125 63.363281v.09375c-.050781 22.523437-.320313 44.671875-.578125 63.363281-.355469 26.046875-.722656 52.980469-7.726563 80.421875-8.042969 31.515625-23.878906 57.089844-47.078125 76.003907-24.039062 19.601562-54.21875 31.027343-87.28125 33.039062-34.535156 2.101562-70.011718 3.125-108.277344 3.125zm-5.097656-40.007812c39.480469.09375 75.730469-.902344 110.945313-3.042969 25-1.519531 46.675781-9.632813 64.433593-24.113281 16.414063-13.386719 27.71875-31.855469 33.597657-54.894532 5.828125-22.839844 6.164062-47.363281 6.488281-71.078125.253906-18.566406.519531-40.558593.574219-62.863281-.054688-22.308594-.320313-44.296875-.574219-62.863281-.324219-23.714844-.660156-48.238281-6.488281-71.082031-5.878907-23.039063-17.183594-41.507813-33.597657-54.894532-17.757812-14.476562-39.433593-22.589844-64.433593-24.109375-35.214844-2.144531-71.464844-3.132812-110.851563-3.046875-39.472656-.09375-75.726562.902344-110.941406 3.046875-25 1.519531-46.675781 9.632813-64.433594 24.109375-16.414062 13.386719-27.71875 31.855469-33.597656 54.894532-5.828125 22.84375-6.164062 47.363281-6.488281 71.082031-.253907 18.582031-.519531 40.585937-.574219 62.910156.054688 22.226563.320312 44.234375.574219 62.816406.324219 23.714844.660156 48.238281 6.488281 71.078125 5.878906 23.039063 17.183594 41.507813 33.597656 54.894532 17.757813 14.476562 39.433594 22.589843 64.433594 24.109374 35.214844 2.144532 71.476562 3.144532 110.847656 3.046876zm-.953125-90.992188c-68.921875 0-125-56.074219-125-125s56.078125-125 125-125c68.925781 0 125 56.074219 125 125s-56.074219 125-125 125zm0-210c-46.867187 0-85 38.132812-85 85s38.132813 85 85 85c46.871094 0 85-38.132812 85-85s-38.128906-85-85-85zm139-80c-16.566406 0-30 13.429688-30 30s13.433594 30 30 30c16.570313 0 30-13.429688 30-30s-13.429687-30-30-30zm0 0" />
+                            </svg></a>
+                        <a href="#" class="menu__basketLink">
+                            <svg class="menu__basket" enable-background="new 0 0 512 512" height="512"
+                                viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path
+                                        d="m337.034 420.796c.835.139 1.665.207 2.484.207 7.2 0 13.555-5.2 14.778-12.537l15-90c1.362-8.171-4.158-15.9-12.33-17.262-8.172-1.366-15.9 4.158-17.262 12.33l-15 90c-1.362 8.172 4.158 15.901 12.33 17.262z" />
+                                    <path
+                                        d="m158.704 408.466c1.223 7.337 7.577 12.537 14.778 12.537.819 0 1.649-.067 2.484-.207 8.172-1.362 13.692-9.09 12.33-17.262l-15-90c-1.362-8.172-9.089-13.691-17.262-12.33-8.172 1.362-13.692 9.09-12.33 17.262z" />
+                                    <path
+                                        d="m497 181h-52.791l-115.496-144.37c-5.174-6.467-14.613-7.518-21.083-2.342-6.469 5.175-7.518 14.614-2.342 21.083l100.503 125.629h-299.582l100.504-125.629c5.175-6.469 4.126-15.909-2.342-21.083-6.47-5.176-15.909-4.126-21.083 2.342l-115.497 144.37h-52.791c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15h18.686l56.892 199.121c1.839 6.44 7.725 10.879 14.422 10.879h302c6.697 0 12.583-4.439 14.423-10.879l56.891-199.121h18.686c8.284 0 15-6.716 15-15v-60c0-8.284-6.716-15-15-15zm-101.314 270h-279.372l-51.428-180h382.229zm86.314-210c-51.385 0-403.32 0-452 0v-30h452z" />
+                                    <path
+                                        d="m256 421c8.284 0 15-6.716 15-15v-90c0-8.284-6.716-15-15-15s-15 6.716-15 15v90c0 8.285 6.716 15 15 15z" />
+                                </g>
+                            </svg>
+                        </a>
+
+                        <div class="menu__language">
+                            <a href="#" class="language__ukr active">укр</a>
+                            <hr class="language__line" color="#d1bca9" size="1px">
+                            <a href="#" class="language__rus">рус</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="header__image">
+            <div class="image__titlebox">
+                <h1 class="titlebox__title">кухни под заказ</h1>
+                <p class="titlebox__subtitle font-regular">дизайн | изготовление | монтаж</p>
+                <p class="titlebox__price">от <span class="price__big">10 000</span> грн. за метр</p>
+                <button class="titlebox__btn btn font-regular">Визвать замерщика</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="components">
+            <div id="component-1" class="component">
+                <div class="kitchens" id="kitchens">
+                    <div class="kitchens__block">
+                        <div class="kitchensCart__description">
+                            <h2 class="kitchenBox__title">кухня 124</h2>
+                            <p class="kitchenBox__parametr">Фасады: <span class="kitchenBox__text">МДФ краска
+                                    матовая</span></p>
+                            <p class="kitchenBox__parametr">Столешница: <span class="kitchenBox__text">акрил</span></p>
+                            <p class="kitchenBox__parametr">Фурнитура: <span class="kitchenBox__text">Блюм</span></p>
+                            <p class="kitchenBox__parametr">Цена мебели на фото: <span class="kitchenBox__text">52 000
+                                    грн</span></p>
+                            <p class="kitchenBox__parametr">Цена: <span class="kitchenBox__text">от 9 000 грн за
+                                    м</span></p>
+                            <a href="#" class="kitchenBox__seeMoreLink">Смотреть</a>
+                            <a href="#" class="linkAreaForDesktopMode"></a>
+                            <div href="#" class="description__cart kitchens__cart1"></div>
+                        </div>
+                        <div class="kitchensCart__description">
+                            <h2 class="kitchenBox__title">кухня 124</h2>
+                            <p class="kitchenBox__parametr">Фасады: <span class="kitchenBox__text">МДФ краска
+                                    матовая</span></p>
+                            <p class="kitchenBox__parametr">Столешница: <span class="kitchenBox__text">акрил</span></p>
+                            <p class="kitchenBox__parametr">Фурнитура:<span class="kitchenBox__text">Блюм</span></p>
+                            <p class="kitchenBox__parametr">Цена мебели на фото: <span class="kitchenBox__text">52 000
+                                    грн</span></p>
+                            <p class="kitchenBox__parametr">Цена: <span class="kitchenBox__text">от 9 000 грн за
+                                    м</span></p>
+                            <a href="#" class="kitchenBox__seeMoreLink">Смотреть</a>
+                            <a href="#" class="linkAreaForDesktopMode"></a>
+                            <div class="description__cart kitchens__cart2"></div>
+                        </div>
+                        <div class="kitchensCart__description">
+                            <h2 class="kitchenBox__title">кухня 124</h2>
+                            <p class="kitchenBox__parametr">Фасады: <span class="kitchenBox__text">МДФ краска
+                                    матовая</span></p>
+                            <p class="kitchenBox__parametr">Столешница: <span class="kitchenBox__text">акрил</span></p>
+                            <p class="kitchenBox__parametr">Фурнитура: <span class="kitchenBox__text">Блюм</span></p>
+                            <p class="kitchenBox__parametr">Цена мебели на фото: <span class="kitchenBox__text">52 000
+                                    грн</span></p>
+                            <p class="kitchenBox__parametr">Цена: <span class="kitchenBox__text">от 9 000 грн за
+                                    м</span></p>
+                            <a href="#" class="kitchenBox__seeMoreLink">Смотреть</a>
+                            <a href="#" class="linkAreaForDesktopMode"></a>
+                            <div class="description__cart kitchens__cart3"></div>
+                        </div>
+                        <div class="kitchensCart__description">
+                            <h2 class="kitchenBox__title">кухня 124</h2>
+                            <p class="kitchenBox__parametr">Фасады: <span class="kitchenBox__text">МДФ краска
+                                    матовая</span></p>
+                            <p class="kitchenBox__parametr">Столешница: <span class="kitchenBox__text">акрил</span></p>
+                            <p class="kitchenBox__parametr">Фурнитура: <span class="kitchenBox__text">Блюм</span></p>
+                            <p class="kitchenBox__parametr">Цена мебели на фото: <span class="kitchenBox__text">52 000
+                                    грн</span></p>
+                            <p class="kitchenBox__parametr">Цена: <span class="kitchenBox__text">от 9 000 грн за
+                                    м</span></p>
+                            <a href="#" class="kitchenBox__seeMoreLink">Смотреть</a>
+                            <a href="#" class="linkAreaForDesktopMode"></a>
+                            <div class="description__cart kitchens__cart4"></div>
+                        </div>
+                        <div class="kitchensCart__description">
+                            <h2 class="kitchenBox__title">кухня 124</h2>
+                            <p class="kitchenBox__parametr">Фасады: <span class="kitchenBox__text">МДФ краска
+                                    матовая</span></p>
+                            <p class="kitchenBox__parametr">Столешница: <span class="kitchenBox__text">акрил</span></p>
+                            <p class="kitchenBox__parametr">Фурнитура: <span class="kitchenBox__text">Блюм</span></p>
+                            <p class="kitchenBox__parametr">Цена мебели на фото: <span class="kitchenBox__text">52 000
+                                    грн</span></p>
+                            <p class="kitchenBox__parametr">Цена: <span class="kitchenBox__text">от 9 000 грн за
+                                    м</span></p>
+                            <a href="#" class="kitchenBox__seeMoreLink">Смотреть</a>
+                            <a href="#" class="linkAreaForDesktopMode"></a>
+                            <div class="description__cart kitchens__cart5"></div>
+                        </div>
+                        <div class="kitchensCart__description">
+                            <h2 class="kitchenBox__title">кухня 124</h2>
+                            <p class="kitchenBox__parametr">Фасады: <span class="kitchenBox__text">МДФ краска
+                                    матовая</span></p>
+                            <p class="kitchenBox__parametr">Столешница: <span class="kitchenBox__text">акрил</span></p>
+                            <p class="kitchenBox__parametr">Фурнитура: <span class="kitchenBox__text">Блюм</span></p>
+                            <p class="kitchenBox__parametr">Цена мебели на фото: <span class="kitchenBox__text">52 000
+                                    грн</span></p>
+                            <p class="kitchenBox__parametr">Цена: <span class="kitchenBox__text">от 9 000 грн за
+                                    м</span></p>
+                            <a href="#" class="kitchenBox__seeMoreLink">Смотреть</a>
+                            <a href="#" class="linkAreaForDesktopMode"></a>
+                            <div class="description__cart kitchens__cart6"></div>
+                        </div>
+                    </div>
+                    <button class="kitchens__btn btn font-regular">
+                        <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m61.496094 279.609375c-.988282-8.234375-1.496094-16.414063-1.496094-23.609375 0-107.402344 88.597656-196 196-196 50.097656 0 97 20.199219 131.5 51.699219l-17.300781 17.601562c-3.898438 3.898438-5.398438 9.597657-3.898438 15 1.800781 5.097657 6 9 11.398438 10.199219 3.019531.605469 102.214843 32.570312 95.898437 31.300781 8.035156 2.675781 19.917969-5.894531 17.703125-17.699219-.609375-3.023437-22.570312-113.214843-21.300781-106.902343-1.199219-5.398438-5.101562-9.898438-10.5-11.398438-5.097656-1.5-10.800781 0-14.699219 3.898438l-14.699219 14.398437c-45.300781-42.296875-107.503906-68.097656-174.101562-68.097656-140.699219 0-256 115.300781-256 256v.597656c0 8.457032.386719 14.992188.835938 19.992188.597656 6.625 5.480468 12.050781 12.003906 13.359375l30.816406 6.160156c10.03125 2.007813 19.050781-6.402344 17.839844-16.5zm0 0" />
+                            <path
+                                d="m499.25 222.027344-30.90625-6.296875c-10.042969-2.046875-19.125 6.371093-17.890625 16.515625 1.070313 8.753906 1.546875 17.265625 1.546875 23.753906 0 107.398438-88.597656 196-196 196-50.097656 0-97-20.199219-131.5-52l17.300781-17.300781c3.898438-3.898438 5.398438-9.597657 3.898438-15-1.800781-5.101563-6-9-11.398438-10.199219-3.019531-.609375-102.214843-32.570312-95.898437-31.300781-5.101563-.898438-10.203125.601562-13.5 4.199219-3.601563 3.300781-5.101563 8.699218-4.203125 13.5.609375 3.019531 22.574219 112.210937 21.304687 105.898437 1.195313 5.402344 5.097656 9.902344 10.496094 11.398437 6.261719 1.570313 11.488281-.328124 14.699219-3.898437l14.402343-14.398437c45.296876 42.300781 107.5 69.101562 174.398438 69.101562 140.699219 0 256-115.300781 256-256v-.902344c0-6.648437-.242188-13.175781-.796875-19.664062-.570313-6.628906-5.433594-12.074219-11.953125-13.40625zm0 0" />
+                        </svg>
+                        Показать еще
+                    </button>
+                </div>
+            </div>
+            <div id="component-2" class="component">
+                <div class="benefits" id="benefits">
+                    <div class="benefits__container">
+                        <div class="benefits__box1 benefits__box">
+                            <p class="box__number">1</p>
+                            <p class="box__text font-regular">Для нас важно выполнить данные нами гарантийные
+                                обязательства как можно
+                                скорее</p>
+                        </div>
+                        <div class="benefits__box2 benefits__box">
+                            <p class="box__number">2</p>
+                            <p class="box__text font-regular">Мы берем на работу лучших специалистов, чтобы Вы нас
+                                рекомендовали
+                                своим
+                                друзьям</p>
+                        </div>
+                        <div class="benefits__box3 benefits__box">
+                            <p class="box__number">3</p>
+                            <p class="box__text font-regular">Мы используем только указанные в договоре материалы и даем
+                                5 лет
+                                гарантии
+                                на изготовленную нами мебель</p>
+                        </div>
+                        <div class="benefits__box4 benefits__box">
+                            <p class="box__number">4</p>
+                            <p class="box__text font-regular">Мы точно соблюдаем указанные сроки и внимательны к
+                                пожеланиям заказчика
+                            </p>
+                        </div>
+                        <div class="benefits__box5 benefits__box">
+                            <p class="box__number">5</p>
+                            <p class="box__text font-regular">Вы получите удовольствие от дизайна и функциональности
+                                мебель Вашей
+                                мечты
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer__container font-regular">
+            <div class="container__logoBox">
+                <a href="#" class="container__logo">
+                    <img class="logo__image" src="image/logo.png" alt="comfort design">
+                </a>
+                <a href="#" class="container__instagram"><svg height="512pt" viewBox="0 0 512 512.00006" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m261.039062 512c-1.695312 0-3.390624 0-5.097656-.007812-40.132812.097656-77.214844-.921876-113.277344-3.117188-33.0625-2.011719-63.242187-13.4375-87.28125-33.039062-23.195312-18.914063-39.035156-44.488282-47.078124-76.003907-7-27.4375-7.371094-54.371093-7.726563-80.421875-.257813-18.691406-.5234375-40.839844-.578125-63.363281.0546875-22.617187.320312-44.765625.578125-63.457031.355469-26.046875.726563-52.980469 7.726563-80.421875 8.042968-31.515625 23.882812-57.089844 47.078124-76.003907 24.039063-19.601562 54.21875-31.027343 87.285157-33.039062 36.0625-2.191406 73.152343-3.2148438 113.371093-3.1171875 40.144532-.0859375 77.214844.9257815 113.277344 3.1171875 33.0625 2.011719 63.242188 13.4375 87.28125 33.039062 23.199219 18.914063 39.035156 44.488282 47.078125 76.003907 7 27.4375 7.371094 54.375 7.726563 80.421875.257812 18.691406.527344 40.839844.578125 63.363281v.09375c-.050781 22.523437-.320313 44.671875-.578125 63.363281-.355469 26.046875-.722656 52.980469-7.726563 80.421875-8.042969 31.515625-23.878906 57.089844-47.078125 76.003907-24.039062 19.601562-54.21875 31.027343-87.28125 33.039062-34.535156 2.101562-70.011718 3.125-108.277344 3.125zm-5.097656-40.007812c39.480469.09375 75.730469-.902344 110.945313-3.042969 25-1.519531 46.675781-9.632813 64.433593-24.113281 16.414063-13.386719 27.71875-31.855469 33.597657-54.894532 5.828125-22.839844 6.164062-47.363281 6.488281-71.078125.253906-18.566406.519531-40.558593.574219-62.863281-.054688-22.308594-.320313-44.296875-.574219-62.863281-.324219-23.714844-.660156-48.238281-6.488281-71.082031-5.878907-23.039063-17.183594-41.507813-33.597657-54.894532-17.757812-14.476562-39.433593-22.589844-64.433593-24.109375-35.214844-2.144531-71.464844-3.132812-110.851563-3.046875-39.472656-.09375-75.726562.902344-110.941406 3.046875-25 1.519531-46.675781 9.632813-64.433594 24.109375-16.414062 13.386719-27.71875 31.855469-33.597656 54.894532-5.828125 22.84375-6.164062 47.363281-6.488281 71.082031-.253907 18.582031-.519531 40.585937-.574219 62.910156.054688 22.226563.320312 44.234375.574219 62.816406.324219 23.714844.660156 48.238281 6.488281 71.078125 5.878906 23.039063 17.183594 41.507813 33.597656 54.894532 17.757813 14.476562 39.433594 22.589843 64.433594 24.109374 35.214844 2.144532 71.476562 3.144532 110.847656 3.046876zm-.953125-90.992188c-68.921875 0-125-56.074219-125-125s56.078125-125 125-125c68.925781 0 125 56.074219 125 125s-56.074219 125-125 125zm0-210c-46.867187 0-85 38.132812-85 85s38.132813 85 85 85c46.871094 0 85-38.132812 85-85s-38.128906-85-85-85zm139-80c-16.566406 0-30 13.429688-30 30s13.433594 30 30 30c16.570313 0 30-13.429688 30-30s-13.429687-30-30-30zm0 0" />
+                    </svg> comfort_design_kiev</a>
+            </div>
+            <div class="container__telephone">
+                <a href="tel:(063) 236 01 92" class="telephone">+38 (063) 236 01 92</a>
+                <a href="tel:(097) 832 35 36" class="telephone">+38 (097) 832 35 36</a>
+            </div>
+            <div class="container__email">
+                <a href="mailto:comfort.design@ukr.net" class="email">comfort.design@ukr.net</a>
+                <a href="mailto:draga@ukr.net" class="email">draga@ukr.net</a>
+            </div>
+            <div class="container__timeWork">
+                <p class="timeWork__text">Работаем по Киеву и области</p>
+                <p class="timeWork__text">C 09:00 до 21:00 без выходных</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.baner{
+    .banerImage{
+        height: 400px;
+        width: 100%;
+        background-color: #ded8cd;
+    }
+}
+.katalogPropozucii{
+    margin: 0 -15px 0;
+    padding: 38px 0 62px;
+    .katalogPropozucii__title{
+        color: #656565;
+        font-size: 30;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 15px 0;
+    }
+    .katalogPropozuciiBox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .katalogPropozbciiBox__propozucia{
+        margin: 15px;
+        display: block;
+        width: 350px;
+        background-color: $mainColor1;
+        color: $textColor2;
+        transition: background-color .3s ease-in-out;
+        &:hover{
+            background-color: $mainColor2;
+            .propozuciaLinkBox__lookMoreLink{
+                color: $textColor2;
+            }
+        }
+        .propozuciaLinkBox__description{
+            padding: 14px 21px 11px;
+        }
+        .propozuciaLinkBox__image{
+            width: 100%;
+        }
+        .propozuciaLinkBox__title{
+            font-weight: bold;
+            font-size: 18px;
+            padding-bottom: 17px;
+        }
+        .propozuciaLinkBox__text{
+            font-weight: normal;
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+        .propozuciaLinkBox__lookMoreLink{
+            display: block;
+            text-align: right;
+            color: #a2fdbb;
+            font-size: 13px;
+            font-weight: normal;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.header{
+    margin: 0 auto;
+    max-width: 1110px;
+    width: 100%;
+    color: $textColor1;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__contactsBox{
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1 0 50%;
+        }
+        .contactsBox__telephoneBox{
+            display: flex;
+            .telephoneBox__telItem{
+                padding: 0 3px 0;
+                .telephoneNumber{
+                    font-size: 17px;
+                    &:hover{
+                        color: $mainColor2;
+                    }
+                }
+            }
+        }
+        .contactsBox__socialBox{
+            display: flex;
+            padding-right: 34px;
+            .socialBox__item{
+                padding: 0 6px 0;
+            }
+        }
+        .greenLine{
+            color: $mainColor1;
+            font-size: 17px;
+        }
+        .contactsBox__langMenu{
+            position: absolute;
+            right: 0;
+            top: 10%;
+            height: 20px;
+            overflow: hidden;
+            transition: all .2s linear;
+            .linkItem{
+                padding-bottom: 16px;
+                .linkItem__link{
+                    color: #6f6f6e;
+                    font-size: 15px;
+                }
+                &:not(.vubrana):hover .linkItem__link{
+                    color: $mainColor2;
+                }
+            }
+        }
+        .contactsBox__langMenu:hover{
+            height: 52px;
+        }
+        
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 9px;
+        .navMenu{
+            display: flex;
+            justify-content: space-between;
+            flex: 0 0 760px;
+        }
+        .link__item{
+            text-transform: uppercase;
+            font-size: 16px;
+            color: $textColor1;
+            &:hover{
+                color: $mainColor2;
+            }
+        }
+        .navSearch{
+            display: flex;
+            
+        }
+        .navSearch__text{
+            width: 215px;
+            height: 35px;
+            font-size: 14px;
+            padding-left: 11px;
+            color: $textColor1;
+            outline: none;
+            border: 1px solid #f0f0f0;
+            &:focus{
+                border: 1px solid #f0f0f0;
+            }
+            &::placeholder{
+                color: #b4b4b4;
+                opacity: 1;
+            }
+        }
+    }
+}
+.body__greenline{
+    border: none;
+    color: #d8efdf;
+    background-color: #d8efdf;
+    height: 1px;
+}

@@ -84,6 +84,7 @@
         justify-content: space-between;
     }
     .newsAndEventsBox__item{
+        position: relative;
         width: 255px;
         border: 1px solid $mainColor1;
         display: flex;
@@ -112,12 +113,19 @@
                 padding-bottom: 12px;
                 flex: auto;
             }
-            .description__seeMoreLink{
+            .description__seeMore{
                 color: $mainColor1;
                 font-size: 12px;
                 text-align: right;
                 display: block;
             }
+        }
+        .description__seeMoreLink{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     }
 }

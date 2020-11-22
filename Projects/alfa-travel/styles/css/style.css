@@ -211,6 +211,12 @@ h2, h6 {
   padding: 15px 15px 0px;
   z-index: 1;
 }
+.header .headerMobile .mobileBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 .header .headerMobile .headerMobile__menuBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +227,6 @@ h2, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 14px;
 }
 .header .headerMobile .headerMobile__menuBar .menuBar__logo {
   -webkit-box-flex: 1;
@@ -230,12 +235,6 @@ h2, h6 {
 }
 .header .headerMobile .headerMobile__menuBar .menuBar__item {
   padding: 10px;
-}
-.header .headerMobile .headerMobile__menuBar .mobileBtn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
 .header .headerMobile .headerMobile__menuBar .logoImage__iconImage {
   width: 40vw;
@@ -250,15 +249,13 @@ h2, h6 {
   width: 6vw;
 }
 .header .headerMobile .telephoneWindow {
-  position: absolute;
-  top: 80px;
-  left: 0;
   width: 100%;
   background-color: #fff;
   padding: 30px 15px;
-}
-.header .headerMobile .telephoneWindow_exitStatus {
   display: none;
+}
+.header .headerMobile .telephoneWindow_openStatus {
+  display: block;
 }
 .header .headerMobile .telephoneWindow .telephoneNumber {
   display: block;
@@ -280,9 +277,6 @@ h2, h6 {
     display: none;
   }
   .header .headerMobile {
-    display: block;
-  }
-  .header .menuBar__telephoneBtn:focus + .telephoneWindow {
     display: block;
   }
 }

@@ -110,22 +110,22 @@
         background-color: #fff;
         padding: 15px 15px 0px;
         z-index: 1;
+        .mobileBtn{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
         .headerMobile__menuBar{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-bottom: 14px;
+            // padding-bottom: 14px;
             .menuBar__logo{
                 flex: auto;
             }
             .menuBar__item{
                 padding: 10px;
-            }
-            .mobileBtn{
-                background-color: transparent;
-                border: none;
-                outline: none;
-                cursor: pointer;
             }
             .logoImage__iconImage{
                 width: 40vw;
@@ -141,15 +141,12 @@
             }
         }
         .telephoneWindow{
-            position: absolute;
-            top: 80px;
-            left: 0;
             width: 100%;
             background-color: #fff;
             padding: 30px 15px;
-            // display: none;
-            &_exitStatus{
-                display: none;
+            display: none;
+            &_openStatus{
+                display: block;
             }
             .telephoneNumber{
                 display: block;
@@ -173,9 +170,6 @@
             display: none;
         }
         .headerMobile{
-            display: block;
-        }
-        .menuBar__telephoneBtn:focus + .telephoneWindow{
             display: block;
         }
     }

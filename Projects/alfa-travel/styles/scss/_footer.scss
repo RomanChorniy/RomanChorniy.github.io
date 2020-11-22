@@ -1,0 +1,54 @@
+.footer{
+    background-color: $mainColor1;
+    .footerContainer{
+        max-width: 1110px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 35px 0 45px;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .logoBox__logoIcon{
+        padding-bottom: 29px;
+    }
+    .titleSmall{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .titleBig{
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .contactBox__item{
+        padding-bottom: 5px;
+    }
+    .socialItem{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        padding-bottom: 20px;
+        &__text, &__arrowIcon, &__link{
+            padding-right: 8px;
+        }
+        &__link:last-child{
+            padding-right: 0px;
+        }
+    }
+    .contactBox__addressItem{
+        padding-bottom: 14px;
+    }
+    .menuListItem__link, .katalogItem__link{
+        color: #fff;
+        font-size: 14px;
+    }
+    .menuList__menuListItem{
+        padding-bottom: 16px;
+    }
+    .katalogList__katalogItem{
+        padding-bottom: 12px;
+    }
+    .menuList__menuListItem:last-child, .katalogList__katalogItem:last-child{
+        padding-bottom: 0px;
+    }
+}

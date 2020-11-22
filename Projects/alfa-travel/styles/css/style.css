@@ -206,6 +206,69 @@ h2, h6 {
   height: 1px;
 }
 
+.footer {
+  background-color: #3cad5e;
+}
+.footer .footerContainer {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px 0 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+.footer .logoBox__logoIcon {
+  padding-bottom: 29px;
+}
+.footer .titleSmall {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.footer .titleBig {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.footer .contactBox__item {
+  padding-bottom: 5px;
+}
+.footer .socialItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.footer .socialItem__text, .footer .socialItem__arrowIcon, .footer .socialItem__link {
+  padding-right: 8px;
+}
+.footer .socialItem__link:last-child {
+  padding-right: 0px;
+}
+.footer .contactBox__addressItem {
+  padding-bottom: 14px;
+}
+.footer .menuListItem__link, .footer .katalogItem__link {
+  color: #fff;
+  font-size: 14px;
+}
+.footer .menuList__menuListItem {
+  padding-bottom: 16px;
+}
+.footer .katalogList__katalogItem {
+  padding-bottom: 12px;
+}
+.footer .menuList__menuListItem:last-child, .footer .katalogList__katalogItem:last-child {
+  padding-bottom: 0px;
+}
+
 .baner .banerImage {
   height: 400px;
   width: 100%;

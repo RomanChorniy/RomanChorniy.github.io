@@ -164,6 +164,35 @@
                 width: 6vw;
             }
         }
+        .searchWindow{
+            margin: 0 -15px;
+            width: 100vw;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            display: none;
+            &_openStatus{
+                display: flex;
+            }
+            &__searchFild{
+                height: 62px;
+                padding-left: 15px;
+                font-size: 30px;
+                border: none;
+                border-top: 1px solid #daefdf; 
+                border-bottom: 1px solid #daefdf;
+                flex: auto;
+                outline: none;
+                &::placeholder{
+                    color: #b4b4b4;
+                }
+            }
+            &__searchBtn{
+                height: 62px;
+                width: 82px;
+                background-color: $mainColor1;
+            }
+        }
     }
     @media screen and (max-width: 575px){
         .header__top, .header__bottom{

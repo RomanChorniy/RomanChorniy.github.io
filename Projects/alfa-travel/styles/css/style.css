@@ -272,6 +272,52 @@ h2, h6 {
 .header .headerMobile .telephoneWindow .telephoneWindow__closeIcon {
   width: 6vw;
 }
+.header .headerMobile .searchWindow {
+  margin: 0 -15px;
+  width: 100vw;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+.header .headerMobile .searchWindow_openStatus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .headerMobile .searchWindow__searchFild {
+  height: 62px;
+  padding-left: 15px;
+  font-size: 30px;
+  border: none;
+  border-top: 1px solid #daefdf;
+  border-bottom: 1px solid #daefdf;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  outline: none;
+}
+.header .headerMobile .searchWindow__searchFild::-webkit-input-placeholder {
+  color: #b4b4b4;
+}
+.header .headerMobile .searchWindow__searchFild:-ms-input-placeholder {
+  color: #b4b4b4;
+}
+.header .headerMobile .searchWindow__searchFild::-ms-input-placeholder {
+  color: #b4b4b4;
+}
+.header .headerMobile .searchWindow__searchFild::placeholder {
+  color: #b4b4b4;
+}
+.header .headerMobile .searchWindow__searchBtn {
+  height: 62px;
+  width: 82px;
+  background-color: #3cad5e;
+}
 @media screen and (max-width: 575px) {
   .header .header__top, .header .header__bottom {
     display: none;

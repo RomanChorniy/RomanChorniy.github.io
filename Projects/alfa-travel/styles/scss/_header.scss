@@ -145,9 +145,27 @@
             top: 80px;
             left: 0;
             width: 100%;
-            height: 100px;
-            background-color: red;
-            display: none;
+            background-color: #fff;
+            padding: 30px 15px;
+            // display: none;
+            &_exitStatus{
+                display: none;
+            }
+            .telephoneNumber{
+                display: block;
+                font-size: 30px;
+                padding-bottom: 10px;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+            }
+            .telephoneWindow__closeBtn{
+                float: right;
+                padding: 0 10px;
+            }
+            .telephoneWindow__closeIcon{
+                width: 6vw;
+            }
         }
     }
     @media screen and (max-width: 575px){

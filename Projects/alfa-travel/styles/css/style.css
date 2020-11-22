@@ -254,9 +254,26 @@ h2, h6 {
   top: 80px;
   left: 0;
   width: 100%;
-  height: 100px;
-  background-color: red;
+  background-color: #fff;
+  padding: 30px 15px;
+}
+.header .headerMobile .telephoneWindow_exitStatus {
   display: none;
+}
+.header .headerMobile .telephoneWindow .telephoneNumber {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.header .headerMobile .telephoneWindow .telephoneNumber:last-child {
+  padding-bottom: 0;
+}
+.header .headerMobile .telephoneWindow .telephoneWindow__closeBtn {
+  float: right;
+  padding: 0 10px;
+}
+.header .headerMobile .telephoneWindow .telephoneWindow__closeIcon {
+  width: 6vw;
 }
 @media screen and (max-width: 575px) {
   .header .header__top, .header .header__bottom {

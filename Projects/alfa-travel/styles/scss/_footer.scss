@@ -1,5 +1,6 @@
 .footer{
     background-color: $mainColor1;
+    margin: 0 -15px;
     .footerContainer{
         max-width: 1110px;
         width: 100%;
@@ -8,6 +9,9 @@
         display: flex;
         justify-content: space-between;
         color: #fff;
+    }
+    .footerContainer__logoBox{
+        width: 143px;
     }
     .logoBox__logoIcon{
         padding-bottom: 29px;
@@ -20,8 +24,14 @@
         font-size: 16px;
         text-transform: uppercase;
     }
+    .footerContainer__contactBox{
+        width: 263px;
+    }
     .contactBox__item{
         padding-bottom: 5px;
+    }
+    .footerContainer__menuList{
+        width: 140px;
     }
     .socialItem{
         display: flex;
@@ -37,6 +47,9 @@
     }
     .contactBox__addressItem{
         padding-bottom: 14px;
+    }
+    .footerContainer__katalogList{
+        width: 186px;
     }
     .menuListItem__link, .katalogItem__link{
         color: #fff;

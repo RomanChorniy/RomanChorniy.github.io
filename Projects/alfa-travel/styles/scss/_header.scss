@@ -3,6 +3,7 @@
     max-width: 1110px;
     width: 100%;
     color: $textColor1;
+    position: relative;
     &__top{
         display: flex;
         justify-content: space-between;
@@ -59,7 +60,6 @@
         .contactsBox__langMenu:hover{
             height: 52px;
         }
-        
     }
     &__bottom{
         display: flex;
@@ -100,10 +100,74 @@
             }
         }
     }
+    .headerMobile{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #fff;
+        padding: 15px 15px 0px;
+        z-index: 1;
+        .headerMobile__menuBar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 14px;
+            .menuBar__logo{
+                flex: auto;
+            }
+            .menuBar__item{
+                padding: 10px;
+            }
+            .mobileBtn{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            .logoImage__iconImage{
+                width: 40vw;
+            }
+            .facebookLink__iconImage{
+                width: 2.4vw;
+            }
+            .instagramLink__iconImage, .telephoneBtn__iconImage{
+                width: 5vw;
+            }
+            .searchBtn__iconImage, .menuBtn__iconImage{
+                width: 6vw;
+            }
+        }
+        .telephoneWindow{
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            display: none;
+        }
+    }
+    @media screen and (max-width: 575px){
+        .header__top, .header__bottom{
+            display: none;
+        }
+        .headerMobile{
+            display: block;
+        }
+        .menuBar__telephoneBtn:focus + .telephoneWindow{
+            display: block;
+        }
+    }
 }
 .body__greenline{
     border: none;
     color: #d8efdf;
     background-color: #d8efdf;
     height: 1px;
+    @media screen and (max-width: 575px){
+        padding-top: 59px;
+    }
 }

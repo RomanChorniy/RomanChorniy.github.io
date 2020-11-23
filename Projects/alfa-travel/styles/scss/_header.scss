@@ -193,6 +193,66 @@
                 background-color: $mainColor1;
             }
         }
+        .menuWindow{
+            // display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba($color: #5a5a5a, $alpha: .8);
+            .menuWindowContainer{
+                width: 88vw;
+                height: 100%;
+                background-color: #fff;
+            }
+            .menuWindowContainer__langAndExit{
+                background-color: $mainColor1;
+                border-bottom: 1px solid #daefdf;
+                color: #fff;
+                font-size: 22px;
+                display: flex;
+                .languageBox{
+                    position: relative;
+                    flex: auto;
+                    padding: 0 15px;
+                    .languageBox__item{
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        .languageBox__lang{
+                            flex: auto;
+                        }
+                    }
+                    .secondLangItem{
+                        position: absolute;
+                        background-color: $mainColor1;
+                        width: 100%;
+                        left: 0;
+                        padding-left: 15px;
+                        display: none;
+                        order: 1;
+                    }
+                    .languageBox__indicator{
+                        color: #fff;
+                        float: right;
+                    }
+                    .rotateIndecator{
+                        transform: rotate(180deg);
+                    }
+                    .openBlock{
+                        display: flex;
+                    }
+                }
+                .exitBox{
+                    background-color: #fff;
+                    padding: 10px;
+                    & img{
+                        width: 80%;
+                    }
+                }
+            }
+        }
     }
     @media screen and (max-width: 575px){
         .header__top, .header__bottom{

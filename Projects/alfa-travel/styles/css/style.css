@@ -318,6 +318,81 @@ h2, h6 {
   width: 82px;
   background-color: #3cad5e;
 }
+.header .headerMobile .menuWindow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(90, 90, 90, 0.8);
+}
+.header .headerMobile .menuWindow .menuWindowContainer {
+  width: 88vw;
+  height: 100%;
+  background-color: #fff;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit {
+  background-color: #3cad5e;
+  border-bottom: 1px solid #daefdf;
+  color: #fff;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit .languageBox {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 0 15px;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit .languageBox .languageBox__item {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit .languageBox .languageBox__item .languageBox__lang {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit .languageBox .secondLangItem {
+  position: absolute;
+  background-color: #3cad5e;
+  width: 100%;
+  left: 0;
+  padding-left: 15px;
+  display: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit .languageBox .languageBox__indicator {
+  color: #fff;
+  float: right;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit .languageBox .rotateIndecator {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit .languageBox .openBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit .exitBox {
+  background-color: #fff;
+  padding: 10px;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__langAndExit .exitBox img {
+  width: 80%;
+}
 @media screen and (max-width: 575px) {
   .header .header__top, .header .header__bottom {
     display: none;

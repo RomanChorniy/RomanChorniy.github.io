@@ -11,4 +11,12 @@ $(document).ready(function () {
         else $('.searchWindow').addClass('searchWindow_openStatus');
         $('.telephoneWindow').removeClass('telephoneWindow_openStatus');
     });
+    $('.languageBox').click(function () {
+        if ($('.secondLangItem').hasClass('openBlock'))
+            $('.secondLangItem').removeClass('openBlock');
+        else
+            $('.secondLangItem').addClass('openBlock');
+        if ($('.secondLangItem').hasClass('openBlock')) $('.languageBox__indicator').addClass('rotateIndecator')
+        else $('.languageBox__indicator').removeClass('rotateIndecator')
+    });
 });

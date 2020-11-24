@@ -393,6 +393,16 @@ h2, h6 {
 .header .headerMobile .menuWindow .menuWindowContainer__langAndExit .exitBox img {
   width: 80%;
 }
+.header .headerMobile .menuWindow .head {
+  background: #eee;
+  cursor: pointer;
+}
+.header .headerMobile .menuWindow .section .head, .header .headerMobile .menuWindow .section .section {
+  margin-left: 20px;
+}
+.header .headerMobile .menuWindow .section {
+  display: none;
+}
 @media screen and (max-width: 575px) {
   .header .header__top, .header .header__bottom {
     display: none;

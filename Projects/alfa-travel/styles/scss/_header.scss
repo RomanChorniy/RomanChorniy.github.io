@@ -252,6 +252,16 @@
                     }
                 }
             }
+            .head {
+                background: #eee;
+                cursor: pointer;
+            }
+            .section .head, .section .section {
+                margin-left: 20px;
+            }
+            .section{
+                display:none;   
+            }
         }
     }
     @media screen and (max-width: 575px){

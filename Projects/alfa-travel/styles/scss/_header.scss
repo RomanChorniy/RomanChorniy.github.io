@@ -252,12 +252,30 @@
                     }
                 }
             }
-            .head {
-                background: #eee;
+            .menuWindowContainer__accordionMenu{
+                .accordionMenu__item_icon{
+                    float: right;
+                }
+                .clouseIcon{
+                    transform: rotate(180deg);  
+                }
+            }
+            .accordionMenu__item {
+                border-top: 1px solid #daefdf;
+                color: #373737;
+                font-size: 30px;
+                background: #fff;
                 cursor: pointer;
             }
-            .section .head, .section .section {
-                margin-left: 20px;
+            .section .accordionMenu__item {
+                
+                color: #6f6f6e;
+                padding-left: 20px;
+            }
+            .section .section {
+                color: #6f6f6e;
+                padding-left: 40px;
+                font-size: 26px;
             }
             .section{
                 display:none;   

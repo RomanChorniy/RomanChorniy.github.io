@@ -32,7 +32,7 @@ li {
   list-style: none;
 }
 
-h2, h6 {
+h2, h3, h6 {
   font-weight: normal;
 }
 
@@ -393,12 +393,29 @@ h2, h6 {
 .header .headerMobile .menuWindow .menuWindowContainer__langAndExit .exitBox img {
   width: 80%;
 }
-.header .headerMobile .menuWindow .head {
-  background: #eee;
+.header .headerMobile .menuWindow .menuWindowContainer__accordionMenu .accordionMenu__item_icon {
+  float: right;
+}
+.header .headerMobile .menuWindow .menuWindowContainer__accordionMenu .clouseIcon {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.header .headerMobile .menuWindow .accordionMenu__item {
+  border-top: 1px solid #daefdf;
+  color: #373737;
+  font-size: 30px;
+  background: #fff;
   cursor: pointer;
 }
-.header .headerMobile .menuWindow .section .head, .header .headerMobile .menuWindow .section .section {
-  margin-left: 20px;
+.header .headerMobile .menuWindow .section .accordionMenu__item {
+  color: #6f6f6e;
+  padding-left: 20px;
+}
+.header .headerMobile .menuWindow .section .section {
+  color: #6f6f6e;
+  padding-left: 40px;
+  font-size: 26px;
 }
 .header .headerMobile .menuWindow .section {
   display: none;

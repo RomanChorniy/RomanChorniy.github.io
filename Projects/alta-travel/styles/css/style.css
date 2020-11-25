@@ -432,6 +432,11 @@ h2, h3, h6 {
 .header .headerMobile .menuWindow .section {
   display: none;
 }
+.header .headerMobile .menuWindow .active .accordionMenu__item_icon {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
 .header .headerMobile .menuWindow_open {
   display: block;
 }
@@ -724,7 +729,7 @@ h2, h3, h6 {
 
 @media screen and (max-width: 575px) {
   .katalogPropozucii {
-    margin: 0 15px 0 0;
+    margin: 0;
   }
   .katalogPropozucii .katalogPropozuciiBox {
     -webkit-box-orient: vertical;
@@ -738,6 +743,7 @@ h2, h3, h6 {
   .katalogPropozucii .katalogPropozuciiBox .katalogPropozbciiBox__propozucia {
     max-width: 350px;
     width: 100%;
+    margin: 10px 0;
   }
 
   .newsAndEvents .newsAndEventsBox {

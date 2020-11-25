@@ -131,13 +131,14 @@
 }
 @media screen and (max-width: 575px){
     .katalogPropozucii{
-        margin: 0 15px 0 0;
+        margin: 0;
         .katalogPropozuciiBox{
             flex-direction: column;
             align-items: center;
             .katalogPropozbciiBox__propozucia{
                 max-width: 350px;
                 width: 100%;
+                margin: 10px 0;
             }
         }
     }

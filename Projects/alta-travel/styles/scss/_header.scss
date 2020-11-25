@@ -290,6 +290,9 @@
             .section{
                 display:none;   
             }
+            .active .accordionMenu__item_icon{
+                transform: rotate(0deg);
+            }
         }
         .menuWindow_open{
             display: block;

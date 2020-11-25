@@ -237,7 +237,7 @@ h2, h3, h6 {
   padding: 10px;
 }
 .header .headerMobile .headerMobile__menuBar .logoImage__iconImage {
-  width: 40vw;
+  width: calc(33vw + 7 * ((100vw - 300px) / (575 - 300)));
 }
 .header .headerMobile .headerMobile__menuBar .facebookLink__iconImage {
   width: 2.4vw;
@@ -259,7 +259,7 @@ h2, h3, h6 {
 }
 .header .headerMobile .telephoneWindow .telephoneNumber {
   display: block;
-  font-size: 30px;
+  font-size: calc(21px + 9 * ((100vw - 300px) / (575 - 300)));
   padding-bottom: 10px;
 }
 .header .headerMobile .telephoneWindow .telephoneNumber:last-child {
@@ -290,9 +290,10 @@ h2, h3, h6 {
   display: flex;
 }
 .header .headerMobile .searchWindow__searchFild {
+  width: 100%;
   height: 62px;
   padding-left: 15px;
-  font-size: 30px;
+  font-size: calc(21px + 9 * ((100vw - 300px) / (575 - 300)));
   border: none;
   border-top: 1px solid #daefdf;
   border-bottom: 1px solid #daefdf;
@@ -397,6 +398,10 @@ h2, h3, h6 {
 .header .headerMobile .menuWindow .menuWindowContainer__accordionMenu .accordionMenu__item_icon {
   float: right;
 }
+.header .headerMobile .menuWindow .menuWindowContainer__accordionMenu .accordionMenu__item_icon img {
+  width: 34px;
+  width: calc(22px + 12 * ((100vw - 300px) / (575 - 300)));
+}
 .header .headerMobile .menuWindow .menuWindowContainer__accordionMenu .clouseIcon {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -405,12 +410,13 @@ h2, h3, h6 {
 .header .headerMobile .menuWindow .accordionMenu__item {
   border-top: 1px solid #daefdf;
   color: #373737;
-  font-size: 30px;
+  font-size: calc(25px + 3 * ((100vw - 300px) / (575 - 300)));
   background: #fff;
-  padding-right: 30px;
+  padding: 10px 30px 10px 15px;
   cursor: pointer;
 }
 .header .headerMobile .menuWindow .section .accordionMenu__item {
+  font-size: calc(20px + 3 * ((100vw - 300px) / (575 - 300)));
   color: #6f6f6e;
   padding-left: 20px;
 }
@@ -418,6 +424,10 @@ h2, h3, h6 {
   color: #6f6f6e;
   padding-left: 40px;
   font-size: 26px;
+  font-size: calc(21px + 3 * ((100vw - 300px) / (575 - 300)));
+}
+.header .headerMobile .menuWindow .section .section p {
+  padding: 5px 0;
 }
 .header .headerMobile .menuWindow .section {
   display: none;
@@ -521,6 +531,26 @@ h2, h3, h6 {
 .footer .menuList__menuListItem:last-child, .footer .katalogList__katalogItem:last-child {
   padding-bottom: 0px;
 }
+@media screen and (max-width: 575px) {
+  .footer .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footerContainer .footerContainer__logoBox {
+    margin-bottom: 10px;
+  }
+  .footer .footerContainer .footerContainer__contactBox {
+    text-align: center;
+  }
+  .footer .footerContainer__menuList, .footer .footerContainer__katalogList {
+    display: none;
+  }
+}
 
 .baner .banerImage {
   height: 400px;
@@ -534,7 +564,7 @@ h2, h3, h6 {
 }
 .katalogPropozucii .katalogPropozucii__title {
   color: #656565;
-  font-size: 30;
+  font-size: 20px;
   text-transform: uppercase;
   text-align: center;
   margin: 0 15px 0;
@@ -687,4 +717,36 @@ h2, h3, h6 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 575px) {
+  .katalogPropozucii {
+    margin: 0 15px 0 0;
+  }
+  .katalogPropozucii .katalogPropozuciiBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .katalogPropozucii .katalogPropozuciiBox .katalogPropozbciiBox__propozucia {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .newsAndEvents .newsAndEventsBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsAndEvents .newsAndEventsBox .newsAndEventsBox__item {
+    margin: 15px;
+  }
 }

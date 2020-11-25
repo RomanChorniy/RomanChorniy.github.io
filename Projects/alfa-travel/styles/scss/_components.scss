@@ -10,7 +10,7 @@
     padding: 38px 0 62px;
     .katalogPropozucii__title{
         color: #656565;
-        font-size: 30;
+        font-size: 20px;
         text-transform: uppercase;
         text-align: center;
         margin: 0 15px 0;
@@ -127,5 +127,27 @@
             width: 100%;
             height: 100%;
         }
+    }
+}
+@media screen and (max-width: 575px){
+    .katalogPropozucii{
+        margin: 0 15px 0 0;
+        .katalogPropozuciiBox{
+            flex-direction: column;
+            align-items: center;
+            .katalogPropozbciiBox__propozucia{
+                max-width: 350px;
+                width: 100%;
+            }
+        }
+    }
+    .newsAndEvents{
+      .newsAndEventsBox{
+          flex-direction: column;
+          align-items: center;
+          .newsAndEventsBox__item{
+              margin: 15px;
+          }
+      }  
     }
 }

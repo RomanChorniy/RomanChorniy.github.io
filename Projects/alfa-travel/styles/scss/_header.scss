@@ -127,7 +127,7 @@
                 padding: 10px;
             }
             .logoImage__iconImage{
-                width: 40vw;
+                width: calc(33vw + 7 * ((100vw - 300px) / (575 - 300)));
             }
             .facebookLink__iconImage{
                 width: 2.4vw;
@@ -149,7 +149,7 @@
             }
             .telephoneNumber{
                 display: block;
-                font-size: 30px;
+                font-size: calc(21px + 9 * ((100vw - 300px) / (575 - 300)));
                 padding-bottom: 10px;
                 &:last-child{
                     padding-bottom: 0;
@@ -174,9 +174,10 @@
                 display: flex;
             }
             &__searchFild{
+                width: 100%;
                 height: 62px;
                 padding-left: 15px;
-                font-size: 30px;
+                font-size: calc(21px + 9 * ((100vw - 300px) / (575 - 300)));
                 border: none;
                 border-top: 1px solid #daefdf; 
                 border-bottom: 1px solid #daefdf;
@@ -254,6 +255,10 @@
             .menuWindowContainer__accordionMenu{
                 .accordionMenu__item_icon{
                     float: right;
+                    img{
+                        width: 34px;
+                        width: calc(22px + 12 * ((100vw - 300px) / (575 - 300)));
+                    }
                 }
                 .clouseIcon{
                     transform: rotate(180deg);  
@@ -262,20 +267,25 @@
             .accordionMenu__item {
                 border-top: 1px solid #daefdf;
                 color: #373737;
-                font-size: 30px;
+                font-size: calc(25px + 3 * ((100vw - 300px) / (575 - 300)));
                 background: #fff;
-                padding-right: 30px;
+                padding: 10px 30px 10px 15px;
                 cursor: pointer;
             }
             .section .accordionMenu__item {
-                
+                font-size: calc(20px + 3 * ((100vw - 300px) / (575 - 300)));
                 color: #6f6f6e;
                 padding-left: 20px;
+                
             }
             .section .section {
                 color: #6f6f6e;
                 padding-left: 40px;
                 font-size: 26px;
+                font-size: calc(21px + 3 * ((100vw - 300px) / (575 - 300)));
+                p{
+                    padding: 5px 0;
+                }
             }
             .section{
                 display:none;   
@@ -292,7 +302,9 @@
         .headerMobile{
             display: block;
         }
-        
+        .menuWindow{
+
+        }
     }
 }
 .body__greenline{

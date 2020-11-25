@@ -319,6 +319,7 @@ h2, h3, h6 {
   background-color: #3cad5e;
 }
 .header .headerMobile .menuWindow {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -406,6 +407,7 @@ h2, h3, h6 {
   color: #373737;
   font-size: 30px;
   background: #fff;
+  padding-right: 30px;
   cursor: pointer;
 }
 .header .headerMobile .menuWindow .section .accordionMenu__item {
@@ -419,6 +421,9 @@ h2, h3, h6 {
 }
 .header .headerMobile .menuWindow .section {
   display: none;
+}
+.header .headerMobile .menuWindow_open {
+  display: block;
 }
 @media screen and (max-width: 575px) {
   .header .header__top, .header .header__bottom {

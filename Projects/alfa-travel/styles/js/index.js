@@ -22,35 +22,30 @@ $(document).ready(function () {
     $('.menuWindowContainer__accordionMenu .accordionMenu__item').click(function () {
         var head = $(this);
 
-
         // remove any active head
         head.siblings('.accordionMenu__item').removeClass('active');
-
-
 
         var section = head.next('.section');
         //remove .section to exclude from hide all
         section.removeClass('section');
 
-
-
         //hide sibling sections
         head.siblings('.section').hide();
 
-
-
         // set .section class back
         section.addClass('section');
-
-
 
         if (!section.css(':visible')) {
             // set as active and show section
             head.addClass('active');
             section.fadeIn(500);
+            $('.accordionMenu__item_icon').removeClass('clouseIcon');
         };
-
-
-
+    });
+    $('.menuBar__menuBtn').click(function () {
+        $('.menuWindow').addClass('menuWindow_open');
+    });
+    $('.exitBox').click(function () {
+        $('.menuWindow').removeClass('menuWindow_open');
     });
 });

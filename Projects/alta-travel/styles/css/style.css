@@ -435,6 +435,9 @@ h2, h3, h6 {
 .header .headerMobile .menuWindow_open {
   display: block;
 }
+.header .headerMobile .d-block {
+  display: block !important;
+}
 @media screen and (max-width: 575px) {
   .header .header__top, .header .header__bottom {
     display: none;

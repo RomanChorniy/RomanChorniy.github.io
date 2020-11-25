@@ -294,6 +294,9 @@
         .menuWindow_open{
             display: block;
         }
+        .d-block {
+            display: block !important;
+          }
     }
     @media screen and (max-width: 575px){
         .header__top, .header__bottom{

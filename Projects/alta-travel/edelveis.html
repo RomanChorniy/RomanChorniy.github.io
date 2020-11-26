@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="dynamicViewport" name="viewport" content="width=1140, user-scalable=1">
+    <script>
+        function changeViewport() {
+            var mvp = document.getElementById("dynamicViewport");
+
+            if (screen.width < 576) {
+                mvp.setAttribute("content", "width=device-width, initial-scale=1, user-scalable=1");
+            } else {
+                mvp.setAttribute("content", "width=1140, user-scalable=1");
+            }
+        }
+
+        changeViewport();
+
+        window.onresize = function (event) {
+            changeViewport();
+        };
+    </script>
+    <title>Alta-travel</title>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/slick.css" />
+    <link rel="stylesheet" href="styles/css/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="styles/js/slick.min.js"></script>
+    <script src="styles/js/index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__logo">
+                <a href="#"><img src="image/alta-travel.logo.png" alt="alta-travel"></a>
+            </div>
+            <div class="header__contactsBox">
+                <div class="contactsBox__telephoneBox">
+                    <div class="telephoneBox__telIcon">
+                        <img src="image/Tel_icon.png" alt="telephone icon">
+                    </div>
+                    <div class="telephoneBox__telItem"><a href="tel:+380972402020" class="telephoneNumber">+38 097 240
+                            20 20</a></div>
+                    <span class="greenLine">|</span>
+                    <div class="telephoneBox__telItem"><a href="tel:+380992370700" class="telephoneNumber">+38 099 237
+                            07 00</a></div>
+                    <span class="greenLine">|</span>
+                    <div class="telephoneBox__telItem"><a href="tel:+380974045301" class="telephoneNumber">+38 097 404
+                            53 01</a></div>
+                </div>
+                <div class="contactsBox__socialBox">
+                    <div class="socialBox__item">
+                        <a href="https://www.facebook.com/profile.php?id=100023144043240"
+                            class="socialBox__itemFacebook"><img src="image/facebook_icon.png" alt="facebook_icon"></a>
+                    </div>
+                    <div class="socialBox__item">
+                        <a href="https://www.instagram.com/" class="socialBox__itemInstagram"><img
+                                src="image/instagram_icon.png" alt="instagram_icon"></a>
+                    </div>
+                </div>
+                <div class="contactsBox__langMenu">
+                    <ul class="languageMenu__links">
+                        <li class="linkItem vubrana">
+                            <a class="linkItem__link" href="#">РУ</a>
+                        </li>
+                        <li class="linkItem">
+                            <a class="linkItem__link" href="#">УК</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <ul class="navMenu">
+                <li class="navMenu__link"><a class="link__item" href="#">главная</a></li>
+                <li class="navMenu__link"><a class="link__item" href="#">о компании</a></li>
+                <li class="navMenu__link"><a class="link__item" href="#">каталог</a></li>
+                <li class="navMenu__link"><a class="link__item" href="#">спецпредложения</a></li>
+                <li class="navMenu__link"><a class="link__item" href="#">туристам</a></li>
+                <li class="navMenu__link"><a class="link__item" href="#">контакты</a></li>
+            </ul>
+            <div class="navSearch">
+                <input class="navSearch__text font-regular" type="text" placeholder="Поиск...">
+                <button class="navSearch__btn btn"><img src="image/Serch_icon.png" alt="serch icon"></button>
+            </div>
+        </div>
+        <div class="headerMobile">
+            <div class="headerMobile__menuBar">
+                <div class="menuBar__logo">
+                    <a href="#"><img class="logoImage__iconImage" src="image/AltaTravel_logo_mobile.png"
+                            alt="Alta-travel"></a>
+                </div>
+                <a class="menuBar__facebookLink menuBar__item"
+                    href="https://www.facebook.com/profile.php?id=100023144043240"><img src="image/facebook_mobile.png"
+                        class="facebookLink__iconImage" alt="Alta-travel facebook_icon"></a>
+                <a class="menuBar__instagramLink menuBar__item" href="https://www.instagram.com/"><img
+                        src="image/instagram_mobile.png" class="instagramLink__iconImage"
+                        alt="Alta-travel instagram_icon"></a>
+                <button class="menuBar__telephoneBtn mobileBtn menuBar__item"><img src="image/Tel_mobile.png"
+                        class="telephoneBtn__iconImage" alt="telephone icon"></button>
+                <button class="menuBar__searchBtn mobileBtn menuBar__item"><img src="image/Serch_mobile.png"
+                        class="searchBtn__iconImage" alt="serch icon"></button>
+                <button class="menuBar__menuBtn mobileBtn menuBar__item"><img src="image/Menu mobile.png"
+                        class="menuBtn__iconImage" alt="menu icon"></button>
+            </div>
+            <div class="telephoneWindow">
+                <button class="telephoneWindow__closeBtn mobileBtn"><img class="telephoneWindow__closeIcon"
+                        src="image/Close_btn_mobile.png" alt="Close_btn_mobile"></button>
+                <a href="tel:+380972402020" class="telephoneNumber">+38 097 240 20 20</a>
+                <a href="tel:+380972402020" class="telephoneNumber">+38 099 237 07 00</a>
+                <a href="tel:+380972402020" class="telephoneNumber">+38 097 404 51 01</a>
+            </div>
+            <div class="searchWindow">
+                <input class="searchWindow__searchFild font-regular" type="text" placeholder="Поиск...">
+                <button class="searchWindow__searchBtn mobileBtn"><img class="searchWindow__searchIcon"
+                        src="image/Serch_mobile_white.png" alt="search_btn_mobile"></button>
+            </div>
+            <div class="menuWindow">
+                <div class="menuWindowContainer">
+                    <div class="menuWindowContainer__langAndExit">
+                        <ul class="languageBox">
+                            <li class="languageBox__rus languageBox__item">
+                                <p class="languageBox__lang">РУ</p>
+                                <p class="languageBox__indicator"><img src="image/Arrow_mobile_white.png" alt="arrow">
+                                </p>
+                            </li>
+                            <li class="languageBox__ua languageBox__item secondLangItem">
+                                <p class="languageBox__lang">УК | Українська</p>
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="exitBox mobileBtn"><img src="image/Close_btn_mobile.png" alt=""></button>
+                    </div>
+                    <div class="menuWindowContainer__accordionMenu font-regular">
+                        <h3 class="accordionMenu__item">Главная</h3>
+                        <h3 class="accordionMenu__item">О компании</h3>
+                        <h3 class="accordionMenu__item"><span class="accordionMenu__item_icon clouseIcon"><img
+                                    src="image/Arrow_mobile_black.png" alt="arrow icon"></span>Каталог</h3>
+                        <div class="section">
+                            <h3 class="accordionMenu__item"><span class="accordionMenu__item_icon clouseIcon"><img
+                                        src="image/Arrow_mobile_grey.png" alt="arrow icon"></span>Экскурсионные туры
+                            </h3>
+                            <div class="section">
+                                <p>Календарь туров</p>
+                                <p>Туры на праздники</p>
+                                <p>Экскурсии по Киеву</p>
+                                <p>Туры по Украине</p>
+                                <p>Туры за рубеж</p>
+                            </div>
+                            <h3 class="accordionMenu__item"><span class="accordionMenu__item_icon clouseIcon"><img
+                                        src="image/Arrow_mobile_grey.png" alt="arrow icon"></span>Детский отдых</h3>
+                            <div class="section">
+                                <p>Календарь туров</p>
+                                <p>Туры на праздники</p>
+                                <p>Экскурсии по Киеву</p>
+                                <p>Туры по Украине</p>
+                                <p>Туры за рубеж</p>
+                            </div>
+                            <h3 class="accordionMenu__item"><span class="accordionMenu__item_icon clouseIcon"><img
+                                        src="image/Arrow_mobile_grey.png" alt="arrow icon"></span>Отдых в Карпатах</h3>
+                            <div class="section">
+                                <p>Календарь туров</p>
+                                <p>Туры на праздники</p>
+                            </div>
+                            <h3 class="accordionMenu__item"><span class="accordionMenu__item_icon clouseIcon"><img
+                                        src="image/Arrow_mobile_grey.png" alt="arrow icon"></span>Отдых на Черном море
+                            </h3>
+                            <div class="section">
+                                <p>Календарь туров</p>
+                                <p>Туры на праздники</p>
+                                <p>Туры по Украине</p>
+                                <p>Туры за рубеж</p>
+                            </div>
+                            <h3 class="accordionMenu__item"><span class="accordionMenu__item_icon clouseIcon"><img
+                                        src="image/Arrow_mobile_grey.png" alt="arrow icon"></span>Туры на Азовском море
+                            </h3>
+                            <div class="section">
+                                <p>Календарь туров</p>
+                                <p>Туры на праздники</p>
+                                <p>Туры по Украине</p>
+                                <p>Туры за рубеж</p>
+                            </div>
+                            <h3 class="accordionMenu__item"><span class="accordionMenu__item_icon clouseIcon"><img
+                                        src="image/Arrow_mobile_grey.png" alt="arrow icon"></span>Отдых под Киевом</h3>
+                            <div class="section">
+                                <p>Календарь туров</p>
+                                <p>Туры на праздники</p>
+                                <p>Экскурсии по Киеву</p>
+                            </div>
+                            <h3 class="accordionMenu__item"><span class="accordionMenu__item_icon clouseIcon"><img
+                                        src="image/Arrow_mobile_grey.png" alt="arrow icon"></span>Отели Киева</h3>
+                            <div class="section">
+                                <p>Отели 5 звезд</p>
+                                <p>Отели 4 звезд</p>
+                                <p>Отели 3 звезд</p>
+                            </div>
+                            <h3 class="accordionMenu__item "><span class="accordionMenu__item_icon clouseIcon"><img
+                                        src="image/Arrow_mobile_grey.png" alt="arrow icon"></span>Зеленый туризм</h3>
+                            <div class="section">
+                                <p>Календарь туров</p>
+                                <p>Туры на праздники</p>
+                                <p>Экскурсии по Киеву</p>
+                                <p>Туры по Украине</p>
+                                <p>Туры за рубеж</p>
+                            </div>
+                        </div>
+                        <h3 class="accordionMenu__item">Спецпредложения</h3>
+                        <h3 class="accordionMenu__item">Туристам</h3>
+                        <h3 class="accordionMenu__item">Контакты</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr class="body__greenline">
+    <main id="main">
+        <div class="components">
+            <div id="component-1" class="component">
+                <div class="katalogPage__kroshkiBlock">
+                    <div class="kroshkiBlock">
+                        <a href="#" class="kroshkiBlock__level">Главная</a>
+                        <span>/</span>
+                        <a href="#" class="kroshkiBlock__level">Каталог</a>
+                        <span>/</span>
+                        <a href="#" class="kroshkiBlock__level">Отдых в Карпатах</a>
+                        <span>/</span>
+                        <a href="#" class="kroshkiBlock__level">База &laquo;Эдельвейс&raquo;</a>
+                    </div>
+                </div>
+            </div>
+            <div id="component-2" class="component">
+                <div class="placePage">
+                    <div class="placePage__hotelAricle">
+                        <div class="hotelAricle__sliderBox">
+                            <div class="placePage__slickSlider_big">
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais1.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais2.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais3.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais4.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais5.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais6.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais7.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais8.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais9.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais10.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais11.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais12.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais13.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais14.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais15.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais16.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais17.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais18.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais19.jpg" alt="edelvais">
+                                </div>
+                            </div>
+                            <div class="placePage__slickSlider_nav">
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais1.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais2.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais3.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais4.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais5.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais6.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais7.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais8.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais9.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais10.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais11.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais12.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais13.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais14.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais15.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais16.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais17.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais18.jpg" alt="edelvais">
+                                </div>
+                                <div class="slider__image">
+                                    <img src="image/edelveis/edelvais19.jpg" alt="edelvais">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotelAricle__description">
+                            <h2 class="description__title font-bold">База отдыха &laquo;Эдельвейс&raquo; в Карпатах
+                            </h2>
+                            <p class="description__text font-regular">Отдых в экологически чистой местности с живописной
+                                природой в
+                                Карпатах – это возможность укрепить здоровье, познакомиться с местной культурой,
+                                получить незабываемые впечатления. Пешие и конные прогулки летом, горные лыжи зимой –
+                                сюда можно приезжать круглый год и всегда получать позитивные эмоции.</p>
+                            <p class="description__openText font-regular">Узнать больше</p>
+                            <div class="description__infrastruktura">
+                                <h3 class="infrastruktura__title font-bold">Инфраструктура</h3>
+                                <ul class="infrastruktura__itemBox font-regular">
+                                    <li class="itemBox__item">
+                                        <img src="image/wifi_icon.png" alt="wifi_icon">
+                                        WiFi-бесплатный
+                                    </li>
+                                    <li class="itemBox__item">
+                                        <img src="image/sky_icon.png" alt="sky_icon">
+                                        Горнолыжные склоны
+                                    </li>
+                                    <li class="itemBox__item">
+                                        <img src="image/wifi_icon.png" alt="wifi_icon">
+                                        WiFi-бесплатный
+                                    </li>
+                                    <li class="itemBox__item">
+                                        <img src="image/sky_icon.png" alt="sky_icon">
+                                        Горнолыжные склоны
+                                    </li>
+                                    <li class="itemBox__item">
+                                        <img src="image/family_icon.png" alt="family_icon">
+                                        Семейные номера
+                                    </li>
+                                    <li class="itemBox__item">
+                                        <img src="image/eating_icon.png" alt="eating_icon">
+                                        3-х разовое питание
+                                    </li>
+                                    <li class="itemBox__item">
+                                        <img src="image/family_icon.png" alt="family_icon">
+                                        Семейные номера
+                                    </li>
+                                    <li class="itemBox__item">
+                                        <img src="image/eating_icon.png" alt="eating_icon">
+                                        3-х разовое питание
+                                    </li>
+                                </ul>
+                                <button class="infrastruktura__bronirivatBtn font-regular">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div id="component-3" class="component">
+                <div class="priceBlok">
+                    <table class="priceBlok__table">
+                        <caption class="table__title font-bold">Стоимость в сезон 2020-2021 (грн.)</caption>
+                        <tr class="table__hederRow">
+                            <th class="colonum__title font-regular">Категория номера</th>
+                            <th class="colonum__title font-bold">01.09.20-25.12.20</th>
+                            <th class="colonum__title font-bold">26.12.20-10.01.21</th>
+                            <th class="colonum__title font-bold">11.01.21-25.04.21</th>
+                        </tr>
+                        <tr>
+                            <td>Эконом 2-4 местный</td>
+                            <td class="font-bold">250</td>
+                            <td class="font-bold">300</td>
+                            <td class="font-bold">250</td>
+                        </tr>
+                        <tr>
+                            <td>Стандарт 2-3 местный</td>
+                            <td class="font-bold">350</td>
+                            <td class="font-bold">400</td>
+                            <td class="font-bold">350</td>
+                        </tr>
+                        <tr>
+                            <td>Ст.семейный 4 местный</td>
+                            <td class="font-bold">350</td>
+                            <td class="font-bold">400</td>
+                            <td class="font-bold">350</td>
+                        </tr>
+                    </table>
+                    <p class="priceBlok__primitka1 font-regular">Стоимость дополнительного места: 100 грн.</p>
+                    <p class="priceBlok__primitka2 font-regular">Дополнительное место возможно в некоторых номерах
+                        категорий
+                        «Стандарт» и «Стандарт семейный»</p>
+                    <div class="priceBlok__eatting">
+                        <ul class="eatting font-regular">
+                            <h5 class="eatting__title font-bold">Стоимость питания:</h5>
+                            <li class="eatting__item">Завтрак - 50 грн;</li>
+                            <li class="eatting__item">Обед - 90 грн;</li>
+                            <li class="eatting__item">Ужын - 60 грн;</li>
+                            <li class="eatting__item">Полный пансион - 200 грн.</li>
+                        </ul>
+                    </div>
+                    <div class="priceBlok__howToGo">
+                        <ul class="howToGo font-regular">
+                            <h5 class="howToGo__title font-bold">Как проехать:</h5>
+                            <li class="howToGo__item">По железной дороге до станции Воловец. Далее — маршрутным такси до
+                                села Верхний студеный.</li>
+                            <li class="howToGo__item">Из Львова, Ужгорода или Мукачево можно электричкой до станции
+                                Бескид. Далее 3км пешего пути до базы «Эдельвейс».</li>
+                            <li class="howToGo__item">На автомобиле по трассе Киев-Львов-Чоп в направлении Межигорья.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerContainer__logoBox">
+                <a href="#"><img class="logoBox__logoIcon" src="image/alta-travel_logo_white.png"
+                        alt="alta-travel icon"></a>
+                <h1 class="logoBox__titel">
+                    <p class="titleSmall font-regular">Туристическая компания</p>
+                    <p class="titleBig font-bold">"альта тревел"</p>
+                </h1>
+            </div>
+            <ul class="footerContainer__contactBox">
+                <li class="contactBox__item socialItem">
+                    <i class="socialItem__text">Следуйте за нами</i>
+                    <img class="socialItem__arrowIcon" src="image/Arrow_icon.png" alt="Arrow icon">
+                    <a class="socialItem__link" href="https://www.facebook.com/profile.php?id=100023144043240"><img
+                            src="image/facebook_icon_white.png" alt="alta-travel facebook icon"></a>
+                    <a class="socialItem__link" href="https://www.instagram.com/"><img
+                            src="image/instagram_icon_white.png" alt="alta-travel instagram icon"></a>
+                </li>
+                <li class="contactBox__item contactBox__addressItem">ул. Трехсвятительская, 3, офис 45<br>г. Киев,
+                    01001,
+                    Украина</li>
+                <li class="contactBox__item">(044) 221 18 86 (факс)</li>
+                <li class="contactBox__item">(097) 404 53 01</li>
+                <li class="contactBox__item">(097) 240 20 20</li>
+                <li class="contactBox__item">(099) 23 70 700</li>
+            </ul>
+            <ul class="footerContainer__menuList">
+                <li class="menuList__menuListItem"><a href="#" class="menuListItem__link">Главная</a></li>
+                <li class="menuList__menuListItem"><a href="#" class="menuListItem__link">О компании</a></li>
+                <li class="menuList__menuListItem"><a href="#" class="menuListItem__link">Каталог</a></li>
+                <li class="menuList__menuListItem"><a href="#" class="menuListItem__link">Спецпредложения</a></li>
+                <li class="menuList__menuListItem"><a href="#" class="menuListItem__link">Туристам</a></li>
+                <li class="menuList__menuListItem"><a href="#" class="menuListItem__link">Контакты</a></li>
+            </ul>
+            <ul class="footerContainer__katalogList">
+                <li class="katalogList__katalogItem"><a href="#" class="katalogItem__link">Экскурсионные туры</a></li>
+                <li class="katalogList__katalogItem"><a href="#" class="katalogItem__link">Детский отдых</a></li>
+                <li class="katalogList__katalogItem"><a href="#" class="katalogItem__link">Отдых в Карпатах</a></li>
+                <li class="katalogList__katalogItem"><a href="#" class="katalogItem__link">Отдых под Киевом</a></li>
+                <li class="katalogList__katalogItem"><a href="#" class="katalogItem__link">Отдых на Азовском море</a>
+                </li>
+                <li class="katalogList__katalogItem"><a href="#" class="katalogItem__link">Отдых на Черном море</a></li>
+                <li class="katalogList__katalogItem"><a href="#" class="katalogItem__link">Отели Киева</a></li>
+                <li class="katalogList__katalogItem"><a href="#" class="katalogItem__link">Зеленый туризм</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

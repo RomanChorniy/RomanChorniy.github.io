@@ -32,4 +32,22 @@ $(document).ready(function () {
         $('.menuWindow').removeClass('menuWindow_open');
         $('body').removeClass('stopScrolling');
     });
+    $('.placePage__slickSlider_big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        adaptiveHeight: true,
+        asNavFor: '.placePage__slickSlider_nav'
+    });
+    $('.placePage__slickSlider_nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.placePage__slickSlider_big',
+        dots: false,
+        centerMo: true,
+        adaptiveHeight: true,
+        variableWidth: true,
+        focusOnSelect: true
+    });;
 });

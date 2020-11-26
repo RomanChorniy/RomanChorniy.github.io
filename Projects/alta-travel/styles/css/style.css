@@ -796,6 +796,187 @@ h2, h3, h6 {
   color: #373737;
 }
 
+.placePage .placePage__hotelAricle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.placePage .hotelAricle__sliderBox {
+  max-width: 635px;
+  width: 100%;
+  padding-bottom: 46px;
+  margin-right: 30px;
+}
+.placePage .placePage__slickSlider_big {
+  width: 100%;
+  height: 73%;
+  margin-bottom: 14px;
+}
+.placePage .placePage__slickSlider_big .slider__image img {
+  margin: 0 auto;
+  width: auto;
+  height: 100%;
+}
+.placePage .placePage__slickSlider_nav {
+  width: 100%;
+  height: 25%;
+}
+.placePage .placePage__slickSlider_nav .slider__image img {
+  padding-right: 15px;
+  height: 150px;
+  width: auto;
+  margin: 0 auto;
+}
+.placePage .placePage__slickSlider_big div img, .placePage .placePage__slickSlider_nav div img {
+  width: 100%;
+  height: 100%;
+  max-height: 425px;
+}
+.placePage .hotelAricle__description {
+  color: #373737;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.placePage .hotelAricle__description .description__title {
+  padding-bottom: 33px;
+}
+.placePage .hotelAricle__description .description__text {
+  font-size: 16px;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  text-align: justify;
+}
+.placePage .hotelAricle__description .description__openText {
+  font-size: 13px;
+  color: #3cad5e;
+  padding-bottom: 68px;
+  text-align: right;
+  cursor: pointer;
+}
+.placePage .hotelAricle__description .description__infrastruktura {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 46px;
+}
+.placePage .hotelAricle__description .description__infrastruktura .infrastruktura__bronirivatBtn {
+  width: 255px;
+  height: 44px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #3cad5e;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.placePage .hotelAricle__description .infrastruktura__title {
+  font-size: 21px;
+}
+.placePage .hotelAricle__description .infrastruktura__itemBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.placePage .hotelAricle__description .infrastruktura__itemBox .itemBox__item {
+  width: 50%;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.placePage .hotelAricle__description .infrastruktura__itemBox .itemBox__item img {
+  padding-right: 10px;
+}
+
+.priceBlok {
+  color: #373737;
+}
+.priceBlok .priceBlok__table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 920px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+.priceBlok .table__title {
+  font-size: 21px;
+  text-align: left;
+  padding-bottom: 15px;
+}
+.priceBlok tr td:first-child {
+  text-align: left;
+  padding-left: 21px;
+}
+.priceBlok tr {
+  height: 40px;
+  border-bottom: 1px solid #3cad5e;
+}
+.priceBlok .table__hederRow {
+  color: #fff;
+  background-color: #3cad5e;
+  font-size: 14px;
+  height: 34px;
+}
+.priceBlok .table__hederRow .colonum__title:first-child {
+  text-align: left;
+  padding-left: 21px;
+}
+.priceBlok .priceBlok__primitka1, .priceBlok .priceBlok__primitka2 {
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+.priceBlok .priceBlok__eatting .eatting__title {
+  font-size: 21px;
+  padding-bottom: 17px;
+}
+.priceBlok .priceBlok__eatting .eatting__item {
+  font-size: 16px;
+  padding-bottom: 11px;
+}
+.priceBlok .priceBlok__howToGo {
+  width: 100%;
+  max-width: 825px;
+  padding-bottom: 36px;
+}
+.priceBlok .priceBlok__howToGo .howToGo__title {
+  font-size: 21px;
+  padding-bottom: 17px;
+}
+.priceBlok .priceBlok__howToGo .howToGo__item {
+  font-size: 16px;
+  padding-bottom: 11px;
+}
+.priceBlok .priceBlok__howToGo .howToGo li {
+  margin-left: 20px;
+  list-style: disc;
+}
+
 @media screen and (max-width: 575px) {
   .katalogPropozucii {
     margin: 0;

@@ -11,6 +11,10 @@ body {
   padding: 21px 15px 0;
 }
 
+.stopScrolling {
+  overflow-y: hidden;
+}
+
 .font-regular {
   font-weight: normal !important;
 }

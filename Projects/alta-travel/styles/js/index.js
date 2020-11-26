@@ -26,8 +26,10 @@ $(document).ready(function () {
     });
     $('.menuBar__menuBtn').click(function () {
         $('.menuWindow').addClass('menuWindow_open');
+        $('body').addClass('stopScrolling');
     });
     $('.exitBox').click(function () {
         $('.menuWindow').removeClass('menuWindow_open');
+        $('body').removeClass('stopScrolling');
     });
 });

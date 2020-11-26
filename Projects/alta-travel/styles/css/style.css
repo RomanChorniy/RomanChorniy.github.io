@@ -733,6 +733,67 @@ h2, h3, h6 {
 
 .kroshkiBlock {
   padding: 25px 0 30px;
+  font-size: 12px;
+  color: #656565;
+}
+.kroshkiBlock .kroshkiBlock__level {
+  color: #656565;
+}
+
+.otduhVKarpatahBlok .otduhVKarpatahBlok__title {
+  font-size: 31px;
+  color: #373737;
+  padding-bottom: 20px;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__region {
+  padding-bottom: 15px;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__region .region__link {
+  color: #3cad5e;
+  font-size: 13px;
+  text-decoration: underline;
+  padding-right: 30px;
+  white-space: nowrap;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__region .region__link:last-child {
+  padding-right: 0;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .tablica__title {
+  background-color: #3cad5e;
+  padding: 9px 20px;
+  color: #fff;
+  font-size: 16px;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 7px 20px;
+  border-bottom: 1px solid #fff;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item .subItem {
+  width: 33%;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item .item__tyrName {
+  font-size: 14px;
+  color: #373737;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item .item__tyrAddress {
+  font-size: 13px;
+  color: #9a9a9a;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item .item__tyrServises {
+  text-align: right;
+}
+.otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .tablica__prumitkaBox {
+  border-top: 1px solid #3cad5e;
+  padding: 18px 20px 20px;
+  font-size: 13px;
+  color: #373737;
 }
 
 @media screen and (max-width: 575px) {
@@ -765,5 +826,26 @@ h2, h3, h6 {
   }
   .newsAndEvents .newsAndEventsBox .newsAndEventsBox__item {
     margin: 15px;
+  }
+
+  .otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item .subItem {
+    width: 50%;
+  }
+  .otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item .item__tyrServises {
+    padding-top: 11px;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+  .otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item .item__tyrServises img {
+    max-width: 356px;
+    width: 100%;
+  }
+  .otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item .item__tyrServises img[src*=_short] {
+    max-width: 266px;
   }
 }

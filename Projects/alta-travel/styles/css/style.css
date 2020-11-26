@@ -1029,4 +1029,30 @@ h2, h3, h6 {
   .otduhVKarpatahBlok .otduhVKarpatahBlok__tablica .itemBox__item .item__tyrServises img[src*=_short] {
     max-width: 266px;
   }
+
+  .placePage .placePage__hotelAricle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .placePage .placePage__hotelAricle .placePage__slickSlider_big .slider__image img {
+    width: 100%;
+  }
+  .placePage .placePage__hotelAricle .infrastruktura__bronirivatBtn {
+    margin: 15px auto 0;
+  }
+  .placePage .placePage__hotelAricle .placePage__slickSlider_nav {
+    overflow: hidden;
+  }
+  .placePage .placePage__hotelAricle .placePage__slickSlider_nav .slider__image img {
+    height: 80px;
+  }
+
+  .priceBlok .priceBlok__table .table__hederRow {
+    font-size: calc(10px + 4 * ((100vw - 300px) / (575 - 300)));
+  }
+  .priceBlok .priceBlok__table .colonum__title {
+    padding: 0 5px;
+  }
 }

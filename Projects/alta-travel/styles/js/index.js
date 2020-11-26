@@ -49,5 +49,5 @@ $(document).ready(function () {
         adaptiveHeight: true,
         variableWidth: true,
         focusOnSelect: true
-    });;
+    });
 });

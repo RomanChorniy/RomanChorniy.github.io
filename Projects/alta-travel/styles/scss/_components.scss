@@ -397,5 +397,34 @@
         }
         
     }
-    
+    .placePage{
+        .placePage__hotelAricle{
+            flex-direction: column;
+            .placePage__slickSlider_big{
+                .slider__image img{
+                    width: 100%;
+                }
+            }
+            .infrastruktura__bronirivatBtn{
+                margin: 15px auto 0;
+            }
+            .placePage__slickSlider_nav{
+                overflow: hidden;
+                .slider__image
+                 img {
+                    height: 80px;
+                }
+            }
+        }
+    }
+    .priceBlok{
+        .priceBlok__table{
+            .table__hederRow{
+                font-size: calc(10px + 4 * ((100vw - 300px) / (575 - 300)));
+            }
+            .colonum__title{
+               padding: 0 5px;
+           } 
+        }
+    }
 }

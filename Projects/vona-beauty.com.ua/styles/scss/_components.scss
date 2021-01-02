@@ -86,5 +86,27 @@
                 }
             }
         }
+        .tovary{
+            .sortirovka__btnBox p{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 302px;
+                font-size: 13px;
+                color: $textColor1;
+                .vubranaBtn{
+                    color: $mainColor4;
+                }
+                .vubranaArrow{
+                    filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
+                }
+                .sortirovka__arrowBtn:not(.vubranaArrow){
+                    filter: invert(90%) sepia(2%) saturate(9%) hue-rotate(324deg) brightness(89%) contrast(77%);
+                }
+                span, img{
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }

@@ -249,3 +249,29 @@ h2, h3, h6 {
 .components .katalog__block .sortMenu .accordion .list-group .form-check-input:checked + .checkboxText {
   font-weight: bold;
 }
+.components .katalog__block .tovary .sortirovka__btnBox p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 302px;
+  font-size: 13px;
+  color: #000;
+}
+.components .katalog__block .tovary .sortirovka__btnBox p .vubranaBtn {
+  color: #ebc8cc;
+}
+.components .katalog__block .tovary .sortirovka__btnBox p .vubranaArrow {
+  -webkit-filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
+          filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
+}
+.components .katalog__block .tovary .sortirovka__btnBox p .sortirovka__arrowBtn:not(.vubranaArrow) {
+  -webkit-filter: invert(90%) sepia(2%) saturate(9%) hue-rotate(324deg) brightness(89%) contrast(77%);
+          filter: invert(90%) sepia(2%) saturate(9%) hue-rotate(324deg) brightness(89%) contrast(77%);
+}
+.components .katalog__block .tovary .sortirovka__btnBox p span, .components .katalog__block .tovary .sortirovka__btnBox p img {
+  cursor: pointer;
+}

@@ -1,6 +1,7 @@
 $mainColor1: #3cad5e;
-$mainColor2: #fe631a;
-$textColor1: #373737;
+$mainColor2: #e8bfc5;
+$mainColor3: #eaeaea;
+$textColor1: #000;
 $textColor2: #fefefe;
 *{
     margin: 0;
@@ -11,7 +12,7 @@ $textColor2: #fefefe;
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    padding: 21px 15px 0;
+    padding: 0px 15px;
 }
 .stopScrolling{
     overflow-y: hidden;
@@ -30,6 +31,9 @@ a{
 }
 a.active{
     color: #d1bca9;
+}
+a:hover{
+    color: $textColor1;
 }
 li{
     list-style: none;

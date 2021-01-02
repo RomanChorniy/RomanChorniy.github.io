@@ -35,15 +35,265 @@
 
 <body>
     <header class="header">
-
+        <div class="header__container">
+            <div class="burgerMenu header__flexElement">
+                <div class="burgerMenu__lines">
+                    <div class="burgerMenu__line"></div>
+                    <div class="burgerMenu__line"></div>
+                    <div class="burgerMenu__line"></div>
+                </div>
+            </div>
+            <div class="containerLogo header__flexElement">
+                <img src="image/vona logo.png" alt="vona-beauty">
+            </div>
+            <div class="rightHeaderBox header__flexElement">
+                <div class="telephone">
+                    <div class="telephoneIcon">
+                        <img src="image/telephone_icon.png" alt="telephone_icon">
+                    </div>
+                    <div class="telephoneList font-regular">
+                        <a href="tel:+380639222733" class="telephoneNumb">(063) 922 27 33</a>
+                        <a href="tel:+380123456789" class="telephoneNumb">(012) 345 67 89</a>
+                    </div>
+                </div>
+                <div class="basketAndLang">
+                    <img src="image/Bag.png" alt="basket" class="basket__icon">
+                    <a href="http://" class="lang__choose font-regular">Ру</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <ul class="navList font-regular">
+                <li class="navList__item"><a href="#" class="navLink">обличчя</a></li>
+                <li class="navList__item"><a href="#" class="navLink">волосся</a></li>
+                <li class="navList__item"><a href="#" class="navLink">тіло</a></li>
+                <li class="navList__item"><a href="#" class="navLink">чоловікам</a></li>
+                <li class="navList__item"><a href="#" class="navLink">дітками</a></li>
+                <li class="navList__item"><a href="#" class="navLink">подарунки</a></li>
+                <li class="navList__item"><a href="#" class="navLink">бренди</a></li>
+                <li class="navList__item"><a href="#" class="navLink">акції</a></li>
+            </ul>
+        </div>
     </header>
+    <hr class="body__line">
     <main id="main">
         <div class="components">
             <div id="component-1" class="component">
-
+                <div class="breadcrumb__block">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb font-regular">
+                            <li class="breadcrumb-item"><a class="breadcrumb-itemLink" href="#">Главная</a></li>
+                            <li class="breadcrumb-item"><a class="breadcrumb-itemLink" href="#">Магазин</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Волосы</li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
             <div id="component-2" class="component">
-
+                <div class="katalog__block">
+                    <h2 class="katalog__blockTitle">Косметика для волос</h2>
+                    <div class="sortMenu">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Бренд
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Academie <span>(5)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Genosys <span>(8)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Holy land <span>(6)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Image skincare <span>(6)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">La biosthetique <span>(8)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Medik8 <span>(6)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Onmacabim <span>(6)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Skintech <span>(8)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" disabled>
+                                                <span class="checkboxText">Wiqu <span>(0)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Nanogen <span>(5)</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Тип волос
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Жирные <span>(5)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Сухие <span>(8)</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Пол
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Чоловік <span>(5)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Жінка <span>(8)</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Возраст
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">0-18 <span>(5)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">19-80 <span>(8)</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Назначение
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Назначение 1 <span>(5)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Назначение 2 <span>(8)</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Объем
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">50 мл. <span>(5)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">100 мл. <span>(8)</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        Страна ТМ
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="list-group">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Україна <span>(5)</span></span>
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                <span class="checkboxText">Польша <span>(8)</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="component-3" class="component">
 

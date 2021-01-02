@@ -1,0 +1,90 @@
+.header{
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 15px 0 0;
+    .header__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        .header__flexElement{
+            width: 33%;
+            &:last-child{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .burgerMenu{
+            height: 31px;
+            padding: 5px;
+            .burgerMenu__lines{
+                position: relative;
+                width: 43px;
+                height: 33px;
+                cursor: pointer;
+            }
+            .burgerMenu__line{
+                position: absolute;
+                background-color:$textColor1;
+                width: 33px;
+                height: 2px;
+                top: 49%;
+                &:first-child{
+                    top: 25%;
+                }
+                &:last-child{
+                    top: 75%;
+                }
+            }
+        }
+        .containerLogo{
+            text-align: center;
+        }
+        .telephone{
+            width: 100%;
+            max-width: 190px;
+            display: flex;
+            .telephoneIcon{
+                display: flex;
+                align-items: center;
+                padding-right: 20px;
+            }
+            .telephoneList{
+                color:$textColor1;
+                font-size: 18px;
+            }
+        }
+        .basketAndLang{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 65px;
+            .basket__icon{
+                cursor: pointer;
+            }
+            .lang__choose{
+                display: block;
+                width: 21px;
+                text-align: center;
+                color:$textColor1;
+                font-size: 14px;
+            }
+        }
+    }
+    .header__nav{
+        .navList{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0 0;
+            .navList__item{
+                .navLink{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

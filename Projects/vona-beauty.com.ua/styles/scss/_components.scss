@@ -1,0 +1,90 @@
+.body__line{
+    border-bottom: 1px solid $mainColor3;
+    opacity: 1;
+}
+.components{
+    .breadcrumb__block{
+        .breadcrumb{
+            .breadcrumb-item{
+                font-size: 12px;
+                .breadcrumb-itemLink {
+                    color: #707070;
+                }
+                &:last-child{
+                    color: $textColor1;
+                }
+            }
+        }
+    }
+    .katalog__block{
+        .katalog__blockTitle{
+            font-size: 24px;
+            text-align: center;
+        }
+        .sortMenu{
+            width: 100%;
+            max-width: 255px;
+            .accordion{
+                .accordion-item{
+                    .accordion-collapse, .accordion-button{
+                        border: none;
+                    }
+                    &:last-child .accordion-button{
+                        border-bottom: 1px solid $mainColor3;
+                    }
+                    .accordion-button{
+                        font-size: 16px;
+                        box-shadow: none;
+                        border-top: 1px solid $mainColor3;
+                        &:not(.collapsed){
+                            color: $textColor1;
+                            background-color: #ffffff;
+                            box-shadow: none;
+                            &::after{
+                                transform: none;
+                                background-image: url("../../image/minus.svg");
+                            }
+                        }
+                        &::after{
+                            font-size: 16px;
+                            background-image: url("../../image/plus.svg");
+                        }
+                    }
+                }
+                .list-group{
+                    color: $textColor1;
+                    .checkboxText>span{
+                        color: #707070;
+                    }
+                    .list-group-item{
+                        border: none;
+                        cursor: pointer;
+                    }
+                    .form-check-input[type=checkbox]{
+                        border-radius: 0;
+                        box-shadow: none;
+                        border-color: $mainColor3;
+                        &:disabled{
+                            border-color: #eaeaea ;
+                            opacity: 1;
+                        }
+                        &:disabled + .checkboxText{
+                            color: #aaa;
+                        }
+                    }
+                    .form-check-input:checked[type=checkbox]{
+                        background-image: none;
+                    }
+                    .form-check-input:checked{
+                        background-color: $mainColor2;
+                        border-color: $mainColor2;
+                        &+.checkboxText{
+                            font-weight: bold;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

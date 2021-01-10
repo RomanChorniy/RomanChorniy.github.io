@@ -387,6 +387,72 @@ h2, h3, h6 {
   }
 }
 
+.footer {
+  background-color: #ededed;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 50px 0 20px 0;
+}
+.footer .footerContainer .footerHeaderBox {
+  color: #000;
+}
+.footer .footerContainer .footerHeaderBox .headerBox__header2 {
+  font-size: 15px;
+}
+.footer .footerContainer .footerHeaderBox .headerBox__header1 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.footer .footerContainer .footerAddresBox {
+  font-size: 15px;
+  color: #000;
+}
+.footer .footerContainer .footerAddresBox p {
+  margin-bottom: 0;
+}
+.footer .footerContainer .footerAddresBox .footerAddresBox__adress {
+  margin-bottom: 18px;
+}
+.footer .footerContainer .footerMapBox {
+  width: 445px;
+  height: 225px;
+  background-color: #fff;
+}
+@media screen and (max-width: 576px) {
+  .footer .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer .footerContainer .footerHeaderBox {
+    text-align: center;
+  }
+  .footer .footerContainer .footerLinkBox {
+    padding-bottom: 20px;
+  }
+  .footer .footerContainer .footerMapBox {
+    width: 100%;
+    max-width: 445px;
+  }
+}
+
 .body__line {
   border-bottom: 1px solid #eaeaea;
   opacity: 1;
@@ -602,6 +668,7 @@ h2, h3, h6 {
   display: inline-block;
 }
 .components .katalog__block .tovary .katalog__seeMoreBtn {
+  display: inline-block;
   color: #000;
   text-decoration: underline;
   font-size: 14px;

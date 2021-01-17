@@ -31,4 +31,45 @@ $(document).ready(function () {
     $('.btn-close').click(function () {
         $('.sortMenu').removeClass('open');
     });
+
+    $('.accordion-button').click(function () {
+        console.log($(this).parent().next());
+        if ($(this).hasClass('collapsed')) ($(this).parent().next().removeClass('show'))
+        else ($(this).parent().next().addClass('show'));
+        console.log('my code1');
+    });
+
+    // shop_IP
+
+    //slick slider
+    $(document).ready(function () {
+        $('.imageBox__slider_big').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.imageBox__slider_small'
+        });
+        $('.imageBox__slider_small').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.imageBox__slider_big',
+            dots: false,
+            prevArrow: "<img src='image/arrow_prev.png' class='prev' alt='1'>",
+            nextArrow: "<img src='image/arrow_next.png' class='next' alt='2'>",
+            centerMode: true,
+            focusOnSelect: true
+        });
+    });
+    //Form kilkist arrow
+    $('.kilkist__btnDown').click(function () {
+        let a = $('.kilkist').val();
+        if (a > 1) a--
+        $('.kilkist').val(a);
+    });
+    $('.kilkist__btnUp').click(function () {
+        let a = $('.kilkist').val();
+        if (a < 99) a++
+        $('.kilkist').val(a);
+    });
 });

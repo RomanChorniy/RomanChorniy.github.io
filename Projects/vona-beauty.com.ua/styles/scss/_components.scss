@@ -201,6 +201,209 @@
             }
         }
     }
+    .tovarPage{
+        display: flex;
+        justify-content: space-between;
+        .tovarPage__imageBox{
+            max-width: 445px;
+            .imageBox__slider_small{
+                max-height: 92px;
+                max-width: 399px;
+                padding-left: 23px;
+                img{
+                    height: 90px;
+                    width: 90px;
+                };
+                .slick-current{
+                    img{
+                        border: 1px solid #fee0e4;
+                    }
+                }
+                .slick-slide{
+                    outline: none;
+                }
+                .prev{
+                    width: 23px;
+                    height: 45px;
+                }
+                .next{
+                    width: 23px;
+                    height: 45px;
+                }
+                .prev,
+                .next {
+                  position: absolute;
+                  top: 25%;
+                  z-index: 1;
+                  cursor: pointer;
+                }
+                .prev{
+                    left: -3px;
+                }
+                .next {
+                    right: -26px;
+                }
+            }
+        }
+        .tovarPage__description{
+            color: $textColor1;
+            .description__topBox{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 635px;
+                padding-bottom: 70px;
+                .topBox__harakterustuku{
+                    max-width: 350px;
+                    .title{
+                        font-size: 24px;
+                    }
+                    .subtitle{
+                        color: #aaa;
+                        font-size: 14px;
+                        margin-bottom: 28px;
+                    }
+                    .harakterustuku__punktu{
+                        .punktu{
+                            display: flex;
+                            margin-bottom: 14px;
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            .punktu__name{
+                                color: #707070;
+                                font-size: 13px;
+                                display: inline-block;
+                                min-width: 95px;
+                            }
+                            .punktu__znachenja{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .topBox__buyForm{
+                    width: 100%;
+                    max-width: 255px;
+                    .priseBox{
+                        display: flex;
+                        justify-content: space-between;
+                        .priseBox__price{
+                            font-size: 24px;
+                            .priseBox__price_old{
+                                color: #aaa;
+                                font-size: 16px;
+                                text-decoration: line-through;
+                                margin-bottom: 0;
+                            }
+                        }
+                        .priseBox__akciaFlag{
+                            font-size: 14px;
+                            background-color: #fee0e4;
+                            width: 65px;
+                            height: 23px;
+                            text-align: center;
+                            line-height: 23px;
+                        }
+                    }
+                    .najavnistFlag{
+                        color: #3be2a4;
+                        font-size: 13px;
+                    }
+                    .vubirObjemy{
+                        width: 100%;
+                        height: 30px;
+                        border: 1px solid #eaeaea;
+                        font-size: 14px;
+                        padding-left: 9px;
+                        margin-bottom: 19px;
+                    }
+                    .kilkistBox{
+                        padding-bottom: 20px;
+                        .kilkistArea{
+                            color: #707070;
+                            font-size: 13px;
+                            .kilkist{
+                                width: 65px;
+                                height: 30px;
+                                border: 1px solid #eaeaea;
+                                text-align: center;
+                            }
+                            .kilkist__btnDown, .kilkist__btnUp{
+                                width: 24px;
+                                background-color: #fff;
+                                outline: none;
+                                border: none;
+                            }
+                        }
+                    }
+                    .kilkist__btnBuy{
+                        background-color: #fee0e4;
+                        border: 1px solid #000;
+                        outline: none;
+                        width: 100%;
+                        max-width: 255px;
+                        height: 45px;
+                        margin-bottom: 15px;
+                        &:active{
+                            border-color:  #fee0e4;
+                        }
+                    }
+                }
+                .kodTovary{
+                    color: #707070;
+                    font-size: 13px;
+                    margin-bottom: 23px;
+                    .kodTovary__number{
+                        color: $textColor1;
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                }
+                .service{
+                    font-size: 13px;
+                    color: #707070;
+
+                    .dostavka{
+                        display: inline-block;
+                        padding-right: 37px;
+                        .dostavka__text, .garantia{
+                            text-decoration: underline;
+                        }
+                    }
+                    .garantia{
+                        display: inline-block;
+                        .garantia__text{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .description__bottomBox{
+                width: 100%;
+                max-width: 635px;
+                text-align: justify;
+                .nav{
+                    .nav-link{
+                        color: #aaa;
+                        font-size: 16px;
+                        border: 1px solid #fff;
+                        margin-right: 30px;
+                        padding-left: 0;
+                        &:hover{
+                            color: #e8bfc5;
+                        }
+                    }
+                    .active{
+                        background-color: #fff;
+                        border-radius: 0;
+                        border-bottom: 1px solid #e8bfc5;
+                        color: $textColor1;
+                    }
+                }
+            }
+        }
+    }
     @media screen and (max-width: 576px) {
         .katalog__block{
             .katalog__container{

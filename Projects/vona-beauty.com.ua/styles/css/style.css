@@ -674,6 +674,216 @@ h2, h3, h6 {
   font-size: 14px;
   padding-bottom: 62px;
 }
+.components .tovarPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.components .tovarPage .tovarPage__imageBox {
+  max-width: 445px;
+}
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small {
+  max-height: 92px;
+  max-width: 399px;
+  padding-left: 23px;
+}
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small img {
+  height: 90px;
+  width: 90px;
+}
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small .slick-current img {
+  border: 1px solid #fee0e4;
+}
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small .slick-slide {
+  outline: none;
+}
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small .prev {
+  width: 23px;
+  height: 45px;
+}
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small .next {
+  width: 23px;
+  height: 45px;
+}
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small .prev,
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small .next {
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+  cursor: pointer;
+}
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small .prev {
+  left: -3px;
+}
+.components .tovarPage .tovarPage__imageBox .imageBox__slider_small .next {
+  right: -26px;
+}
+.components .tovarPage .tovarPage__description {
+  color: #000;
+}
+.components .tovarPage .tovarPage__description .description__topBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 635px;
+  padding-bottom: 70px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__harakterustuku {
+  max-width: 350px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__harakterustuku .title {
+  font-size: 24px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__harakterustuku .subtitle {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__harakterustuku .harakterustuku__punktu .punktu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__harakterustuku .harakterustuku__punktu .punktu:last-child {
+  margin-bottom: 0;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__harakterustuku .harakterustuku__punktu .punktu .punktu__name {
+  color: #707070;
+  font-size: 13px;
+  display: inline-block;
+  min-width: 95px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__harakterustuku .harakterustuku__punktu .punktu .punktu__znachenja {
+  font-size: 14px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm {
+  width: 100%;
+  max-width: 255px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .priseBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .priseBox .priseBox__price {
+  font-size: 24px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .priseBox .priseBox__price .priseBox__price_old {
+  color: #aaa;
+  font-size: 16px;
+  text-decoration: line-through;
+  margin-bottom: 0;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .priseBox .priseBox__akciaFlag {
+  font-size: 14px;
+  background-color: #fee0e4;
+  width: 65px;
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .najavnistFlag {
+  color: #3be2a4;
+  font-size: 13px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .vubirObjemy {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+  padding-left: 9px;
+  margin-bottom: 19px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .kilkistBox {
+  padding-bottom: 20px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .kilkistBox .kilkistArea {
+  color: #707070;
+  font-size: 13px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .kilkistBox .kilkistArea .kilkist {
+  width: 65px;
+  height: 30px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .kilkistBox .kilkistArea .kilkist__btnDown, .components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .kilkistBox .kilkistArea .kilkist__btnUp {
+  width: 24px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .kilkist__btnBuy {
+  background-color: #fee0e4;
+  border: 1px solid #000;
+  outline: none;
+  width: 100%;
+  max-width: 255px;
+  height: 45px;
+  margin-bottom: 15px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .topBox__buyForm .kilkist__btnBuy:active {
+  border-color: #fee0e4;
+}
+.components .tovarPage .tovarPage__description .description__topBox .kodTovary {
+  color: #707070;
+  font-size: 13px;
+  margin-bottom: 23px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .kodTovary .kodTovary__number {
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+}
+.components .tovarPage .tovarPage__description .description__topBox .service {
+  font-size: 13px;
+  color: #707070;
+}
+.components .tovarPage .tovarPage__description .description__topBox .service .dostavka {
+  display: inline-block;
+  padding-right: 37px;
+}
+.components .tovarPage .tovarPage__description .description__topBox .service .dostavka .dostavka__text, .components .tovarPage .tovarPage__description .description__topBox .service .dostavka .garantia {
+  text-decoration: underline;
+}
+.components .tovarPage .tovarPage__description .description__topBox .service .garantia {
+  display: inline-block;
+}
+.components .tovarPage .tovarPage__description .description__topBox .service .garantia .garantia__text {
+  text-decoration: underline;
+}
+.components .tovarPage .tovarPage__description .description__bottomBox {
+  width: 100%;
+  max-width: 635px;
+  text-align: justify;
+}
+.components .tovarPage .tovarPage__description .description__bottomBox .nav .nav-link {
+  color: #aaa;
+  font-size: 16px;
+  border: 1px solid #fff;
+  margin-right: 30px;
+  padding-left: 0;
+}
+.components .tovarPage .tovarPage__description .description__bottomBox .nav .nav-link:hover {
+  color: #e8bfc5;
+}
+.components .tovarPage .tovarPage__description .description__bottomBox .nav .active {
+  background-color: #fff;
+  border-radius: 0;
+  border-bottom: 1px solid #e8bfc5;
+  color: #000;
+}
 @media screen and (max-width: 576px) {
   .components .katalog__block .katalog__container {
     display: block;

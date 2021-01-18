@@ -48,7 +48,16 @@ $(document).ready(function () {
             slidesToScroll: 1,
             arrows: false,
             fade: true,
-            asNavFor: '.imageBox__slider_small'
+            asNavFor: '.imageBox__slider_small',
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        dots: true
+                    }
+                }
+            ]
         });
         $('.imageBox__slider_small').slick({
             slidesToShow: 3,
@@ -59,6 +68,24 @@ $(document).ready(function () {
             nextArrow: "<img src='image/arrow_next.png' class='next' alt='2'>",
             centerMode: true,
             focusOnSelect: true
+        });
+        $('.vuSmotreli__table').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false,
+            nextArrow: "<img src='image/arrow_next.png' class='next' alt='2'>",
+            centerMode: false,
+            variableWidth: true,
+            focusOnSelect: false,
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false,
+                    }
+                }
+            ]
         });
     });
     //Form kilkist arrow

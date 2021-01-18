@@ -204,8 +204,11 @@
     .tovarPage{
         display: flex;
         justify-content: space-between;
+        padding-bottom: 90px;
         .tovarPage__imageBox{
             max-width: 445px;
+            .imageBox__slider_big{
+            }
             .imageBox__slider_small{
                 max-height: 92px;
                 max-width: 399px;
@@ -253,6 +256,16 @@
                 width: 100%;
                 max-width: 635px;
                 padding-bottom: 70px;
+                .title_mobile{
+                    font-size: 24px;
+                    display: none;
+                }
+                .subtitle_mobile{
+                    color: #aaa;
+                    font-size: 14px;
+                    margin-bottom: 28px;
+                    display: none;
+                }
                 .topBox__harakterustuku{
                     max-width: 350px;
                     .title{
@@ -401,6 +414,110 @@
                         color: $textColor1;
                     }
                 }
+                .tab-content{
+                    .otzuvBox{
+                        .btn{
+                            border: 1px solid #000;
+                            border-radius: 0;
+                            font-size: 17px;
+                            width: 100%;
+                            max-width: 255px;
+                            height: 35px;
+                            margin-bottom: 20px;
+                            background-color: #fee0e4;
+                            &:active{
+                                border: 1px solid #fee0e4;
+                            }
+                            &:focus{
+                                box-shadow: none;
+                            }
+                        }
+                        .otzuvContainer{
+                            padding-bottom: 17px;
+                            .otzuvContainer__item{
+                                border-top: 1px solid #eaeaea;
+                                padding: 15px 0;
+                                &:last-child{
+                                    border-bottom: 1px solid #eaeaea;
+                                }
+                                .avtorName{
+                                    font-size: 15px;
+                                    .rozdilovaLinija{
+                                        color: #707070;
+                                    }
+                                    .avtorDate{
+                                        font-size: 10px;
+                                        color: #707070;
+                                    }
+                                }
+                                .avtorOtzuv__text{
+                                    color: #707070;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .vuSmotreli{
+        .vuSmotreli__title{
+            font-size: 24px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .vuSmotreli__table{
+            width: 100%;
+            max-width: 1080px;
+            padding-bottom: 80px;
+            .table__item{
+                width: 100%;
+                max-width: 255px;
+                text-align: center;
+                position: relative;
+                padding: 0 15px;
+                background-color: #fff;
+                p{
+                    margin-bottom: 0;
+                }
+                .item__image{
+                    width: 100%;
+                }
+                .item__name{
+                    font-size: 16px;
+                    color: $textColor1;
+                }
+                .item__nameEng{
+                    font-size: 12px;
+                    color: #aaa;
+                }
+                .item__price{
+                    font-size: 18px;
+                    color: $textColor1;
+                    .oldPrice{
+                        color: #aaa;
+                        font-size: 14px;
+                        text-decoration: line-through;
+                    }
+                }
+                .akciaFlag{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: #fee0e4;
+                    font-size: 11px;
+                    padding: 0px 8px;
+                }
+            }
+            .next{
+                position: absolute;
+                top: 25%;
+                z-index: 1;
+                width: 23px;
+                height: 45px;
+                right: -34px;
+                cursor: pointer;
             }
         }
     }
@@ -499,6 +616,120 @@
                         border: 1px solid #eaeaea;
                         color: $textColor1;
                     }
+                }
+            }
+        }
+        .tovarPage{
+            flex-direction: column;
+            align-items: center;
+            .tovarPage__imageBox{
+                width: 100%;
+                max-width: 445px;
+                .imageBox__slider_big{
+                    .slick-dots li button:before{
+                        font-size: 13px;
+                    }
+                    .sliderBig__photo{
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+                .imageBox__slider_small{
+                    display: none;
+                }
+            }
+            .tovarPage__description{
+                .description__topBox{
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 26px;
+                    .title_mobile, .subtitle_mobile{
+                        display: block;
+                        text-align: center;
+                        order: 1;
+                    }
+                    .topBox__harakterustuku{
+                        order: 3;
+                        max-width: 100%;
+                        .title, .subtitle{
+                            display: none;
+                        }
+
+                    }
+                    .topBox__buyForm{
+                        order: 2;
+                        max-width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        .priseBox{
+                            width: 70px;
+                            order: 1;
+                            .priseBox__akciaFlag{
+                                display: none;
+                            }
+                        }
+                        .vubirObjemy{
+                            order: 2;
+                            width: 100px;
+                        }
+                        .kodTovary{
+                            order: 3;
+                            width: 72px;
+                            text-align: end;
+                        }
+                        .najavnistFlag{
+                            order: 4;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        .kilkist__btnBuy{
+                            order: 5;
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                        .service{
+                            order: 6;
+                            width: 100%;
+                            display: flex;
+                            .dostavka, .garantia{
+                                width: 50%;
+                            }
+                        }
+                        .kilkistBox{
+                            display: none;
+                        }
+                    }
+                }
+                .description__bottomBox{
+                    .nav{
+                        .nav-link:hover{
+                            color: #000;
+                        }
+                    }
+                    .tab-content{
+                        .otzuvBox{
+                            .btn{
+                                max-width: 100%;
+                                background-color: #fff;
+                                &:active{
+                                    border: 1px solid #000;
+                                }
+                                &:focus{
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .vuSmotreli{
+            .vuSmotreli__table{
+                .next{
+                    width: 0;
+                    height: 0;
                 }
             }
         }

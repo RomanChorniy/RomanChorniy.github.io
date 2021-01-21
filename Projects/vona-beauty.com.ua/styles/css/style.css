@@ -900,10 +900,9 @@ h2, h3, h6 {
   border-radius: 0;
   font-size: 17px;
   width: 100%;
-  max-width: 255px;
-  height: 35px;
-  margin-bottom: 20px;
-  background-color: #fee0e4;
+  max-width: 160px;
+  height: 45px;
+  margin-bottom: 14px;
 }
 .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .btn:active {
   border: 1px solid #fee0e4;
@@ -912,29 +911,33 @@ h2, h3, h6 {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .btn:hover {
+  background-color: #fee0e4;
+}
 .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer {
-  padding-bottom: 17px;
+  padding-bottom: 24px;
 }
 .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer .otzuvContainer__item {
   border-top: 1px solid #eaeaea;
-  padding: 15px 0;
+  padding: 20px 0 25px;
 }
 .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer .otzuvContainer__item:last-child {
   border-bottom: 1px solid #eaeaea;
 }
 .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer .otzuvContainer__item .avtorName {
-  font-size: 15px;
+  font-size: 16px;
 }
 .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer .otzuvContainer__item .avtorName .rozdilovaLinija {
   color: #707070;
 }
 .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer .otzuvContainer__item .avtorName .avtorDate {
-  font-size: 10px;
+  font-size: 12px;
   color: #707070;
 }
 .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer .otzuvContainer__item .avtorOtzuv__text {
   color: #707070;
-  font-size: 13px;
+  font-size: 14px;
+  margin-bottom: 0;
 }
 .components .vuSmotreli .vuSmotreli__title {
   font-size: 24px;
@@ -1234,6 +1237,7 @@ h2, h3, h6 {
   .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .btn {
     max-width: 100%;
     background-color: #fff;
+    margin-bottom: 20px;
   }
   .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .btn:active {
     border: 1px solid #000;
@@ -1241,6 +1245,15 @@ h2, h3, h6 {
   .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .btn:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer .otzuvContainer__item .avtorName {
+    font-size: 14px;
+  }
+  .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer .otzuvContainer__item .avtorName .avtorDate {
+    font-size: 10px;
+  }
+  .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .otzuvContainer .otzuvContainer__item .avtorOtzuv__text {
+    font-size: 12px;
   }
   .components .vuSmotreli .vuSmotreli__table .next {
     width: 0;

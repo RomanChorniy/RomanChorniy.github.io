@@ -421,38 +421,41 @@
                             border-radius: 0;
                             font-size: 17px;
                             width: 100%;
-                            max-width: 255px;
-                            height: 35px;
-                            margin-bottom: 20px;
-                            background-color: #fee0e4;
+                            max-width: 160px;
+                            height: 45px;
+                            margin-bottom: 14px;
                             &:active{
                                 border: 1px solid #fee0e4;
                             }
                             &:focus{
                                 box-shadow: none;
                             }
+                            &:hover{
+                                background-color: #fee0e4;
+                            }
                         }
                         .otzuvContainer{
-                            padding-bottom: 17px;
+                            padding-bottom: 24px;
                             .otzuvContainer__item{
                                 border-top: 1px solid #eaeaea;
-                                padding: 15px 0;
+                                padding: 20px 0 25px;
                                 &:last-child{
                                     border-bottom: 1px solid #eaeaea;
                                 }
                                 .avtorName{
-                                    font-size: 15px;
+                                    font-size: 16px;
                                     .rozdilovaLinija{
                                         color: #707070;
                                     }
                                     .avtorDate{
-                                        font-size: 10px;
+                                        font-size: 12px;
                                         color: #707070;
                                     }
                                 }
                                 .avtorOtzuv__text{
                                     color: #707070;
-                                    font-size: 13px;
+                                    font-size: 14px;
+                                    margin-bottom: 0;
                                 }
                             }
                         }
@@ -713,11 +716,25 @@
                             .btn{
                                 max-width: 100%;
                                 background-color: #fff;
+                                margin-bottom: 20px;
                                 &:active{
                                     border: 1px solid #000;
                                 }
                                 &:focus{
                                     box-shadow: none;
+                                }
+                            }
+                            .otzuvContainer{
+                                .otzuvContainer__item{
+                                    .avtorName{
+                                        font-size: 14px;
+                                        .avtorDate{
+                                            font-size: 10px;
+                                        }
+                                    }
+                                    .avtorOtzuv__text{
+                                        font-size: 12px;
+                                    }
                                 }
                             }
                         }

@@ -99,4 +99,13 @@ $(document).ready(function () {
         if (a < 99) a++
         $('.kilkist').val(a);
     });
+    // Basket popup
+    $('.basket__btn').click(function () {
+        $('.basket__popup').addClass('openPopup');
+        $('body').css('overflow', 'hidden');
+    });
+    $('.backBtn').click(function () {
+        $('.basket__popup').removeClass('openPopup');
+        $('body').css('overflow', 'visible');
+    });
 });

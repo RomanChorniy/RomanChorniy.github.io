@@ -72,6 +72,149 @@
                 color:$textColor1;
                 font-size: 14px;
             }
+            .basket__popup{
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                background-color: #ededed;
+                width: 100vw;
+                height: 100vh;
+                .popup__container{
+                    background-color: #fff;
+                    width: 100%;
+                    max-width: 600px;
+                    height: 100%;
+                    max-height: 583px;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    .closePopup{
+                        position: absolute;
+                        right: 0;
+                        font-size: 20px;
+                        opacity: 1;
+                        padding: 13px;
+                    }
+                    .popup__title{
+                        padding-top: 32px;
+                        padding-bottom: 35px;
+                        margin-bottom: 0;
+                        font-size: 24px;
+                        text-align: center;
+                    }
+                    .popup__tovarBox{
+                            width: 100%;
+                            max-width: 480px;
+                            margin: 0 auto 20px;
+                            padding-right: 20px;
+                            max-height: 340px;
+                            overflow: hidden;
+                            border-top: 1px solid #eaeaea;
+                            border-bottom: 1px solid #eaeaea;
+                            .tovarBox__item{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                border-bottom: 1px solid #eaeaea;
+                                padding: 20px 0 20px;
+                                .deleteItem{
+                                    float: right;
+                                    font-size: 10px;
+                                }
+                                .item__photo{
+                                    display: block;
+                                    width: 100%;
+                                    max-width: 130px;
+                                }
+                                .item__textBox{
+                                    .textBox__name{
+                                        font-size: 16px;
+                                        margin-bottom: 0;
+                                    }
+                                    .textBox__name_eng{
+                                        font-size: 11px;
+                                        color: #aaa;
+                                        margin-bottom: 0;
+                                        padding-bottom: 10px;
+                                    }
+                                    .textBox__objem{
+                                        font-size: 13px;
+                                        padding-bottom: 13px;
+                                        margin-bottom: 0;
+                                    }
+                                    .textBox__kilkistbox{
+                                        display: flex;
+                                        align-items: center;
+                                        .kilkist{
+                                            border: 1px solid #eaeaea;
+                                            text-align: center;
+                                            width: 65px;
+                                            height: 30px;
+                                            font-size: 14px;
+                                            margin-right: 9px;
+                                        }
+                                        button{
+                                            border: none;
+                                            background-color: transparent;
+                                            outline: none;
+                                            margin-right: 8px;
+                                        }
+                                        .kilkist__vartist{
+                                            font-size: 16px;
+                                            margin-bottom: 0;
+                                            margin-left: auto;
+                                        }
+                                    }
+                                }
+                                &:last-child{
+                                    border-bottom: none;
+                                }
+                            }
+                    }
+                    .popup__totalCina{
+                        font-size: 16px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        max-width: 480px;
+                        margin: 0 auto;
+                        padding-right: 20px;
+                        padding-bottom: 20px;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                    .popup__btnBox{
+                        width: 100%;
+                        max-width: 480px;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-left: 35px;
+                        .backToPage{
+                            text-decoration: underline;
+                            font-size: 14px;
+                        }
+                        .openZakazPage{
+                            width: 255px;
+                            height: 45px;
+                            border: 1px solid #000;
+                            outline: none;
+                            font-size: 14px;
+                            background-color: #fee0e4;
+
+                        }
+                    }
+                }
+            }
+            .openPopup{
+                display: block;
+            }
         }
     }
     .header__mobileContainer{

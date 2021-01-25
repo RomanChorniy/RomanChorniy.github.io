@@ -524,6 +524,209 @@
             }
         }
     }
+    .zakazPage{
+        .title{
+            font-size: 24px;
+            text-align: center;
+            padding-top: 21px;
+            padding-bottom: 15px;
+        }
+        .pageContainer{
+            padding-bottom: 70px;
+            .leftBlock{
+                .firstStepBox{
+                    padding-bottom: 5px;
+                    .firstStepBox__title{
+                        display: flex;
+                        align-items: center;
+                        font-size: 18px;
+                        span{
+                            border-radius: 50px;
+                            border: 1px solid #000;
+                            display: inline-block;
+                            font-size: 20px;
+                            width: 30px;
+                            height: 30px;
+                            text-align: center;
+                            margin-right: 9px;
+                            line-height: 29px;
+                        }
+                    }
+                    .firstStepBox__form{
+                        border-left: 1px solid #000;
+                        margin-left: 15px;
+                        padding: 30px 30px 35px 80px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        width: 100%;
+                        max-width: 651px;
+                        .form__item{
+                            width: 100%;
+                            max-width: 255px;
+                            padding-bottom: 20px;
+                            p{
+                                margin-bottom: 0;
+                            }
+                            .item__name{
+                            color: #707070;
+                            font-size: 13px;
+                            .questionBtn{
+                                display: inline-block;
+                                width: 14px;
+                                height: 14px;
+                                background-color: #e8bfc5;
+                                color: #fff;
+                                font-size: 11px;
+                                border-radius: 50%;
+                                text-align: center;
+                            }
+                            // tooltip
+                            [data-tooltip]{
+                                position: relative;
+                                cursor: pointer;
+                            }
+                            [data-tooltip]:before,
+                            [data-tooltip]:after {
+                                font-size: 13px;
+                                position: absolute;
+                                display: none;
+                                opacity: 0;
+                            }
+                            [data-tooltip]:before {
+                                content: "";
+                                border: 5px solid transparent;
+                                z-index: 100;
+                            }
+                            [data-tooltip]:after {
+                                content: attr(data-tooltip);
+                                width: 255px;
+                                padding: 12px 11px;
+                                border-radius: 0px;
+                                background: #fee0e4;
+                                color: #000;
+                                z-index: 99;
+                            }
+                            [data-tooltip]:hover:before,
+                            [data-tooltip]:hover:after {
+                                display: block;
+                                opacity: 1;
+                            }
+                            [data-tooltip][data-flow="bottom"]::before {
+                                top: 100%;
+                                left: 0;
+                                transform: translate(0, 8px);
+                                border-top-width: 0;
+                                border-bottom-color: #fee0e4;
+                            }
+                            [data-tooltip][data-flow="bottom"]::after {
+                                top: calc(100% + 5px);
+                                left: -63px;
+                                transform: translate(0, 8px);
+                            }
+                            [data-tooltip=""]::after, [data-tooltip=""]::before {
+                                display: none;
+                            }
+                            }
+                            .item__input{
+                                border: 1px solid #eaeaea;
+                                width: 100%;
+                                padding-left: 5px;
+                            }
+                        }
+                        .form__nextStep{
+                            border: 1px solid #000;
+                            background-color: #fee0e4;
+                            font-size: 14px;
+                            outline: none;
+                            margin-left: auto;
+                            width: 100%;
+                            max-width: 255px;
+                            height: 45px;
+                        }
+                    }
+                }
+                .secondStepBox{
+                    padding-bottom: 5px;
+                    .firstStepBox__title{
+                        display: flex;
+                        align-items: center;
+                        font-size: 18px;
+                        span{
+                            border-radius: 50px;
+                            border: 1px solid #000;
+                            display: inline-block;
+                            font-size: 20px;
+                            width: 30px;
+                            height: 30px;
+                            text-align: center;
+                            margin-right: 9px;
+                            line-height: 29px;
+                        }
+                    }
+                    .secondStepBox__form{
+                        border-left: 1px solid #000;
+                        margin-left: 15px;
+                        padding: 30px 30px 35px 80px;
+                        width: 100%;
+                        max-width: 651px;
+                        .form__item{
+                            width: 100%;
+                            padding-bottom: 20px;
+                            p{
+                                margin-bottom: 0;
+                            }
+                            .item__name{
+                            color: #707070;
+                            font-size: 13px;
+                            }
+                            .item__select{
+                                border: 1px solid #eaeaea;
+                                width: 100%;
+                                padding: 13px 9px;
+                                font-size: 14px;
+                            }
+                        }
+                        .form__komentarii{
+                            text-decoration: underline;
+                            font-size: 13px;
+                            color: #707070;
+                            padding-bottom: 20px;
+                            margin-bottom: 0;
+                        }
+                        .komentarii__check{
+                            border-radius: 0;
+                            border-color: #eaeaea;
+                            margin-top: 0;
+                            width: 22px;
+                            height: 22px;
+                            box-shadow: none;
+                            margin: 0 12px 30px 0;
+                            &:checked{
+                                background-color: red;
+                                background: url(../../image/checked.png) center / 70% no-repeat;
+                            }
+                        }
+                        .form-check-label{
+                            font-size: 13px;
+                            color: #707070;
+                        }
+                        .form__oformitBtn{
+                            display: block;
+                            border: 1px solid #000;
+                            background-color: #fee0e4;
+                            font-size: 14px;
+                            outline: none;
+                            margin-left: auto;
+                            width: 100%;
+                            max-width: 255px;
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media screen and (max-width: 576px) {
         .katalog__block{
             .katalog__container{

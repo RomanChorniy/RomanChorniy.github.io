@@ -108,4 +108,5 @@ $(document).ready(function () {
         $('.basket__popup').removeClass('openPopup');
         $('body').css('overflow', 'visible');
     });
+    $(".questionBtn").tooltip();
 });

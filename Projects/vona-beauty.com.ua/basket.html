@@ -56,25 +56,7 @@
                         <a href="tel:+380123456789" class="telephoneNumb">(012) 345 67 89</a>
                     </div>
                 </div>
-                <div class="basketAndLang">
-                    <a href="#" class="basket__btn">
-                        <img src="image/Bag.png" alt="basket" class="basket__icon">
-                    </a>
-                    <a href="http://" class="lang__choose font-regular">Ру</a>
-                </div>
             </div>
-        </div>
-        <div class="header__nav">
-            <ul class="navList font-regular">
-                <li class="navList__item"><a href="#" class="navLink">обличчя</a></li>
-                <li class="navList__item"><a href="#" class="navLink">волосся</a></li>
-                <li class="navList__item"><a href="#" class="navLink">тіло</a></li>
-                <li class="navList__item"><a href="#" class="navLink">чоловікам</a></li>
-                <li class="navList__item"><a href="#" class="navLink">дітками</a></li>
-                <li class="navList__item"><a href="#" class="navLink">подарунки</a></li>
-                <li class="navList__item"><a href="#" class="navLink">бренди</a></li>
-                <li class="navList__item"><a href="#" class="navLink">акції</a></li>
-            </ul>
         </div>
         <div class="burgerWindow">
             <div class="burgerWindow__container">
@@ -317,380 +299,73 @@
                 <img src="image/Bag.png" alt="basket" width="20px">
             </div>
         </div>
-        <div class="basket__popup">
-            <div class="popup__container">
-                <button type="button" class="btn-close closePopup backBtn" aria-label="Close"></button>
-                <h2 class="popup__title">Корзина</h2>
-                <div class="popup__tovarBox">
-                    <div class="tovarBox__item">
-                        <img src="image/shop_IP_tovar_image.png" alt="tovar image small" class="item__photo">
-                        <div class="item__textBox">
-                            <button type="button" class="btn-close deleteItem" aria-label="Close"></button>
-                            <p class="textBox__name">Маска для окрашеных волос</p>
-                            <p class="textBox__name_eng font-regular">L'Oreal Professionnel Serie Expert
-                                Vitamino
-                                Color Resveratrol Mask</p>
-                            <p class="textBox__objem font-regular">250 ml</p>
-                            <div class="textBox__kilkistbox">
-                                <input type="text" value="1" class="kilkist font-regular">
-                                <button class="kilkist__btnDown" type="button">
-                                    <img src="image/arrowDown_icon.png" alt="arrowDown_icon">
-                                </button>
-                                <button class="kilkist__btnUp" type="button">
-                                    <img src="image/arrowUp_icon.png" alt="arrowUp_icon">
-                                </button>
-                                <p class="kilkist__vartist">300 &#8372</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tovarBox__item">
-                        <img src="image/tovar1.png" alt="tovar1" class="item__photo">
-                        <div class="item__textBox">
-                            <button type="button" class="btn-close deleteItem" aria-label="Close"></button>
-                            <p class="textBox__name">Питательная маска для нормальных и тонких волос</p>
-                            <p class="textBox__name_eng font-regular">L'Oreal Professionnel Mythic Oil
-                                Mask</p>
-                            <p class="textBox__objem font-regular">250 ml</p>
-                            <div class="textBox__kilkistbox">
-                                <input type="text" value="3" class="kilkist font-regular">
-                                <button class="kilkist__btnDown" type="button">
-                                    <img src="image/arrowDown_icon.png" alt="arrowDown_icon">
-                                </button>
-                                <button class="kilkist__btnUp" type="button">
-                                    <img src="image/arrowUp_icon.png" alt="arrowUp_icon">
-                                </button>
-                                <p class="kilkist__vartist">9 000 &#8372</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="popup__totalCina font-bold">
-                    <p class="totalCina__text">Итого:</p>
-                    <p class="totalCina__syma">15 600 &#8372</p>
-                </div>
-                <div class="popup__btnBox">
-                    <a href="#" class="backToPage backBtn">Продолжить покупки</a>
-                    <button type="button" class="openZakazPage">Оформить заказ</button>
-                </div>
-            </div>
-        </div>
     </header>
-    <hr class="body__line">
     <main id="main">
         <div class="components">
             <div id="component-1" class="component">
-                <div class="breadcrumb__block">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb font-regular">
-                            <li class="breadcrumb-item"><a class="breadcrumb-itemLink" href="#">Главная</a></li>
-                            <li class="breadcrumb-item"><a class="breadcrumb-itemLink" href="#">Магазин</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Волосы</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-            <div id="component-2" class="component">
-                <div class="katalog__block">
-                    <h2 class="katalog__blockTitle">Косметика для волос</h2>
-                    <div class="katalog__container">
-                        <div class="sortMenu">
-                            <div class="sortMenu__title_mobile">
-                                <p class="title__name font-regular">Фильтры</p>
-                                <button type="button" class="btn-close" aria-label="Close"></button>
+                <div class="zakazPage">
+                    <h2 class="title">Оформление заказа</h2>
+                    <div class="pageContainer">
+                        <div class="leftBlock">
+                            <div class="firstStepBox">
+                                <h3 class="firstStepBox__title"><span>1</span> Личные данные:</h3>
+                                <form action="get" class="firstStepBox__form">
+                                    <label class="form__item">
+                                        <p class="item__name font-regular">Ваше имя*</p>
+                                        <input type="text" class="customerName item__input">
+                                    </label>
+                                    <label class="form__item">
+                                        <p class="item__name font-regular">Телефон* <span
+                                                data-tooltip="Номер телефона указывается для контакта с Вами при доставке и для подтверждения заказа"
+                                                data-flow="bottom" class="questionBtn">?</span>
+                                        </p>
+                                        <input type="text" class="customerPhone item__input">
+                                    </label>
+                                    <label class="form__item">
+                                        <p class="item__name font-regular">Ваша фамилия*</p>
+                                        <input type="text" class="customerSuname item__input">
+                                    </label>
+                                    <label class="form__item">
+                                        <p class="item__name font-regular">E-mail</p>
+                                        <input type="text" class="customerEmail item__input">
+                                    </label>
+                                    <button class="form__nextStep" type="button">Далее</button>
+                                </form>
                             </div>
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="false"
-                                            aria-controls="collapseOne">
-                                            Бренд
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="list-group">
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Academie <span>(5)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Genosys <span>(8)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Holy land <span>(6)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Image skincare <span>(6)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">La biosthetique <span>(8)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Medik8 <span>(6)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Onmacabim <span>(6)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Skintech <span>(8)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value=""
-                                                        disabled>
-                                                    <span class="checkboxText">Wiqu <span>(0)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Nanogen <span>(5)</span></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Тип волос
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="list-group">
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Жирные <span>(5)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Сухие <span>(8)</span></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Пол
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="list-group">
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Чоловік <span>(5)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Жінка <span>(8)</span></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                            aria-expanded="false" aria-controls="collapseFour">
-                                            Возраст
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse"
-                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="list-group">
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">0-18 <span>(5)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">19-80 <span>(8)</span></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                            aria-expanded="false" aria-controls="collapseFive">
-                                            Назначение
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse"
-                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="list-group">
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Назначение 1 <span>(5)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Назначение 2 <span>(8)</span></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingSix">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                            aria-expanded="false" aria-controls="collapseSix">
-                                            Объем
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSix" class="accordion-collapse collapse"
-                                        aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="list-group">
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">50 мл. <span>(5)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">100 мл. <span>(8)</span></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingSeven">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseSeven"
-                                            aria-expanded="false" aria-controls="collapseSeven">
-                                            Страна ТМ
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSeven" class="accordion-collapse collapse"
-                                        aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="list-group">
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Україна <span>(5)</span></span>
-                                                </label>
-                                                <label class="list-group-item">
-                                                    <input class="form-check-input me-1" type="checkbox" value="">
-                                                    <span class="checkboxText">Польша <span>(8)</span></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sortMenu__btnBox">
-                                <button class="clearBtn sortMenuBtn">Cнять все</button>
-                                <button class="submitBtn sortMenuBtn">Применить</button>
+                            <div class="secondStepBox">
+                                <h3 class="firstStepBox__title"><span>2</span> Доставка и оплата</h3>
+                                <form action="get" class="secondStepBox__form">
+                                    <label class="form__item">
+                                        <p class="item__name font-regular">Варианты доставки</p>
+                                        <select class="item__select" name="dostavka">
+                                            <option value="Новая почта (Самовывоз)">Новая почта (Самовывоз)</option>
+                                        </select>
+                                    </label>
+                                    <label class="form__item">
+                                        <p class="item__name font-regular">Отделение</p>
+                                        <select class="item__select" name="vidilennja">
+                                            <option value="Отделение №1">Отделение №1, ул. Пироговский путь, 135, (044)
+                                                234 56 78</option>
+                                        </select>
+                                    </label>
+                                    <label class="form__item">
+                                        <p class="item__name font-regular">Варианты оплаты</p>
+                                        <select class="item__select font-regular" name="oplata">
+                                            <option value="Оплата при получении товара">Оплата при получении товара
+                                                (Взымается предоплата 100грн)</option>
+                                        </select>
+                                    </label>
+                                    <p class="form__komentarii font-regular">Добавить комментарий к заказу</p>
+                                    <input class="form-check-input komentarii__check" type="checkbox" value=""
+                                        id="callback">
+                                    <label class="form-check-label font-regular" for="callback">
+                                        Мне можно не звонить для подтверждения заказа
+                                    </label>
+                                    <button class="form__oformitBtn" type="button">Оформить заказ</button>
+                                </form>
                             </div>
                         </div>
-                        <div class="tovary">
-                            <div class="sortirovka__btnBox">
-                                <div class="sortirovka__btnBox_mobile">
-                                    <div class="filtruBtn">Фильтры</div>
-                                    <div class="SortirovatBtn">Сортировать</div>
-                                </div>
-                                <p class="font-regular">Сортировать: <span class="priceBtn vubranaBtn">Цена</span><span
-                                        class="nameTovaryBtn">Название</span><img
-                                        class="sortirovka__arrowBtn arrow_down vubranaArrow" src="image/arrow_down.svg"
-                                        alt="arrow_down"><img src="image/arrow_up.svg" alt="arrow_up"
-                                        class="sortirovka__arrowBtn arrow_up"></p>
-                            </div>
-                            <div class="katalog__table">
-                                <div class="table__item">
-                                    <img src="image/tovar1.png" alt="tovar1" class="item__image">
-                                    <p class="item__name">Маска-сияние для волос, восстанавливающая</p>
-                                    <p class="item__nameEng">L'Oreal Professionnel Serie Expert
-                                        Blondifier Masque</p>
-                                    <p class="item__price font-regular"><span class="oldPrice">455 &#8372;</span> 390
-                                        &#8372;
-                                    </p>
-                                    <div class="akciaFlag font-regular">Акция</div>
-                                    <button class="item__buyBtn">Купить</button>
-                                </div>
-                                <div class="table__item">
-                                    <img src="image/tovar2.png" alt="tovar2" class="item__image">
-                                    <p class="item__name">Кондиционер для восстановления плотности поверхности волос по
-                                        длине</p>
-                                    <p class="item__nameEng">L'Oreal Professionnel Pro Longer Lengths Renewing
-                                        Conditioner
-                                    </p>
-                                    <p class="item__price font-regular">300 &#8372;</p>
-                                    <button class="item__buyBtn">Купить</button>
-                                </div>
-                                <div class="table__item">
-                                    <img src="image/tovar3.png" alt="tovar3" class="item__image">
-                                    <p class="item__name">Кондиционер для интенсивного восстановления поврежденных волос
-                                    </p>
-                                    <p class="item__nameEng">L'Oreal Professionnel Absolut
-                                        Repair Gold Quinoa+Protein
-                                        Conditioner</p>
-                                    <p class="item__price font-regular"><span class="oldPrice">455 &#8372;</span> 390
-                                        &#8372;
-                                    </p>
-                                    <div class="akciaFlag font-regular">Акция</div>
-                                    <button class="item__buyBtn">Купить</button>
-                                </div>
-                                <div class="table__item">
-                                    <img src="image/tovar4.png" alt="tovar4" class="item__image">
-                                    <p class="item__name">Маска-сияние для волос, восстанавливающая</p>
-                                    <p class="item__nameEng">L'Oreal Professionnel Serie Expert
-                                        Blondifier Masque</p>
-                                    <p class="item__price font-regular"><span class="oldPrice">455 &#8372;</span> 390
-                                        &#8372;
-                                    </p>
-                                    <button class="item__buyBtn">Купить</button>
-                                </div>
-                                <div class="table__item">
-                                    <img src="image/tovar1.png" alt="tovar5" class="item__image">
-                                    <p class="item__name">Кондиционер для восстановления плотности поверхности волос по
-                                        длине</p>
-                                    <p class="item__nameEng">L'Oreal Professionnel Pro Longer Lengths Renewing
-                                        Conditioner
-                                    </p>
-                                    <p class="item__price font-regular"><span class="oldPrice">455 &#8372;</span> 30 0
-                                        &#8372;
-                                    </p>
-                                    <div class="akciaFlag font-regular">Акция</div>
-                                    <button class="item__buyBtn">Купить</button>
-                                </div>
-                                <div class="table__item">
-                                    <img src="image/tovar6.png" alt="tovar6" class="item__image">
-                                    <p class="item__name">Кондиционер для интенсивного восстановления поврежденных волос
-                                    </p>
-                                    <p class="item__nameEng">L'Oreal Professionnel Absolut
-                                        Repair Gold Quinoa+Protein
-                                        Conditioner</p>
-                                    <p class="item__price font-regular"><span class="oldPrice">455 &#8372;</span> 390
-                                        &#8372;
-                                    </p>
-                                    <button class="item__buyBtn">Купить</button>
-                                </div>
-                            </div>
-                            <a href="#" class="katalog__seeMoreBtn font-regular">Смотреть еще</a>
-                        </div>
+                        <div class="rightBlock"></div>
                     </div>
                 </div>
             </div>

@@ -1189,6 +1189,222 @@ h2, h3, h6 {
   right: -34px;
   cursor: pointer;
 }
+.components .zakazPage .title {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 15px;
+}
+.components .zakazPage .pageContainer {
+  padding-bottom: 70px;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox {
+  padding-bottom: 5px;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__title span {
+  border-radius: 50px;
+  border: 1px solid #000;
+  display: inline-block;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-right: 9px;
+  line-height: 29px;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form {
+  border-left: 1px solid #000;
+  margin-left: 15px;
+  padding: 30px 30px 35px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 651px;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item {
+  width: 100%;
+  max-width: 255px;
+  padding-bottom: 20px;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item p {
+  margin-bottom: 0;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name {
+  color: #707070;
+  font-size: 13px;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name .questionBtn {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #e8bfc5;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 50%;
+  text-align: center;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip]:before,
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip]:after {
+  font-size: 13px;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip]:before {
+  content: "";
+  border: 5px solid transparent;
+  z-index: 100;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip]:after {
+  content: attr(data-tooltip);
+  width: 255px;
+  padding: 12px 11px;
+  border-radius: 0px;
+  background: #fee0e4;
+  color: #000;
+  z-index: 99;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip]:hover:before,
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip]:hover:after {
+  display: block;
+  opacity: 1;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip][data-flow=bottom]::before {
+  top: 100%;
+  left: 0;
+  -webkit-transform: translate(0, 8px);
+      -ms-transform: translate(0, 8px);
+          transform: translate(0, 8px);
+  border-top-width: 0;
+  border-bottom-color: #fee0e4;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip][data-flow=bottom]::after {
+  top: calc(100% + 5px);
+  left: -63px;
+  -webkit-transform: translate(0, 8px);
+      -ms-transform: translate(0, 8px);
+          transform: translate(0, 8px);
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip=""]::after, .components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__name [data-tooltip=""]::before {
+  display: none;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__item .item__input {
+  border: 1px solid #eaeaea;
+  width: 100%;
+  padding-left: 5px;
+}
+.components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form .form__nextStep {
+  border: 1px solid #000;
+  background-color: #fee0e4;
+  font-size: 14px;
+  outline: none;
+  margin-left: auto;
+  width: 100%;
+  max-width: 255px;
+  height: 45px;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox {
+  padding-bottom: 5px;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .firstStepBox__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .firstStepBox__title span {
+  border-radius: 50px;
+  border: 1px solid #000;
+  display: inline-block;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-right: 9px;
+  line-height: 29px;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form {
+  border-left: 1px solid #000;
+  margin-left: 15px;
+  padding: 30px 30px 35px 80px;
+  width: 100%;
+  max-width: 651px;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .form__item {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .form__item p {
+  margin-bottom: 0;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .form__item .item__name {
+  color: #707070;
+  font-size: 13px;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .form__item .item__select {
+  border: 1px solid #eaeaea;
+  width: 100%;
+  padding: 13px 9px;
+  font-size: 14px;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .form__komentarii {
+  text-decoration: underline;
+  font-size: 13px;
+  color: #707070;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .komentarii__check {
+  border-radius: 0;
+  border-color: #eaeaea;
+  margin-top: 0;
+  width: 22px;
+  height: 22px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0 12px 30px 0;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .komentarii__check:checked {
+  background-color: red;
+  background: url(../../image/checked.png) center/70% no-repeat;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .form-check-label {
+  font-size: 13px;
+  color: #707070;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .form__oformitBtn {
+  display: block;
+  border: 1px solid #000;
+  background-color: #fee0e4;
+  font-size: 14px;
+  outline: none;
+  margin-left: auto;
+  width: 100%;
+  max-width: 255px;
+  height: 45px;
+}
 @media screen and (max-width: 576px) {
   .components .katalog__block .katalog__container {
     display: block;

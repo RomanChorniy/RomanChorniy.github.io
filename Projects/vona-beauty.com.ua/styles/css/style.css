@@ -152,7 +152,7 @@ h2, h3, h6 {
   color: #000;
   font-size: 14px;
 }
-.header .header__container .basketAndLang .basket__popup {
+.header .basket__popup {
   display: none;
   position: absolute;
   top: 0;
@@ -162,7 +162,7 @@ h2, h3, h6 {
   width: 100vw;
   height: 100vh;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container {
+.header .basket__popup .popup__container {
   background-color: #fff;
   width: 100%;
   max-width: 600px;
@@ -175,21 +175,21 @@ h2, h3, h6 {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .closePopup {
+.header .basket__popup .popup__container .closePopup {
   position: absolute;
   right: 0;
   font-size: 20px;
   opacity: 1;
   padding: 13px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__title {
+.header .basket__popup .popup__container .popup__title {
   padding-top: 32px;
   padding-bottom: 35px;
   margin-bottom: 0;
   font-size: 24px;
   text-align: center;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox {
+.header .basket__popup .popup__container .popup__tovarBox {
   width: 100%;
   max-width: 480px;
   margin: 0 auto 20px;
@@ -199,7 +199,7 @@ h2, h3, h6 {
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,31 +212,31 @@ h2, h3, h6 {
   border-bottom: 1px solid #eaeaea;
   padding: 20px 0 20px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item .deleteItem {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .deleteItem {
   float: right;
   font-size: 10px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__photo {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__photo {
   display: block;
   width: 100%;
   max-width: 130px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__name {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__name {
   font-size: 16px;
   margin-bottom: 0;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__name_eng {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__name_eng {
   font-size: 11px;
   color: #aaa;
   margin-bottom: 0;
   padding-bottom: 10px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__objem {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__objem {
   font-size: 13px;
   padding-bottom: 13px;
   margin-bottom: 0;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +244,7 @@ h2, h3, h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox .kilkist {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox .kilkist {
   border: 1px solid #eaeaea;
   text-align: center;
   width: 65px;
@@ -252,21 +252,21 @@ h2, h3, h6 {
   font-size: 14px;
   margin-right: 9px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox button {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox button {
   border: none;
   background-color: transparent;
   outline: none;
   margin-right: 8px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox .kilkist__vartist {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox .kilkist__vartist {
   font-size: 16px;
   margin-bottom: 0;
   margin-left: auto;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__tovarBox .tovarBox__item:last-child {
+.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item:last-child {
   border-bottom: none;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__totalCina {
+.header .basket__popup .popup__container .popup__totalCina {
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,10 +283,10 @@ h2, h3, h6 {
   padding-right: 20px;
   padding-bottom: 20px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__totalCina p {
+.header .basket__popup .popup__container .popup__totalCina p {
   margin-bottom: 0;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__btnBox {
+.header .basket__popup .popup__container .popup__btnBox {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
@@ -301,11 +301,11 @@ h2, h3, h6 {
           align-items: center;
   padding-left: 35px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__btnBox .backToPage {
+.header .basket__popup .popup__container .popup__btnBox .backToPage {
   text-decoration: underline;
   font-size: 14px;
 }
-.header .header__container .basketAndLang .basket__popup .popup__container .popup__btnBox .openZakazPage {
+.header .basket__popup .popup__container .popup__btnBox .openZakazPage {
   width: 255px;
   height: 45px;
   border: 1px solid #000;
@@ -313,7 +313,7 @@ h2, h3, h6 {
   font-size: 14px;
   background-color: #fee0e4;
 }
-.header .header__container .basketAndLang .openPopup {
+.header .openPopup {
   display: block;
 }
 .header .header__mobileContainer {
@@ -548,6 +548,34 @@ h2, h3, h6 {
   }
   .header .open {
     display: block;
+  }
+  .header .basket__popup .popup__container {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    top: 0;
+    left: 0;
+    padding: 0 15px;
+    max-height: 100%;
+  }
+  .header .basket__popup .popup__container .popup__tovarBox {
+    max-height: 67%;
+  }
+  .header .basket__popup .popup__container .popup__tovarBox .tovarBox__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .basket__popup .popup__container .popup__btnBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0;
+  }
+  .header .basket__popup .popup__container .popup__btnBox .backToPage {
+    padding-bottom: 6px;
   }
 }
 

@@ -863,6 +863,9 @@ p {
 .components .katalog__block .tovary .katalog__table .table__item:hover .item__buyBtn {
   display: inline-block;
 }
+.components .katalog__block .tovary .katalog__table .table__item:hover .item__name {
+  font-size: 15px;
+}
 .components .katalog__block .tovary .katalog__seeMoreBtn {
   display: inline-block;
   color: #000;

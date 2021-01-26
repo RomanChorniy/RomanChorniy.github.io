@@ -201,6 +201,8 @@ p {
   max-height: 300px;
   overflow: hidden;
   overflow-y: auto;
+  scrollbar-color: #000 #f5f5f5;
+  scrollbar-width: thin;
 }
 .header .basket__popup .popup__container .popup__tovarBox::-webkit-scrollbar {
   width: 5px;
@@ -1468,6 +1470,8 @@ p {
   max-height: 481px;
   overflow: hidden;
   overflow-y: auto;
+  scrollbar-color: #000 #f5f5f5;
+  scrollbar-width: thin;
 }
 .components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox::-webkit-scrollbar {
   width: 5px;

@@ -44,6 +44,10 @@ h2, h3, h6 {
   font-weight: normal;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 .component {
   max-width: 1110px;
   width: 100%;
@@ -1197,6 +1201,12 @@ h2, h3, h6 {
 }
 .components .zakazPage .pageContainer {
   padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .components .zakazPage .pageContainer .leftBlock .firstStepBox {
   padding-bottom: 5px;
@@ -1384,11 +1394,20 @@ h2, h3, h6 {
   height: 22px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  margin: 0 12px 30px 0;
+  margin: 0 12px 0 0;
 }
 .components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .komentarii__check:checked {
   background-color: red;
   background: url(../../image/checked.png) center/70% no-repeat;
+}
+.components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .callbackBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
 }
 .components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form .form-check-label {
   font-size: 13px;
@@ -1404,6 +1423,120 @@ h2, h3, h6 {
   width: 100%;
   max-width: 255px;
   height: 45px;
+}
+.components .zakazPage .pageContainer .rightBlock {
+  color: #000;
+  width: 100%;
+  max-width: 445px;
+  padding-left: 30px;
+  border-left: 1px solid #000;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__titleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__titleBox .titleBox__title {
+  font-size: 18px;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__titleBox .titleBox__backLink {
+  font-size: 11px;
+  text-decoration: underline;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 15px;
+  padding-right: 20px;
+  max-height: 512px;
+  overflow: hidden;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 0 15px;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item .deleteItem {
+  float: right;
+  font-size: 10px;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item .item__photo {
+  display: block;
+  width: 100%;
+  max-width: 130px;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item .item__textBox .textBox__name {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item .item__textBox .textBox__name_eng {
+  font-size: 11px;
+  color: #aaa;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item .item__textBox .textBox__objem {
+  font-size: 13px;
+  padding-bottom: 13px;
+  margin-bottom: 0;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox .kilkist {
+  border: 1px solid #eaeaea;
+  text-align: center;
+  width: 65px;
+  height: 30px;
+  font-size: 14px;
+  margin-right: 9px;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-right: 8px;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox .kilkist__vartist {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+.components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item:last-child {
+  border-bottom: none;
+}
+.components .zakazPage .pageContainer .rightBlock .cinaTotal {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
 }
 @media screen and (max-width: 576px) {
   .components .katalog__block .katalog__container {
@@ -1666,5 +1799,31 @@ h2, h3, h6 {
   .components .vuSmotreli .vuSmotreli__table .next {
     width: 0;
     height: 0;
+  }
+  .components .zakazPage .pageContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .components .zakazPage .pageContainer .leftBlock .firstStepBox .firstStepBox__form {
+    padding: 15px 15px 35px;
+  }
+  .components .zakazPage .pageContainer .leftBlock .secondStepBox .secondStepBox__form {
+    padding: 15px 15px 35px;
+  }
+  .components .zakazPage .pageContainer .rightBlock {
+    border: none;
+    padding: 0;
+  }
+  .components .zakazPage .pageContainer .rightBlock .vashZakaz__tovarBox .tovarBox__item {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

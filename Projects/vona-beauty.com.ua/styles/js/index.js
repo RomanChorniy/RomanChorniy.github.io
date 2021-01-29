@@ -89,15 +89,17 @@ $(document).ready(function () {
         });
     });
     //Form kilkist arrow
-    $('.kilkist__btnDown').click(function () {
-        let a = $('.kilkist').val();
-        if (a > 1) a--
-        $('.kilkist').val(a);
-    });
     $('.kilkist__btnUp').click(function () {
-        let a = $('.kilkist').val();
-        if (a < 99) a++
-        $('.kilkist').val(a);
+        let product = $(this).parent('.textBox__kilkistbox');
+        let count = $(product).children('.kilkist').val();
+        if (count < 99) count++
+        $(product).children('.kilkist').val(count);
+    });
+    $('.kilkist__btnDown').click(function () {
+        let product = $(this).parent('.textBox__kilkistbox');
+        let count = $(product).children('.kilkist').val();
+        if (count > 1) count--
+        $(product).children('.kilkist').val(count);
     });
     // Basket popup
     $('.basket__btn').click(function () {

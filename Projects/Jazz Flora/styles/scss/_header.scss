@@ -7,6 +7,7 @@
         max-width: 1110px;
         margin: 0 auto;
         .header__titleBox{
+            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -14,6 +15,51 @@
             .telephoneList{
                 .phoneNumber{
                     font-size: 18px;
+                }
+                .telephoneList__button{
+                    width: 8px;
+                    margin: 0 0 2px 3px;
+                }
+                .hide{
+                    display: none;
+                }
+                &:hover{
+                    border: 1px solid $mainColor1;
+                    padding-top: 42px;
+                    position: absolute;
+                    top: -32px;
+                    right: -26px;
+                    background-color: #000;
+                    .telephoneList__button{
+                        margin-right: 26px;
+                        transform: rotate(180deg);
+                    }
+                    .phoneNumber{
+                        display: inline-block;
+                        padding: 0 26px 20px;
+                        &:first-child{
+                            padding-right: 0;
+                        }
+                    }
+                    .hide{
+                        display: block;
+                    }
+                    .workTime{
+                        padding: 4px 26px 24px;
+                        color: $textColor1;
+                        font-size: 14px;
+                    }
+                    .callback{
+                        width: 100%;
+                        height: 50px;
+                        background-color: #fff;
+                        border: none;
+                        border-top: 1px solid $mainColor1;
+                        outline: none;
+                        cursor: pointer;
+                        color: $textColor1;
+                        font-size: 14px;
+                    }
                 }
             }
         }

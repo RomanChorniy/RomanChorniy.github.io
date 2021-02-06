@@ -64,6 +64,7 @@ p {
   margin: 0 auto;
 }
 .header .header__container .header__titleBox {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,6 +78,53 @@ p {
 }
 .header .header__container .header__titleBox .telephoneList .phoneNumber {
   font-size: 18px;
+}
+.header .header__container .header__titleBox .telephoneList .telephoneList__button {
+  width: 8px;
+  margin: 0 0 2px 3px;
+}
+.header .header__container .header__titleBox .telephoneList .hide {
+  display: none;
+}
+.header .header__container .header__titleBox .telephoneList:hover {
+  border: 1px solid #D7B46A;
+  padding-top: 42px;
+  position: absolute;
+  top: -32px;
+  right: -26px;
+  background-color: #000;
+}
+.header .header__container .header__titleBox .telephoneList:hover .telephoneList__button {
+  margin-right: 26px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.header .header__container .header__titleBox .telephoneList:hover .phoneNumber {
+  display: inline-block;
+  padding: 0 26px 20px;
+}
+.header .header__container .header__titleBox .telephoneList:hover .phoneNumber:first-child {
+  padding-right: 0;
+}
+.header .header__container .header__titleBox .telephoneList:hover .hide {
+  display: block;
+}
+.header .header__container .header__titleBox .telephoneList:hover .workTime {
+  padding: 4px 26px 24px;
+  color: #D7B46A;
+  font-size: 14px;
+}
+.header .header__container .header__titleBox .telephoneList:hover .callback {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  border-top: 1px solid #D7B46A;
+  outline: none;
+  cursor: pointer;
+  color: #D7B46A;
+  font-size: 14px;
 }
 .header .header__container .header__nav {
   display: -webkit-box;
@@ -135,7 +183,7 @@ p {
     height: auto;
   }
   .header .burgerWindow .accordion-button {
-    border: 1px solid #eaeaea;
+    border: 1px solid #ebc8cc;
   }
   .header .burgerWindow .accordion-button:focus {
     border: none;
@@ -348,7 +396,7 @@ p {
 }
 
 .body__line {
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #ebc8cc;
   opacity: 1;
 }
 
@@ -384,13 +432,13 @@ p {
   border: none;
 }
 .components .katalog__block .sortMenu .accordion .accordion-item:last-child .accordion-button {
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #ebc8cc;
 }
 .components .katalog__block .sortMenu .accordion .accordion-item .accordion-button {
   font-size: 16px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #ebc8cc;
 }
 .components .katalog__block .sortMenu .accordion .accordion-item .accordion-button:not(.collapsed) {
   color: #D7B46A;
@@ -422,7 +470,7 @@ p {
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-color: #eaeaea;
+  border-color: #ebc8cc;
 }
 .components .katalog__block .sortMenu .accordion .list-group .form-check-input[type=checkbox]:disabled {
   border-color: #eaeaea;
@@ -435,8 +483,8 @@ p {
   background-image: none;
 }
 .components .katalog__block .sortMenu .accordion .list-group .form-check-input:checked {
-  background-color: #e8bfc5;
-  border-color: #e8bfc5;
+  background-color: #eaeaea;
+  border-color: #eaeaea;
 }
 .components .katalog__block .sortMenu .accordion .list-group .form-check-input:checked + .checkboxText {
   font-weight: bold;

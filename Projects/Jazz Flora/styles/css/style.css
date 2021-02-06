@@ -463,8 +463,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 43%;
-  margin-right: 11px;
+  width: 44%;
+  padding-right: 11px;
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__image {
   background: url(../../image/Black_box_image.png) center/cover no-repeat;

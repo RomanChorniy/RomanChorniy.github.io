@@ -1,7 +1,7 @@
 $mainColor1: #D7B46A;
+$mainColor2: #000;
+$mainColor3: #fff;
 
-$mainColor2: #eaeaea;
-$mainColor3: #ebc8cc;
 $mainColor4: #ebc8cc;
 
 $textColor1: #D7B46A;
@@ -44,6 +44,11 @@ li{
 p{
     margin-bottom: 0;
 }
+.container{
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
 .siteBtn{
     border: 1px solid $mainColor1;
     background-color: transparent;
@@ -53,8 +58,10 @@ p{
     height: 50px;
     font-size: 13px;
     font-weight: 500;
+    text-transform: uppercase;
     cursor: pointer;
     &:hover{
         background-color: $mainColor1;
+        transition: all ease-in-out .3s;
     }
 }

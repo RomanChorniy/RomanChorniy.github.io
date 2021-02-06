@@ -36,6 +36,107 @@
             color: $textColor2;
         }
     }
+    .whatWeDo{
+        .whatWeDo__container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .whatWeDo__blackBox{
+                display: flex;
+                flex-direction: column;
+                width: 43%;
+                margin-right: 11px;
+                .blackBox__image{
+                    background: url(../../image/Black_box_image.png) center / cover no-repeat;
+                    height: 460px;
+                    margin-bottom: 10px;
+                }
+                .blackBox__textBox{
+                    background-color: $mainColor2;
+                    color: $textColor2;
+                    font-size: 18px;
+                    line-height: 34px;
+                    padding: 54px 78px 61px 0;
+                    .text{
+                        width: 100%;
+                        max-width: 380px;
+                        margin: 0;
+                        margin-left: auto;
+                        padding-bottom: 50px;
+                    }
+                    .text__btn{
+                        display: block;
+                        margin-left: auto;
+                        margin-right: 157px;
+                        &:hover{
+                            color: $textColor3;
+                        }
+                    }
+                }
+            }
+            .whatWeDo__goldBox{
+                display: flex;
+                flex-direction: column;
+                width: 56%;
+                .goldBox__image{
+                    background: url(../../image/Gold_box_image.png) center / cover no-repeat;
+                    height: 420px;
+                }
+                .goldBox__textBox{
+                    background-color: $mainColor1;
+                    margin-bottom: 10px;
+                    padding: 80px 0 60px 74px;
+                    color: $textColor2;
+                    font-size: 18px;
+                    line-height: 34px;
+                    flex: 1;
+                    .text{
+                        width: 100%;
+                        max-width: 570px;
+                        padding-bottom: 50px;
+                    }
+                    .text__btn{
+                        border-color: $mainColor3;
+                        color: $textColor2;
+                        &:hover{
+                            background-color: $mainColor3;
+                            color: $textColor1;
+                        }
+                    }
+                }
+            }
+            .whatWeDo__whiteBox{
+                display: flex;
+                width: 100%;
+                margin-top: 10px;
+                .whiteBox__image{
+                    background: url(../../image/White_box_image.png) center / cover no-repeat;
+                    width: 56%;
+                    margin-right: 11px;
+                }
+                .whiteBox__textBox{
+                    background-color: #F7F1E5;
+                    width: 43%;
+                    padding: 62px 0 56px 75px;
+                    .text{
+                        width: 100%;
+                        max-width: 379px;
+                        font-size: 18px;
+                        line-height: 34px;
+                        padding-bottom: 50px;
+                    }
+                    .text__btn{
+                        border-color: $mainColor2;
+                        color: $textColor3;
+                        &:hover{
+                            background-color: $mainColor2;
+                            color: #F7F1E5;
+                        }
+                    }
+                }    
+            }
+        }
+    }
     // .breadcrumb__block{
     //     .breadcrumb{
     //         .breadcrumb-item{

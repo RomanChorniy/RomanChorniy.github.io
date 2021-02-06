@@ -1,7 +1,8 @@
 $mainColor2: #e8bfc5;
 $mainColor3: #eaeaea;
 $mainColor4: #ebc8cc;
-$textColor1: #000;
+$textColor1: #D7B46A;
+$textColor2: #fff;
 
 *{
     margin: 0;
@@ -11,7 +12,6 @@ $textColor1: #000;
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    padding: 0px 15px;
 }
 .stopScrolling{
     overflow-y: hidden;

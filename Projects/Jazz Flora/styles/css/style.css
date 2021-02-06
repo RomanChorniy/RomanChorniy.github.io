@@ -8,7 +8,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  padding: 0px 15px;
 }
 
 .stopScrolling {
@@ -25,7 +24,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #D7B46A;
 }
 
 a.active {
@@ -33,7 +32,7 @@ a.active {
 }
 
 a:hover {
-  color: #000;
+  color: #D7B46A;
 }
 
 li {
@@ -56,350 +55,41 @@ p {
 
 .header {
   width: 100%;
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 15px 0 0;
+  background-color: #000;
+  padding: 32px 0 25px;
 }
 .header .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 15px;
-}
-.header .header__container .header__flexElement {
-  width: 33%;
-}
-.header .header__container .header__flexElement:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-.header .header__container .burgerMenu {
-  height: 31px;
-  padding: 5px;
-}
-.header .header__container .burgerMenu .burgerMenu__lines {
-  position: relative;
-  width: 43px;
-  height: 33px;
-  cursor: pointer;
-}
-.header .header__container .burgerMenu .burgerMenu__line {
-  position: absolute;
-  background-color: #000;
-  width: 33px;
-  height: 2px;
-  top: 49%;
-}
-.header .header__container .burgerMenu .burgerMenu__line:first-child {
-  top: 25%;
-}
-.header .header__container .burgerMenu .burgerMenu__line:last-child {
-  top: 75%;
-}
-.header .header__container .containerLogo {
-  text-align: center;
-}
-.header .header__container .telephone {
-  width: 100%;
-  max-width: 190px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.header .header__container .telephone .telephoneIcon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 20px;
-}
-.header .header__container .telephone .telephoneList {
-  color: #000;
-  font-size: 18px;
-}
-.header .header__container .basketAndLang {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  max-width: 65px;
-}
-.header .header__container .basketAndLang .basket__icon {
-  cursor: pointer;
-}
-.header .header__container .basketAndLang .lang__choose {
-  display: block;
-  width: 21px;
-  text-align: center;
-  color: #000;
-  font-size: 14px;
-}
-.header .basket__popup {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background-color: #ededed;
-  width: 100vw;
-  height: 100vh;
-}
-.header .basket__popup .popup__container {
-  background-color: #fff;
-  width: 100%;
-  max-width: 600px;
-  height: 100%;
-  max-height: 583px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.header .basket__popup .popup__container .closePopup {
-  position: absolute;
-  right: 0;
-  font-size: 20px;
-  opacity: 1;
-  padding: 13px;
-}
-.header .basket__popup .popup__container .popup__title {
-  padding-top: 32px;
-  padding-bottom: 35px;
-  margin-bottom: 0;
-  font-size: 24px;
-  text-align: center;
-}
-.header .basket__popup .popup__container .popup__tovarBox {
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto 20px;
-  padding-right: 20px;
-  max-height: 300px;
-  overflow: hidden;
-  overflow-y: auto;
-  scrollbar-color: #000 #f5f5f5;
-  scrollbar-width: thin;
-}
-.header .basket__popup .popup__container .popup__tovarBox::-webkit-scrollbar {
-  width: 5px;
-  background-color: #f5f5f5;
-}
-.header .basket__popup .popup__container .popup__tovarBox::-webkit-scrollbar-thumb {
-  background-color: #000;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-top: 1px solid #eaeaea;
-  padding: 20px 0 20px;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .deleteItem {
-  float: right;
-  font-size: 10px;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__photo {
-  display: block;
-  width: 100%;
-  max-width: 130px;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__name {
-  font-size: 16px;
-  margin-bottom: 0;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__name_eng {
-  font-size: 11px;
-  color: #aaa;
-  margin-bottom: 0;
-  padding-bottom: 10px;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__objem {
-  font-size: 13px;
-  padding-bottom: 13px;
-  margin-bottom: 0;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox .kilkist {
-  border: 1px solid #eaeaea;
-  text-align: center;
-  width: 65px;
-  height: 30px;
-  font-size: 14px;
-  margin-right: 9px;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox button {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  margin-right: 8px;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item .item__textBox .textBox__kilkistbox .kilkist__vartist {
-  font-size: 16px;
-  margin-bottom: 0;
-  margin-left: auto;
-}
-.header .basket__popup .popup__container .popup__tovarBox .tovarBox__item:last-child {
-  border-bottom: 1px solid #eaeaea;
-}
-.header .basket__popup .popup__container .popup__totalCina {
-  font-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-.header .basket__popup .popup__container .popup__totalCina p {
-  margin-bottom: 0;
-}
-.header .basket__popup .popup__container .popup__btnBox {
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 35px;
-}
-.header .basket__popup .popup__container .popup__btnBox .backToPage {
-  text-decoration: underline;
-  font-size: 14px;
-}
-.header .basket__popup .popup__container .popup__btnBox .openZakazPage {
-  width: 255px;
-  height: 45px;
-  border: 1px solid #000;
-  outline: none;
-  font-size: 14px;
-  background-color: #fee0e4;
-}
-.header .openPopup {
-  display: block;
-}
-.header .header__mobileContainer {
-  display: none;
-}
-.header .header__nav .navList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 15px 0 0;
-}
-.header .header__nav .navList .navList__item .navLink {
-  text-transform: uppercase;
-  font-size: 14px;
-}
-.header .burgerWindow {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(237, 237, 237, 0.9);
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
-}
-.header .burgerWindow .burgerWindow__container {
-  margin: 0 auto;
   width: 100%;
   max-width: 1110px;
+  margin: 0 auto;
 }
-.header .burgerWindow .burgerWindow__navMenu {
-  background-color: #fff;
-  opacity: 1;
-  padding: 13px 0;
-  width: 255px;
-  position: relative;
+.header .header__container .header__titleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 53px;
 }
-.header .burgerWindow .burgerWindow__navMenu .btn-close {
-  position: relative;
-  margin-left: auto;
-  margin-right: 13px;
-  display: block;
-  font-size: 19px;
-  -webkit-filter: invert(0%) sepia(95%) saturate(21%) hue-rotate(358deg) brightness(93%) contrast(107%);
-          filter: invert(0%) sepia(95%) saturate(21%) hue-rotate(358deg) brightness(93%) contrast(107%);
-  opacity: 1;
+.header .header__container .header__titleBox .telephoneList .phoneNumber {
+  font-size: 18px;
 }
-.header .burgerWindow .burgerWindow__navMenu .burgerNav {
-  width: 100%;
-  padding: 0;
+.header .header__container .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.header .burgerWindow .burgerWindow__navMenu .burgerNav .burgerNav__item {
-  width: 100%;
-  height: 44px;
-  padding-left: 36px;
-  line-height: 44px;
+.header .header__container .header__nav .navLink {
+  color: #fff;
   text-transform: uppercase;
-  font-size: 14px;
-  color: #000;
-}
-.header .burgerWindow .burgerWindow__navMenu .burgerNav .burgerNav__item a {
-  display: block;
-}
-.header .burgerWindow .burgerWindow__navMenu .burgerNav .burgerNav__item:hover {
-  background-color: #e8bfc5;
-}
-.header .burgerWindow .accordion {
-  display: none;
-}
-.header .open {
-  display: block;
+  font-size: 13px;
 }
 @media screen and (max-width: 576px) {
   .header .header__container, .header .header__nav {
@@ -428,7 +118,7 @@ p {
   }
   .header .header__mobileContainer .burgerMenu .burgerMenu__line {
     position: absolute;
-    background-color: #000;
+    background-color: #D7B46A;
     width: 33px;
     height: 2px;
     top: 49%;
@@ -609,7 +299,7 @@ p {
   padding: 50px 0 20px 0;
 }
 .footer .footerContainer .footerHeaderBox {
-  color: #000;
+  color: #D7B46A;
 }
 .footer .footerContainer .footerHeaderBox .headerBox__header2 {
   font-size: 15px;
@@ -620,7 +310,7 @@ p {
 }
 .footer .footerContainer .footerAddresBox {
   font-size: 15px;
-  color: #000;
+  color: #D7B46A;
 }
 .footer .footerContainer .footerAddresBox p {
   margin-bottom: 0;
@@ -669,7 +359,7 @@ p {
   color: #707070;
 }
 .components .breadcrumb__block .breadcrumb .breadcrumb-item:last-child {
-  color: #000;
+  color: #D7B46A;
 }
 .components .katalog__block .katalog__blockTitle {
   font-size: 24px;
@@ -703,7 +393,7 @@ p {
   border-top: 1px solid #eaeaea;
 }
 .components .katalog__block .sortMenu .accordion .accordion-item .accordion-button:not(.collapsed) {
-  color: #000;
+  color: #D7B46A;
   background-color: #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -719,7 +409,7 @@ p {
   background-image: url("../../image/plus.svg");
 }
 .components .katalog__block .sortMenu .accordion .list-group {
-  color: #000;
+  color: #D7B46A;
 }
 .components .katalog__block .sortMenu .accordion .list-group .checkboxText > span {
   color: #707070;
@@ -768,7 +458,7 @@ p {
   width: 100%;
   max-width: 302px;
   font-size: 13px;
-  color: #000;
+  color: #D7B46A;
 }
 .components .katalog__block .tovary .sortirovka__btnBox p .vubranaBtn {
   color: #ebc8cc;
@@ -825,7 +515,7 @@ p {
 }
 .components .katalog__block .tovary .katalog__table .table__item .item__name {
   font-size: 16px;
-  color: #000;
+  color: #D7B46A;
 }
 .components .katalog__block .tovary .katalog__table .table__item .item__nameEng {
   font-size: 12px;
@@ -833,7 +523,7 @@ p {
 }
 .components .katalog__block .tovary .katalog__table .table__item .item__price {
   font-size: 18px;
-  color: #000;
+  color: #D7B46A;
 }
 .components .katalog__block .tovary .katalog__table .table__item .item__price .oldPrice {
   color: #aaa;
@@ -849,7 +539,7 @@ p {
   padding: 0px 8px;
 }
 .components .katalog__block .tovary .katalog__table .table__item .item__buyBtn {
-  border: 1px solid #000;
+  border: 1px solid #D7B46A;
   font-size: 14px;
   background-color: #fee0e4;
   width: 100%;
@@ -876,7 +566,7 @@ p {
 }
 .components .katalog__block .tovary .katalog__seeMoreBtn {
   display: inline-block;
-  color: #000;
+  color: #D7B46A;
   text-decoration: underline;
   font-size: 14px;
   padding-bottom: 62px;
@@ -930,7 +620,7 @@ p {
   right: -26px;
 }
 .components .tovarPage .tovarPage__description {
-  color: #000;
+  color: #D7B46A;
 }
 .components .tovarPage .tovarPage__description .description__topBox {
   display: -webkit-box;
@@ -1060,7 +750,7 @@ p {
   margin-bottom: 23px;
 }
 .components .tovarPage .tovarPage__description .description__topBox .kodTovary .kodTovary__number {
-  color: #000;
+  color: #D7B46A;
   font-size: 14px;
   font-weight: normal;
 }
@@ -1100,7 +790,7 @@ p {
   background-color: #fff;
   border-radius: 0;
   border-bottom: 1px solid #e8bfc5;
-  color: #000;
+  color: #D7B46A;
 }
 .components .tovarPage .tovarPage__description .description__bottomBox .tab-content .otzuvBox .btn {
   border: 1px solid #000;
@@ -1172,7 +862,7 @@ p {
 }
 .components .vuSmotreli .vuSmotreli__table .table__item .item__name {
   font-size: 16px;
-  color: #000;
+  color: #D7B46A;
 }
 .components .vuSmotreli .vuSmotreli__table .table__item .item__nameEng {
   font-size: 12px;
@@ -1180,7 +870,7 @@ p {
 }
 .components .vuSmotreli .vuSmotreli__table .table__item .item__price {
   font-size: 18px;
-  color: #000;
+  color: #D7B46A;
 }
 .components .vuSmotreli .vuSmotreli__table .table__item .item__price .oldPrice {
   color: #aaa;
@@ -1672,7 +1362,7 @@ p {
   .components .katalog__block .katalog__container .tovary .sortirovka__btnBox_mobile .filtruBtn, .components .katalog__block .katalog__container .tovary .sortirovka__btnBox_mobile .SortirovatBtn {
     width: 50%;
     border: 1px solid #eaeaea;
-    color: #000;
+    color: #D7B46A;
   }
   .components .tovarPage {
     -webkit-box-orient: vertical;

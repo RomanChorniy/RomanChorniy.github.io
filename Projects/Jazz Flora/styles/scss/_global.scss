@@ -3,8 +3,10 @@ $mainColor1: #D7B46A;
 $mainColor2: #eaeaea;
 $mainColor3: #ebc8cc;
 $mainColor4: #ebc8cc;
+
 $textColor1: #D7B46A;
 $textColor2: #fff;
+$textColor3: #000;
 
 *{
     margin: 0;
@@ -20,11 +22,11 @@ body{
 }
 .font-regular {
     font-weight: normal !important;
-  }
+}
 
-  .font-bold {
+.font-bold {
     font-weight: bold !important;
-  }
+}
 
 a{
     text-decoration: none;
@@ -39,14 +41,20 @@ a:hover{
 li{
     list-style: none;
 }
-h2,h3,h6{
-    font-weight: normal;
-}
 p{
     margin-bottom: 0;
 }
-.component{
-    max-width: 1110px;
-    width: 100%;
-    margin: 0 auto;
+.siteBtn{
+    border: 1px solid $mainColor1;
+    background-color: transparent;
+    color: $textColor1;
+    outline: none;
+    width: 220px;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover{
+        background-color: $mainColor1;
+    }
 }

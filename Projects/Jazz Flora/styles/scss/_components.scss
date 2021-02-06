@@ -1,846 +1,879 @@
-.body__line{
-    border-bottom: 1px solid $mainColor3;
-    opacity: 1;
-}
 .components{
-    .breadcrumb__block{
-        .breadcrumb{
-            .breadcrumb-item{
-                font-size: 12px;
-                .breadcrumb-itemLink {
-                    color: #707070;
-                }
-                &:last-child{
-                    color: $textColor1;
-                }
-            }
-        }
-    }
-    .katalog__block{
-        .katalog__blockTitle{
-            font-size: 24px;
-            text-align: center;
-        }
-        .katalog__container{
-            display: flex;
-            justify-content: space-between;
-        }
-        .sortMenu{
+    .siteTitle{
+        color: $textColor1;
+        text-align: center;
+        background-color: #fff;
+        padding-bottom: 68px;
+        .frontImage{
             width: 100%;
-            max-width: 255px;
-            .sortMenu__title_mobile, .sortMenu__btnBox{
-                display: none;
-            }
-            .accordion{
-                .accordion-item{
-                    .accordion-collapse, .accordion-button{
-                        border: none;
-                    }
-                    &:last-child .accordion-button{
-                        border-bottom: 1px solid $mainColor3;
-                    }
-                    .accordion-button{
-                        font-size: 16px;
-                        box-shadow: none;
-                        border-top: 1px solid $mainColor3;
-                        &:not(.collapsed){
-                            color: $textColor1;
-                            background-color: #ffffff;
-                            box-shadow: none;
-                            &::after{
-                                transform: none;
-                                background-image: url("../../image/minus.svg");
-                            }
-                        }
-                        &::after{
-                            font-size: 16px;
-                            background-image: url("../../image/plus.svg");
-                        }
-                    }
-                }
-                .list-group{
-                    color: $textColor1;
-                    .checkboxText>span{
-                        color: #707070;
-                    }
-                    .list-group-item{
-                        border: none;
-                        cursor: pointer;
-                    }
-                    .form-check-input[type=checkbox]{
-                        border-radius: 0;
-                        box-shadow: none;
-                        border-color: $mainColor3;
-                        &:disabled{
-                            border-color: #eaeaea ;
-                            opacity: 1;
-                        }
-                        &:disabled + .checkboxText{
-                            color: #aaa;
-                        }
-                    }
-                    .form-check-input:checked[type=checkbox]{
-                        background-image: none;
-                    }
-                    .form-check-input:checked{
-                        background-color: $mainColor2;
-                        border-color: $mainColor2;
-                        &+.checkboxText{
-                            font-weight: bold;
-                        }
-                        
-                    }
-                }
-            }
+            height: 595px;
+            background: url(../../image/Front_image.png) center / cover no-repeat;
+            margin-bottom: 70px;
         }
-        .tovary{
-            text-align: center;
-            width: 100%;
-            .sortirovka__btnBox{
-                .sortirovka__btnBox_mobile{
-                    display: none;
-                }
-            }
-            .sortirovka__btnBox p{
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                max-width: 302px;
-                font-size: 13px;
-                color: $textColor1;
-                .vubranaBtn{
-                    color: $mainColor4;
-                }
-                .vubranaArrow{
-                    filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
-                }
-                .sortirovka__arrowBtn:not(.vubranaArrow){
-                    filter: invert(90%) sepia(2%) saturate(9%) hue-rotate(324deg) brightness(89%) contrast(77%);
-                }
-                span, img{
-                    cursor: pointer;
-                }
-            }
-            .katalog__table{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                width: 100%;
-                max-width: 855px;
-                margin: -15px;
-                padding-bottom: 90px;
-                .table__item{
-                    width: 100%;
-                    max-width: 255px;
-                    text-align: center;
-                    position: relative;
-                    padding: 0 15px 15px;
-                    margin: 15px;
-                    background-color: #fff;
-                    transition: box-shadow .2s ease-in-out;
-                    transition: transform .2s ease-in-out;
-                    p{
-                        margin-bottom: 0;
-                    }
-                    .item__image{
-                        width: 100%;
-                    }
-                    .item__name{
-                        font-size: 16px;
-                        color: $textColor1;
-                    }
-                    .item__nameEng{
-                        font-size: 12px;
-                        color: #aaa;
-                    }
-                    .item__price{
-                        font-size: 18px;
-                        color: $textColor1;
-                        .oldPrice{
-                            color: #aaa;
-                            font-size: 14px;
-                            text-decoration: line-through;
-                        }
-                    }
-                    .akciaFlag{
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #fee0e4;
-                        font-size: 11px;
-                        padding: 0px 8px;
-                    }
-                    .item__buyBtn{
-                        border: 1px solid $textColor1;
-                        font-size: 14px;
-                        background-color: #fee0e4;
-                        width: 100%;
-                        max-width: 260px;
-                        height: 45px;
-                        display: none;
-                        margin: 15px 0;
-                    }
-                    &:hover{
-                        border: 1px solid #fee0e4;
-                        box-shadow: 0px 0px 36.4px 3.6px rgba(0, 0, 0, 0.1);
-                        transform: scale(1.2, 1.2);
-                        z-index: 1;
-                        margin-bottom: -60px;
-                        .item__buyBtn{
-                            display: inline-block;
-                        }
-                        .item__name{
-                            font-size: 15px;
-                        }
-                    }
-                }
-            }
-            .katalog__seeMoreBtn{
-                display: inline-block;
-                color: $textColor1;
-                text-decoration: underline;
-                font-size: 14px;
-                padding-bottom: 62px;
-            }
-        }
-    }
-    .tovarPage{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 90px;
-        .tovarPage__imageBox{
-            max-width: 445px;
-            .imageBox__slider_big{
-            }
-            .imageBox__slider_small{
-                max-height: 92px;
-                max-width: 399px;
-                padding-left: 23px;
-                img{
-                    height: 90px;
-                    width: 90px;
-                };
-                .slick-current{
-                    img{
-                        border: 1px solid #fee0e4;
-                    }
-                }
-                .slick-slide{
-                    outline: none;
-                }
-                .prev{
-                    width: 23px;
-                    height: 45px;
-                }
-                .next{
-                    width: 23px;
-                    height: 45px;
-                }
-                .prev,
-                .next {
-                  position: absolute;
-                  top: 25%;
-                  z-index: 1;
-                  cursor: pointer;
-                }
-                .prev{
-                    left: -3px;
-                }
-                .next {
-                    right: -26px;
-                }
-            }
-        }
-        .tovarPage__description{
-            color: $textColor1;
-            .description__topBox{
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                max-width: 635px;
-                padding-bottom: 70px;
-                .title_mobile{
-                    font-size: 24px;
-                    display: none;
-                }
-                .subtitle_mobile{
-                    color: #aaa;
-                    font-size: 14px;
-                    margin-bottom: 28px;
-                    display: none;
-                }
-                .topBox__harakterustuku{
-                    max-width: 350px;
-                    .title{
-                        font-size: 24px;
-                    }
-                    .subtitle{
-                        color: #aaa;
-                        font-size: 14px;
-                        margin-bottom: 28px;
-                    }
-                    .harakterustuku__punktu{
-                        .punktu{
-                            display: flex;
-                            margin-bottom: 14px;
-                            &:last-child{
-                                margin-bottom: 0;
-                            }
-                            .punktu__name{
-                                color: #707070;
-                                font-size: 13px;
-                                display: inline-block;
-                                min-width: 95px;
-                            }
-                            .punktu__znachenja{
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
-                .topBox__buyForm{
-                    width: 100%;
-                    max-width: 255px;
-                    .priseBox{
-                        display: flex;
-                        justify-content: space-between;
-                        .priseBox__price{
-                            font-size: 24px;
-                            .priseBox__price_old{
-                                color: #aaa;
-                                font-size: 16px;
-                                text-decoration: line-through;
-                                margin-bottom: 0;
-                            }
-                        }
-                        .priseBox__akciaFlag{
-                            font-size: 14px;
-                            background-color: #fee0e4;
-                            width: 65px;
-                            height: 23px;
-                            text-align: center;
-                            line-height: 23px;
-                        }
-                    }
-                    .najavnistFlag{
-                        color: #3be2a4;
-                        font-size: 13px;
-                    }
-                    .vubirObjemy{
-                        width: 100%;
-                        height: 30px;
-                        border: 1px solid #eaeaea;
-                        font-size: 14px;
-                        padding-left: 9px;
-                        margin-bottom: 19px;
-                    }
-                    .kilkistBox{
-                        padding-bottom: 20px;
-                        .kilkistArea{
-                            color: #707070;
-                            font-size: 13px;
-                            .kilkist{
-                                width: 65px;
-                                height: 30px;
-                                border: 1px solid #eaeaea;
-                                text-align: center;
-                            }
-                            .kilkist__btnDown, .kilkist__btnUp{
-                                width: 24px;
-                                background-color: #fff;
-                                outline: none;
-                                border: none;
-                            }
-                        }
-                    }
-                    .kilkist__btnBuy{
-                        background-color: #fee0e4;
-                        border: 1px solid #000;
-                        outline: none;
-                        width: 100%;
-                        max-width: 255px;
-                        height: 45px;
-                        margin-bottom: 15px;
-                        &:active{
-                            border-color:  #fee0e4;
-                        }
-                    }
-                }
-                .kodTovary{
-                    color: #707070;
-                    font-size: 13px;
-                    margin-bottom: 23px;
-                    .kodTovary__number{
-                        color: $textColor1;
-                        font-size: 14px;
-                        font-weight: normal;
-                    }
-                }
-                .service{
-                    font-size: 13px;
-                    color: #707070;
-
-                    .dostavka{
-                        display: inline-block;
-                        padding-right: 37px;
-                        .dostavka__text, .garantia{
-                            text-decoration: underline;
-                        }
-                    }
-                    .garantia{
-                        display: inline-block;
-                        .garantia__text{
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
-            .description__bottomBox{
-                width: 100%;
-                max-width: 635px;
-                text-align: justify;
-                .nav{
-                    .nav-link{
-                        color: #aaa;
-                        font-size: 16px;
-                        border: 1px solid #fff;
-                        margin-right: 30px;
-                        padding-left: 0;
-                        &:hover{
-                            color: #e8bfc5;
-                        }
-                    }
-                    .active{
-                        background-color: #fff;
-                        border-radius: 0;
-                        border-bottom: 1px solid #e8bfc5;
-                        color: $textColor1;
-                    }
-                }
-                .tab-content{
-                    .otzuvBox{
-                        .btn{
-                            border: 1px solid #000;
-                            border-radius: 0;
-                            font-size: 17px;
-                            width: 100%;
-                            max-width: 160px;
-                            height: 45px;
-                            margin-bottom: 14px;
-                            &:active{
-                                border: 1px solid #fee0e4;
-                            }
-                            &:focus{
-                                box-shadow: none;
-                            }
-                            &:hover{
-                                background-color: #fee0e4;
-                            }
-                        }
-                        .otzuvContainer{
-                            padding-bottom: 24px;
-                            .otzuvContainer__item{
-                                border-top: 1px solid #eaeaea;
-                                padding: 20px 0 25px;
-                                &:last-child{
-                                    border-bottom: 1px solid #eaeaea;
-                                }
-                                .avtorName{
-                                    font-size: 16px;
-                                    .rozdilovaLinija{
-                                        color: #707070;
-                                    }
-                                    .avtorDate{
-                                        font-size: 12px;
-                                        color: #707070;
-                                    }
-                                }
-                                .avtorOtzuv__text{
-                                    color: #707070;
-                                    font-size: 14px;
-                                    margin-bottom: 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .vuSmotreli{
-        .vuSmotreli__title{
-            font-size: 24px;
-            text-align: center;
-            padding-bottom: 30px;
-        }
-        .vuSmotreli__table{
-            width: 100%;
-            max-width: 1080px;
-            padding-bottom: 80px;
-            .table__item{
-                width: 100%;
-                max-width: 255px;
-                text-align: center;
-                position: relative;
-                padding: 0 15px;
-                background-color: #fff;
-                p{
-                    margin-bottom: 0;
-                }
-                .item__image{
-                    width: 100%;
-                }
-                .item__name{
-                    font-size: 16px;
-                    color: $textColor1;
-                }
-                .item__nameEng{
-                    font-size: 12px;
-                    color: #aaa;
-                }
-                .item__price{
-                    font-size: 18px;
-                    color: $textColor1;
-                    .oldPrice{
-                        color: #aaa;
-                        font-size: 14px;
-                        text-decoration: line-through;
-                    }
-                }
-                .akciaFlag{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    background-color: #fee0e4;
-                    font-size: 11px;
-                    padding: 0px 8px;
-                }
-            }
-            .next{
-                position: absolute;
-                top: 25%;
-                z-index: 1;
-                width: 23px;
-                height: 45px;
-                right: -34px;
-                cursor: pointer;
-            }
-        }
-    }
-    .zakazPage{
         .title{
-            font-size: 24px;
-            text-align: center;
-            padding-top: 21px;
-            padding-bottom: 15px;
+            font-size: 36px;
+            padding-bottom: 5px;
+            &__sumbol{
+                font-size: 24px;
+            }
         }
-        .pageContainer{
-            padding-bottom: 70px;
-            display: flex;
-            justify-content: center;
-            .leftBlock{
-                .firstStepBox{
-                    padding-bottom: 5px;
-                    .firstStepBox__title{
-                        display: flex;
-                        align-items: center;
-                        font-size: 18px;
-                        span{
-                            border-radius: 50px;
-                            border: 1px solid #000;
-                            display: inline-block;
-                            font-size: 20px;
-                            width: 30px;
-                            height: 30px;
-                            text-align: center;
-                            margin-right: 9px;
-                            line-height: 29px;
-                        }
-                    }
-                    .firstStepBox__form{
-                        border-left: 1px solid #000;
-                        margin-left: 15px;
-                        padding: 30px 30px 35px 80px;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        width: 100%;
-                        max-width: 651px;
-                        .form__item{
-                            width: 100%;
-                            max-width: 255px;
-                            padding-bottom: 20px;
-                            p{
-                                margin-bottom: 0;
-                            }
-                            .item__name{
-                            color: #707070;
-                            font-size: 13px;
-                            .questionBtn{
-                                display: inline-block;
-                                width: 14px;
-                                height: 14px;
-                                background-color: #e8bfc5;
-                                color: #fff;
-                                font-size: 11px;
-                                border-radius: 50%;
-                                text-align: center;
-                            }
-                            // tooltip
-                            [data-tooltip]{
-                                position: relative;
-                                cursor: pointer;
-                            }
-                            [data-tooltip]:before,
-                            [data-tooltip]:after {
-                                font-size: 13px;
-                                position: absolute;
-                                display: none;
-                                opacity: 0;
-                            }
-                            [data-tooltip]:before {
-                                content: "";
-                                border: 5px solid transparent;
-                                z-index: 100;
-                            }
-                            [data-tooltip]:after {
-                                content: attr(data-tooltip);
-                                width: 255px;
-                                padding: 12px 11px;
-                                border-radius: 0px;
-                                background: #fee0e4;
-                                color: #000;
-                                z-index: 99;
-                            }
-                            [data-tooltip]:hover:before,
-                            [data-tooltip]:hover:after {
-                                display: block;
-                                opacity: 1;
-                            }
-                            [data-tooltip][data-flow="bottom"]::before {
-                                top: 100%;
-                                left: 0;
-                                transform: translate(0, 8px);
-                                border-top-width: 0;
-                                border-bottom-color: #fee0e4;
-                            }
-                            [data-tooltip][data-flow="bottom"]::after {
-                                top: calc(100% + 5px);
-                                left: -63px;
-                                transform: translate(0, 8px);
-                            }
-                            [data-tooltip=""]::after, [data-tooltip=""]::before {
-                                display: none;
-                            }
-                            }
-                            .item__input{
-                                border: 1px solid #eaeaea;
-                                width: 100%;
-                                padding-left: 5px;
-                            }
-                        }
-                        .form__nextStep{
-                            border: 1px solid #000;
-                            background-color: #fee0e4;
-                            font-size: 14px;
-                            outline: none;
-                            margin-left: auto;
-                            width: 100%;
-                            max-width: 255px;
-                            height: 45px;
-                        }
-                    }
-                }
-                .secondStepBox{
-                    padding-bottom: 5px;
-                    .firstStepBox__title{
-                        display: flex;
-                        align-items: center;
-                        font-size: 18px;
-                        span{
-                            border-radius: 50px;
-                            border: 1px solid #000;
-                            display: inline-block;
-                            font-size: 20px;
-                            width: 30px;
-                            height: 30px;
-                            text-align: center;
-                            margin-right: 9px;
-                            line-height: 29px;
-                        }
-                    }
-                    .secondStepBox__form{
-                        border-left: 1px solid #000;
-                        margin-left: 15px;
-                        padding: 30px 30px 35px 80px;
-                        width: 100%;
-                        max-width: 651px;
-                        .form__item{
-                            width: 100%;
-                            padding-bottom: 20px;
-                            p{
-                                margin-bottom: 0;
-                            }
-                            .item__name{
-                            color: #707070;
-                            font-size: 13px;
-                            }
-                            .item__select{
-                                border: 1px solid #eaeaea;
-                                width: 100%;
-                                padding: 13px 9px;
-                                font-size: 14px;
-                            }
-                        }
-                        .form__komentarii{
-                            text-decoration: underline;
-                            font-size: 13px;
-                            color: #707070;
-                            padding-bottom: 20px;
-                            margin-bottom: 0;
-                        }
-                        .komentarii__check{
-                            border-radius: 0;
-                            border-color: #eaeaea;
-                            margin-top: 0;
-                            width: 22px;
-                            height: 22px;
-                            box-shadow: none;
-                            margin: 0 12px 0 0;
-                            &:checked{
-                                background-color: red;
-                                background: url(../../image/checked.png) center / 70% no-repeat;
-                            }
-                        }
-                        .callbackBox{
-                            display: flex;
-                            align-items: center;
-                            padding-bottom: 30px;
-                        }
-                        .form-check-label{
-                            font-size: 13px;
-                            color: #707070;
-                        }
-                        .form__oformitBtn{
-                            display: block;
-                            border: 1px solid #000;
-                            background-color: #fee0e4;
-                            font-size: 14px;
-                            outline: none;
-                            margin-left: auto;
-                            width: 100%;
-                            max-width: 255px;
-                            height: 45px;
-                        }
-                    }
-                }
-            }
-            .rightBlock{
-                color: #000;
-                width: 100%;
-                max-width: 445px;
-                padding-left: 30px;
-                border-left: 1px solid #000;
-                .vashZakaz__titleBox{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: flex-end;
-                    margin-bottom: 0;
-                    padding-bottom: 16px;
-                    .titleBox__title{
-                        font-size: 18px;
-                    }
-                    .titleBox__backLink{
-                        font-size: 11px;
-                        text-decoration: underline;
-                    }
-                }
-                .vashZakaz__tovarBox{
-                    width: 100%;
-                    max-width: 480px;
-                    margin: 0 auto 15px;
-                    padding-right: 20px;
-                    max-height: 481px;
-                    overflow: hidden;
-                    overflow-y: auto;
-                    scrollbar-color: #000 #f5f5f5;
-                    scrollbar-width: thin; 
-                    &::-webkit-scrollbar{
-                        width: 5px;
-                        background-color: #f5f5f5;
-                    }
-                    &::-webkit-scrollbar-thumb{
-                        background-color: #000;
-                    }
-                    .tovarBox__item{
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        border-top: 1px solid #eaeaea;
-                        padding: 15px 0 15px;
-                        .deleteItem{
-                            float: right;
-                            font-size: 10px;
-                        }
-                        .item__photo{
-                            display: block;
-                            width: 100%;
-                            max-width: 130px;
-                        }
-                        .item__textBox{
-                            .textBox__name{
-                                font-size: 16px;
-                                margin-bottom: 0;
-                            }
-                            .textBox__name_eng{
-                                font-size: 11px;
-                                color: #aaa;
-                                margin-bottom: 0;
-                                padding-bottom: 10px;
-                            }
-                            .textBox__objem{
-                                font-size: 13px;
-                                padding-bottom: 13px;
-                                margin-bottom: 0;
-                            }
-                            .textBox__kilkistbox{
-                                display: flex;
-                                align-items: center;
-                                .kilkist{
-                                    border: 1px solid #eaeaea;
-                                    text-align: center;
-                                    width: 65px;
-                                    height: 30px;
-                                    font-size: 14px;
-                                    margin-right: 9px;
-                                }
-                                button{
-                                    border: none;
-                                    background-color: transparent;
-                                    outline: none;
-                                    margin-right: 8px;
-                                }
-                                .kilkist__vartist{
-                                    font-size: 16px;
-                                    margin-bottom: 0;
-                                    margin-left: auto;
-                                }
-                            }
-                        }
-                        &:last-child{
-                            border-bottom: 1px solid #eaeaea;
-                        }
-                    }
-                }
-                .cinaTotal{
-                    font-size: 16px;
-                    display: flex;
-                    justify-content: space-between;
-                    padding-right: 20px;
-                }
-            }
+        .subtitle{
+            font-size: 24px;
+            padding-bottom: 5px;
+        }
+        .annotation{
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            text-align: center;
+            line-height: 34px;
+            width: 100%;
+            max-width: 730px;
+            color: $textColor3;
+            font-size: 18px;
+        }
+        .siteTitle__btn:hover{
+            color: $textColor2;
         }
     }
+    // .breadcrumb__block{
+    //     .breadcrumb{
+    //         .breadcrumb-item{
+    //             font-size: 12px;
+    //             .breadcrumb-itemLink {
+    //                 color: #707070;
+    //             }
+    //             &:last-child{
+    //                 color: $textColor1;
+    //             }
+    //         }
+    //     }
+    // }
+    // .katalog__block{
+    //     .katalog__blockTitle{
+    //         font-size: 24px;
+    //         text-align: center;
+    //     }
+    //     .katalog__container{
+    //         display: flex;
+    //         justify-content: space-between;
+    //     }
+    //     .sortMenu{
+    //         width: 100%;
+    //         max-width: 255px;
+    //         .sortMenu__title_mobile, .sortMenu__btnBox{
+    //             display: none;
+    //         }
+    //         .accordion{
+    //             .accordion-item{
+    //                 .accordion-collapse, .accordion-button{
+    //                     border: none;
+    //                 }
+    //                 &:last-child .accordion-button{
+    //                     border-bottom: 1px solid $mainColor3;
+    //                 }
+    //                 .accordion-button{
+    //                     font-size: 16px;
+    //                     box-shadow: none;
+    //                     border-top: 1px solid $mainColor3;
+    //                     &:not(.collapsed){
+    //                         color: $textColor1;
+    //                         background-color: #ffffff;
+    //                         box-shadow: none;
+    //                         &::after{
+    //                             transform: none;
+    //                             background-image: url("../../image/minus.svg");
+    //                         }
+    //                     }
+    //                     &::after{
+    //                         font-size: 16px;
+    //                         background-image: url("../../image/plus.svg");
+    //                     }
+    //                 }
+    //             }
+    //             .list-group{
+    //                 color: $textColor1;
+    //                 .checkboxText>span{
+    //                     color: #707070;
+    //                 }
+    //                 .list-group-item{
+    //                     border: none;
+    //                     cursor: pointer;
+    //                 }
+    //                 .form-check-input[type=checkbox]{
+    //                     border-radius: 0;
+    //                     box-shadow: none;
+    //                     border-color: $mainColor3;
+    //                     &:disabled{
+    //                         border-color: #eaeaea ;
+    //                         opacity: 1;
+    //                     }
+    //                     &:disabled + .checkboxText{
+    //                         color: #aaa;
+    //                     }
+    //                 }
+    //                 .form-check-input:checked[type=checkbox]{
+    //                     background-image: none;
+    //                 }
+    //                 .form-check-input:checked{
+    //                     background-color: $mainColor2;
+    //                     border-color: $mainColor2;
+    //                     &+.checkboxText{
+    //                         font-weight: bold;
+    //                     }
+                        
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     .tovary{
+    //         text-align: center;
+    //         width: 100%;
+    //         .sortirovka__btnBox{
+    //             .sortirovka__btnBox_mobile{
+    //                 display: none;
+    //             }
+    //         }
+    //         .sortirovka__btnBox p{
+    //             display: flex;
+    //             justify-content: space-between;
+    //             width: 100%;
+    //             max-width: 302px;
+    //             font-size: 13px;
+    //             color: $textColor1;
+    //             .vubranaBtn{
+    //                 color: $mainColor4;
+    //             }
+    //             .vubranaArrow{
+    //                 filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
+    //             }
+    //             .sortirovka__arrowBtn:not(.vubranaArrow){
+    //                 filter: invert(90%) sepia(2%) saturate(9%) hue-rotate(324deg) brightness(89%) contrast(77%);
+    //             }
+    //             span, img{
+    //                 cursor: pointer;
+    //             }
+    //         }
+    //         .katalog__table{
+    //             display: flex;
+    //             flex-wrap: wrap;
+    //             justify-content: space-between;
+    //             width: 100%;
+    //             max-width: 855px;
+    //             margin: -15px;
+    //             padding-bottom: 90px;
+    //             .table__item{
+    //                 width: 100%;
+    //                 max-width: 255px;
+    //                 text-align: center;
+    //                 position: relative;
+    //                 padding: 0 15px 15px;
+    //                 margin: 15px;
+    //                 background-color: #fff;
+    //                 transition: box-shadow .2s ease-in-out;
+    //                 transition: transform .2s ease-in-out;
+    //                 p{
+    //                     margin-bottom: 0;
+    //                 }
+    //                 .item__image{
+    //                     width: 100%;
+    //                 }
+    //                 .item__name{
+    //                     font-size: 16px;
+    //                     color: $textColor1;
+    //                 }
+    //                 .item__nameEng{
+    //                     font-size: 12px;
+    //                     color: #aaa;
+    //                 }
+    //                 .item__price{
+    //                     font-size: 18px;
+    //                     color: $textColor1;
+    //                     .oldPrice{
+    //                         color: #aaa;
+    //                         font-size: 14px;
+    //                         text-decoration: line-through;
+    //                     }
+    //                 }
+    //                 .akciaFlag{
+    //                     position: absolute;
+    //                     top: 0;
+    //                     right: 0;
+    //                     background-color: #fee0e4;
+    //                     font-size: 11px;
+    //                     padding: 0px 8px;
+    //                 }
+    //                 .item__buyBtn{
+    //                     border: 1px solid $textColor1;
+    //                     font-size: 14px;
+    //                     background-color: #fee0e4;
+    //                     width: 100%;
+    //                     max-width: 260px;
+    //                     height: 45px;
+    //                     display: none;
+    //                     margin: 15px 0;
+    //                 }
+    //                 &:hover{
+    //                     border: 1px solid #fee0e4;
+    //                     box-shadow: 0px 0px 36.4px 3.6px rgba(0, 0, 0, 0.1);
+    //                     transform: scale(1.2, 1.2);
+    //                     z-index: 1;
+    //                     margin-bottom: -60px;
+    //                     .item__buyBtn{
+    //                         display: inline-block;
+    //                     }
+    //                     .item__name{
+    //                         font-size: 15px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         .katalog__seeMoreBtn{
+    //             display: inline-block;
+    //             color: $textColor1;
+    //             text-decoration: underline;
+    //             font-size: 14px;
+    //             padding-bottom: 62px;
+    //         }
+    //     }
+    // }
+    // .tovarPage{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     padding-bottom: 90px;
+    //     .tovarPage__imageBox{
+    //         max-width: 445px;
+    //         .imageBox__slider_big{
+    //         }
+    //         .imageBox__slider_small{
+    //             max-height: 92px;
+    //             max-width: 399px;
+    //             padding-left: 23px;
+    //             img{
+    //                 height: 90px;
+    //                 width: 90px;
+    //             };
+    //             .slick-current{
+    //                 img{
+    //                     border: 1px solid #fee0e4;
+    //                 }
+    //             }
+    //             .slick-slide{
+    //                 outline: none;
+    //             }
+    //             .prev{
+    //                 width: 23px;
+    //                 height: 45px;
+    //             }
+    //             .next{
+    //                 width: 23px;
+    //                 height: 45px;
+    //             }
+    //             .prev,
+    //             .next {
+    //               position: absolute;
+    //               top: 25%;
+    //               z-index: 1;
+    //               cursor: pointer;
+    //             }
+    //             .prev{
+    //                 left: -3px;
+    //             }
+    //             .next {
+    //                 right: -26px;
+    //             }
+    //         }
+    //     }
+    //     .tovarPage__description{
+    //         color: $textColor1;
+    //         .description__topBox{
+    //             display: flex;
+    //             justify-content: space-between;
+    //             width: 100%;
+    //             max-width: 635px;
+    //             padding-bottom: 70px;
+    //             .title_mobile{
+    //                 font-size: 24px;
+    //                 display: none;
+    //             }
+    //             .subtitle_mobile{
+    //                 color: #aaa;
+    //                 font-size: 14px;
+    //                 margin-bottom: 28px;
+    //                 display: none;
+    //             }
+    //             .topBox__harakterustuku{
+    //                 max-width: 350px;
+    //                 .title{
+    //                     font-size: 24px;
+    //                 }
+    //                 .subtitle{
+    //                     color: #aaa;
+    //                     font-size: 14px;
+    //                     margin-bottom: 28px;
+    //                 }
+    //                 .harakterustuku__punktu{
+    //                     .punktu{
+    //                         display: flex;
+    //                         margin-bottom: 14px;
+    //                         &:last-child{
+    //                             margin-bottom: 0;
+    //                         }
+    //                         .punktu__name{
+    //                             color: #707070;
+    //                             font-size: 13px;
+    //                             display: inline-block;
+    //                             min-width: 95px;
+    //                         }
+    //                         .punktu__znachenja{
+    //                             font-size: 14px;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //             .topBox__buyForm{
+    //                 width: 100%;
+    //                 max-width: 255px;
+    //                 .priseBox{
+    //                     display: flex;
+    //                     justify-content: space-between;
+    //                     .priseBox__price{
+    //                         font-size: 24px;
+    //                         .priseBox__price_old{
+    //                             color: #aaa;
+    //                             font-size: 16px;
+    //                             text-decoration: line-through;
+    //                             margin-bottom: 0;
+    //                         }
+    //                     }
+    //                     .priseBox__akciaFlag{
+    //                         font-size: 14px;
+    //                         background-color: #fee0e4;
+    //                         width: 65px;
+    //                         height: 23px;
+    //                         text-align: center;
+    //                         line-height: 23px;
+    //                     }
+    //                 }
+    //                 .najavnistFlag{
+    //                     color: #3be2a4;
+    //                     font-size: 13px;
+    //                 }
+    //                 .vubirObjemy{
+    //                     width: 100%;
+    //                     height: 30px;
+    //                     border: 1px solid #eaeaea;
+    //                     font-size: 14px;
+    //                     padding-left: 9px;
+    //                     margin-bottom: 19px;
+    //                 }
+    //                 .kilkistBox{
+    //                     padding-bottom: 20px;
+    //                     .kilkistArea{
+    //                         color: #707070;
+    //                         font-size: 13px;
+    //                         .kilkist{
+    //                             width: 65px;
+    //                             height: 30px;
+    //                             border: 1px solid #eaeaea;
+    //                             text-align: center;
+    //                         }
+    //                         .kilkist__btnDown, .kilkist__btnUp{
+    //                             width: 24px;
+    //                             background-color: #fff;
+    //                             outline: none;
+    //                             border: none;
+    //                         }
+    //                     }
+    //                 }
+    //                 .kilkist__btnBuy{
+    //                     background-color: #fee0e4;
+    //                     border: 1px solid #000;
+    //                     outline: none;
+    //                     width: 100%;
+    //                     max-width: 255px;
+    //                     height: 45px;
+    //                     margin-bottom: 15px;
+    //                     &:active{
+    //                         border-color:  #fee0e4;
+    //                     }
+    //                 }
+    //             }
+    //             .kodTovary{
+    //                 color: #707070;
+    //                 font-size: 13px;
+    //                 margin-bottom: 23px;
+    //                 .kodTovary__number{
+    //                     color: $textColor1;
+    //                     font-size: 14px;
+    //                     font-weight: normal;
+    //                 }
+    //             }
+    //             .service{
+    //                 font-size: 13px;
+    //                 color: #707070;
+
+    //                 .dostavka{
+    //                     display: inline-block;
+    //                     padding-right: 37px;
+    //                     .dostavka__text, .garantia{
+    //                         text-decoration: underline;
+    //                     }
+    //                 }
+    //                 .garantia{
+    //                     display: inline-block;
+    //                     .garantia__text{
+    //                         text-decoration: underline;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         .description__bottomBox{
+    //             width: 100%;
+    //             max-width: 635px;
+    //             text-align: justify;
+    //             .nav{
+    //                 .nav-link{
+    //                     color: #aaa;
+    //                     font-size: 16px;
+    //                     border: 1px solid #fff;
+    //                     margin-right: 30px;
+    //                     padding-left: 0;
+    //                     &:hover{
+    //                         color: #e8bfc5;
+    //                     }
+    //                 }
+    //                 .active{
+    //                     background-color: #fff;
+    //                     border-radius: 0;
+    //                     border-bottom: 1px solid #e8bfc5;
+    //                     color: $textColor1;
+    //                 }
+    //             }
+    //             .tab-content{
+    //                 .otzuvBox{
+    //                     .btn{
+    //                         border: 1px solid #000;
+    //                         border-radius: 0;
+    //                         font-size: 17px;
+    //                         width: 100%;
+    //                         max-width: 160px;
+    //                         height: 45px;
+    //                         margin-bottom: 14px;
+    //                         &:active{
+    //                             border: 1px solid #fee0e4;
+    //                         }
+    //                         &:focus{
+    //                             box-shadow: none;
+    //                         }
+    //                         &:hover{
+    //                             background-color: #fee0e4;
+    //                         }
+    //                     }
+    //                     .otzuvContainer{
+    //                         padding-bottom: 24px;
+    //                         .otzuvContainer__item{
+    //                             border-top: 1px solid #eaeaea;
+    //                             padding: 20px 0 25px;
+    //                             &:last-child{
+    //                                 border-bottom: 1px solid #eaeaea;
+    //                             }
+    //                             .avtorName{
+    //                                 font-size: 16px;
+    //                                 .rozdilovaLinija{
+    //                                     color: #707070;
+    //                                 }
+    //                                 .avtorDate{
+    //                                     font-size: 12px;
+    //                                     color: #707070;
+    //                                 }
+    //                             }
+    //                             .avtorOtzuv__text{
+    //                                 color: #707070;
+    //                                 font-size: 14px;
+    //                                 margin-bottom: 0;
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // .vuSmotreli{
+    //     .vuSmotreli__title{
+    //         font-size: 24px;
+    //         text-align: center;
+    //         padding-bottom: 30px;
+    //     }
+    //     .vuSmotreli__table{
+    //         width: 100%;
+    //         max-width: 1080px;
+    //         padding-bottom: 80px;
+    //         .table__item{
+    //             width: 100%;
+    //             max-width: 255px;
+    //             text-align: center;
+    //             position: relative;
+    //             padding: 0 15px;
+    //             background-color: #fff;
+    //             p{
+    //                 margin-bottom: 0;
+    //             }
+    //             .item__image{
+    //                 width: 100%;
+    //             }
+    //             .item__name{
+    //                 font-size: 16px;
+    //                 color: $textColor1;
+    //             }
+    //             .item__nameEng{
+    //                 font-size: 12px;
+    //                 color: #aaa;
+    //             }
+    //             .item__price{
+    //                 font-size: 18px;
+    //                 color: $textColor1;
+    //                 .oldPrice{
+    //                     color: #aaa;
+    //                     font-size: 14px;
+    //                     text-decoration: line-through;
+    //                 }
+    //             }
+    //             .akciaFlag{
+    //                 position: absolute;
+    //                 top: 0;
+    //                 right: 0;
+    //                 background-color: #fee0e4;
+    //                 font-size: 11px;
+    //                 padding: 0px 8px;
+    //             }
+    //         }
+    //         .next{
+    //             position: absolute;
+    //             top: 25%;
+    //             z-index: 1;
+    //             width: 23px;
+    //             height: 45px;
+    //             right: -34px;
+    //             cursor: pointer;
+    //         }
+    //     }
+    // }
+    // .zakazPage{
+    //     .title{
+    //         font-size: 24px;
+    //         text-align: center;
+    //         padding-top: 21px;
+    //         padding-bottom: 15px;
+    //     }
+    //     .pageContainer{
+    //         padding-bottom: 70px;
+    //         display: flex;
+    //         justify-content: center;
+    //         .leftBlock{
+    //             .firstStepBox{
+    //                 padding-bottom: 5px;
+    //                 .firstStepBox__title{
+    //                     display: flex;
+    //                     align-items: center;
+    //                     font-size: 18px;
+    //                     span{
+    //                         border-radius: 50px;
+    //                         border: 1px solid #000;
+    //                         display: inline-block;
+    //                         font-size: 20px;
+    //                         width: 30px;
+    //                         height: 30px;
+    //                         text-align: center;
+    //                         margin-right: 9px;
+    //                         line-height: 29px;
+    //                     }
+    //                 }
+    //                 .firstStepBox__form{
+    //                     border-left: 1px solid #000;
+    //                     margin-left: 15px;
+    //                     padding: 30px 30px 35px 80px;
+    //                     display: flex;
+    //                     flex-wrap: wrap;
+    //                     justify-content: space-between;
+    //                     width: 100%;
+    //                     max-width: 651px;
+    //                     .form__item{
+    //                         width: 100%;
+    //                         max-width: 255px;
+    //                         padding-bottom: 20px;
+    //                         p{
+    //                             margin-bottom: 0;
+    //                         }
+    //                         .item__name{
+    //                         color: #707070;
+    //                         font-size: 13px;
+    //                         .questionBtn{
+    //                             display: inline-block;
+    //                             width: 14px;
+    //                             height: 14px;
+    //                             background-color: #e8bfc5;
+    //                             color: #fff;
+    //                             font-size: 11px;
+    //                             border-radius: 50%;
+    //                             text-align: center;
+    //                         }
+    //                         // tooltip
+    //                         [data-tooltip]{
+    //                             position: relative;
+    //                             cursor: pointer;
+    //                         }
+    //                         [data-tooltip]:before,
+    //                         [data-tooltip]:after {
+    //                             font-size: 13px;
+    //                             position: absolute;
+    //                             display: none;
+    //                             opacity: 0;
+    //                         }
+    //                         [data-tooltip]:before {
+    //                             content: "";
+    //                             border: 5px solid transparent;
+    //                             z-index: 100;
+    //                         }
+    //                         [data-tooltip]:after {
+    //                             content: attr(data-tooltip);
+    //                             width: 255px;
+    //                             padding: 12px 11px;
+    //                             border-radius: 0px;
+    //                             background: #fee0e4;
+    //                             color: #000;
+    //                             z-index: 99;
+    //                         }
+    //                         [data-tooltip]:hover:before,
+    //                         [data-tooltip]:hover:after {
+    //                             display: block;
+    //                             opacity: 1;
+    //                         }
+    //                         [data-tooltip][data-flow="bottom"]::before {
+    //                             top: 100%;
+    //                             left: 0;
+    //                             transform: translate(0, 8px);
+    //                             border-top-width: 0;
+    //                             border-bottom-color: #fee0e4;
+    //                         }
+    //                         [data-tooltip][data-flow="bottom"]::after {
+    //                             top: calc(100% + 5px);
+    //                             left: -63px;
+    //                             transform: translate(0, 8px);
+    //                         }
+    //                         [data-tooltip=""]::after, [data-tooltip=""]::before {
+    //                             display: none;
+    //                         }
+    //                         }
+    //                         .item__input{
+    //                             border: 1px solid #eaeaea;
+    //                             width: 100%;
+    //                             padding-left: 5px;
+    //                         }
+    //                     }
+    //                     .form__nextStep{
+    //                         border: 1px solid #000;
+    //                         background-color: #fee0e4;
+    //                         font-size: 14px;
+    //                         outline: none;
+    //                         margin-left: auto;
+    //                         width: 100%;
+    //                         max-width: 255px;
+    //                         height: 45px;
+    //                     }
+    //                 }
+    //             }
+    //             .secondStepBox{
+    //                 padding-bottom: 5px;
+    //                 .firstStepBox__title{
+    //                     display: flex;
+    //                     align-items: center;
+    //                     font-size: 18px;
+    //                     span{
+    //                         border-radius: 50px;
+    //                         border: 1px solid #000;
+    //                         display: inline-block;
+    //                         font-size: 20px;
+    //                         width: 30px;
+    //                         height: 30px;
+    //                         text-align: center;
+    //                         margin-right: 9px;
+    //                         line-height: 29px;
+    //                     }
+    //                 }
+    //                 .secondStepBox__form{
+    //                     border-left: 1px solid #000;
+    //                     margin-left: 15px;
+    //                     padding: 30px 30px 35px 80px;
+    //                     width: 100%;
+    //                     max-width: 651px;
+    //                     .form__item{
+    //                         width: 100%;
+    //                         padding-bottom: 20px;
+    //                         p{
+    //                             margin-bottom: 0;
+    //                         }
+    //                         .item__name{
+    //                         color: #707070;
+    //                         font-size: 13px;
+    //                         }
+    //                         .item__select{
+    //                             border: 1px solid #eaeaea;
+    //                             width: 100%;
+    //                             padding: 13px 9px;
+    //                             font-size: 14px;
+    //                         }
+    //                     }
+    //                     .form__komentarii{
+    //                         text-decoration: underline;
+    //                         font-size: 13px;
+    //                         color: #707070;
+    //                         padding-bottom: 20px;
+    //                         margin-bottom: 0;
+    //                     }
+    //                     .komentarii__check{
+    //                         border-radius: 0;
+    //                         border-color: #eaeaea;
+    //                         margin-top: 0;
+    //                         width: 22px;
+    //                         height: 22px;
+    //                         box-shadow: none;
+    //                         margin: 0 12px 0 0;
+    //                         &:checked{
+    //                             background-color: red;
+    //                             background: url(../../image/checked.png) center / 70% no-repeat;
+    //                         }
+    //                     }
+    //                     .callbackBox{
+    //                         display: flex;
+    //                         align-items: center;
+    //                         padding-bottom: 30px;
+    //                     }
+    //                     .form-check-label{
+    //                         font-size: 13px;
+    //                         color: #707070;
+    //                     }
+    //                     .form__oformitBtn{
+    //                         display: block;
+    //                         border: 1px solid #000;
+    //                         background-color: #fee0e4;
+    //                         font-size: 14px;
+    //                         outline: none;
+    //                         margin-left: auto;
+    //                         width: 100%;
+    //                         max-width: 255px;
+    //                         height: 45px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         .rightBlock{
+    //             color: #000;
+    //             width: 100%;
+    //             max-width: 445px;
+    //             padding-left: 30px;
+    //             border-left: 1px solid #000;
+    //             .vashZakaz__titleBox{
+    //                 display: flex;
+    //                 justify-content: space-between;
+    //                 align-items: flex-end;
+    //                 margin-bottom: 0;
+    //                 padding-bottom: 16px;
+    //                 .titleBox__title{
+    //                     font-size: 18px;
+    //                 }
+    //                 .titleBox__backLink{
+    //                     font-size: 11px;
+    //                     text-decoration: underline;
+    //                 }
+    //             }
+    //             .vashZakaz__tovarBox{
+    //                 width: 100%;
+    //                 max-width: 480px;
+    //                 margin: 0 auto 15px;
+    //                 padding-right: 20px;
+    //                 max-height: 481px;
+    //                 overflow: hidden;
+    //                 overflow-y: auto;
+    //                 scrollbar-color: #000 #f5f5f5;
+    //                 scrollbar-width: thin; 
+    //                 &::-webkit-scrollbar{
+    //                     width: 5px;
+    //                     background-color: #f5f5f5;
+    //                 }
+    //                 &::-webkit-scrollbar-thumb{
+    //                     background-color: #000;
+    //                 }
+    //                 .tovarBox__item{
+    //                     display: flex;
+    //                     align-items: center;
+    //                     justify-content: space-between;
+    //                     border-top: 1px solid #eaeaea;
+    //                     padding: 15px 0 15px;
+    //                     .deleteItem{
+    //                         float: right;
+    //                         font-size: 10px;
+    //                     }
+    //                     .item__photo{
+    //                         display: block;
+    //                         width: 100%;
+    //                         max-width: 130px;
+    //                     }
+    //                     .item__textBox{
+    //                         .textBox__name{
+    //                             font-size: 16px;
+    //                             margin-bottom: 0;
+    //                         }
+    //                         .textBox__name_eng{
+    //                             font-size: 11px;
+    //                             color: #aaa;
+    //                             margin-bottom: 0;
+    //                             padding-bottom: 10px;
+    //                         }
+    //                         .textBox__objem{
+    //                             font-size: 13px;
+    //                             padding-bottom: 13px;
+    //                             margin-bottom: 0;
+    //                         }
+    //                         .textBox__kilkistbox{
+    //                             display: flex;
+    //                             align-items: center;
+    //                             .kilkist{
+    //                                 border: 1px solid #eaeaea;
+    //                                 text-align: center;
+    //                                 width: 65px;
+    //                                 height: 30px;
+    //                                 font-size: 14px;
+    //                                 margin-right: 9px;
+    //                             }
+    //                             button{
+    //                                 border: none;
+    //                                 background-color: transparent;
+    //                                 outline: none;
+    //                                 margin-right: 8px;
+    //                             }
+    //                             .kilkist__vartist{
+    //                                 font-size: 16px;
+    //                                 margin-bottom: 0;
+    //                                 margin-left: auto;
+    //                             }
+    //                         }
+    //                     }
+    //                     &:last-child{
+    //                         border-bottom: 1px solid #eaeaea;
+    //                     }
+    //                 }
+    //             }
+    //             .cinaTotal{
+    //                 font-size: 16px;
+    //                 display: flex;
+    //                 justify-content: space-between;
+    //                 padding-right: 20px;
+    //             }
+    //         }
+    //     }
+    // }
     @media screen and (max-width: 576px) {
         .katalog__block{
             .katalog__container{

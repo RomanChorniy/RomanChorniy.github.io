@@ -1,39 +1,39 @@
 .footer{
-    background-color: #ededed;
-    margin-left: -15px;
-    margin-right: -15px;
+    background-color: $mainColor2;
     .footerContainer{
         display: flex;
-        justify-content: space-between;
         width: 100%;
         max-width: 1110px;
         margin: 0 auto;
         padding: 50px 0 20px 0;
         .footerHeaderBox{
+            padding-right: 114px;
+            .footerLogo{
+                width: 160px;
+            }
+        }
+        .footerLinkBox{
+            padding-right: 108px;
+            .link{
+                padding: 0 10px;
+            }
+        }
+        .footerPhoneBox{
+            font-size: 16px;
             color: $textColor1;
-            .headerBox__header2{
-                font-size: 15px;
-            }
-            .headerBox__header1{
-                font-size: 15px;
-                text-transform: uppercase;
+            padding-right: 156px;
+            .phoneNumber{
+                display: block;
+                padding-bottom: 10px;
+                font-size: 16px;
             }
         }
-        .footerAddresBox{
-            font-size: 15px;
+        .workTime{
             color: $textColor1;
-            p {
-                margin-bottom: 0;
-            }
-            .footerAddresBox__adress{
-                margin-bottom: 18px;
-            }
+            font-size: 14px;
+            line-height: 22.5px;
         }
-        .footerMapBox{
-            width: 445px;
-            height: 225px;
-            background-color: #fff;
-        }
+        
     }
     @media screen and (max-width: 576px){
         .footerContainer{

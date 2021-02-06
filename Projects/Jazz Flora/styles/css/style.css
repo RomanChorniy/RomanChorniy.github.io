@@ -345,46 +345,43 @@ p {
 }
 
 .footer {
-  background-color: #ededed;
-  margin-left: -15px;
-  margin-right: -15px;
+  background-color: #000;
 }
 .footer .footerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   max-width: 1110px;
   margin: 0 auto;
   padding: 50px 0 20px 0;
 }
 .footer .footerContainer .footerHeaderBox {
+  padding-right: 114px;
+}
+.footer .footerContainer .footerHeaderBox .footerLogo {
+  width: 160px;
+}
+.footer .footerContainer .footerLinkBox {
+  padding-right: 108px;
+}
+.footer .footerContainer .footerLinkBox .link {
+  padding: 0 10px;
+}
+.footer .footerContainer .footerPhoneBox {
+  font-size: 16px;
   color: #D7B46A;
+  padding-right: 156px;
 }
-.footer .footerContainer .footerHeaderBox .headerBox__header2 {
-  font-size: 15px;
+.footer .footerContainer .footerPhoneBox .phoneNumber {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 16px;
 }
-.footer .footerContainer .footerHeaderBox .headerBox__header1 {
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.footer .footerContainer .footerAddresBox {
-  font-size: 15px;
+.footer .footerContainer .workTime {
   color: #D7B46A;
-}
-.footer .footerContainer .footerAddresBox p {
-  margin-bottom: 0;
-}
-.footer .footerContainer .footerAddresBox .footerAddresBox__adress {
-  margin-bottom: 18px;
-}
-.footer .footerContainer .footerMapBox {
-  width: 445px;
-  height: 225px;
-  background-color: #fff;
+  font-size: 14px;
+  line-height: 22.5px;
 }
 @media screen and (max-width: 576px) {
   .footer .footerContainer {
@@ -456,6 +453,7 @@ p {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 114px;
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox {
   display: -webkit-box;

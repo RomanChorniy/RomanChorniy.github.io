@@ -160,14 +160,15 @@
             }
         }
     }
-    .Produkcia{
-        .ProdukciaTitle{
+    .produkcia{
+        text-align: center;
+        .produkciaTitle{
             font-size: 18px;
             text-align: center;
             text-transform: uppercase;
             padding-bottom: 20px;
         }
-        .Produkcia__category{
+        .produkcia__category{
             padding-bottom: 37px;
             .category__box{
                 display: flex;
@@ -201,186 +202,113 @@
                 }
             }
         }
-        .katalog__container{
+        .produkcia__katalog{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-        }
-        .sortMenu{
-            width: 100%;
-            max-width: 255px;
-            .sortMenu__title_mobile, .sortMenu__btnBox{
-                display: none;
-            }
-            .accordion{
-                .accordion-item{
-                    .accordion-collapse, .accordion-button{
-                        border: none;
-                    }
-                    &:last-child .accordion-button{
-                        border-bottom: 1px solid $mainColor3;
-                    }
-                    .accordion-button{
-                        font-size: 16px;
-                        box-shadow: none;
-                        border-top: 1px solid $mainColor3;
-                        &:not(.collapsed){
-                            color: $textColor1;
-                            background-color: #ffffff;
-                            box-shadow: none;
-                            &::after{
-                                transform: none;
-                                background-image: url("../../image/minus.svg");
-                            }
-                        }
-                        &::after{
-                            font-size: 16px;
-                            background-image: url("../../image/plus.svg");
-                        }
-                    }
-                }
-                .list-group{
-                    color: $textColor1;
-                    .checkboxText>span{
-                        color: #707070;
-                    }
-                    .list-group-item{
-                        border: none;
-                        cursor: pointer;
-                    }
-                    .form-check-input[type=checkbox]{
-                        border-radius: 0;
-                        box-shadow: none;
-                        border-color: $mainColor3;
-                        &:disabled{
-                            border-color: #eaeaea ;
-                            opacity: 1;
-                        }
-                        &:disabled + .checkboxText{
-                            color: #aaa;
-                        }
-                    }
-                    .form-check-input:checked[type=checkbox]{
-                        background-image: none;
-                    }
-                    .form-check-input:checked{
-                        background-color: $mainColor2;
-                        border-color: $mainColor2;
-                        &+.checkboxText{
-                            font-weight: bold;
-                        }
-                        
-                    }
-                }
-            }
-        }
-        .tovary{
-            text-align: center;
-            width: 100%;
-            .sortirovka__btnBox{
-                .sortirovka__btnBox_mobile{
-                    display: none;
-                }
-            }
-            .sortirovka__btnBox p{
+            margin-bottom: 50px;
+            .cart{
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
+                align-items: center;
                 width: 100%;
-                max-width: 302px;
-                font-size: 13px;
-                color: $textColor1;
-                .vubranaBtn{
-                    color: $mainColor4;
-                }
-                .vubranaArrow{
-                    filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
-                }
-                .sortirovka__arrowBtn:not(.vubranaArrow){
-                    filter: invert(90%) sepia(2%) saturate(9%) hue-rotate(324deg) brightness(89%) contrast(77%);
-                }
-                span, img{
-                    cursor: pointer;
-                }
-            }
-            .katalog__table{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                width: 100%;
-                max-width: 855px;
-                margin: -15px;
-                padding-bottom: 90px;
-                .table__item{
-                    width: 100%;
-                    max-width: 255px;
+                max-width: 255px;
+                padding: 38px 10px 0;
+                position: relative;
+                background-color: $mainColor3;
+                transition: transform .3s ease-in-out;
+                .imageBox{
                     text-align: center;
-                    position: relative;
-                    padding: 0 15px 15px;
-                    margin: 15px;
-                    background-color: #fff;
-                    transition: box-shadow .2s ease-in-out;
-                    transition: transform .2s ease-in-out;
-                    p{
-                        margin-bottom: 0;
-                    }
-                    .item__image{
-                        width: 100%;
-                    }
-                    .item__name{
-                        font-size: 16px;
-                        color: $textColor1;
-                    }
-                    .item__nameEng{
-                        font-size: 12px;
-                        color: #aaa;
-                    }
-                    .item__price{
-                        font-size: 18px;
-                        color: $textColor1;
-                        .oldPrice{
-                            color: #aaa;
-                            font-size: 14px;
-                            text-decoration: line-through;
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .cart__title{
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-bottom: 4px;
+                }
+                .cart__size{
+                    color: #8c8c8c;
+                    font-size: 14px;
+                    padding-bottom: 7px;
+                }
+                .cart__price{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 10px;
+                    .price__roznica{
+                        text-align: right;
+                        border-right: 1px solid #e5e5e5;
+                        padding-right: 10px;
+                        .price__syma{
+                            font-size: 16px;
+                        }
+                        .price__name{
+                            font-size: 10px;
+                            color: #8c8c8c;
                         }
                     }
-                    .akciaFlag{
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        background-color: #fee0e4;
-                        font-size: 11px;
-                        padding: 0px 8px;
-                    }
-                    .item__buyBtn{
-                        border: 1px solid $textColor1;
-                        font-size: 14px;
-                        background-color: #fee0e4;
-                        width: 100%;
-                        max-width: 260px;
-                        height: 45px;
-                        display: none;
-                        margin: 15px 0;
-                    }
-                    &:hover{
-                        border: 1px solid #fee0e4;
-                        box-shadow: 0px 0px 36.4px 3.6px rgba(0, 0, 0, 0.1);
-                        transform: scale(1.2, 1.2);
-                        z-index: 1;
-                        margin-bottom: -60px;
-                        .item__buyBtn{
-                            display: inline-block;
+                    .price__opt{
+                        text-align: left;
+                        padding-left: 10px;
+                        .price__syma{
+                            font-size: 16px;
+                            color: $textColor1;
                         }
-                        .item__name{
-                            font-size: 15px;
+                        .price__name{
+                            font-size: 10px;
+                            color: #8c8c8c;
                         }
                     }
                 }
+                .cart__byuBtn{
+                    display: none;
+                    text-transform: uppercase;
+                    margin-bottom: 0px;
+                    width: 100%;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                    &:hover{
+                        color: $textColor2;
+                    }
+                }
+                &:hover{
+                    z-index: 1;
+                    margin-bottom: -60px;
+                    transform: scale(1.078, 1.2);
+                    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+                    .cart__byuBtn{
+                        display: block;
+                    }
+                }
             }
-            .katalog__seeMoreBtn{
-                display: inline-block;
-                color: $textColor1;
+        }
+        .produkcia__seeMoreBtn{
+            display: inline-block;
+            color: #8c8c8c;   
+            font-size: 14px;
+            text-decoration: underline;
+            margin-bottom: 60px;      
+        }
+        .propozucia{
+            font-size: 16px;
+            text-align: left;
+            width: 100%;
+            max-width: 918px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+            &__text{
+                padding-bottom: 30px;
+                b{
+                    font-weight: 500;
+                }
+            }
+            &__link{
+                color: #8c8c8c;
                 text-decoration: underline;
-                font-size: 14px;
-                padding-bottom: 62px;
             }
         }
     }

@@ -60,6 +60,7 @@ p {
   font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
 }
 .siteBtn:hover {
@@ -772,6 +773,188 @@ p {
 .components .produkcia .propozucia__link {
   color: #8c8c8c;
   text-decoration: underline;
+}
+.components .tovar {
+  padding: 70px 0 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.components .tovar .imageBox {
+  padding: 0px 42px 36px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.components .tovar .description__title {
+  font-weight: 500;
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+.components .tovar .description__parametr {
+  font-size: 13px;
+  color: #8c8c8c;
+  padding-bottom: 15px;
+}
+.components .tovar .description__parametr_black {
+  font-size: 16px;
+  color: #000;
+}
+.components .tovar .description__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+.components .tovar .description__price .price__roznica, .components .tovar .description__price .price__opt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.components .tovar .description__price .price__roznica .price__vartist, .components .tovar .description__price .price__opt .price__vartist {
+  font-size: 21px;
+}
+.components .tovar .description__price .price__roznica .text, .components .tovar .description__price .price__opt .text {
+  color: #8c8c8c;
+  font-size: 14px;
+}
+.components .tovar .description__price .price__roznica {
+  border-right: 1px solid #e5e5e5;
+}
+.components .tovar .description__buttonBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 48px;
+}
+.components .tovar .description__buttonBox .zakaz {
+  margin-right: 3px;
+}
+.components .tovar .description__buttonBox .zakaz:hover {
+  color: #fff;
+}
+.components .tovar .description__buttonBox .consultation {
+  margin-left: 3px;
+  color: #000;
+  border-color: #000;
+}
+.components .tovar .description__buttonBox .consultation:hover {
+  background-color: #000;
+  color: #fff;
+}
+.components .tovar .description__ymovuZnuzhku {
+  font-size: 14px;
+}
+.components .tovar .description__ymovuZnuzhku .znuzhkaLink {
+  text-decoration: underline;
+  color: #000;
+}
+.components .vuSmotreli {
+  padding-bottom: 80px;
+}
+.components .vuSmotreli .vuSmotreli__title {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.components .vuSmotreli .vuSmotreli__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.components .vuSmotreli .vuSmotreli__table .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 255px;
+  padding: 0 10px;
+  position: relative;
+  background-color: #fff;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .imageBox {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .cart__title {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .cart__size {
+  color: #8c8c8c;
+  font-size: 14px;
+  padding-bottom: 7px;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .cart__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__roznica {
+  text-align: right;
+  border-right: 1px solid #e5e5e5;
+  padding-right: 10px;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__roznica .price__syma {
+  font-size: 16px;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__roznica .price__name {
+  font-size: 10px;
+  color: #8c8c8c;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__opt {
+  text-align: left;
+  padding-left: 10px;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__opt .price__syma {
+  font-size: 16px;
+  color: #D7B46A;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__opt .price__name {
+  font-size: 10px;
+  color: #8c8c8c;
 }
 @media screen and (max-width: 576px) {
   .components .katalog__block .katalog__container {

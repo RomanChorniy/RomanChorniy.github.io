@@ -138,19 +138,28 @@
             }
         }
     }
-    // .breadcrumb__block{
-    //     .breadcrumb{
-    //         .breadcrumb-item{
-    //             font-size: 12px;
-    //             .breadcrumb-itemLink {
-    //                 color: #707070;
-    //             }
-    //             &:last-child{
-    //                 color: $textColor1;
-    //             }
-    //         }
-    //     }
-    // }
+    .breadcrumb{
+        .breadcrumb__box{
+            padding: 10px 0;
+            .box__item{
+                display: inline;
+                font-size: 12px;
+                color: #8c8c8c;
+                &+.box__item::before{
+                    padding: 4px;
+                    color: $textColor3;
+                    content: "/\00a0";
+                }
+                .box__itemLink{
+                    color: $textColor3;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
     // .katalog__block{
     //     .katalog__blockTitle{
     //         font-size: 24px;

@@ -584,6 +584,256 @@ p {
 .components .breadcrumb .breadcrumb__box .box__item .box__itemLink:hover {
   text-decoration: underline;
 }
+.components .Produkcia .ProdukciaTitle {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.components .Produkcia .Produkcia__category {
+  padding-bottom: 37px;
+}
+.components .Produkcia .Produkcia__category .category__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.components .Produkcia .Produkcia__category .category__box .box__item {
+  text-align: center;
+  display: block;
+  border-left: 1px solid #e5e5e5;
+  font-size: 12px;
+  padding: 0 24px;
+}
+.components .Produkcia .Produkcia__category .category__box .box__item:last-child {
+  border-right: 1px solid #e5e5e5;
+}
+.components .Produkcia .Produkcia__category .category__box .box__item .box__itemLink {
+  color: #515151;
+  font-size: 14px;
+}
+.components .Produkcia .Produkcia__category .category__box .active {
+  border-color: #D7B46A;
+}
+.components .Produkcia .Produkcia__category .category__box .active + .box__item {
+  border-color: #D7B46A;
+  border-right-color: #e5e5e5;
+}
+.components .Produkcia .Produkcia__category .category__box .active:last-child {
+  border-right: 1px solid #D7B46A;
+}
+.components .Produkcia .Produkcia__category .category__box .active .box__itemLink {
+  color: #D7B46A;
+}
+.components .Produkcia .katalog__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.components .Produkcia .sortMenu {
+  width: 100%;
+  max-width: 255px;
+}
+.components .Produkcia .sortMenu .sortMenu__title_mobile, .components .Produkcia .sortMenu .sortMenu__btnBox {
+  display: none;
+}
+.components .Produkcia .sortMenu .accordion .accordion-item .accordion-collapse, .components .Produkcia .sortMenu .accordion .accordion-item .accordion-button {
+  border: none;
+}
+.components .Produkcia .sortMenu .accordion .accordion-item:last-child .accordion-button {
+  border-bottom: 1px solid #fff;
+}
+.components .Produkcia .sortMenu .accordion .accordion-item .accordion-button {
+  font-size: 16px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-top: 1px solid #fff;
+}
+.components .Produkcia .sortMenu .accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: #D7B46A;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.components .Produkcia .sortMenu .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  background-image: url("../../image/minus.svg");
+}
+.components .Produkcia .sortMenu .accordion .accordion-item .accordion-button::after {
+  font-size: 16px;
+  background-image: url("../../image/plus.svg");
+}
+.components .Produkcia .sortMenu .accordion .list-group {
+  color: #D7B46A;
+}
+.components .Produkcia .sortMenu .accordion .list-group .checkboxText > span {
+  color: #707070;
+}
+.components .Produkcia .sortMenu .accordion .list-group .list-group-item {
+  border: none;
+  cursor: pointer;
+}
+.components .Produkcia .sortMenu .accordion .list-group .form-check-input[type=checkbox] {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #fff;
+}
+.components .Produkcia .sortMenu .accordion .list-group .form-check-input[type=checkbox]:disabled {
+  border-color: #eaeaea;
+  opacity: 1;
+}
+.components .Produkcia .sortMenu .accordion .list-group .form-check-input[type=checkbox]:disabled + .checkboxText {
+  color: #aaa;
+}
+.components .Produkcia .sortMenu .accordion .list-group .form-check-input:checked[type=checkbox] {
+  background-image: none;
+}
+.components .Produkcia .sortMenu .accordion .list-group .form-check-input:checked {
+  background-color: #000;
+  border-color: #000;
+}
+.components .Produkcia .sortMenu .accordion .list-group .form-check-input:checked + .checkboxText {
+  font-weight: bold;
+}
+.components .Produkcia .tovary {
+  text-align: center;
+  width: 100%;
+}
+.components .Produkcia .tovary .sortirovka__btnBox .sortirovka__btnBox_mobile {
+  display: none;
+}
+.components .Produkcia .tovary .sortirovka__btnBox p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 302px;
+  font-size: 13px;
+  color: #D7B46A;
+}
+.components .Produkcia .tovary .sortirovka__btnBox p .vubranaBtn {
+  color: #ebc8cc;
+}
+.components .Produkcia .tovary .sortirovka__btnBox p .vubranaArrow {
+  -webkit-filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
+          filter: invert(1) sepia(1) saturate(20) hue-rotate(275deg);
+}
+.components .Produkcia .tovary .sortirovka__btnBox p .sortirovka__arrowBtn:not(.vubranaArrow) {
+  -webkit-filter: invert(90%) sepia(2%) saturate(9%) hue-rotate(324deg) brightness(89%) contrast(77%);
+          filter: invert(90%) sepia(2%) saturate(9%) hue-rotate(324deg) brightness(89%) contrast(77%);
+}
+.components .Produkcia .tovary .sortirovka__btnBox p span, .components .Produkcia .tovary .sortirovka__btnBox p img {
+  cursor: pointer;
+}
+.components .Produkcia .tovary .katalog__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 855px;
+  margin: -15px;
+  padding-bottom: 90px;
+}
+.components .Produkcia .tovary .katalog__table .table__item {
+  width: 100%;
+  max-width: 255px;
+  text-align: center;
+  position: relative;
+  padding: 0 15px 15px;
+  margin: 15px;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.components .Produkcia .tovary .katalog__table .table__item p {
+  margin-bottom: 0;
+}
+.components .Produkcia .tovary .katalog__table .table__item .item__image {
+  width: 100%;
+}
+.components .Produkcia .tovary .katalog__table .table__item .item__name {
+  font-size: 16px;
+  color: #D7B46A;
+}
+.components .Produkcia .tovary .katalog__table .table__item .item__nameEng {
+  font-size: 12px;
+  color: #aaa;
+}
+.components .Produkcia .tovary .katalog__table .table__item .item__price {
+  font-size: 18px;
+  color: #D7B46A;
+}
+.components .Produkcia .tovary .katalog__table .table__item .item__price .oldPrice {
+  color: #aaa;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+.components .Produkcia .tovary .katalog__table .table__item .akciaFlag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fee0e4;
+  font-size: 11px;
+  padding: 0px 8px;
+}
+.components .Produkcia .tovary .katalog__table .table__item .item__buyBtn {
+  border: 1px solid #D7B46A;
+  font-size: 14px;
+  background-color: #fee0e4;
+  width: 100%;
+  max-width: 260px;
+  height: 45px;
+  display: none;
+  margin: 15px 0;
+}
+.components .Produkcia .tovary .katalog__table .table__item:hover {
+  border: 1px solid #fee0e4;
+  -webkit-box-shadow: 0px 0px 36.4px 3.6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 36.4px 3.6px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.2, 1.2);
+      -ms-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  z-index: 1;
+  margin-bottom: -60px;
+}
+.components .Produkcia .tovary .katalog__table .table__item:hover .item__buyBtn {
+  display: inline-block;
+}
+.components .Produkcia .tovary .katalog__table .table__item:hover .item__name {
+  font-size: 15px;
+}
+.components .Produkcia .tovary .katalog__seeMoreBtn {
+  display: inline-block;
+  color: #D7B46A;
+  text-decoration: underline;
+  font-size: 14px;
+  padding-bottom: 62px;
+}
 @media screen and (max-width: 576px) {
   .components .katalog__block .katalog__container {
     display: block;

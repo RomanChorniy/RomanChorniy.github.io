@@ -57,6 +57,31 @@
             align-items: flex-end;
         }
     }
+    .marks{
+        padding-bottom: 65px;
+        .title{
+            color: $textColor3;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 40px;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+        }
+        .marks__slider{
+            padding-bottom: 48px;
+            .marks__logo img{
+                margin: 0 auto;
+            }
+            .prev, .next {
+                position: absolute;
+                bottom: 0;
+                cursor: pointer;
+            }
+            .next{
+                left: 35px;
+            }
+        }
+    }
     .whatWeDo{
         .whatWeDo__container{
             display: flex;

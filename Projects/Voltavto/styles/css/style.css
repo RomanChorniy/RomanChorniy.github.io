@@ -364,6 +364,31 @@ p {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+.components .marks {
+  padding-bottom: 65px;
+}
+.components .marks .title {
+  color: #d0d0d0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.components .marks .marks__slider {
+  padding-bottom: 48px;
+}
+.components .marks .marks__slider .marks__logo img {
+  margin: 0 auto;
+}
+.components .marks .marks__slider .prev, .components .marks .marks__slider .next {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+.components .marks .marks__slider .next {
+  left: 35px;
+}
 .components .whatWeDo .whatWeDo__container {
   display: -webkit-box;
   display: -ms-flexbox;

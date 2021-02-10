@@ -342,6 +342,28 @@ p {
 .components .baner .linkBar .link:last-child {
   margin-bottom: 0;
 }
+.components .weOffer {
+  padding: 30px 0 88px;
+}
+.components .weOffer .title {
+  color: #d0d0d0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.components .weOffer .offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
 .components .whatWeDo .whatWeDo__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,7 +411,7 @@ p {
   margin-right: 157px;
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox .text__btn:hover {
-  color: #000;
+  color: #d0d0d0;
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox {
   display: -webkit-box;
@@ -455,7 +477,7 @@ p {
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox .text__btn {
   border-color: #000;
-  color: #000;
+  color: #d0d0d0;
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox .text__btn:hover {
   background-color: #000;
@@ -471,11 +493,11 @@ p {
 }
 .components .breadcrumb .breadcrumb__box .box__item + .box__item::before {
   padding: 4px;
-  color: #000;
+  color: #d0d0d0;
   content: "/ ";
 }
 .components .breadcrumb .breadcrumb__box .box__item .box__itemLink {
-  color: #000;
+  color: #d0d0d0;
   text-decoration: none;
 }
 .components .breadcrumb .breadcrumb__box .box__item .box__itemLink:hover {
@@ -698,7 +720,7 @@ p {
 }
 .components .tovar .description__parametr_black {
   font-size: 16px;
-  color: #000;
+  color: #d0d0d0;
 }
 .components .tovar .description__price {
   display: -webkit-box;
@@ -743,7 +765,7 @@ p {
 }
 .components .tovar .description__buttonBox .consultation {
   margin-left: 3px;
-  color: #000;
+  color: #d0d0d0;
   border-color: #000;
 }
 .components .tovar .description__buttonBox .consultation:hover {
@@ -755,7 +777,7 @@ p {
 }
 .components .tovar .description__ymovuZnuzhku .znuzhkaLink {
   text-decoration: underline;
-  color: #000;
+  color: #d0d0d0;
 }
 .components .vuSmotreli {
   padding-bottom: 80px;

@@ -1,0 +1,99 @@
+.footer{
+    background-color: $mainColor2;
+    .footerContainer{
+        display: flex;
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 20px 0;
+        color: $textColor1;
+        .footerInfo{
+            width: 100%;
+            .footerflexItem{
+                width: 33%;
+            }
+            .titleBox{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 25px;
+                .footerHeaderBox{
+                    display: inline-block;
+                    img{
+                        width: 80px;
+                    }
+                }
+                .vopros{
+                    width: 158px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+                .linkList{
+                    .link{
+                        margin-right: 20px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+                
+            }
+            .contactBox{
+                display: flex;
+                justify-content: space-between;
+                .footerHeader{
+                    .footer__title{
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        margin-bottom: 30px;
+                    }
+                    .footer__subtitle{
+                        font-size: 14px;
+                        display: inline-block;
+                        width: 158px;
+                        font-weight: 500;
+                        line-height: 21px;
+                    }
+                }
+                .footerPhoneBox{
+                    font-size: 16px;
+                    color: $textColor1;
+                    .phoneNumber{
+                        display: block;
+                        padding-bottom: 20px;
+                        font-size: 16px;
+                    }
+                }
+                .adresaBox{
+                    .addresa{
+                        line-height: 24px;
+                        padding-bottom: 15px;
+                    }
+                    .workTime{
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        .map{
+            background-color: #d0d0d0;
+            width: 350px;
+        }
+    }
+    .copyright{
+        font-size: 9px;
+        color: $textColor1;
+        padding-bottom: 30px;
+    }
+    @media screen and (max-width: 576px){
+        .footerContainer{
+            flex-direction: column;
+            align-items: center;
+            padding: 25px 15px 28px;
+            .footerHeaderBox, .footerLinkBox, .footerPhoneBox{
+                padding: 0 0 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="dynamicViewport" name="viewport" content="width=1140, user-scalable=1">
+    <script>
+        function changeViewport() {
+            var mvp = document.getElementById("dynamicViewport");
+
+            if (screen.width < 576) {
+                mvp.setAttribute("content", "width=device-width, initial-scale=1, user-scalable=1");
+            } else {
+                mvp.setAttribute("content", "width=1140, user-scalable=1");
+            }
+        }
+
+        changeViewport();
+
+        window.onresize = function (event) {
+            changeViewport();
+        };
+    </script>
+    <title>VoltAvto. Главная</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__titleBox">
+                <div class="burgerMenu__openBtn">
+                    <div class="burgerMenu__openBtn_line"></div>
+                    <div class="burgerMenu__openBtn_line"></div>
+                    <div class="burgerMenu__openBtn_line"></div>
+                </div>
+                <div class="logoBox">
+                    <img src="image/logo.png" alt="jazz flora. Home decore" class="titleImage">
+                </div>
+                <div class="telephoneList">
+                    <a href="tel:0688686808" class="phoneNumber">068 868 68 08</a>
+                    <div class="verticalLine"></div>
+                    <a href="tel:0688682808" class="phoneNumber">068 868 28 08</a>
+                    <div class="verticalLine"></div>
+                    <a href="tel:0688683808" class="phoneNumber">068 868 38 08</a>
+                </div>
+                <div class="socialList">
+                    <a href="http://" class="socialLink"><img src="image/Viber.svg" alt="Viber.svg"></a>
+                    <a href="http://" class="socialLink"><img src="image/Telegram.svg" alt="Telegram.svg"></a>
+                    <a href="http://" class="socialLink"><img src="image/Watsapp.svg" alt="Watsapp.svg"></a>
+                </div>
+                <div class="language">
+                    <a href="http://">Ру</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="components">
+            <div id="component-1" class="component">
+                <div class="baner">
+                    <div class="baner__container container">
+                        <h2 class="subtitle font-regular">НОВЫЕ<br><span
+                                class="subtitle_bold font-bold">электромобили</span><br><span
+                                class="subtitle_smaller">из
+                                КИТАЯ</span>
+                        </h2>
+                        <p class="motto">Подберем <span class="motto_white">></span> Доставим <span
+                                class="motto_white">></span> Оформим</p>
+                        <button type="button" class="siteBtn baner__btn">Оставить заявку</button>
+                    </div>
+                    <div class="linkBar">
+                        <a href="#" class="link"><img src="image/youtybe.svg" alt="youtybe.svg"></a>
+                        <a href="#" class="link"><img src="image/Telegram_white.svg" alt="Telegram_white.svg"></a>
+                        <a href="#" class="link"><img src="image/instagram_white.svg" alt="instagram_white.svg"></a>
+                        <a href="#" class="link"><img src="image/facebook_white.svg" alt="facebook_white.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="component-2" class="component">
+                <div class="whatWeDo">
+                    <div class="whatWeDo__container conteiner">
+                        <div class="whatWeDo__blackBox">
+                            <div class="blackBox__image"></div>
+                            <div class="blackBox__textBox">
+                                <p class="text">
+                                    Искусственные цветы и деревья Real Touch, которые выглядят, как
+                                    живые, красивый сезонный декор, приуроченный к важным событиям и праздникам, кашпо,
+                                    вазы, подсвечники и свечи – у нас есть все, чтобы сделать ваш дом уникальным и
+                                    запоминающимся.
+                                </p>
+                                <button type="button" class="text__btn siteBtn">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="whatWeDo__goldBox">
+                            <div class="goldBox__textBox">
+                                <p class="text">
+                                    Jazz Flora® оформляет любые комнаты и залы, будь то в доме, квартире, офисе,
+                                    ресторане, отеле, аэропорту, другой коммерческой и административной недвижимости.
+                                    Руками наших дизайнеров были декорированы VIP и бизнес-залы аэропорта Шереметьево и
+                                    сотни других объектов. Клиенты Jazz Flora® всегда получают то, чего хотят и остаются
+                                    довольны нашей работой.
+                                </p>
+                                <button type="button" class="text__btn siteBtn">Подробнее</button>
+                            </div>
+                            <div class="goldBox__image"></div>
+                        </div>
+                        <div class="whatWeDo__whiteBox">
+                            <div class="whiteBox__image"></div>
+                            <div class="whiteBox__textBox">
+                                <p class="text">
+                                    Мы фотографируем свои работы, чтобы продемонстрировать их заказчикам. Вы воочию
+                                    можете убедиться в том, что обращаетесь к настоящим профессионалам, знающим свое
+                                    дело. Просто изучите наше портфолио и получите визуальное подтверждение этим словам.
+                                </p>
+                                <button type="button" class="text__btn siteBtn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerInfo">
+                <div class="titleBox">
+                    <a class="footerHeaderBox footerflexItem" href="#">
+                        <img src="image/logo_white.png" alt="jazz flora. Home decore" class="footerLogo">
+                    </a>
+                    <div class="btnBox footerflexItem">
+                        <button type="button" class="siteBtn vopros">Задать вопрос</button>
+                    </div>
+                    <div class="linkList footerflexItem">
+                        <a href="#" class="link"><img src="image/youtybe.svg" alt="youtybe.svg"></a>
+                        <a href="#" class="link"><img src="image/Telegram_white.svg" alt="Telegram_white.svg"></a>
+                        <a href="#" class="link"><img src="image/instagram_white.svg" alt="instagram_white.svg"></a>
+                        <a href="#" class="link"><img src="image/facebook_white.svg" alt="facebook_white.svg"></a>
+                    </div>
+                </div>
+                <div class="contactBox">
+                    <div class="footerHeader footerflexItem">
+                        <h1 class="footer__title">voltavto</h1>
+                        <h2 class="footer__subtitle">Новые электромобили из Китая</h2>
+                    </div>
+                    <div class="footerPhoneBox footerflexItem">
+                        <a href="tel:0688686808" class="phoneNumber">+38 (068) 868 68 08</a>
+                        <a href="tel:0688682808" class="phoneNumber">+38 (068) 868 28 08</a>
+                        <a href="tel:0688683808" class="phoneNumber">+38 (068) 868 38 08</a>
+                        <a href="mailto:voltauto2020@gmail.com" class="email">voltauto2020@gmail.com</a>
+                    </div>
+                    <div class="adresaBox footerflexItem">
+                        <p class="addresa">Киев<br>пр-т Григоренко, 15/27<br>(Вход с улицы)</p>
+                        <p class="workTime">Время роботы:<br>Пн-Пт 10:00-19:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map"></div>
+        </div>
+        <p class="copyright container">© 2019 Сайт разработан и обслуживается компанией «Бизнес-формула»</p>
+    </footer>
+</body>
+
+</html>

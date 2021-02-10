@@ -1,0 +1,101 @@
+.header{
+    width: 100%;
+    background-color: $mainColor1;
+    padding: 11px 15px;
+    .header__container{
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        .header__titleBox{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logoBox{
+                flex: 1;
+                padding-left: 66px;
+            }
+            .telephoneList{
+                display: flex;
+                align-items: center;
+                padding-right: 16px;
+                .phoneNumber{
+                    font-size: 18px;
+                    color: $textColor2;
+                }
+                .verticalLine{
+                    background-color: $mainColor3;
+                    width: 1px;
+                    height: 16px;
+                    display: inline-block;
+                    margin: 0 8px;
+                }
+            }
+            .burgerMenu__openBtn{
+                position: relative;
+                height: 16px;
+                width: 30px;
+                cursor: pointer;
+                .burgerMenu__openBtn_line{
+                    background-color: $mainColor2;
+                    height: 2px;
+                    width: 30px;
+                    position: absolute;
+                    top: 50%;
+                    &:first-child{
+                        top: 0px;
+                    }
+                    &:last-child{
+                        top: 16px
+                    }
+                }
+
+            }
+            .socialList{
+                .socialLink{
+                    margin-right: 9px;
+                    &:last-child{
+                        margin-right: 27px;
+                    }
+                }
+            }
+            .language{
+                a{
+                    color: $textColor2;
+                    font-size: 12px;
+                }
+            }
+        }
+        .header__nav{
+            display: flex;
+            justify-content: space-between;
+            .navLink{
+                color: $textColor2;
+                text-transform: uppercase;
+                font-size: 13px;
+            }
+        }
+    }
+    @media screen and (max-width: 576px){
+        padding: 32px 15px 25px;
+        .header__container{
+            .header__titleBox{
+                padding-bottom: 0;
+                .titleImage{
+                    width: 138px;
+                }
+                .telephoneList{
+                    display: none;
+                }
+                .telephoneIcon{
+                    display: block;
+                }
+                .burgerMenu__openBtn{
+                    display: block;
+                }
+            }
+            .header__nav{
+                display: none;
+            }
+        }
+    }
+}

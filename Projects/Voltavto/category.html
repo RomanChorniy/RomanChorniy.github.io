@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="dynamicViewport" name="viewport" content="width=1140, user-scalable=1">
+    <script>
+        function changeViewport() {
+            var mvp = document.getElementById("dynamicViewport");
+
+            if (screen.width < 576) {
+                mvp.setAttribute("content", "width=device-width, initial-scale=1, user-scalable=1");
+            } else {
+                mvp.setAttribute("content", "width=1140, user-scalable=1");
+            }
+        }
+
+        changeViewport();
+
+        window.onresize = function (event) {
+            changeViewport();
+        };
+    </script>
+    <title>Jazz Flora. Category</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__titleBox">
+                <img src="image/logo.png" alt="jazz flora. Home decore" class="titleImage">
+                <div class="telephoneList">
+                    <a href="tel:84957285805" class="phoneNumber">8 495 728 58 05</a>
+                    <img src="image/down-arrow.svg" alt="down-arrow.svg" class="telephoneList__button arrowDown">
+                    <a href="tel:88007755948" class="phoneNumber hide">8 800 775 59 48</a>
+                    <a href="tel:84952100065" class="phoneNumber hide">8 495 210 00 65</a>
+                    <a href="tel:89253880488" class="phoneNumber hide">8 925 388 04 88</a>
+                    <a href="tel:88002008158" class="phoneNumber hide">8 800 200 81 58</a>
+                    <div class="workTime hide">
+                        <p>Пн-Пт 9-19</p>
+                        <p>Сб-Вс Выходной</p>
+                    </div>
+                    <button type="button" class="callback hide">Перезвоните мне</button>
+                </div>
+                <img src="image/phone.svg" alt="phone.svg" class="telephoneIcon">
+                <div class="burgerMenu__openBtn">
+                    <div class="burgerMenu__openBtn_line"></div>
+                    <div class="burgerMenu__openBtn_line"></div>
+                    <div class="burgerMenu__openBtn_line"></div>
+                </div>
+            </div>
+            <nav class="header__nav font-regular">
+                <a href="#" class="navLink">главная</a>
+                <a href="#" class="navLink">о компании</a>
+                <a href="#" class="navLink">оформление</a>
+                <a href="#" class="navLink">фотопроекты</a>
+                <a href="#" class="navLink">продукция</a>
+                <a href="#" class="navLink">доставка и оплата</a>
+                <a href="#" class="navLink">контакты</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="components">
+            <div id="component-1" class="component">
+                <nav class="breadcrumb container">
+                    <ul class="breadcrumb__box font-regular">
+                        <li class="box__item"><a class="box__itemLink" href="#">Jazz Flora</a></li>
+                        <li class="box__item active">Продукция</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="component-2" class="component">
+                <div class="produkcia container">
+                    <h2 class="produkciaTitle font-regular">продукция</h2>
+                    <nav class="produkcia__category">
+                        <ul class="category__box font-regular">
+                            <li class="box__item active"><a class="box__itemLink" href="#">Все</a></li>
+                            <li class="box__item"><a class="box__itemLink" href="#">Цветы</a></li>
+                            <li class="box__item"><a class="box__itemLink" href="#">Растения</a></li>
+                            <li class="box__item"><a class="box__itemLink" href="#">Деревья</a></li>
+                            <li class="box__item"><a class="box__itemLink" href="#">Вазы</a></li>
+                            <li class="box__item"><a class="box__itemLink" href="#">Маленькие кашпо</a></li>
+                            <li class="box__item"><a class="box__itemLink" href="#">Большие кашпо</a></li>
+                            <li class="box__item"><a class="box__itemLink" href="#">Декор</a></li>
+                        </ul>
+                    </nav>
+                    <div class="produkcia__katalog">
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok1.png" alt="Gorshok1">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok2.png" alt="Gorshok2">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok3.png" alt="Gorshok3">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok4.png" alt="Gorshok4">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok5.png" alt="Gorshok5">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok6.png" alt="Gorshok6">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok7.png" alt="Gorshok7">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok8.png" alt="Gorshok8">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok9.png" alt="Gorshok9">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok10.png" alt="Gorshok10">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok11.png" alt="Gorshok11">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                        <div class="cart">
+                            <div class="imageBox">
+                                <img class="cart__image" src="image/Gorshok12.png" alt="Gorshok12">
+                            </div>
+                            <h6 class="cart__title">Горшок кубический белый</h6>
+                            <p class="cart__size">30x30x30</p>
+                            <div class="cart__price">
+                                <div class="price__roznica">
+                                    <p class="price__syma font-bold">8 749 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">розница</p>
+                                </div>
+                                <div class="price__opt">
+                                    <p class="price__syma font-bold">7 000 <span
+                                            class="rybil font-regular">&#8381;</span></p>
+                                    <p class="price__name font-regular">опт</p>
+                                </div>
+                            </div>
+                            <button type="button" class="siteBtn cart__byuBtn">заказать</button>
+                        </div>
+                    </div>
+                    <a href="#" class="produkcia__seeMoreBtn">Смотреть еще</a>
+                    <article class="propozucia font-regular">
+                        <p class="propozucia__text">Предлагаем оптовые поставки интерьерного декора и искусственной
+                            флористики Real Touch от европейского производителя по предзаказу. В ассортименте вазы,
+                            кашпо и вазоны, канделябры и свечи, сезонный праздничный декор, искусственные цветы и
+                            деревья, которые выглядят, как живые. Сезонные коллекции декора выполнены в разных стилях и
+                            гармонично сочетаются, создавая уют и отличное настроение.</p>
+                        <p class="propozucia__text">Лично ознакомиться с декором и искусственными растениями можно в
+                            нашем демонстрационном зале по адресу: 127591, <b>Москва, Дмитровское шоссе, д. 100, стр. 2,
+                                БЦ
+                                Норд-Хаус</b></p>
+                        <a href="" class="propozucia__link">Условия сотрудничества</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerContainer">
+            <a class="footerHeaderBox" href="#">
+                <img src="image/logo.png" alt="jazz flora. Home decore" class="footerLogo">
+            </a>
+            <div class="footerLinkBox">
+                <a href="#"><img src="image/Instagram.svg" alt="Instagram" class="link"></a>
+                <a href="#"><img src="image/Facebook.svg" alt="Facebook" class="link"></a>
+            </div>
+            <div class="footerPhoneBox">
+                <a href="tel:84957285805" class="phoneNumber">8 495 728 58 05</a>
+                <a href="tel:88007755948" class="phoneNumber">8 800 775 59 48</a>
+                <a href="tel:84952100065" class="phoneNumber">8 495 210 00 65</a>
+                <a href="tel:89253880488" class="phoneNumber">8 925 388 04 88</a>
+                <a href="tel:88002008158" class="phoneNumber">8 800 200 81 58</a>
+            </div>
+            <div class="workTime">
+                <p>Пн-Пт 9-19</p>
+                <p>Сб-Вс Выходной</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

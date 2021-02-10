@@ -1,0 +1,682 @@
+.components{
+    .baner{
+        background: url(../../image/baner.png) center / cover no-repeat;
+        padding: 77px 0 83px;
+        position: relative;
+        .subtitle{
+            font-size: 72px;
+            color: $textColor1;
+            line-height: 69px;
+            padding-bottom: 8px;
+            &_bold{
+                font-size: 52px;
+                text-transform: uppercase;
+                line-height: 50px;
+            }
+            &_smaller{
+                font-size: 50px;
+            }
+        }
+        .motto{
+            color: $textColor2;
+            font-size: 21px;
+            line-height: 55px;
+            padding-bottom: 21px;
+            &_white{
+                color: $textColor1;
+            }
+        }
+        .linkBar{
+            position: absolute;
+            top: 50%;
+            right: 21px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            .link{
+                margin-bottom: 18px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .whatWeDo{
+        .whatWeDo__container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 114px;
+            .whatWeDo__blackBox{
+                display: flex;
+                flex-direction: column;
+                width: 44%;
+                padding-right: 11px;
+                .blackBox__image{
+                    background: url(../../image/Black_box_image.png) center / cover no-repeat;
+                    height: 460px;
+                    margin-bottom: 10px;
+                }
+                .blackBox__textBox{
+                    background-color: $mainColor2;
+                    color: $textColor2;
+                    font-size: 18px;
+                    line-height: 34px;
+                    padding: 54px 78px 61px 0;
+                    .text{
+                        width: 100%;
+                        max-width: 380px;
+                        margin: 0;
+                        margin-left: auto;
+                        padding-bottom: 50px;
+                    }
+                    .text__btn{
+                        display: block;
+                        margin-left: auto;
+                        margin-right: 157px;
+                        &:hover{
+                            color: $textColor3;
+                        }
+                    }
+                }
+            }
+            .whatWeDo__goldBox{
+                display: flex;
+                flex-direction: column;
+                width: 56%;
+                .goldBox__image{
+                    background: url(../../image/Gold_box_image.png) center / cover no-repeat;
+                    height: 420px;
+                }
+                .goldBox__textBox{
+                    background-color: $mainColor1;
+                    margin-bottom: 10px;
+                    padding: 80px 0 60px 74px;
+                    color: $textColor2;
+                    font-size: 18px;
+                    line-height: 34px;
+                    flex: 1;
+                    .text{
+                        width: 100%;
+                        max-width: 570px;
+                        padding-bottom: 50px;
+                    }
+                    .text__btn{
+                        border-color: $mainColor3;
+                        color: $textColor2;
+                        &:hover{
+                            background-color: $mainColor3;
+                            color: $textColor1;
+                        }
+                    }
+                }
+            }
+            .whatWeDo__whiteBox{
+                display: flex;
+                width: 100%;
+                margin-top: 10px;
+                .whiteBox__image{
+                    background: url(../../image/White_box_image.png) center / cover no-repeat;
+                    width: 56%;
+                    margin-right: 11px;
+                }
+                .whiteBox__textBox{
+                    background-color: #F7F1E5;
+                    width: 43%;
+                    padding: 62px 0 56px 75px;
+                    .text{
+                        width: 100%;
+                        max-width: 379px;
+                        font-size: 18px;
+                        line-height: 34px;
+                        padding-bottom: 50px;
+                    }
+                    .text__btn{
+                        border-color: $mainColor2;
+                        color: $textColor3;
+                        &:hover{
+                            background-color: $mainColor2;
+                            color: #F7F1E5;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+    .breadcrumb{
+        .breadcrumb__box{
+            padding: 10px 0;
+            .box__item{
+                display: inline;
+                font-size: 12px;
+                color: #8c8c8c;
+                &+.box__item::before{
+                    padding: 4px;
+                    color: $textColor3;
+                    content: "/\00a0";
+                }
+                .box__itemLink{
+                    color: $textColor3;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .produkcia{
+        text-align: center;
+        .produkciaTitle{
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+        .produkcia__category{
+            padding-bottom: 37px;
+            .category__box{
+                display: flex;
+                justify-content: center;
+                .box__item{
+                    text-align: center;
+                    display: block;
+                    border-left: 1px solid #e5e5e5;
+                    font-size: 12px;
+                    padding: 0 24px;
+                    &:last-child{
+                        border-right: 1px solid #e5e5e5;
+                    }
+                    .box__itemLink{
+                        color: #515151;
+                        font-size: 14px;
+                    }
+                }
+                .active{
+                    border-color: $mainColor1;
+                    &+.box__item{
+                        border-color: $mainColor1;
+                        border-right-color: #e5e5e5;
+                    }
+                    &:last-child{
+                        border-right: 1px solid $mainColor1;
+                    }
+                    .box__itemLink{
+                        color: $textColor1;
+                    }
+                }
+            }
+        }
+        .produkcia__katalog{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .cart{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                max-width: 255px;
+                padding: 38px 10px 0;
+                position: relative;
+                background-color: $mainColor3;
+                transition: transform .3s ease-in-out;
+                .imageBox{
+                    text-align: center;
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .cart__title{
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-bottom: 4px;
+                }
+                .cart__size{
+                    color: #8c8c8c;
+                    font-size: 14px;
+                    padding-bottom: 7px;
+                }
+                .cart__price{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 10px;
+                    .price__roznica{
+                        text-align: right;
+                        border-right: 1px solid #e5e5e5;
+                        padding-right: 10px;
+                        .price__syma{
+                            font-size: 16px;
+                        }
+                        .price__name{
+                            font-size: 10px;
+                            color: #8c8c8c;
+                        }
+                    }
+                    .price__opt{
+                        text-align: left;
+                        padding-left: 10px;
+                        .price__syma{
+                            font-size: 16px;
+                            color: $textColor1;
+                        }
+                        .price__name{
+                            font-size: 10px;
+                            color: #8c8c8c;
+                        }
+                    }
+                }
+                .cart__byuBtn{
+                    display: none;
+                    text-transform: uppercase;
+                    margin-bottom: 0px;
+                    width: 100%;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                    &:hover{
+                        color: $textColor2;
+                    }
+                }
+                &:hover{
+                    z-index: 1;
+                    margin-bottom: -60px;
+                    transform: scale(1.078, 1.2);
+                    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+                    .cart__byuBtn{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .produkcia__seeMoreBtn{
+            display: inline-block;
+            color: #8c8c8c;   
+            font-size: 14px;
+            text-decoration: underline;
+            margin-bottom: 60px;      
+        }
+        .propozucia{
+            font-size: 16px;
+            text-align: left;
+            width: 100%;
+            max-width: 918px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+            &__text{
+                padding-bottom: 30px;
+                b{
+                    font-weight: 500;
+                }
+            }
+            &__link{
+                color: #8c8c8c;
+                text-decoration: underline;
+            }
+        }
+    }
+    .tovar{
+        padding: 70px 0 66px;
+        display: flex;
+        justify-content: center;
+        .imageBox{
+            padding: 0px 42px 36px;
+            flex: 1;
+            text-align: center;
+        }
+        .description{
+            &__title{
+                font-weight: 500;
+                font-size: 21px;
+                padding-bottom: 20px;
+            }
+            &__parametr{
+                font-size: 13px;
+                color: #8c8c8c;
+                padding-bottom: 15px;
+                &_black{
+                    font-size: 16px;
+                    color: $textColor3;
+                }
+            }
+            &__price{
+                display: flex;
+                justify-content: center;
+                padding-top: 25px;
+                padding-bottom: 40px;
+                .price__roznica, .price__opt{
+                    flex: 1;
+                    text-align: center;
+                    .price__vartist{
+                        font-size: 21px;
+                    }
+                    .text{
+                        color: #8c8c8c;
+                        font-size: 14px;
+                    }
+                }
+                .price__roznica{
+                    border-right: 1px solid #e5e5e5;
+                }
+            }
+            &__buttonBox{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 48px;
+                .zakaz{
+                    margin-right: 3px;
+                    &:hover{
+                        color: $textColor2;
+                    }
+                }
+                .consultation{
+                    margin-left: 3px;
+                    color: $textColor3;
+                    border-color: $mainColor2;
+                    &:hover{
+                        background-color: $mainColor2;
+                        color: $textColor2;
+                    }
+                }
+            }
+            &__ymovuZnuzhku{
+                font-size: 14px;
+                .znuzhkaLink{
+                    text-decoration: underline;
+                    color: $textColor3;
+                }
+            }
+        }
+    }
+    .vuSmotreli{
+        padding-bottom: 80px;
+        .vuSmotreli__title{
+            font-size: 18px;
+            text-align: center;
+            padding-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .vuSmotreli__table{
+            display: flex;
+            justify-content: space-between;
+            .cart{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                max-width: 255px;
+                padding: 0 10px;
+                position: relative;
+                background-color: $mainColor3;
+                .imageBox{
+                    text-align: center;
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .cart__title{
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-bottom: 4px;
+                    text-align: center;
+                }
+                .cart__size{
+                    color: #8c8c8c;
+                    font-size: 14px;
+                    padding-bottom: 7px;
+                }
+                .cart__price{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 10px;
+                    .price__roznica{
+                        text-align: right;
+                        border-right: 1px solid #e5e5e5;
+                        padding-right: 10px;
+                        .price__syma{
+                            font-size: 16px;
+                        }
+                        .price__name{
+                            font-size: 10px;
+                            color: #8c8c8c;
+                        }
+                    }
+                    .price__opt{
+                        text-align: left;
+                        padding-left: 10px;
+                        .price__syma{
+                            font-size: 16px;
+                            color: $textColor1;
+                        }
+                        .price__name{
+                            font-size: 10px;
+                            color: #8c8c8c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 576px) {
+        .siteTitle{
+            padding-bottom: 34px;
+            .frontImage{
+                height: 220px;
+                margin-bottom: 33px;
+            }
+            .title{
+                padding: 0 15px 5px;
+                font-size: 24px;
+            }
+            .subtitle{
+                font-size: 18px;
+                padding: 0 15px 5px;
+            }
+            .annotation{
+                font-size: 14px;
+                padding: 0 15px 25px;
+            }
+            .siteTitle__btn{
+                font-size: 12px;
+            }
+        }
+        .whatWeDo{
+            .whatWeDo__container{
+                flex-direction: column;
+                padding: 0;
+                .whatWeDo__blackBox, .whatWeDo__goldBox{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .whatWeDo__blackBox{
+                    padding: 0;
+                    .blackBox__image{
+                        margin-bottom: 0;
+                        height: 200px;
+                    }
+                    .blackBox__textBox{
+                        padding: 18px 15px 33px;
+                        font-size: 14px;
+                        .text{
+                            margin: 0;
+                            max-width: none;
+                            padding-bottom: 20px;
+                        }
+                        .text__btn{
+                            font-size: 12px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                .whatWeDo__goldBox{
+                    flex-direction: column-reverse;
+                    .goldBox__image{
+                        height: 200px;
+                    }
+                    .goldBox__textBox{
+                        padding: 18px 15px 33px;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        .text{
+                            margin: 0;
+                            max-width: none;
+                            padding-bottom: 20px;
+                        }
+                        .text__btn{
+                            display: block;
+                            font-size: 12px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                .whatWeDo__whiteBox{
+                    flex-direction: column;
+                    margin-top: 0;
+                    .whiteBox__image{
+                        height: 200px;
+                        width: 100%;
+                        margin: 0;
+                    }
+                    .whiteBox__textBox{
+                        padding: 18px 15px 33px;
+                        font-size: 14px;
+                        width: 100%;
+                        .text{
+                            margin: 0;
+                            max-width: none;
+                            padding-bottom: 20px;
+                        }
+                        .text__btn{
+                            display: block;
+                            font-size: 12px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .breadcrumb{
+            padding: 10px 15px;
+            .breadcrumb__box{
+                .box__item{
+                    display: none;
+                    &:first-child, &:last-child{
+                        display: inline;
+                    }
+                }
+            }
+        }
+        .produkcia{
+            padding: 0 15px;
+            .produkcia__category{
+                padding-bottom: 28px;
+                .category__box{
+                    flex-wrap: wrap;
+                    .box__item{
+                        margin-bottom: 15px;
+                        padding: 0 5px;
+                        .box__itemLink{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .produkcia__katalog{
+                margin-bottom: 15px;
+                .cart{
+                    width: 50%;
+                    .imageBox img{
+                        width: 100%;
+                    }
+                    .cart__title, .cart__size{
+                        font-size: 12px;
+                    }
+                    .cart__price{
+                        .price__roznica .price__syma, .price__opt .price__syma{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .produkcia__seeMoreBtn{
+                font-size: 13px;
+                margin-bottom: 34px;
+            }
+            .propozucia{
+                font-size: 14px;
+                padding-bottom: 30px;
+                &__text{
+                    padding-bottom: 25px;
+                }
+            }
+        }
+        .tovar{
+            flex-direction: column;
+            padding: 22px 15px 42px;
+            .imageBox{
+                padding: 0px 26px 23px;
+                .imageBox__image{
+                    width: 100%;
+                }
+            }
+            .description{
+                text-align: center;
+                &__title{
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                }
+                &__parametr{
+                    font-size: 14px;
+                    padding-bottom: 10px;                        
+                    &_name{
+                        display: none;
+                    }
+                    .articul{
+                        font-size: 13px;
+                    }
+                }
+                &__buttonBox{
+                    flex-direction: column;
+                    align-items: center;
+                    .zakaz{
+                        margin: 0 0 9px;
+                        font-size: 12px;
+                    }
+                    .consultation{
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .vuSmotreli{
+            padding: 0 15px 36px;
+            .vuSmotreli__title{
+                padding-bottom: 10px;
+            }
+            .vuSmotreli__table{
+                .cart{
+                    display: none;
+                    &:first-child, &:nth-child(2){
+                        display: flex;
+                    }
+                    .imageBox img{
+                        width: 100%;
+                    }
+                    .cart__title, .cart__size{
+                        font-size: 12px;
+                    }
+                    .cart__price{
+                        .price__roznica .price__syma, .price__opt .price__syma{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

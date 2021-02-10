@@ -773,6 +773,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 4px;
+  text-align: center;
 }
 .components .vuSmotreli .vuSmotreli__table .cart .cart__size {
   color: #8c8c8c;
@@ -813,6 +814,85 @@ p {
   color: #8c8c8c;
 }
 @media screen and (max-width: 576px) {
+  .components .breadcrumb {
+    padding: 10px 15px;
+  }
+  .components .breadcrumb .breadcrumb__box .box__item {
+    display: none;
+  }
+  .components .breadcrumb .breadcrumb__box .box__item:first-child, .components .breadcrumb .breadcrumb__box .box__item:last-child {
+    display: inline;
+  }
+  .components .tovar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 22px 15px 42px;
+  }
+  .components .tovar .imageBox {
+    padding: 0px 26px 23px;
+  }
+  .components .tovar .imageBox .imageBox__image {
+    width: 100%;
+  }
+  .components .tovar .description {
+    text-align: center;
+  }
+  .components .tovar .description__title {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .components .tovar .description__parametr {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .components .tovar .description__parametr_name {
+    display: none;
+  }
+  .components .tovar .description__parametr .articul {
+    font-size: 13px;
+  }
+  .components .tovar .description__buttonBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .components .tovar .description__buttonBox .zakaz {
+    margin: 0 0 9px;
+    font-size: 12px;
+  }
+  .components .tovar .description__buttonBox .consultation {
+    margin: 0;
+    font-size: 12px;
+  }
+  .components .vuSmotreli {
+    padding: 0 15px 36px;
+  }
+  .components .vuSmotreli .vuSmotreli__title {
+    padding-bottom: 10px;
+  }
+  .components .vuSmotreli .vuSmotreli__table .cart {
+    display: none;
+  }
+  .components .vuSmotreli .vuSmotreli__table .cart:first-child, .components .vuSmotreli .vuSmotreli__table .cart:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .components .vuSmotreli .vuSmotreli__table .cart .imageBox img {
+    width: 100%;
+  }
+  .components .vuSmotreli .vuSmotreli__table .cart .cart__title, .components .vuSmotreli .vuSmotreli__table .cart .cart__size {
+    font-size: 12px;
+  }
+  .components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__roznica .price__syma, .components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__opt .price__syma {
+    font-size: 12px;
+  }
   .components .katalog__block .katalog__container {
     display: block;
   }

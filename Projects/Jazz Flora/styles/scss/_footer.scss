@@ -33,23 +33,17 @@
             font-size: 14px;
             line-height: 22.5px;
         }
-        
     }
     @media screen and (max-width: 576px){
         .footerContainer{
             flex-direction: column;
             align-items: center;
-            padding-left: 15px;
-            padding-right: 15px;
-            .footerHeaderBox{
+            padding: 25px 15px 28px;
+            .footerHeaderBox, .footerLinkBox, .footerPhoneBox{
+                padding: 0 0 24px;
+            }
+            .workTime{
                 text-align: center;
-            }
-            .footerLinkBox{
-                padding-bottom: 20px;
-            }
-            .footerMapBox{
-                width: 100%;
-                max-width: 445px;
             }
         }
     }

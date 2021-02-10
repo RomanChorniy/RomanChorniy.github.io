@@ -457,6 +457,103 @@
         }
     }
     @media screen and (max-width: 576px) {
+        .siteTitle{
+            padding-bottom: 34px;
+            .frontImage{
+                height: 220px;
+                margin-bottom: 33px;
+            }
+            .title{
+                padding: 0 15px 5px;
+                font-size: 24px;
+            }
+            .subtitle{
+                font-size: 18px;
+                padding: 0 15px 5px;
+            }
+            .annotation{
+                font-size: 14px;
+                padding: 0 15px 25px;
+            }
+            .siteTitle__btn{
+                font-size: 12px;
+            }
+        }
+        .whatWeDo{
+            .whatWeDo__container{
+                flex-direction: column;
+                padding: 0;
+                .whatWeDo__blackBox, .whatWeDo__goldBox{
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .whatWeDo__blackBox{
+                    padding: 0;
+                    .blackBox__image{
+                        margin-bottom: 0;
+                        height: 200px;
+                    }
+                    .blackBox__textBox{
+                        padding: 18px 15px 33px;
+                        font-size: 14px;
+                        .text{
+                            margin: 0;
+                            max-width: none;
+                            padding-bottom: 20px;
+                        }
+                        .text__btn{
+                            font-size: 12px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                .whatWeDo__goldBox{
+                    flex-direction: column-reverse;
+                    .goldBox__image{
+                        height: 200px;
+                    }
+                    .goldBox__textBox{
+                        padding: 18px 15px 33px;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        .text{
+                            margin: 0;
+                            max-width: none;
+                            padding-bottom: 20px;
+                        }
+                        .text__btn{
+                            display: block;
+                            font-size: 12px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                .whatWeDo__whiteBox{
+                    flex-direction: column;
+                    margin-top: 0;
+                    .whiteBox__image{
+                        height: 200px;
+                        width: 100%;
+                        margin: 0;
+                    }
+                    .whiteBox__textBox{
+                        padding: 18px 15px 33px;
+                        font-size: 14px;
+                        width: 100%;
+                        .text{
+                            margin: 0;
+                            max-width: none;
+                            padding-bottom: 20px;
+                        }
+                        .text__btn{
+                            display: block;
+                            font-size: 12px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
         .breadcrumb{
             padding: 10px 15px;
             .breadcrumb__box{

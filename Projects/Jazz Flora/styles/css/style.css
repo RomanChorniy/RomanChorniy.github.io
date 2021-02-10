@@ -814,6 +814,110 @@ p {
   color: #8c8c8c;
 }
 @media screen and (max-width: 576px) {
+  .components .siteTitle {
+    padding-bottom: 34px;
+  }
+  .components .siteTitle .frontImage {
+    height: 220px;
+    margin-bottom: 33px;
+  }
+  .components .siteTitle .title {
+    padding: 0 15px 5px;
+    font-size: 24px;
+  }
+  .components .siteTitle .subtitle {
+    font-size: 18px;
+    padding: 0 15px 5px;
+  }
+  .components .siteTitle .annotation {
+    font-size: 14px;
+    padding: 0 15px 25px;
+  }
+  .components .siteTitle .siteTitle__btn {
+    font-size: 12px;
+  }
+  .components .whatWeDo .whatWeDo__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox, .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox {
+    padding: 0;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__image {
+    margin-bottom: 0;
+    height: 200px;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox {
+    padding: 18px 15px 33px;
+    font-size: 14px;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox .text {
+    margin: 0;
+    max-width: none;
+    padding-bottom: 20px;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox .text__btn {
+    font-size: 12px;
+    margin: 0 auto;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__image {
+    height: 200px;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__textBox {
+    padding: 18px 15px 33px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__textBox .text {
+    margin: 0;
+    max-width: none;
+    padding-bottom: 20px;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__textBox .text__btn {
+    display: block;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__image {
+    height: 200px;
+    width: 100%;
+    margin: 0;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox {
+    padding: 18px 15px 33px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox .text {
+    margin: 0;
+    max-width: none;
+    padding-bottom: 20px;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox .text__btn {
+    display: block;
+    font-size: 12px;
+    margin: 0 auto;
+  }
   .components .breadcrumb {
     padding: 10px 15px;
   }

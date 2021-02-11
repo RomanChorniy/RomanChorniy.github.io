@@ -82,6 +82,59 @@
             }
         }
     }
+    .specialOffer{
+        display: flex;
+        justify-content: center;
+        color: $textColor1;
+        .blueOffer, .blackOffer, .greenOffer{
+            padding: 42px 33px 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .blueOffer{
+            background-color: $mainColor4;
+            flex: 1;
+            .offer__text, .offer__title{
+                max-width: 320px;
+                margin-left: auto;
+            }
+            .offer__btn{
+                margin-left: auto;
+                margin-right: 64px;
+            }
+        }
+        .blackOffer{
+            background-color: $mainColor2;
+            width: 100%;
+            max-width: 409px;
+        }
+        .greenOffer{
+            background-color: $mainColor3;
+            flex: 1;
+            .offer__text, .offer__title{
+                max-width: 320px;
+            }
+        }
+        .offer__title{
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 40px;
+            text-transform: uppercase;
+            height: 86px;
+            margin-bottom: 43px;
+        }
+        .offer__text{
+            font-size: 18px;
+            line-height: 31px;
+            margin-bottom: 37px;
+            flex: 1;        }
+        .offer__btn{
+            background-color: transparent;
+            border-color: $mainColor1;
+        }
+    }
+    // Old style
     .whatWeDo{
         .whatWeDo__container{
             display: flex;

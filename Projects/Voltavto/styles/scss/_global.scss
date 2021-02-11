@@ -6,7 +6,7 @@ $mainColor4: #1048E3;
 $textColor1: #fff;
 $textColor2: #000;
 $textColor3: #d0d0d0;
-
+$textColor4: #15DB12;
 
 *{
     margin: 0;
@@ -26,7 +26,6 @@ body{
 .font-bold {
     font-weight: bold !important;
 }
-
 a{
     text-decoration: none;
     color:$textColor1;
@@ -61,7 +60,9 @@ p{
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     &:hover{
-        background-color: $mainColor1;
+        background-color: $mainColor3;
+        
         transition: all ease-in-out .3s;
     }
 }
+path{ fill:inherit; stroke:inherit; }

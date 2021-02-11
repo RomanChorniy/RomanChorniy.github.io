@@ -34,6 +34,12 @@
                         &:last-child{
                             margin-right: 0;
                         }
+                        .icon{
+                            fill: white;
+                            &:hover{
+                                fill: $textColor4;
+                            }
+                        }
                     }
                 }
                 
@@ -63,6 +69,12 @@
                         display: block;
                         padding-bottom: 20px;
                         font-size: 16px;
+                        &:hover{
+                            color: $textColor4;
+                        }
+                    }
+                    .email:hover{
+                        color: $textColor4;
                     }
                 }
                 .adresaBox{

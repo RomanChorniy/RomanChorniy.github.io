@@ -154,6 +154,84 @@
             }
         }
     }
+    .whyWe{
+        padding: 0 0 69px;
+        .title{
+            color: $textColor3;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 40px;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+        }
+        .itembox{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: -15px;
+            .item{
+                height: 255px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                margin: 15px;
+                color: $textColor1;
+                text-transform: uppercase;
+                font-size: 18px;
+                .bigText{
+                    font-size: 32px;
+                }
+                .text{
+                    text-align: center;
+                    line-height: 34px;
+                }
+            }
+            .blue{
+                background-color: $mainColor4;
+                flex: 1;
+            }
+            .black{
+                background-color: $mainColor2;
+                width: 255px;
+                &_bigger{
+                    width: 349px;
+                }
+            }
+            .green{
+                background-color: $mainColor3;
+                width: 255px;
+            }
+        }
+    }
+    .reviews{
+        padding-bottom: 65px;
+        .title{
+            color: $textColor3;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 40px;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+        }
+        .reviews__slider{
+            padding-bottom: 48px;
+            .reviews__response img{
+                margin: 10px auto;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+            .prev, .next {
+                position: absolute;
+                bottom: 0;
+                cursor: pointer;
+            }
+            .next{
+                left: 35px;
+            }
+        }
+    }
     // Old style
     .whatWeDo{
         .whatWeDo__container{

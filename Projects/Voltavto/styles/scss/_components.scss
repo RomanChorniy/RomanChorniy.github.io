@@ -134,6 +134,26 @@
             border-color: $mainColor1;
         }
     }
+    .videoBox{
+        padding: 81px 0 71px;
+        .videos{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 40px;
+            .video{
+                cursor: pointer;
+            }
+        }
+        .videoBox__btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            img{
+                margin-left: 28px;
+            }
+        }
+    }
     // Old style
     .whatWeDo{
         .whatWeDo__container{

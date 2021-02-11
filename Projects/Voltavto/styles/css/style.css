@@ -459,6 +459,36 @@ p {
   background-color: transparent;
   border-color: #fff;
 }
+.components .videoBox {
+  padding: 81px 0 71px;
+}
+.components .videoBox .videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
+}
+.components .videoBox .videos .video {
+  cursor: pointer;
+}
+.components .videoBox .videoBox__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+.components .videoBox .videoBox__btn img {
+  margin-left: 28px;
+}
 .components .whatWeDo .whatWeDo__container {
   display: -webkit-box;
   display: -ms-flexbox;

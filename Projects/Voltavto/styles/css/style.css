@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -78,6 +79,7 @@ path {
   width: 100%;
   background-color: #fff;
   padding: 11px 15px;
+  border-bottom: 1px solid #d0d0d0;
 }
 .header .header__container {
   width: 100%;
@@ -677,6 +679,241 @@ path {
 }
 .components .reviews .reviews__slider .next {
   left: 35px;
+}
+.components .breadcrumb .breadcrumb__box {
+  padding: 6px 0 32px;
+}
+.components .breadcrumb .breadcrumb__box .box__item {
+  display: inline;
+  font-size: 9px;
+  color: #d0d0d0;
+}
+.components .breadcrumb .breadcrumb__box .box__item + .box__item::before {
+  padding: 4px;
+  content: "/ ";
+}
+.components .breadcrumb .breadcrumb__box .box__item .box__itemLink {
+  text-decoration: none;
+  color: #000;
+}
+.components .breadcrumb .breadcrumb__box .box__item .box__itemLink:hover {
+  text-decoration: underline;
+}
+.components .categoriesPage__title {
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+  padding-bottom: 30px;
+}
+.components .categoriesPage .filterBlock {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 160px;
+}
+.components .categoriesPage .filterBlock .group {
+  border-right: 1px solid #15DB12;
+  border-left: 1px solid #15DB12;
+}
+.components .categoriesPage .filterBlock .group .listTitle {
+  background-color: #1048E3;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 12px;
+  border-radius: 10px 10px 0 0;
+  margin: 0 -1px;
+}
+.components .categoriesPage .filterBlock .group .blockItem .itemName {
+  padding: 6px 12px;
+  display: block;
+  font-size: 13px;
+}
+.components .categoriesPage .filterBlock .group .blockItem .itemName input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.components .categoriesPage .filterBlock .group .blockItem .itemName input:checked + .checkboxIcon {
+  background-color: #15DB12;
+  border-color: #15DB12;
+}
+.components .categoriesPage .filterBlock .group .blockItem .itemName .checkboxIcon {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+}
+.components .categoriesPage .filterBlock .group:first-child {
+  border: none;
+}
+.components .categoriesPage .filterBlock .group:first-child .blockItem {
+  border-right: 1px solid #15DB12;
+  border-left: 1px solid #15DB12;
+  margin: 0;
+}
+.components .categoriesPage .filterBlock .group:last-child {
+  border-bottom: 1px solid #15DB12;
+  border-radius: 0 0 10px 10px;
+}
+.components .categoriesPage .filterBlock .brandBlock {
+  max-height: 260px;
+  overflow: hidden;
+}
+.components .categoriesPage .filterBlock .priceBlock {
+  padding: 0 0 10px;
+}
+.components .categoriesPage .filterBlock .priceBlock .price__range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 12px;
+}
+.components .categoriesPage .filterBlock .priceBlock .price__range .range__item {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  width: 50%;
+}
+.components .categoriesPage .filterBlock .priceBlock .price__range .range__item input {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 10px 0 21px;
+  border: none;
+}
+.components .categoriesPage .filterBlock .priceBlock .price__range .price__line {
+  width: 100%;
+  height: 3px;
+  background-color: #e5e5e5;
+  border: none;
+}
+.components .categoriesPage .filterBlock .priceBlock .price__range .price__line .ui-widget-header {
+  background-color: #15DB12;
+}
+.components .categoriesPage .filterBlock .priceBlock .price__range .price__line .ui-corner-all {
+  border-radius: 50%;
+}
+.components .categoriesPage .filterBlock .priceBlock .price__range .price__line .ui-state-default {
+  border: 1px solid #15DB12;
+  background-color: #fff;
+}
+.components .categoriesPage .filterBlock .priceBlock .price__range .price__line .ui-slider-handle {
+  top: -9px;
+  width: 21px;
+  height: 21px;
+  outline: none;
+}
+.components .categoriesPage .carCard {
+  width: 100%;
+  max-width: 920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.components .categoriesPage .carCard .infoBlock .car__name {
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  padding: 30px 23px;
+}
+.components .categoriesPage .carCard .infoBlock .car__characteristics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 16px;
+  padding: 0 23px;
+}
+.components .categoriesPage .carCard .infoBlock .car__characteristics .item {
+  text-align: center;
+}
+.components .categoriesPage .carCard .infoBlock .car__characteristics .item .iconBox {
+  color: #15DB12;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+.components .categoriesPage .carCard .infoBlock .car__parameters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 15px;
+  margin: 0 23px 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #d0d0d0;
+}
+.components .categoriesPage .carCard .infoBlock .car__parameters .iconBox {
+  text-align: center;
+  color: #15DB12;
+  font-size: 14px;
+  padding-right: 30px;
+}
+.components .categoriesPage .carCard .infoBlock .car__parameters .iconBox__text {
+  margin-top: -10px;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 23px 15px;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .priceBlock {
+  width: 70%;
+  padding-bottom: 15px;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .priceBlock .price__header {
+  font-size: 14px;
+  color: #15DB12;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .priceBlock .price {
+  font-size: 30px;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .priceBlock .price .price_small {
+  font-weight: 500;
+  font-size: 14px;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .priceBlock .price .price_valuta {
+  font-weight: 500;
+  font-size: 24px;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .priceBlock .price__text {
+  font-size: 12px;
+  color: #818181;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .buttonBlock {
+  width: 70%;
+}
+.components .categoriesPage .carCard .imageBlock {
+  width: 100%;
+  max-width: 540px;
+}
+.components .categoriesPage .carCard .imageBlock .imageBox__slider_big {
+  padding-bottom: 8px;
+}
+.components .categoriesPage .carCard .imageBlock .imageBox__slider_small {
+  margin-right: -9px;
+}
+.components .categoriesPage .carCard .imageBlock .imageBox__slider_small .slider__photo {
+  width: 81px;
+  margin-right: 9px;
 }
 @media screen and (max-width: 576px) {
   .components .siteTitle {

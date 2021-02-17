@@ -99,12 +99,34 @@
         padding-bottom: 30px;
     }
     @media screen and (max-width: 576px){
+        padding: 0 15px;
         .footerContainer{
             flex-direction: column;
             align-items: center;
-            padding: 25px 15px 28px;
-            .footerHeaderBox, .footerLinkBox, .footerPhoneBox{
-                padding: 0 0 24px;
+            .footerInfo{
+                .titleBox{
+                    text-align: center;
+                    flex-wrap: wrap;
+                    .footerHeaderBox{
+                        padding-bottom: 10px;
+                    }
+                    .vopros{
+                        margin-bottom: 15px;
+                    }
+                }
+                .footerflexItem{
+                    width: 100%;
+                }
+                .contactBox{
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding-bottom: 30px;
+                }
+            }
+            .map{
+                width: 100%;
+                max-width: 350%;
             }
         }
     }

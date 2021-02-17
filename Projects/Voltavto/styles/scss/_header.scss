@@ -112,25 +112,14 @@
         }
     }
     @media screen and (max-width: 576px){
-        padding: 32px 15px 25px;
         .header__container{
             .header__titleBox{
-                padding-bottom: 0;
-                .titleImage{
-                    width: 138px;
+                .logoBox{
+                    padding-left: 15px;
                 }
                 .telephoneList{
                     display: none;
                 }
-                .telephoneIcon{
-                    display: block;
-                }
-                .burgerMenu__openBtn{
-                    display: block;
-                }
-            }
-            .header__nav{
-                display: none;
             }
         }
     }

@@ -196,25 +196,10 @@ path {
   display: block;
 }
 @media screen and (max-width: 576px) {
-  .header {
-    padding: 32px 15px 25px;
-  }
-  .header .header__container .header__titleBox {
-    padding-bottom: 0;
-  }
-  .header .header__container .header__titleBox .titleImage {
-    width: 138px;
+  .header .header__container .header__titleBox .logoBox {
+    padding-left: 15px;
   }
   .header .header__container .header__titleBox .telephoneList {
-    display: none;
-  }
-  .header .header__container .header__titleBox .telephoneIcon {
-    display: block;
-  }
-  .header .header__container .header__titleBox .burgerMenu__openBtn {
-    display: block;
-  }
-  .header .header__container .header__nav {
     display: none;
   }
 }
@@ -328,6 +313,9 @@ path {
   padding-bottom: 30px;
 }
 @media screen and (max-width: 576px) {
+  .footer {
+    padding: 0 15px;
+  }
   .footer .footerContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -336,10 +324,35 @@ path {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 25px 15px 28px;
   }
-  .footer .footerContainer .footerHeaderBox, .footer .footerContainer .footerLinkBox, .footer .footerContainer .footerPhoneBox {
-    padding: 0 0 24px;
+  .footer .footerContainer .footerInfo .titleBox {
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .footerContainer .footerInfo .titleBox .footerHeaderBox {
+    padding-bottom: 10px;
+  }
+  .footer .footerContainer .footerInfo .titleBox .vopros {
+    margin-bottom: 15px;
+  }
+  .footer .footerContainer .footerInfo .footerflexItem {
+    width: 100%;
+  }
+  .footer .footerContainer .footerInfo .contactBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .footer .footerContainer .map {
+    width: 100%;
+    max-width: 350%;
   }
 }
 
@@ -705,10 +718,19 @@ path {
   color: #000;
   padding-bottom: 30px;
 }
+.components .categoriesPage .pageBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .components .categoriesPage .filterBlock {
   border-radius: 10px;
   overflow: hidden;
   width: 160px;
+  margin-bottom: 8px;
 }
 .components .categoriesPage .filterBlock .group {
   border-right: 1px solid #15DB12;
@@ -809,6 +831,26 @@ path {
   height: 21px;
   outline: none;
 }
+.components .categoriesPage .advertisingBlock .advertising {
+  width: 160px;
+  border-radius: 10px;
+  background-color: #15DB12;
+  text-align: center;
+  padding: 14px 12px;
+}
+.components .categoriesPage .advertisingBlock .advertising__title {
+  text-transform: uppercase;
+  color: #1048E3;
+  font-weight: 500;
+  font-size: 24px;
+}
+.components .categoriesPage .advertisingBlock .advertising__text {
+  font-size: 16px;
+  color: #fff;
+}
+.components .categoriesPage .advertisingBlock .advertising__text .textBig {
+  text-transform: uppercase;
+}
 .components .categoriesPage .carCard {
   width: 100%;
   max-width: 920px;
@@ -818,6 +860,7 @@ path {
   border: 1px solid #e5e5e5;
   border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 50px;
 }
 .components .categoriesPage .carCard .infoBlock .car__name {
   background-color: #000;
@@ -898,8 +941,24 @@ path {
   font-size: 12px;
   color: #818181;
 }
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .videoBlock img:first-child {
+  margin-right: 10px;
+}
 .components .categoriesPage .carCard .infoBlock .card__buyBlock .buttonBlock {
   width: 70%;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .carLogoBlock img {
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.1s linear;
+  transition: -webkit-box-shadow 0.1s linear;
+  -o-transition: box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear, -webkit-box-shadow 0.1s linear;
+  border-radius: 10px;
+}
+.components .categoriesPage .carCard .infoBlock .card__buyBlock .carLogoBlock img:hover {
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 }
 .components .categoriesPage .carCard .imageBlock {
   width: 100%;
@@ -914,232 +973,4 @@ path {
 .components .categoriesPage .carCard .imageBlock .imageBox__slider_small .slider__photo {
   width: 81px;
   margin-right: 9px;
-}
-@media screen and (max-width: 576px) {
-  .components .siteTitle {
-    padding-bottom: 34px;
-  }
-  .components .siteTitle .frontImage {
-    height: 220px;
-    margin-bottom: 33px;
-  }
-  .components .siteTitle .title {
-    padding: 0 15px 5px;
-    font-size: 24px;
-  }
-  .components .siteTitle .subtitle {
-    font-size: 18px;
-    padding: 0 15px 5px;
-  }
-  .components .siteTitle .annotation {
-    font-size: 14px;
-    padding: 0 15px 25px;
-  }
-  .components .siteTitle .siteTitle__btn {
-    font-size: 12px;
-  }
-  .components .whatWeDo .whatWeDo__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox, .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox {
-    padding: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__image {
-    margin-bottom: 0;
-    height: 200px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox {
-    padding: 18px 15px 33px;
-    font-size: 14px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox .text {
-    margin: 0;
-    max-width: none;
-    padding-bottom: 20px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox .text__btn {
-    font-size: 12px;
-    margin: 0 auto;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__image {
-    height: 200px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__textBox {
-    padding: 18px 15px 33px;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__textBox .text {
-    margin: 0;
-    max-width: none;
-    padding-bottom: 20px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__textBox .text__btn {
-    display: block;
-    font-size: 12px;
-    margin: 0 auto;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__image {
-    height: 200px;
-    width: 100%;
-    margin: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox {
-    padding: 18px 15px 33px;
-    font-size: 14px;
-    width: 100%;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox .text {
-    margin: 0;
-    max-width: none;
-    padding-bottom: 20px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox .text__btn {
-    display: block;
-    font-size: 12px;
-    margin: 0 auto;
-  }
-  .components .breadcrumb {
-    padding: 10px 15px;
-  }
-  .components .breadcrumb .breadcrumb__box .box__item {
-    display: none;
-  }
-  .components .breadcrumb .breadcrumb__box .box__item:first-child, .components .breadcrumb .breadcrumb__box .box__item:last-child {
-    display: inline;
-  }
-  .components .produkcia {
-    padding: 0 15px;
-  }
-  .components .produkcia .produkcia__category {
-    padding-bottom: 28px;
-  }
-  .components .produkcia .produkcia__category .category__box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .components .produkcia .produkcia__category .category__box .box__item {
-    margin-bottom: 15px;
-    padding: 0 5px;
-  }
-  .components .produkcia .produkcia__category .category__box .box__item .box__itemLink {
-    font-size: 12px;
-  }
-  .components .produkcia .produkcia__katalog {
-    margin-bottom: 15px;
-  }
-  .components .produkcia .produkcia__katalog .cart {
-    width: 50%;
-  }
-  .components .produkcia .produkcia__katalog .cart .imageBox img {
-    width: 100%;
-  }
-  .components .produkcia .produkcia__katalog .cart .cart__title, .components .produkcia .produkcia__katalog .cart .cart__size {
-    font-size: 12px;
-  }
-  .components .produkcia .produkcia__katalog .cart .cart__price .price__roznica .price__syma, .components .produkcia .produkcia__katalog .cart .cart__price .price__opt .price__syma {
-    font-size: 12px;
-  }
-  .components .produkcia .produkcia__seeMoreBtn {
-    font-size: 13px;
-    margin-bottom: 34px;
-  }
-  .components .produkcia .propozucia {
-    font-size: 14px;
-    padding-bottom: 30px;
-  }
-  .components .produkcia .propozucia__text {
-    padding-bottom: 25px;
-  }
-  .components .tovar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 22px 15px 42px;
-  }
-  .components .tovar .imageBox {
-    padding: 0px 26px 23px;
-  }
-  .components .tovar .imageBox .imageBox__image {
-    width: 100%;
-  }
-  .components .tovar .description {
-    text-align: center;
-  }
-  .components .tovar .description__title {
-    font-size: 16px;
-    padding-bottom: 10px;
-  }
-  .components .tovar .description__parametr {
-    font-size: 14px;
-    padding-bottom: 10px;
-  }
-  .components .tovar .description__parametr_name {
-    display: none;
-  }
-  .components .tovar .description__parametr .articul {
-    font-size: 13px;
-  }
-  .components .tovar .description__buttonBox {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .components .tovar .description__buttonBox .zakaz {
-    margin: 0 0 9px;
-    font-size: 12px;
-  }
-  .components .tovar .description__buttonBox .consultation {
-    margin: 0;
-    font-size: 12px;
-  }
-  .components .vuSmotreli {
-    padding: 0 15px 36px;
-  }
-  .components .vuSmotreli .vuSmotreli__title {
-    padding-bottom: 10px;
-  }
-  .components .vuSmotreli .vuSmotreli__table .cart {
-    display: none;
-  }
-  .components .vuSmotreli .vuSmotreli__table .cart:first-child, .components .vuSmotreli .vuSmotreli__table .cart:nth-child(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .components .vuSmotreli .vuSmotreli__table .cart .imageBox img {
-    width: 100%;
-  }
-  .components .vuSmotreli .vuSmotreli__table .cart .cart__title, .components .vuSmotreli .vuSmotreli__table .cart .cart__size {
-    font-size: 12px;
-  }
-  .components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__roznica .price__syma, .components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__opt .price__syma {
-    font-size: 12px;
-  }
 }

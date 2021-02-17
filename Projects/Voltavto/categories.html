@@ -21,7 +21,7 @@
             changeViewport();
         };
     </script>
-    <title>VoltAvto. Главная</title>
+    <title>VoltAvto. Катагория</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
@@ -100,208 +100,319 @@
             <div id="component-1" class="component">
                 <div class="categoriesPage container">
                     <h1 class="categoriesPage__title">АВТОМОБИЛИ ПРЕМИУМ-КЛАССА</h1>
-                    <div class="filterBlock">
-                        <ul class="brandBlock group">
-                            <li class="listTitle">БРЕНД</li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>AUDI
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>DENZA
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>BYD
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>GAC
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>JAGUAR
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>VOLVO
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>XPENG
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>NIO
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>NISSAN
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>BMW
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>FORD
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>HONDA
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="kyzovBlock group">
-                            <li class="listTitle">КУЗОВ</li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>Седан
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>Кроссовер
-                                </label>
-                            </li>
-                        </ul>
-                        <ul class="probegBlock group">
-                            <li class="listTitle">ПРОБЕГ</li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>от 200 км.
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>от 300 км.
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>от 400 км.
-                                </label>
-                            </li>
-                            <li class="blockItem">
-                                <label class="itemName"><input type="checkbox" name="" id="">
-                                    <div class="checkboxIcon"></div>от 500 км.
-                                </label>
-                            </li>
-                        </ul>
-                        <div class="priceBlock group">
-                            <p class="listTitle">ЦЕНА ($)</p>
-                            <div class="price__range">
-                                <label class="range__start range__item font-bold">от<input class="range__start_input"
-                                        type="text" readonly></label>
-                                <label class="range__end range__item font-bold">до<input class="range__end_input"
-                                        type="text" readonly></label>
-                                <div id="slider-range" class="price__line"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carCard">
-                        <div class="infoBlock">
-                            <h3 class="car__name font-bold">AUDI Q2L E-TRON</h3>
-                            <div class="car__characteristics">
-                                <div class="power item">
-                                    <div class="iconBox">
-                                        <img src="image/engine.png" alt="engine.png">
-                                        <div class="iconBox__text">ЛС</div>
+                    <div class="pageBox">
+                        <div class="leftBar">
+                            <div class="filterBlock">
+                                <ul class="brandBlock group">
+                                    <li class="listTitle">БРЕНД</li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>AUDI
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>DENZA
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>BYD
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>GAC
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>JAGUAR
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>VOLVO
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>XPENG
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>NIO
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>NISSAN
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>BMW
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>FORD
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>HONDA
+                                        </label>
+                                    </li>
+                                </ul>
+                                <ul class="kyzovBlock group">
+                                    <li class="listTitle">КУЗОВ</li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>Седан
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>Кроссовер
+                                        </label>
+                                    </li>
+                                </ul>
+                                <ul class="probegBlock group">
+                                    <li class="listTitle">ПРОБЕГ</li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>от 200 км.
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>от 300 км.
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>от 400 км.
+                                        </label>
+                                    </li>
+                                    <li class="blockItem">
+                                        <label class="itemName"><input type="checkbox" name="" id="">
+                                            <div class="checkboxIcon"></div>от 500 км.
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="priceBlock group">
+                                    <p class="listTitle">ЦЕНА ($)</p>
+                                    <div class="price__range">
+                                        <label class="range__start range__item font-bold">от<input
+                                                class="range__start_input" type="text" readonly></label>
+                                        <label class="range__end range__item font-bold">до<input
+                                                class="range__end_input" type="text" readonly></label>
+                                        <div id="slider-range" class="price__line"></div>
                                     </div>
-                                    <p class="power__text">136</p>
-                                </div>
-                                <div class="distance item">
-                                    <div class="iconBox">
-                                        <img src="image/road.png" alt="road.png">
-                                        <div class="iconBox__text">КМ</div>
-                                    </div>
-                                    <p class="distance__text">265</p>
-                                </div>
-                                <div class="outlay item">
-                                    <div class="iconBox">
-                                        <img src="image/car-battery.png" alt="car-battery.png">
-                                        <div class="iconBox__text">КВЧ</div>
-                                    </div>
-                                    <p class="outlay__text">39.7</p>
                                 </div>
                             </div>
-                            <div class="car__parameters">
-                                <div class="iconBox">
-                                    <img src="image/car.png" alt="car.png">
-                                    <div class="iconBox__text">ММ</div>
-                                </div>
-                                <p class="text">4237х1785х1548</p>
-                            </div>
-                            <div class="card__buyBlock">
-                                <div class="priceBlock">
-                                    <p class="price__header">Цена в Украине</p>
-                                    <div class="price font-bold"><span class="price_small">от</span> 41 500 <span
-                                            class="price_valuta">$</span></div>
-                                    <p class="price__text">Новый под ключ</p>
-                                </div>
-                                <div class="videoBlock">
-                                    <img src="image/youtube_red.svg" alt="youtube_red.svg">
-                                    <img src="image/3d_icon.svg" alt="3d_icon.svg">
-                                </div>
-                                <div class="buttonBlock">
-                                    <button type="button" class="siteBtn card__button">Получить консультацию</button>
-                                </div>
-                                <div class="carLogoBlock">
-                                    <img src="image/car_logo1.png" alt="car_logo1.png">
+                            <div class="advertisingBlock">
+                                <div class="advertising">
+                                    <h6 class="advertising__title">акция!</h6>
+                                    <p class="advertising__text">При покупке любого авто переходник в <span
+                                            class="textBig">подарок</span>!</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="imageBlock">
-                            <div class="imageBox__slider_big">
-                                <div>
-                                    <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                        <div class="resultBlock">
+                            <div class="carCard">
+                                <div class="infoBlock">
+                                    <h3 class="car__name font-bold">AUDI Q2L E-TRON</h3>
+                                    <div class="car__characteristics">
+                                        <div class="power item">
+                                            <div class="iconBox">
+                                                <img src="image/engine.png" alt="engine.png">
+                                                <div class="iconBox__text">ЛС</div>
+                                            </div>
+                                            <p class="power__text">136</p>
+                                        </div>
+                                        <div class="distance item">
+                                            <div class="iconBox">
+                                                <img src="image/road.png" alt="road.png">
+                                                <div class="iconBox__text">КМ</div>
+                                            </div>
+                                            <p class="distance__text">265</p>
+                                        </div>
+                                        <div class="outlay item">
+                                            <div class="iconBox">
+                                                <img src="image/car-battery.png" alt="car-battery.png">
+                                                <div class="iconBox__text">КВЧ</div>
+                                            </div>
+                                            <p class="outlay__text">39.7</p>
+                                        </div>
+                                    </div>
+                                    <div class="car__parameters">
+                                        <div class="iconBox">
+                                            <img src="image/car.png" alt="car.png">
+                                            <div class="iconBox__text">ММ</div>
+                                        </div>
+                                        <p class="text">4237х1785х1548</p>
+                                    </div>
+                                    <div class="card__buyBlock">
+                                        <div class="priceBlock">
+                                            <p class="price__header">Цена в Украине</p>
+                                            <div class="price font-bold"><span class="price_small">от</span> 41 500
+                                                <span class="price_valuta">$</span>
+                                            </div>
+                                            <p class="price__text">Новый под ключ</p>
+                                        </div>
+                                        <div class="videoBlock">
+                                            <img src="image/youtube_red.svg" alt="youtube_red.svg">
+                                            <img src="image/3d_icon.svg" alt="3d_icon.svg">
+                                        </div>
+                                        <div class="buttonBlock">
+                                            <button type="button" class="siteBtn card__button">Получить
+                                                консультацию</button>
+                                        </div>
+                                        <div class="carLogoBlock">
+                                            <img src="image/car_logo1.png" alt="car_logo1.png">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
-                                </div>
-                                <div>
-                                    <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
-                                </div>
-                                <div>
-                                    <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
-                                </div>
-                                <div>
-                                    <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
-                                </div>
-                                <div>
-                                    <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
-                                </div>
-                                <div>
-                                    <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
-                                </div>
-                                <div>
-                                    <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                <div class="imageBlock">
+                                    <div class="imageBox__slider_big">
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                    </div>
+                                    <div class="imageBox__slider_small">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="imageBox__slider_small">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
-                                <img class="slider__photo" src="image/car1.png" alt="tovar">
+                            <div class="carCard">
+                                <div class="infoBlock">
+                                    <h3 class="car__name font-bold">XPENG P7</h3>
+                                    <div class="car__characteristics">
+                                        <div class="power item">
+                                            <div class="iconBox">
+                                                <img src="image/engine.png" alt="engine.png">
+                                                <div class="iconBox__text">ЛС</div>
+                                            </div>
+                                            <p class="power__text">267/430</p>
+                                        </div>
+                                        <div class="distance item">
+                                            <div class="iconBox">
+                                                <img src="image/road.png" alt="road.png">
+                                                <div class="iconBox__text">КМ</div>
+                                            </div>
+                                            <p class="distance__text">562/586/<br>670/706</p>
+                                        </div>
+                                        <div class="outlay item">
+                                            <div class="iconBox">
+                                                <img src="image/car-battery.png" alt="car-battery.png">
+                                                <div class="iconBox__text">КВЧ</div>
+                                            </div>
+                                            <p class="outlay__text">70.8/80.9</p>
+                                        </div>
+                                    </div>
+                                    <div class="car__parameters">
+                                        <div class="iconBox">
+                                            <img src="image/car.png" alt="car.png">
+                                            <div class="iconBox__text">ММ</div>
+                                        </div>
+                                        <p class="text">4237х1785х1548</p>
+                                    </div>
+                                    <div class="card__buyBlock">
+                                        <div class="priceBlock">
+                                            <p class="price__header">Цена в Украине</p>
+                                            <div class="price font-bold"><span class="price_small">от</span> 43 000
+                                                <span class="price_valuta">$</span>
+                                            </div>
+                                            <p class="price__text">Новый под ключ</p>
+                                        </div>
+                                        <div class="videoBlock">
+                                            <img src="image/youtube_red.svg" alt="youtube_red.svg">
+                                            <img src="image/3d_icon.svg" alt="3d_icon.svg">
+                                        </div>
+                                        <div class="buttonBlock">
+                                            <button type="button" class="siteBtn card__button">Получить
+                                                консультацию</button>
+                                        </div>
+                                        <div class="carLogoBlock">
+                                            <img src="image/car_logo2.png" alt="car_logo2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="imageBlock">
+                                    <div class="imageBox__slider_big">
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car2.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                        <div>
+                                            <img class="sliderBig__photo" src="image/car1.png" alt="tovar">
+                                        </div>
+                                    </div>
+                                    <div class="imageBox__slider_small">
+                                        <img class="slider__photo" src="image/car2.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                        <img class="slider__photo" src="image/car1.png" alt="tovar">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

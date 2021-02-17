@@ -779,8 +779,21 @@ path {
   border-radius: 0 0 10px 10px;
 }
 .components .categoriesPage .filterBlock .brandBlock {
-  max-height: 260px;
+  height: 260px;
   overflow: hidden;
+}
+.components .categoriesPage .filterBlock .brandBlock .simleBar {
+  height: 260px;
+}
+.components .categoriesPage .filterBlock .brandBlock .simleBar .simplebar-scrollbar::before {
+  background-color: #15DB12;
+  opacity: 1;
+}
+.components .categoriesPage .filterBlock .brandBlock .simleBar .simplebar-track {
+  background-color: #e5e5e5;
+  height: 212px;
+  margin: 5px 1px;
+  border-radius: 5px;
 }
 .components .categoriesPage .filterBlock .priceBlock {
   padding: 0 0 10px;
@@ -830,6 +843,9 @@ path {
   width: 21px;
   height: 21px;
   outline: none;
+}
+.components .categoriesPage .filterOpenBtn {
+  display: none;
 }
 .components .categoriesPage .advertisingBlock .advertising {
   width: 160px;
@@ -1008,12 +1024,15 @@ path {
   }
   .components .weOffer .offers .offer {
     width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
   }
   .components .weOffer .offers .offer img {
     width: 100%;
   }
   .components .weOffer .offers .offer .offer__bg {
     height: 100%;
+    border-radius: 0;
   }
   .components .specialOffer {
     -webkit-box-orient: vertical;
@@ -1086,5 +1105,92 @@ path {
   .components .reviews .reviews__response img {
     width: 100%;
     max-width: 348px;
+  }
+  .components .breadcrumb .breadcrumb__box {
+    padding: 6px 15px 32px;
+  }
+  .components .categoriesPage__title {
+    padding: 0 15px 30px;
+    font-size: calc(15px + 15 * ((100vw - 300px) / (575 - 300)));
+  }
+  .components .categoriesPage .pageBox {
+    position: relative;
+  }
+  .components .categoriesPage .pageBox .leftBar {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    top: 51px;
+    left: 0;
+    border-radius: 10px;
+  }
+  .components .categoriesPage .pageBox .leftBar .filterBlock {
+    margin-bottom: 0;
+  }
+  .components .categoriesPage .pageBox .leftBar .filterOpenBtn {
+    display: block;
+    position: absolute;
+    padding: 4px;
+    top: 9px;
+    right: -28px;
+    background-color: #1048E3;
+    border: 1px solid #1048E3;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+  }
+  .components .categoriesPage .pageBox .leftBar .filterOpenBtn .statusClouse {
+    display: none;
+  }
+  .components .categoriesPage .pageBox .leftBar .filterOpenBtn .statusOpen {
+    display: inline;
+  }
+  .components .categoriesPage .pageBox .leftBar .advertisingBlock {
+    display: none;
+  }
+  .components .categoriesPage .pageBox .resultBlock {
+    padding: 0 15px;
+  }
+  .components .categoriesPage .pageBox .resultBlock .carCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .components .categoriesPage .pageBox .resultBlock .carCard .infoBlock .car__name {
+    font-size: calc(20px + 4 * ((100vw - 300px) / (575 - 300)));
+  }
+  .components .categoriesPage .pageBox .resultBlock .carCard .infoBlock .card__buyBlock .buttonBlock .card__button {
+    width: 100%;
+    max-width: 255px;
+  }
+  .components .categoriesPage .pageBox .resultBlock .carCard .imageBlock {
+    padding: 0 5px;
+  }
+  .components .categoriesPage .pageBox .resultBlock .carCard .imageBlock .imageBox__slider_big {
+    width: 100%;
+  }
+  .components .categoriesPage .pageBox .resultBlock .carCard .imageBlock .imageBox__slider_big div {
+    text-align: center;
+    border-radius: 20px;
+    width: calc(100vw - 30px - 15px - 2px);
+  }
+  .components .categoriesPage .pageBox .resultBlock .carCard .imageBlock .imageBox__slider_big div .sliderBig__photo {
+    width: 100%;
+  }
+  .components .categoriesPage .pageBox .resultBlock .carCard .imageBlock .imageBox__slider_small {
+    display: none;
+  }
+  .components .categoriesPage .pageBox .closeBar {
+    left: -161px;
+  }
+  .components .categoriesPage .pageBox .closeBar .filterOpenBtn .statusClouse {
+    display: inline;
+  }
+  .components .categoriesPage .pageBox .closeBar .filterOpenBtn .statusOpen {
+    display: none;
   }
 }

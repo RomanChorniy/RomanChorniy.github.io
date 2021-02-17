@@ -48,14 +48,6 @@ $(document).ready(function () {
         fade: true,
         asNavFor: '.imageBox__slider_small',
         dots: false,
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-                    dots: true
-                }
-            }
-        ]
     });
     $('.imageBox__slider_small').slick({
         slidesToShow: 6,
@@ -77,5 +69,12 @@ $(document).ready(function () {
         });
         $(".range__start_input").val($("#slider-range").slider("values", 0) + " 000");
         $(".range__end_input").val($("#slider-range").slider("values", 1) + " 000");
+    });
+    $(".statusClouse").click(function () {
+        $(".leftBar").removeClass('closeBar');
+        console.log("1")
+    });
+    $(".statusOpen").click(function () {
+        $(".leftBar").addClass('closeBar');
     });
 });

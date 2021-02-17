@@ -361,8 +361,21 @@
                 }
             }
             .brandBlock{
-                max-height: 260px;
+                height: 260px;
                 overflow: hidden;
+                .simleBar{
+                    height: 260px;
+                    .simplebar-scrollbar::before {
+                        background-color: $mainColor3;
+                        opacity: 1;
+                    }
+                    .simplebar-track{
+                        background-color: #e5e5e5;
+                        height: 212px;
+                        margin: 5px 1px;
+                        border-radius: 5px;
+                    }
+                }
             }
             .priceBlock{
                 padding:0 0 10px;
@@ -409,6 +422,9 @@
                     }
                 }
             }
+        }
+        .filterOpenBtn{
+            display: none;
         }
         .advertisingBlock{
             .advertising{
@@ -575,11 +591,14 @@
             .offers{
                 .offer{
                     width: 30%;
+                    border-radius: 10px;
+                    overflow: hidden;
                     img{
                         width: 100%;
                     }
                     .offer__bg{
                         height: 100%;
+                        border-radius: 0;
                     }
                 }
             }
@@ -645,6 +664,98 @@
                 img{
                     width: 100%;
                     max-width: 348px;
+                }
+            }
+        }
+        .breadcrumb{
+            .breadcrumb__box{
+                padding: 6px 15px 32px;
+            }
+        }
+        .categoriesPage{
+            &__title{
+                padding:0 15px 30px;
+                font-size: calc(15px + 15 * ((100vw - 300px) / (575 - 300)));
+            }
+            .pageBox{
+                position: relative;
+                .leftBar{
+                    display: block;
+                    position: fixed;
+                    z-index: 1;
+                    background-color: $mainColor1;
+                    top: 51px;
+                    left: 0;
+                    border-radius: 10px;
+                    .filterBlock{
+                        margin-bottom: 0;
+                    }
+                    .filterOpenBtn{
+                        display: block;
+                        position: absolute;
+                        padding: 4px;
+                        top: 9px;
+                        right: -28px;
+                        background-color: $mainColor4;
+                        border: 1px solid $mainColor4;
+                        color: $textColor1;
+                        border-radius: 0 10px 10px 0;
+                        .statusClouse{
+                            display: none;
+                        }
+                        .statusOpen{
+                            display: inline;
+                        }
+                    }
+                    .advertisingBlock{
+                        display: none;
+                    }
+                }
+                .resultBlock{
+                    padding: 0 15px;
+                    .carCard{
+                        flex-direction: column;
+                        align-items: center;
+                        .infoBlock{
+                            .car__name{
+                                font-size: calc(20px + 4 * ((100vw - 300px) / (575 - 300)));
+                            }
+                            .card__buyBlock{
+                                .buttonBlock{
+                                    .card__button{
+                                        width: 100%;
+                                        max-width: 255px;
+                                    }
+                                }
+                            }
+                        }
+                        .imageBlock{
+                            padding: 0 5px;
+                            .imageBox__slider_big{
+                                width: 100%;
+                                div{
+                                    text-align: center;
+                                    border-radius: 20px;
+                                    width: calc(100vw - 30px - 15px - 2px);
+                                    .sliderBig__photo{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .imageBox__slider_small{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .closeBar{
+                    left: -161px;
+                    .filterOpenBtn .statusClouse{
+                        display: inline;
+                    }
+                    .filterOpenBtn .statusOpen{
+                        display: none;
+                    }
                 }
             }
         }

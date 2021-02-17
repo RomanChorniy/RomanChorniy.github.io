@@ -4,14 +4,42 @@ $(document).ready(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         prevArrow: "<img src='image/prev.svg' class='prev' alt='prev arrow'>",
-        nextArrow: "<img src='image/next.svg' class='next' alt='next arrow'>"
+        nextArrow: "<img src='image/next.svg' class='next' alt='next arrow'>",
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 390,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
     $('.reviews__slider').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: "<img src='image/prev.svg' class='prev' alt='prev arrow'>",
-        nextArrow: "<img src='image/next.svg' class='next' alt='next arrow'>"
+        nextArrow: "<img src='image/next.svg' class='next' alt='next arrow'>",
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
     $('.imageBox__slider_big').slick({
         slidesToShow: 1,

@@ -452,6 +452,17 @@ path {
   -o-transition: height 0.2s linear;
   transition: height 0.2s linear;
 }
+.components .weOffer .offers .offer .offer__linkTitle {
+  position: absolute;
+  bottom: 40px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 .components .weOffer .offers .offer .green {
   background-color: #15DB12;
 }
@@ -1033,6 +1044,10 @@ path {
   .components .weOffer .offers .offer .offer__bg {
     height: 100%;
     border-radius: 0;
+  }
+  .components .weOffer .offers .offer .offer__linkTitle {
+    font-size: calc(7px + 7 * ((100vw - 300px) / (575 - 300)));
+    bottom: calc(7px + 13 * ((100vw - 300px) / (575 - 300)));
   }
   .components .specialOffer {
     -webkit-box-orient: vertical;

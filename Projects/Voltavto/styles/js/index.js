@@ -72,7 +72,6 @@ $(document).ready(function () {
     });
     $(".statusClouse").click(function () {
         $(".leftBar").removeClass('closeBar');
-        console.log("1")
     });
     $(".statusOpen").click(function () {
         $(".leftBar").addClass('closeBar');

@@ -73,6 +73,15 @@
                     z-index: -1;
                     transition: height .2s linear;
                 }
+                .offer__linkTitle{
+                    position: absolute;
+                    bottom: 40px;
+                    color: $textColor1;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
                 .green{
                     background-color: $mainColor3;
                 }
@@ -599,6 +608,10 @@
                     .offer__bg{
                         height: 100%;
                         border-radius: 0;
+                    }
+                    .offer__linkTitle{
+                        font-size: calc(7px + 7 * ((100vw - 300px) / (575 - 300)));
+                        bottom: calc(7px + 13 * ((100vw - 300px) / (575 - 300)));
                     }
                 }
             }

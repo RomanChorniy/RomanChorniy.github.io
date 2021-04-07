@@ -383,6 +383,7 @@
       }
       .telephoneList{
         margin-right: 40px;
+        position: relative;
         .phoneNumber{
             font-size: 18px;
             color: $textColor2;
@@ -393,47 +394,51 @@
           width: 9px;
           margin: 0 0 2px 3px;
         }
-        .hide{
-            display: none;
+        &__dropdownMenu{
+          display: none;
+          position: absolute;
+          overflow: hidden;
+          background-color: $mainColor1;
+          border: 1px solid $mainColor3;
+          top: -30px;
+          padding: 30px 27px 0;
+          margin: 0 -27px;
+          z-index: 1;
+          .arrowDown{
+            margin: 0;
+            transform: rotate(180deg);
+          }
+          .phoneNumber{
+            display: inline-block;
+            padding: 0 0 20px;
+          }
+          .workTime{
+            padding: 0 0 20px;
+            color: $textColor2;
+            font-size: 14px;
+          }
+          .callback{
+            width: calc(100% + 54px);
+            height: 50px;
+            background-color: $mainColor3;
+            border: none;
+            border-top: 1px solid $mainColor1;
+            outline: none;
+            cursor: pointer;
+            color: $textColor1;
+            font-size: 14px;
+            margin: 0 -27px;
+            &:hover{
+              background-color: rgba($color: $mainColor3, $alpha: .2);
+              color: $textColor3;
+            }
+          }
         }
-        // &:hover{
-        //   border: 1px solid $mainColor3;
-        //   padding-top: 42px;
-        //   top: 0px;
-        //   right: 60px;
-        //   background-color: $mainColor1;
-        //   position: absolute;
-        //     .telephoneList__button{
-        //         margin-right: 26px;
-        //         transform: rotate(180deg);
-        //     }
-        //     .phoneNumber{
-        //         display: inline-block;
-        //         padding: 0 26px 20px;
-        //         &:first-child{
-        //             padding-right: 0;
-        //         }
-        //     }
-        //     .hide{
-        //         display: block;
-        //     }
-        //     .workTime{
-        //         padding: 4px 26px 24px;
-        //         color: $textColor1;
-        //         font-size: 14px;
-        //     }
-        //     .callback{
-        //         width: 100%;
-        //         height: 50px;
-        //         background-color: $mainColor3;
-        //         border: none;
-        //         border-top: 1px solid $mainColor1;
-        //         outline: none;
-        //         cursor: pointer;
-        //         color: $textColor1;
-        //         font-size: 14px;
-        //     }
-        // }
+        &:hover{
+          .telephoneList__dropdownMenu{
+            display: block;
+          }
+        }
       }
       .telephoneIcon{
                 display: none;
@@ -495,7 +500,6 @@
         // }
       }
     }
-        
   }
     @media screen and (max-width: 576px){
         padding: 32px 15px 25px;

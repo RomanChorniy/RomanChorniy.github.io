@@ -1785,6 +1785,7 @@ body .margin-65 {
 }
 #header .header__container .header__titleBox .telephoneList {
   margin-right: 40px;
+  position: relative;
 }
 #header .header__container .header__titleBox .telephoneList .phoneNumber {
   font-size: 18px;
@@ -1796,8 +1797,50 @@ body .margin-65 {
   width: 9px;
   margin: 0 0 2px 3px;
 }
-#header .header__container .header__titleBox .telephoneList .hide {
+#header .header__container .header__titleBox .telephoneList__dropdownMenu {
   display: none;
+  position: absolute;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #E89D94;
+  top: -30px;
+  padding: 30px 27px 0;
+  margin: 0 -27px;
+  z-index: 1;
+}
+#header .header__container .header__titleBox .telephoneList__dropdownMenu .arrowDown {
+  margin: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+#header .header__container .header__titleBox .telephoneList__dropdownMenu .phoneNumber {
+  display: inline-block;
+  padding: 0 0 20px;
+}
+#header .header__container .header__titleBox .telephoneList__dropdownMenu .workTime {
+  padding: 0 0 20px;
+  color: #000;
+  font-size: 14px;
+}
+#header .header__container .header__titleBox .telephoneList__dropdownMenu .callback {
+  width: calc(100% + 54px);
+  height: 50px;
+  background-color: #E89D94;
+  border: none;
+  border-top: 1px solid #fff;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 -27px;
+}
+#header .header__container .header__titleBox .telephoneList__dropdownMenu .callback:hover {
+  background-color: rgba(232, 157, 148, 0.2);
+  color: #E89D94;
+}
+#header .header__container .header__titleBox .telephoneList:hover .telephoneList__dropdownMenu {
+  display: block;
 }
 #header .header__container .header__titleBox .telephoneIcon {
   display: none;

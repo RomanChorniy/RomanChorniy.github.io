@@ -21,29 +21,52 @@
             changeViewport();
         };
     </script>
-    <title>Jazz Flora. One</title>
+    <title>KEL. One</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/css/slick.css" />
+    <link rel="stylesheet" href="styles/css/slick-theme.css">
     <link rel="stylesheet" href="styles/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="styles/js/slick.min.js"></script>
+    <script src="styles/js/custom.notMinify.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="border-bottom">
         <div class="header__container">
             <div class="header__titleBox">
-                <img src="image/logo.png" alt="jazz flora. Home decore" class="titleImage">
+                <img src="image/logo.svg" alt="jazz flora. Home decore" class="titleImage">
+                <nav class="header__nav font-regular">
+                    <a href="#" class="navLink">главная</a>
+                    <a href="#" class="navLink">коллекции</a>
+                    <a href="#" class="navLink">фотопроекты</a>
+                    <a href="#" class="navLink">о нас</a>
+                    <a href="#" class="navLink">контакты</a>
+                </nav>
                 <div class="telephoneList">
-                    <a href="tel:84957285805" class="phoneNumber">8 495 728 58 05</a>
+                    <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
                     <img src="image/down-arrow.svg" alt="down-arrow.svg" class="telephoneList__button arrowDown">
-                    <a href="tel:88007755948" class="phoneNumber hide">8 800 775 59 48</a>
-                    <a href="tel:84952100065" class="phoneNumber hide">8 495 210 00 65</a>
-                    <a href="tel:89253880488" class="phoneNumber hide">8 925 388 04 88</a>
-                    <a href="tel:88002008158" class="phoneNumber hide">8 800 200 81 58</a>
-                    <div class="workTime hide">
-                        <p>Пн-Пт 9-19</p>
-                        <p>Сб-Вс Выходной</p>
+                    <div class="telephoneList__dropdownMenu">
+                        <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+                        <img src="image/down-arrow.svg" alt="down-arrow.svg" class="telephoneList__button arrowDown">
+                        <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+                        <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+                        <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+                        <div class="workTime hide">
+                            <p>Пн-Пт 9-19</p>
+                            <p>Сб-Вс Выходной</p>
+                        </div>
+                        <button type="button" class="callback">Перезвоните мне</button>
                     </div>
-                    <button type="button" class="callback hide">Перезвоните мне</button>
+                </div>
+                <div class="language">
+                    <a href="http://">Ру</a>
+                    <div class="langMenu">
+                        <a class="langMenu__item" href="http://">Ру</a>
+                        <a class="langMenu__item" href="http://">Ук</a>
+                        <a class="langMenu__item" href="http://">En</a>
+                    </div>
                 </div>
                 <img src="image/phone.svg" alt="phone.svg" class="telephoneIcon">
                 <div class="burgerMenu__openBtn">
@@ -52,26 +75,17 @@
                     <div class="burgerMenu__openBtn_line"></div>
                 </div>
             </div>
-            <nav class="header__nav font-regular">
-                <a href="#" class="navLink">главная</a>
-                <a href="#" class="navLink">о компании</a>
-                <a href="#" class="navLink">оформление</a>
-                <a href="#" class="navLink">фотопроекты</a>
-                <a href="#" class="navLink">продукция</a>
-                <a href="#" class="navLink">доставка и оплата</a>
-                <a href="#" class="navLink">контакты</a>
-            </nav>
         </div>
     </header>
     <main id="main">
         <div class="components">
             <div id="component-1" class="component">
-                <nav class="breadcrumb container">
+                <nav class="breadcrumb container margin-65">
                     <ul class="breadcrumb__box font-regular">
-                        <li class="box__item"><a class="box__itemLink" href="#">Jazz Flora</a></li>
-                        <li class="box__item"><a class="box__itemLink" href="#">Продукция</a></li>
-                        <li class="box__item"><a class="box__itemLink" href="#">Вазы</a></li>
-                        <li class="box__item active">Горшок кубический золотой</li>
+                        <li class="box__item"><a class="box__itemLink" href="#">KEL</a></li>
+                        <li class="box__item"><a class="box__itemLink" href="#">Платья</a></li>
+                        <li class="box__item"><a class="box__itemLink" href="#">Вечерние платья</a></li>
+                        <li class="box__item active">Платье Эльза</li>
                     </ul>
                 </nav>
             </div>
@@ -197,25 +211,26 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer id="footer">
         <div class="footerContainer">
             <a class="footerHeaderBox" href="#">
-                <img src="image/logo.png" alt="jazz flora. Home decore" class="footerLogo">
+                <img src="image/logo_white.svg" alt="jazz flora. Home decore" class="footerLogo">
             </a>
             <div class="footerLinkBox">
-                <a href="#"><img src="image/Instagram.svg" alt="Instagram" class="link"></a>
-                <a href="#"><img src="image/Facebook.svg" alt="Facebook" class="link"></a>
+                <a href="https://www.instagram.com/elena.kondratova_design/" class="linkContainer">
+                    <img src="image/Instagram.svg" alt="Instagram">
+                    <p>@elena.kondratova_design</p>
+                </a>
             </div>
             <div class="footerPhoneBox">
-                <a href="tel:84957285805" class="phoneNumber">8 495 728 58 05</a>
-                <a href="tel:88007755948" class="phoneNumber">8 800 775 59 48</a>
-                <a href="tel:84952100065" class="phoneNumber">8 495 210 00 65</a>
-                <a href="tel:89253880488" class="phoneNumber">8 925 388 04 88</a>
-                <a href="tel:88002008158" class="phoneNumber">8 800 200 81 58</a>
+                <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+                <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+                <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
             </div>
             <div class="workTime">
-                <p>Пн-Пт 9-19</p>
-                <p>Сб-Вс Выходной</p>
+                <p class="workTime__text">Киев</p>
+                <p class="workTime__text">Пн-Пт 9:00-19:00</p>
+                <p class="workTime__text">Сб-Вс Выходной</p>
             </div>
         </div>
     </footer>

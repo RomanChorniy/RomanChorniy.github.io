@@ -799,6 +799,10 @@
     }
     .tovar{
         .slider{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 635px;
             .slider__vertical{
                 width: 130px;
                 .vertical__item{
@@ -809,6 +813,8 @@
                     }
                 }
                 .prevBox,.nextBox{
+                    position: absolute;
+                    bottom: 0;
                     .prev, .next{
                         cursor: pointer;
                         opacity: 0.2;
@@ -819,19 +825,24 @@
                     }
                 }
                 .prevBox{
-                    position: absolute;
-                    bottom: 0;
                     left: 30px;
                     .prev{
                         transform: rotate(90deg);
                     }
                 }
                 .nextBox{
-                    margin-left: 85px;
+                    right: 30px;
                     .next{
                         transform: rotate(90deg);
                     }
                 }
+            }
+            .slider__big{
+                width: 100%;
+                max-width: 445px;
+               .big__item_image{
+                   width: 100%;
+               } 
             }
         }
     }    

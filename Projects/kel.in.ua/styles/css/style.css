@@ -1148,6 +1148,16 @@ body .margin-65 {
   color: #fff;
   background-color: #E89D94;
 }
+.components .tovar .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 635px;
+}
 .components .tovar .slider .slider__vertical {
   width: 130px;
 }
@@ -1158,6 +1168,10 @@ body .margin-65 {
 .components .tovar .slider .slider__vertical .vertical__item .item__image {
   width: 100%;
 }
+.components .tovar .slider .slider__vertical .prevBox, .components .tovar .slider .slider__vertical .nextBox {
+  position: absolute;
+  bottom: 0;
+}
 .components .tovar .slider .slider__vertical .prevBox .prev, .components .tovar .slider .slider__vertical .prevBox .next, .components .tovar .slider .slider__vertical .nextBox .prev, .components .tovar .slider .slider__vertical .nextBox .next {
   cursor: pointer;
   opacity: 0.2;
@@ -1167,8 +1181,6 @@ body .margin-65 {
   opacity: 0.5;
 }
 .components .tovar .slider .slider__vertical .prevBox {
-  position: absolute;
-  bottom: 0;
   left: 30px;
 }
 .components .tovar .slider .slider__vertical .prevBox .prev {
@@ -1177,12 +1189,19 @@ body .margin-65 {
           transform: rotate(90deg);
 }
 .components .tovar .slider .slider__vertical .nextBox {
-  margin-left: 85px;
+  right: 30px;
 }
 .components .tovar .slider .slider__vertical .nextBox .next {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+.components .tovar .slider .slider__big {
+  width: 100%;
+  max-width: 445px;
+}
+.components .tovar .slider .slider__big .big__item_image {
+  width: 100%;
 }
 .components .vuSmotreli {
   padding-bottom: 80px;

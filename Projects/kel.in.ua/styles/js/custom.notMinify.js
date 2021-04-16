@@ -286,7 +286,15 @@ $(document).ready(function () {
         prevArrow: "<div class='prevBox'><img src='image/prev-arrow.svg' class='prev' alt='prev arrow'></div>",
         nextArrow: "<div class='nextBox'><img src='image/next-arrow.svg' class='next' alt='next arrow'></div>",
         vertical: true,
-        verticalSwiping: true
+        verticalSwiping: true,
+        asNavFor: '.slider__big'
+    });
+    $('.slider__big').slick({
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider__vertical',
+        arrows: false
     });
     $(function () {
         $("#slider-range").slider({

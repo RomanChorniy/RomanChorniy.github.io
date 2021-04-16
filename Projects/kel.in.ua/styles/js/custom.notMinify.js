@@ -279,4 +279,27 @@ $(document).ready(function () {
         autoplay: true,
 
     });
+    $(function () {
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 20,
+            values: [4, 15],
+            slide: function (event, ui) {
+                $(".range__start_input").val(ui.values[0] + " 000");
+                $(".range__end_input").val(ui.values[1] + " 000");
+            }
+        });
+        $(".range__start_input").val($("#slider-range").slider("values", 0) + " 000");
+        $(".range__end_input").val($("#slider-range").slider("values", 1) + " 000");
+    });
+    $(".statusClouse").click(function () {
+        $(".leftBar").removeClass('closeBar');
+    });
+    $(".statusOpen").click(function () {
+        $(".leftBar").addClass('closeBar');
+    });
+    $('.filterBlock').accordion({
+        icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
+    });
 });

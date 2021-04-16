@@ -1,5 +1,4 @@
 #header{
-
     &.fixed-header {
       .top-header,
       .navbar-wrapper {
@@ -501,6 +500,7 @@
       }
     }
   }
+  
     @media screen and (max-width: 576px){
         padding: 32px 15px 25px;
         .header__container{
@@ -524,4 +524,7 @@
             }
         }
     }
+  }
+  .border-bottom{
+    border-bottom: 1px solid $mainColor3;
   }

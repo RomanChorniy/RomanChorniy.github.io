@@ -1148,92 +1148,41 @@ body .margin-65 {
   color: #fff;
   background-color: #E89D94;
 }
-.components .tovar {
-  padding: 70px 0 66px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.components .tovar .slider .slider__vertical {
+  width: 130px;
 }
-.components .tovar .imageBox {
-  padding: 0px 42px 36px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center;
+.components .tovar .slider .slider__vertical .vertical__item {
+  max-height: 190px;
+  margin-bottom: 20px;
 }
-.components .tovar .description__title {
-  font-weight: 500;
-  font-size: 21px;
-  padding-bottom: 20px;
+.components .tovar .slider .slider__vertical .vertical__item .item__image {
+  width: 100%;
 }
-.components .tovar .description__parametr {
-  font-size: 13px;
-  color: #8c8c8c;
-  padding-bottom: 15px;
+.components .tovar .slider .slider__vertical .prevBox .prev, .components .tovar .slider .slider__vertical .prevBox .next, .components .tovar .slider .slider__vertical .nextBox .prev, .components .tovar .slider .slider__vertical .nextBox .next {
+  cursor: pointer;
+  opacity: 0.2;
+  width: 16px;
 }
-.components .tovar .description__parametr_black {
-  font-size: 16px;
-  color: #E89D94;
+.components .tovar .slider .slider__vertical .prevBox .prev:hover, .components .tovar .slider .slider__vertical .prevBox .next:hover, .components .tovar .slider .slider__vertical .nextBox .prev:hover, .components .tovar .slider .slider__vertical .nextBox .next:hover {
+  opacity: 0.5;
 }
-.components .tovar .description__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 25px;
-  padding-bottom: 40px;
+.components .tovar .slider .slider__vertical .prevBox {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
 }
-.components .tovar .description__price .price__roznica, .components .tovar .description__price .price__opt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center;
+.components .tovar .slider .slider__vertical .prevBox .prev {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
-.components .tovar .description__price .price__roznica .price__vartist, .components .tovar .description__price .price__opt .price__vartist {
-  font-size: 21px;
+.components .tovar .slider .slider__vertical .nextBox {
+  margin-left: 85px;
 }
-.components .tovar .description__price .price__roznica .text, .components .tovar .description__price .price__opt .text {
-  color: #8c8c8c;
-  font-size: 14px;
-}
-.components .tovar .description__price .price__roznica {
-  border-right: 1px solid #e5e5e5;
-}
-.components .tovar .description__buttonBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 48px;
-}
-.components .tovar .description__buttonBox .zakaz {
-  margin-right: 3px;
-}
-.components .tovar .description__buttonBox .zakaz:hover {
-  color: #000;
-}
-.components .tovar .description__buttonBox .consultation {
-  margin-left: 3px;
-  color: #E89D94;
-  border-color: #000;
-}
-.components .tovar .description__buttonBox .consultation:hover {
-  background-color: #000;
-  color: #000;
-}
-.components .tovar .description__ymovuZnuzhku {
-  font-size: 14px;
-}
-.components .tovar .description__ymovuZnuzhku .znuzhkaLink {
-  text-decoration: underline;
-  color: #E89D94;
+.components .tovar .slider .slider__vertical .nextBox .next {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .components .vuSmotreli {
   padding-bottom: 80px;

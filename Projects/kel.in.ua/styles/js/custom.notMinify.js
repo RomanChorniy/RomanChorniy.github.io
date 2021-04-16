@@ -279,6 +279,15 @@ $(document).ready(function () {
         autoplay: true,
 
     });
+    $('.slider__vertical').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: "<div class='prevBox'><img src='image/prev-arrow.svg' class='prev' alt='prev arrow'></div>",
+        nextArrow: "<div class='nextBox'><img src='image/next-arrow.svg' class='next' alt='next arrow'></div>",
+        vertical: true,
+        verticalSwiping: true
+    });
     $(function () {
         $("#slider-range").slider({
             range: true,

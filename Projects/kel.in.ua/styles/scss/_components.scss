@@ -798,78 +798,43 @@
         }
     }
     .tovar{
-        padding: 70px 0 66px;
-        display: flex;
-        justify-content: center;
-        .imageBox{
-            padding: 0px 42px 36px;
-            flex: 1;
-            text-align: center;
-        }
-        .description{
-            &__title{
-                font-weight: 500;
-                font-size: 21px;
-                padding-bottom: 20px;
-            }
-            &__parametr{
-                font-size: 13px;
-                color: #8c8c8c;
-                padding-bottom: 15px;
-                &_black{
-                    font-size: 16px;
-                    color: $textColor3;
-                }
-            }
-            &__price{
-                display: flex;
-                justify-content: center;
-                padding-top: 25px;
-                padding-bottom: 40px;
-                .price__roznica, .price__opt{
-                    flex: 1;
-                    text-align: center;
-                    .price__vartist{
-                        font-size: 21px;
-                    }
-                    .text{
-                        color: #8c8c8c;
-                        font-size: 14px;
+        .slider{
+            .slider__vertical{
+                width: 130px;
+                .vertical__item{
+                    max-height: 190px;
+                    margin-bottom: 20px;
+                    .item__image{
+                        width: 100%;
                     }
                 }
-                .price__roznica{
-                    border-right: 1px solid #e5e5e5;
-                }
-            }
-            &__buttonBox{
-                display: flex;
-                justify-content: space-between;
-                padding-bottom: 48px;
-                .zakaz{
-                    margin-right: 3px;
-                    &:hover{
-                        color: $textColor2;
+                .prevBox,.nextBox{
+                    .prev, .next{
+                        cursor: pointer;
+                        opacity: 0.2;
+                        width: 16px;
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
-                .consultation{
-                    margin-left: 3px;
-                    color: $textColor3;
-                    border-color: $mainColor2;
-                    &:hover{
-                        background-color: $mainColor2;
-                        color: $textColor2;
+                .prevBox{
+                    position: absolute;
+                    bottom: 0;
+                    left: 30px;
+                    .prev{
+                        transform: rotate(90deg);
                     }
                 }
-            }
-            &__ymovuZnuzhku{
-                font-size: 14px;
-                .znuzhkaLink{
-                    text-decoration: underline;
-                    color: $textColor3;
+                .nextBox{
+                    margin-left: 85px;
+                    .next{
+                        transform: rotate(90deg);
+                    }
                 }
             }
         }
-    }
+    }    
     .vuSmotreli{
         padding-bottom: 80px;
         .vuSmotreli__title{

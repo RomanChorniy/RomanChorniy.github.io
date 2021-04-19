@@ -1203,6 +1203,138 @@ body .margin-65 {
 .components .tovar .slider .slider__big .big__item_image {
   width: 100%;
 }
+.components .tovar .info .article, .components .tovar .info .color, .components .tovar .info .size, .components .tovar .info .composition, .components .tovar .info .description {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+.components .tovar .info .article:not(.article), .components .tovar .info .color:not(.article), .components .tovar .info .size:not(.article), .components .tovar .info .composition:not(.article), .components .tovar .info .description:not(.article) {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.components .tovar .info .color__text, .components .tovar .info .composition__text, .components .tovar .info .description__text {
+  text-transform: none;
+  color: #515151;
+  font-size: 14px;
+}
+.components .tovar .info .article__number {
+  font-size: 13px;
+}
+.components .tovar .info .tovarName {
+  color: #000;
+  font-size: 24px;
+}
+.components .tovar .info .price {
+  font-size: 24px;
+}
+.components .tovar .info .size__buttonBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  margin: -6px;
+  padding-bottom: 20px;
+}
+.components .tovar .info .size__buttonBox .sizeBlock__btn {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin: 6px;
+}
+.components .tovar .info .size__buttonBox .sizeBlock__btn input {
+  height: 0;
+  position: absolute;
+}
+.components .tovar .info .size__buttonBox .sizeBlock__btn .btn__text {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 11px 0;
+  font-size: 13px;
+  color: #000;
+  border: 1px solid #e5e5e5;
+}
+.components .tovar .info .size__buttonBox .sizeBlock__btn input:checked + .btn__text {
+  background-color: #E89D94;
+  color: #fff;
+  border: 1px solid #E89D94;
+}
+.components .tovar .info .size__buttonBox .sizeBlock__btn input:disabled + .btn__text {
+  background-color: #fff;
+  color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+  position: relative;
+}
+.components .tovar .info .size__buttonBox .sizeBlock__btn input:disabled + .btn__text::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: calc(100% * 1.414);
+  background-color: #e5e5e5;
+  top: 50%;
+  right: -8px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.components .tovar .info .size__customButton {
+  width: 100%;
+  max-width: 201px;
+  height: 40px;
+  border-color: #e5e5e5;
+  color: #000;
+  font-size: 13px;
+  text-transform: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.components .tovar .info .size__customButton:hover {
+  border-color: #ebc8cc;
+  color: #fff;
+  background-color: #ebc8cc;
+}
+.components .tovar .info .size__customButton:active {
+  border-color: #E89D94;
+  background-color: #E89D94;
+}
+.components .tovar .info .buyBox .toBasket {
+  border-color: #E89D94;
+  color: #E89D94;
+}
+.components .tovar .info .buyBox .toBasket:hover {
+  background-color: #E89D94;
+  color: #fff;
+}
+.components .tovar .info .buyBox .toBasket:active {
+  border-color: #ebc8cc;
+  background-color: #ebc8cc;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.components .tovar .info .buyBox .quickBuy {
+  border-color: #000;
+  color: #000;
+}
+.components .tovar .info .buyBox .quickBuy:hover {
+  background-color: #000;
+  color: #fff;
+}
+.components .tovar .info .buyBox .quickBuy:active {
+  border-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.components .tovar .info .buyBox .toBasket, .components .tovar .info .buyBox .quickBuy {
+  font-size: 14px;
+}
 .components .vuSmotreli {
   padding-bottom: 80px;
 }

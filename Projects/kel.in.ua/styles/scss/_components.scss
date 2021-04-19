@@ -845,6 +845,136 @@
                } 
             }
         }
+        .info{
+            .article, .color, .size, .composition, .description{
+                color: #8c8c8c;
+                font-size: 12px;
+                &:not(.article){
+                    font-size: 13px;
+                    text-transform: uppercase;
+                }
+            }
+            .color, .composition, .description{
+                &__text{
+                    text-transform: none;
+                    color: $textColor4;
+                    font-size: 14px;
+                }
+            }
+            .article{
+                &__number{
+                    font-size: 13px;
+                }
+            }
+            .tovarName{
+                color: $textColor2;
+                font-size: 24px;
+            }
+            .price{
+                font-size: 24px;
+            }
+            .size{
+                &__buttonBox{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: start;
+                    margin: -6px;
+                    padding-bottom: 20px;
+                    .sizeBlock__btn{
+                        display: block;
+                        position: relative;
+                        height: 40px;
+                        width: 40px;
+                        text-align: center;
+                        margin: 6px;
+                        input{
+                            height: 0;
+                            position: absolute;
+                        }
+                        .btn__text{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            padding: 11px 0;
+                            font-size: 13px;
+                            color: $textColor2;
+                            border: 1px solid #e5e5e5;
+                        }
+                        input:checked + .btn__text{
+                            background-color: $mainColor3;
+                            color: $textColor1;
+                            border: 1px solid $mainColor3;
+                        }
+                        input:disabled + .btn__text{
+                            background-color: $mainColor1;
+                            color: #e5e5e5;
+                            border: 1px solid #e5e5e5;
+                            position: relative;
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                height: 1px;
+                                width: calc(100% * 1.414);
+                                background-color: #e5e5e5;
+                                top: 50%;
+                                right: -8px;
+                                transform: rotate(-45deg);
+                            }
+                        }
+                    }
+                }
+                &__customButton{
+                    width: 100%;
+                    max-width: 201px;
+                    height: 40px;
+                    border-color: #e5e5e5;
+                    color: $textColor2;
+                    font-size: 13px;
+                    text-transform: none;
+                    transition: none;
+                    &:hover{
+                        border-color: $mainColor4;
+                        color: $textColor1;
+                        background-color: $mainColor4;
+                    }
+                    &:active{
+                        border-color: $mainColor3;
+                        background-color: $mainColor3;
+                    }
+                }
+            }
+            .buyBox{
+                .toBasket{
+                    border-color: $mainColor3;
+                    color: $mainColor3;
+                    &:hover{
+                        background-color: $mainColor3;
+                        color: $textColor1;
+                    }
+                    &:active{
+                        border-color: $mainColor4;
+                        background-color: $mainColor4;
+                        transition: none;
+                    }
+                }
+                .quickBuy{
+                    border-color: $mainColor2;
+                    color: $mainColor2;
+                    &:hover{
+                        background-color: $mainColor2;
+                        color: $textColor1;
+                    }
+                    &:active{
+                        border-color: rgba($mainColor2, $alpha: .8);
+                        background-color: rgba($mainColor2, $alpha: .8);
+                        transition: none;
+                    }
+                }
+                .toBasket, .quickBuy{
+                    font-size: 14px;
+                }
+            }
+        }
     }    
     .vuSmotreli{
         padding-bottom: 80px;

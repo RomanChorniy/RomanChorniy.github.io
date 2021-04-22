@@ -1,1 +1,6 @@
-@import '_global', '_header', '_footer', '_components';
+@import "colors.scss";
+@import "global.scss";
+@import "components.scss";
+@import "header.scss";
+@import "content.scss";
+@import "footer.scss";

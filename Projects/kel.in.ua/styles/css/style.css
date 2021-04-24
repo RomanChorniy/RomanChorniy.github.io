@@ -1155,6 +1155,7 @@ body .margin-65 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 102px;
 }
 .components .tovar .slider {
   display: -webkit-box;
@@ -1375,10 +1376,10 @@ body .margin-65 {
   padding-bottom: 80px;
 }
 .components .vuSmotreli .vuSmotreli__title {
-  font-size: 18px;
-  text-align: center;
-  padding-bottom: 30px;
+  font-size: 36px;
+  padding-bottom: 52px;
   text-transform: uppercase;
+  color: #515151;
 }
 .components .vuSmotreli .vuSmotreli__table {
   display: -webkit-box;
@@ -1387,6 +1388,7 @@ body .margin-65 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: -15px;
 }
 .components .vuSmotreli .vuSmotreli__table .cart {
   display: -webkit-box;
@@ -1404,68 +1406,51 @@ body .margin-65 {
           align-items: center;
   width: 100%;
   max-width: 255px;
-  padding: 0 10px;
   position: relative;
-  background-color: #E89D94;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  margin: 15px;
 }
 .components .vuSmotreli .vuSmotreli__table .cart .imageBox {
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-bottom: 15px;
+}
+.components .vuSmotreli .vuSmotreli__table .cart .imageBox .cart__image {
+  width: 100%;
 }
 .components .vuSmotreli .vuSmotreli__table .cart .cart__title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   padding-bottom: 4px;
-  text-align: center;
-}
-.components .vuSmotreli .vuSmotreli__table .cart .cart__size {
-  color: #8c8c8c;
-  font-size: 14px;
-  padding-bottom: 7px;
+  color: #515151;
 }
 .components .vuSmotreli .vuSmotreli__table .cart .cart__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 10px;
-}
-.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__roznica {
-  text-align: right;
-  border-right: 1px solid #e5e5e5;
-  padding-right: 10px;
-}
-.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__roznica .price__syma {
   font-size: 16px;
+  padding-bottom: 15px;
 }
-.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__roznica .price__name {
-  font-size: 10px;
-  color: #8c8c8c;
+.components .vuSmotreli .vuSmotreli__table .cart .cart__price .font-bold span {
+  font-weight: 400;
 }
-.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__opt {
-  text-align: left;
-  padding-left: 10px;
+.components .vuSmotreli .vuSmotreli__table .cart .cart__byuBtn {
+  text-transform: uppercase;
+  border: 1px solid #E89D94;
+  color: #E89D94;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
-.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__opt .price__syma {
-  font-size: 16px;
+.components .vuSmotreli .vuSmotreli__table .cart .cart__byuBtn:hover {
+  background-color: #E89D94;
   color: #fff;
 }
-.components .vuSmotreli .vuSmotreli__table .cart .cart__price .price__opt .price__name {
-  font-size: 10px;
-  color: #8c8c8c;
+.components .vuSmotreli .vuSmotreli__table .cart:hover {
+  z-index: 1;
+  margin-bottom: -45px;
+}
+.components .vuSmotreli .vuSmotreli__table .cart:hover .cart__byuBtn {
+  display: block;
 }
 @media screen and (max-width: 576px) {
   .components .component p {

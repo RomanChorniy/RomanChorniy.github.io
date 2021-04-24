@@ -800,6 +800,7 @@
     .tovar{
         display: flex;
         justify-content: space-between;
+        padding-bottom: 102px;
         .slider{
             display: flex;
             justify-content: space-between;
@@ -1003,14 +1004,15 @@
     .vuSmotreli{
         padding-bottom: 80px;
         .vuSmotreli__title{
-            font-size: 18px;
-            text-align: center;
-            padding-bottom: 30px;
+            font-size: 36px;
+            padding-bottom: 52px;
             text-transform: uppercase;
+            color: $textColor4;
         }
         .vuSmotreli__table{
             display: flex;
             justify-content: space-between;
+            margin: -15px;
             .cart{
                 display: flex;
                 flex-direction: column;
@@ -1018,54 +1020,47 @@
                 align-items: center;
                 width: 100%;
                 max-width: 255px;
-                padding: 0 10px;
                 position: relative;
-                background-color: $mainColor3;
+                transition: transform .3s ease-in-out;
+                margin: 15px;
                 .imageBox{
-                    text-align: center;
-                    flex: 1;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    .cart__image{
+                        width: 100%;
+                    }
+                    padding-bottom: 15px;
                 }
                 .cart__title{
-                    font-size: 14px;
+                    font-size: 16px;
                     font-weight: 500;
                     padding-bottom: 4px;
-                    text-align: center;
-                }
-                .cart__size{
-                    color: #8c8c8c;
-                    font-size: 14px;
-                    padding-bottom: 7px;
+                    color: #515151;
                 }
                 .cart__price{
-                    display: flex;
-                    justify-content: center;
-                    padding-bottom: 10px;
-                    .price__roznica{
-                        text-align: right;
-                        border-right: 1px solid #e5e5e5;
-                        padding-right: 10px;
-                        .price__syma{
-                            font-size: 16px;
-                        }
-                        .price__name{
-                            font-size: 10px;
-                            color: #8c8c8c;
+                    font-size: 16px;
+                    padding-bottom: 15px;
+                    .font-bold{
+                        span{
+                            font-weight: 400;
                         }
                     }
-                    .price__opt{
-                        text-align: left;
-                        padding-left: 10px;
-                        .price__syma{
-                            font-size: 16px;
-                            color: $textColor1;
-                        }
-                        .price__name{
-                            font-size: 10px;
-                            color: #8c8c8c;
-                        }
+                }
+                .cart__byuBtn{
+                    text-transform: uppercase;
+                    border: 1px solid $mainColor3;
+                    color: $textColor3;
+                    width: 100%;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                    &:hover{
+                        background-color: $mainColor3;
+                        color: $textColor1;
+                    }
+                }
+                &:hover{
+                    z-index: 1;
+                    margin-bottom: -45px;
+                    .cart__byuBtn{
+                        display: block;
                     }
                 }
             }

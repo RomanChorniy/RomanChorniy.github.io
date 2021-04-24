@@ -1148,6 +1148,14 @@ body .margin-65 {
   color: #fff;
   background-color: #E89D94;
 }
+.components .tovar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .components .tovar .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1203,6 +1211,10 @@ body .margin-65 {
 .components .tovar .slider .slider__big .big__item_image {
   width: 100%;
 }
+.components .tovar .info {
+  width: 100%;
+  max-width: 445px;
+}
 .components .tovar .info .article, .components .tovar .info .color, .components .tovar .info .size, .components .tovar .info .composition, .components .tovar .info .description {
   color: #8c8c8c;
   font-size: 12px;
@@ -1216,15 +1228,29 @@ body .margin-65 {
   color: #515151;
   font-size: 14px;
 }
+.components .tovar .info .article {
+  padding-bottom: 8px;
+}
 .components .tovar .info .article__number {
   font-size: 13px;
 }
 .components .tovar .info .tovarName {
   color: #000;
   font-size: 24px;
+  padding-bottom: 29px;
 }
 .components .tovar .info .price {
   font-size: 24px;
+  padding-bottom: 32px;
+}
+.components .tovar .info .color {
+  padding-bottom: 24px;
+}
+.components .tovar .info .size {
+  padding-bottom: 31px;
+}
+.components .tovar .info .size .size__title {
+  padding-bottom: 16px;
 }
 .components .tovar .info .size__buttonBox {
   display: -webkit-box;
@@ -1302,6 +1328,12 @@ body .margin-65 {
   border-color: #E89D94;
   background-color: #E89D94;
 }
+.components .tovar .info .composition {
+  padding-bottom: 42px;
+}
+.components .tovar .info .buyBox {
+  padding-bottom: 36px;
+}
 .components .tovar .info .buyBox .toBasket {
   border-color: #E89D94;
   color: #E89D94;
@@ -1334,6 +1366,10 @@ body .margin-65 {
 }
 .components .tovar .info .buyBox .toBasket, .components .tovar .info .buyBox .quickBuy {
   font-size: 14px;
+}
+.components .tovar .info .description .description__text {
+  padding-top: 7px;
+  line-height: 22.85px;
 }
 .components .vuSmotreli {
   padding-bottom: 80px;

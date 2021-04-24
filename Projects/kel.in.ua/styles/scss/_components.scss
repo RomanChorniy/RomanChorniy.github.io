@@ -798,6 +798,8 @@
         }
     }
     .tovar{
+        display: flex;
+        justify-content: space-between;
         .slider{
             display: flex;
             justify-content: space-between;
@@ -846,6 +848,8 @@
             }
         }
         .info{
+            width: 100%;
+            max-width: 445px;
             .article, .color, .size, .composition, .description{
                 color: #8c8c8c;
                 font-size: 12px;
@@ -862,6 +866,7 @@
                 }
             }
             .article{
+                padding-bottom: 8px;
                 &__number{
                     font-size: 13px;
                 }
@@ -869,11 +874,20 @@
             .tovarName{
                 color: $textColor2;
                 font-size: 24px;
+                padding-bottom: 29px;
             }
             .price{
                 font-size: 24px;
+                padding-bottom: 32px;
+            }
+            .color{
+                padding-bottom: 24px;
             }
             .size{
+                padding-bottom: 31px;
+                .size__title{
+                    padding-bottom: 16px;
+                }
                 &__buttonBox{
                     display: flex;
                     flex-wrap: wrap;
@@ -943,7 +957,11 @@
                     }
                 }
             }
+            .composition{
+                padding-bottom: 42px;
+            }
             .buyBox{
+                padding-bottom: 36px;
                 .toBasket{
                     border-color: $mainColor3;
                     color: $mainColor3;
@@ -972,6 +990,12 @@
                 }
                 .toBasket, .quickBuy{
                     font-size: 14px;
+                }
+            }
+            .description{
+                .description__text{
+                    padding-top: 7px;
+                    line-height: 22.85px;
                 }
             }
         }

@@ -478,25 +478,25 @@
           display: none;
           position: absolute;
           background-color: $mainColor1;
-          border-radius: 20px;
+          border-radius: 5px;
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-          top: -5px;
-          left: -8px;
+          top: -4px;
+          left: -7px;
           z-index: 1;
           &__item{
               display: block;
               color: $textColor2;
               padding: 7px;
               &:hover{
-                  color: green;
+                  color: $textColor3;
               }
           }
         }
-        // &:hover{
-        //   .langMenu{
-        //   display: block;
-        //   }
-        // }
+        &:hover{
+          .langMenu{
+          display: block;
+          }
+        }
       }
     }
   }

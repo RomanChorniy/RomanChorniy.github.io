@@ -2140,11 +2140,11 @@ body .margin-65 {
   display: none;
   position: absolute;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  top: -5px;
-  left: -8px;
+  top: -4px;
+  left: -7px;
   z-index: 1;
 }
 #header .header__container .header__titleBox .language .langMenu__item {
@@ -2153,7 +2153,10 @@ body .margin-65 {
   padding: 7px;
 }
 #header .header__container .header__titleBox .language .langMenu__item:hover {
-  color: green;
+  color: #E89D94;
+}
+#header .header__container .header__titleBox .language:hover .langMenu {
+  display: block;
 }
 @media screen and (max-width: 576px) {
   #header {

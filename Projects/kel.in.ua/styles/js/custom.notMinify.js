@@ -319,4 +319,5 @@ $(document).ready(function () {
     $('.filterBlock').accordion({
         icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
     });
+
 });

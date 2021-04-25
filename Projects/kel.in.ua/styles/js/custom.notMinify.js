@@ -316,8 +316,10 @@ $(document).ready(function () {
     $(".statusOpen").click(function () {
         $(".leftBar").addClass('closeBar');
     });
-    $('.filterBlock').accordion({
-        icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
-    });
+    $('.listTitle').on('click', function (e) {
+        let userBtn = e.target.classList;
 
+        if (userBtn.contains('closeGroup')) userBtn.remove('closeGroup')
+        else userBtn.add('closeGroup');
+    });
 });

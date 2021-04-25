@@ -833,6 +833,7 @@ body .margin-65 {
 .components .catalog .leftBar .filterBlock {
   width: 255px;
   font-family: inherit;
+  border-bottom: 1px solid #e5e5e5;
 }
 .components .catalog .leftBar .filterBlock .listTitle {
   font-size: 14px;
@@ -841,15 +842,20 @@ body .margin-65 {
   padding: 13px 0 16px;
   color: #000;
   font-weight: 500;
+  cursor: pointer;
+}
+.components .catalog .leftBar .filterBlock .listTitle:hover {
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(232, 157, 148, 0.5);
+          box-shadow: 0 0 10px rgba(232, 157, 148, 0.5);
+  background-color: #fff;
 }
 .components .catalog .leftBar .filterBlock .listTitle .ui-icon {
-  background-image: url("../js/jquery-ui-1.12.1.custom/images/ui-icons_000000_256x240.png");
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 6px;
+  background-image: url(../js/jquery-ui-1.12.1.custom/images/ui-icons_000000_256x240.png);
+  background-position: -48px -128px;
+  float: right;
+  margin: auto 6px;
 }
 .components .catalog .leftBar .filterBlock .group {
   border: none;
@@ -886,6 +892,9 @@ body .margin-65 {
   border: 1px solid #d0d0d0;
   display: inline-block;
   margin-right: 7px;
+}
+.components .catalog .leftBar .filterBlock .group:last-child {
+  border-bottom: none;
 }
 .components .catalog .leftBar .filterBlock .brandBlock {
   list-style: none;
@@ -975,6 +984,7 @@ body .margin-65 {
   width: 40px;
   text-align: center;
   margin: 6px;
+  cursor: pointer;
 }
 .components .catalog .leftBar .filterBlock .sizeBlock .sizeBlock__btn input {
   height: 0;
@@ -1011,6 +1021,15 @@ body .margin-65 {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+.components .catalog .leftBar .filterBlock .closeGroup .ui-icon {
+  background-position: -16px -128px;
+}
+.components .catalog .leftBar .filterBlock .closeGroup + .group {
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 .components .catalog .filterResultBlock .block__header {
   display: -webkit-box;

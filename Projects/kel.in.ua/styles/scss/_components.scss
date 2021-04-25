@@ -523,6 +523,7 @@
             .filterBlock{
                 width: 255px;
                 font-family: inherit;
+                border-bottom: 1px solid #e5e5e5;
                 .listTitle{
                     font-size: 14px;
                     background: none;
@@ -530,12 +531,18 @@
                     padding: 13px 0 16px;
                     color: $textColor2;
                     font-weight: 500;
+                    cursor: pointer;
+                    &:hover{
+                        position: relative;
+                        border-radius: 10px;
+                        box-shadow:0 0 10px rgba($mainColor3, $alpha: .5);
+                        background-color: $mainColor1;
+                    }
                     .ui-icon{
-                        background-image: url('../js/jquery-ui-1.12.1.custom/images/ui-icons_000000_256x240.png');
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        right: 6px;
+                        background-image: url(../js/jquery-ui-1.12.1.custom/images/ui-icons_000000_256x240.png);
+                        background-position: -48px -128px;
+                        float: right;
+                        margin: auto 6px;
                     }
                 }
                 .group{
@@ -570,6 +577,9 @@
                             }
                             
                         }
+                    }
+                    &:last-child{
+                        border-bottom: none;
                     }
                 }
                 .brandBlock{
@@ -647,6 +657,7 @@
                         width: 40px;
                         text-align: center;
                         margin: 6px;
+                        cursor: pointer;
                         input{
                             height: 0;
                             position: absolute;
@@ -682,6 +693,17 @@
                             }
                         }
                     }
+                }
+                .closeGroup{
+                    .ui-icon{
+                        background-position: -16px -128px;
+                    }
+                }
+                .closeGroup + .group{
+                    height: 0;
+                    padding: 0;
+                    margin: 0;
+                    overflow: hidden;
                 }
             }
         }

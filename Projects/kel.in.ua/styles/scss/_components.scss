@@ -524,6 +524,9 @@
                 width: 255px;
                 font-family: inherit;
                 border-bottom: 1px solid #e5e5e5;
+                .close__button{
+                    display: none;
+                }
                 .listTitle{
                     font-size: 14px;
                     background: none;
@@ -713,6 +716,18 @@
                 justify-content: space-between;
                 align-items: center;
                 padding-bottom: 15px;
+                .filterBtn{
+                    display: none;
+                    color: $textColor4;
+                    font-size: 14px;
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    white-space: nowrap;
+                    margin-left: auto;
+                    .ui-icon{
+                        background-image: url(../js/jquery-ui-1.12.1.custom/images/ui-icons_E89D94_256x240.png);
+                    }
+                }
             }
             .filterResultBlock__title{
                 text-transform: uppercase;
@@ -1270,109 +1285,58 @@
                 }
             }
         }
-        .produkcia{
+        .catalog{
             padding: 0 15px;
-            .produkcia__category{
-                padding-bottom: 28px;
-                .category__box{
-                    flex-wrap: wrap;
-                    .box__item{
-                        margin-bottom: 15px;
-                        padding: 0 5px;
-                        .box__itemLink{
-                            font-size: 12px;
-                        }
+            .leftBar{
+                display: none;
+                position: absolute;
+                top: 5px;
+                left: 0;
+                background-color: $mainColor1;
+                z-index: 2;
+                height: 100vh;
+                padding: 40px 20px 20px;
+                box-shadow: 0 0 20px rgba($mainColor3, $alpha: .8);
+                border-radius: 0 10px 10px 0;
+                .filterBlock{
+                    .close__button{
+                        display: block;
+                        background-position: -96px -128px;
+                        margin-left: auto;
+                        position: relative;
+                        top: -17px;
+                        right: 6px;
                     }
                 }
             }
-            .produkcia__katalog{
-                margin-bottom: 15px;
-                .cart{
-                    width: 50%;
-                    .imageBox img{
-                        width: 100%;
-                    }
-                    .cart__title, .cart__size{
-                        font-size: 12px;
-                    }
-                    .cart__price{
-                        .price__roznica .price__syma, .price__opt .price__syma{
-                            font-size: 12px;
-                        }
+            .filterResultBlock{
+                .block__header{
+                    padding: 0 15px;
+                    .filterBtn{
+                        display: block;
                     }
                 }
-            }
-            .produkcia__seeMoreBtn{
-                font-size: 13px;
-                margin-bottom: 34px;
-            }
-            .propozucia{
-                font-size: 14px;
-                padding-bottom: 30px;
-                &__text{
-                    padding-bottom: 25px;
+                .filterResultBlock__title{
+                    font-size: calc(17px +  7 * ((100vw - 300px) / (576 - 300)));
                 }
-            }
-        }
-        .tovar{
-            flex-direction: column;
-            padding: 22px 15px 42px;
-            .imageBox{
-                padding: 0px 26px 23px;
-                .imageBox__image{
+                .filterResultBlock__container{
                     width: 100%;
-                }
-            }
-            .description{
-                text-align: center;
-                &__title{
-                    font-size: 16px;
-                    padding-bottom: 10px;
-                }
-                &__parametr{
-                    font-size: 14px;
-                    padding-bottom: 10px;                        
-                    &_name{
-                        display: none;
-                    }
-                    .articul{
-                        font-size: 13px;
-                    }
-                }
-                &__buttonBox{
-                    flex-direction: column;
-                    align-items: center;
-                    .zakaz{
-                        margin: 0 0 9px;
-                        font-size: 12px;
-                    }
-                    .consultation{
-                        margin: 0;
-                        font-size: 12px;
-                    }
-                }
-            }
-        }
-        .vuSmotreli{
-            padding: 0 15px 36px;
-            .vuSmotreli__title{
-                padding-bottom: 10px;
-            }
-            .vuSmotreli__table{
-                .cart{
-                    display: none;
-                    &:first-child, &:nth-child(2){
-                        display: flex;
-                    }
-                    .imageBox img{
-                        width: 100%;
-                    }
-                    .cart__title, .cart__size{
-                        font-size: 12px;
-                    }
-                    .cart__price{
-                        .price__roznica .price__syma, .price__opt .price__syma{
-                            font-size: 12px;
+                    justify-content: center;
+                    margin: 0;
+                    flex-wrap: wrap;
+                    .cart{
+                        flex: 1 1 50%;
+                        .imageBox{
+                            min-width: 150px;
+                        }
+                        .cart__title{
+                            text-align: center;
+                        }
+                        &:hover{
+                            width: 50%;
+                            .cart__byuBtn{
+                                width: 100%;
+                            }
                         }
                     }
                 }

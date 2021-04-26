@@ -362,4 +362,10 @@ $(document).ready(function () {
     $('.mobile__nav .close__button').on('click', function () {
         $('.mobile__nav').css('display', 'none');
     });
+    $('.filterBtn').on('click', function () {
+        $('.leftBar').css('display', 'block');
+    });
+    $('.filterBlock .close__button').on('click', function () {
+        $('.leftBar').css('display', 'none');
+    });
 });

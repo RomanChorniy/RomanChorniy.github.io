@@ -257,7 +257,7 @@
     //     });
     // }
 
-    //Front-end script
+    //Front-end script.
 
 })(jQuery);
 $(document).ready(function () {
@@ -321,5 +321,12 @@ $(document).ready(function () {
 
         if (userBtn.contains('closeGroup')) userBtn.remove('closeGroup')
         else userBtn.add('closeGroup');
+    });
+    console.log($('.mobile__nav::after'));
+    $('.burgerMenu__openBtn').on('click', function () {
+        $('.mobile__nav').css('display', 'block');
+    });
+    $('.mobile__nav .close__button').on('click', function () {
+        $('.mobile__nav').css('display', 'none');
     });
 });

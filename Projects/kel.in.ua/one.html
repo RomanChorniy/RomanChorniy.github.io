@@ -35,11 +35,12 @@
 </head>
 
 <body>
-    <header id="header" class="border-bottom">
+    <header id="header">
         <div class="header__container">
             <div class="header__titleBox">
                 <img src="image/logo.svg" alt="jazz flora. Home decore" class="titleImage">
-                <nav class="header__nav font-regular">
+                <nav class="header__nav mobile__nav font-regular">
+                    <span class="ui-icon close__button"></span>
                     <a href="#" class="navLink">главная</a>
                     <a href="#" class="navLink">коллекции</a>
                     <a href="#" class="navLink">фотопроекты</a>
@@ -48,6 +49,7 @@
                 </nav>
                 <div class="telephoneList">
                     <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+                    <img src="image/phone.svg" alt="phone.svg" class="telephoneIcon">
                     <img src="image/down-arrow.svg" alt="down-arrow.svg" class="telephoneList__button arrowDown">
                     <div class="telephoneList__dropdownMenu">
                         <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
@@ -63,13 +65,12 @@
                     </div>
                 </div>
                 <div class="language">
-                    <a href="http://">Ру</a>
+                    <p class="language_current">Ру</p>
                     <div class="langMenu">
-                        <a class="langMenu__item" href="http://">Ру</a>
-                        <a class="langMenu__item" href="http://">Ук</a>
+                        <a class="langMenu__item" href="#">Ру</a>
+                        <a class="langMenu__item" href="#">Ук</a>
                     </div>
                 </div>
-                <img src="image/phone.svg" alt="phone.svg" class="telephoneIcon">
                 <div class="burgerMenu__openBtn">
                     <div class="burgerMenu__openBtn_line"></div>
                     <div class="burgerMenu__openBtn_line"></div>

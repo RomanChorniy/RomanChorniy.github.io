@@ -1055,6 +1055,7 @@ body .margin-65 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 .components .catalog .filterResultBlock .sortirovkaBtn .text {
   color: #515151;
@@ -1290,6 +1291,7 @@ body .margin-65 {
   width: 40px;
   text-align: center;
   margin: 6px;
+  cursor: pointer;
 }
 .components .tovar .info .size__buttonBox .sizeBlock__btn input {
   height: 0;
@@ -1553,87 +1555,9 @@ body .margin-65 {
   .components .siteTitle .siteTitle__btn {
     font-size: 12px;
   }
-  .components .whatWeDo .whatWeDo__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox, .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox {
+  .components .whatWeDo .whatWeDo__container .whatWeDo__slider {
     width: 100%;
-    margin-bottom: 10px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox {
-    padding: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__image {
-    margin-bottom: 0;
-    height: 200px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox {
-    padding: 18px 15px 33px;
-    font-size: 14px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox .text {
-    margin: 0;
-    max-width: none;
-    padding-bottom: 20px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__blackBox .blackBox__textBox .text__btn {
-    font-size: 12px;
-    margin: 0 auto;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__image {
-    height: 200px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__textBox {
-    padding: 18px 15px 33px;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__textBox .text {
-    margin: 0;
-    max-width: none;
-    padding-bottom: 20px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__goldBox .goldBox__textBox .text__btn {
-    display: block;
-    font-size: 12px;
-    margin: 0 auto;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__image {
-    height: 200px;
-    width: 100%;
-    margin: 0;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox {
-    padding: 18px 15px 33px;
-    font-size: 14px;
-    width: 100%;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox .text {
-    margin: 0;
-    max-width: none;
-    padding-bottom: 20px;
-  }
-  .components .whatWeDo .whatWeDo__container .whatWeDo__whiteBox .whiteBox__textBox .text__btn {
-    display: block;
-    font-size: 12px;
-    margin: 0 auto;
+    max-width: 1110px;
   }
   .components .breadcrumb {
     padding: 10px 15px;
@@ -2053,6 +1977,16 @@ body .margin-65 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+#header .header__container .header__titleBox .header__nav .close__button {
+  display: none;
+  position: absolute;
+  background-image: url(../js/jquery-ui-1.12.1.custom/images/ui-icons_000000_256x240.png);
+  background-position: -96px -128px;
+  top: 25px;
+  right: 20px;
+  height: 16px;
+  width: 16px;
+}
 #header .header__container .header__titleBox .header__nav .navLink {
   color: #000;
   text-transform: uppercase;
@@ -2068,6 +2002,12 @@ body .margin-65 {
 #header .header__container .header__titleBox .telephoneList .phoneNumber {
   font-size: 18px;
   color: #000;
+}
+#header .header__container .header__titleBox .telephoneList .telephoneIcon {
+  display: none;
+  width: 17px;
+  margin-left: auto;
+  margin-right: 14px;
 }
 #header .header__container .header__titleBox .telephoneList .telephoneList__button {
   display: inline-block;
@@ -2120,37 +2060,38 @@ body .margin-65 {
 #header .header__container .header__titleBox .telephoneList:hover .telephoneList__dropdownMenu {
   display: block;
 }
-#header .header__container .header__titleBox .telephoneIcon {
-  display: none;
-  width: 17px;
-  margin-left: auto;
-  margin-right: 14px;
-}
 #header .header__container .header__titleBox .burgerMenu__openBtn {
   display: none;
   position: relative;
-  height: 10px;
+  height: 30px;
   width: 18px;
   padding: 10px 20px;
+  margin-left: 15px;
 }
 #header .header__container .header__titleBox .burgerMenu__openBtn .burgerMenu__openBtn_line {
-  background-color: #fff;
-  height: 1px;
-  width: 18px;
+  background-color: #E89D94;
+  height: 2px;
+  width: 20px;
   position: absolute;
-  top: 50%;
   left: 10px;
 }
 #header .header__container .header__titleBox .burgerMenu__openBtn .burgerMenu__openBtn_line:first-child {
-  top: 5px;
+  top: 7px;
+}
+#header .header__container .header__titleBox .burgerMenu__openBtn .burgerMenu__openBtn_line:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 #header .header__container .header__titleBox .burgerMenu__openBtn .burgerMenu__openBtn_line:last-child {
-  top: 15px;
+  top: auto;
+  bottom: 7px;
 }
 #header .header__container .header__titleBox .language {
   position: relative;
 }
-#header .header__container .header__titleBox .language a {
+#header .header__container .header__titleBox .language .language_current, #header .header__container .header__titleBox .language a {
   color: #000;
   font-size: 12px;
   text-transform: uppercase;
@@ -2162,7 +2103,7 @@ body .margin-65 {
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  top: -4px;
+  top: -7px;
   left: -7px;
   z-index: 1;
 }
@@ -2178,31 +2119,46 @@ body .margin-65 {
   display: block;
 }
 @media screen and (max-width: 576px) {
-  #header {
-    padding: 32px 15px 25px;
+  #header .header__container {
+    padding: 0 15px;
   }
-  #header .header__container .header__titleBox {
-    padding-bottom: 0;
-  }
-  #header .header__container .header__titleBox .titleImage {
-    width: 138px;
-  }
-  #header .header__container .header__titleBox .telephoneList {
+  #header .header__container .header__titleBox .header__nav {
     display: none;
   }
-  #header .header__container .header__titleBox .telephoneIcon {
+  #header .header__container .header__titleBox .mobile__nav {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background-color: #fff;
+    z-index: 2;
+    padding: 45px 15px 30px;
+    -webkit-box-shadow: 0 0 50px rgba(232, 157, 148, 0.8);
+            box-shadow: 0 0 50px rgba(232, 157, 148, 0.8);
+  }
+  #header .header__container .header__titleBox .mobile__nav .close__button {
     display: block;
+  }
+  #header .header__container .header__titleBox .mobile__nav .navLink {
+    display: block;
+    padding: 10px 0;
+  }
+  #header .header__container .header__titleBox .telephoneList .phoneNumber:first-child, #header .header__container .header__titleBox .telephoneList .arrowDown {
+    display: none;
+  }
+  #header .header__container .header__titleBox .telephoneList .telephoneIcon {
+    display: block;
+  }
+  #header .header__container .header__titleBox .telephoneList .telephoneList__dropdownMenu {
+    margin: 0;
+    right: -28px;
+    width: 213px;
   }
   #header .header__container .header__titleBox .burgerMenu__openBtn {
     display: block;
   }
-  #header .header__container .header__nav {
-    display: none;
-  }
-}
-
-.border-bottom {
-  border-bottom: 1px solid #E89D94;
 }
 
 #main .default-template {

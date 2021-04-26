@@ -124,17 +124,17 @@
           }
         }
     }
-    @media screen and (max-width: 576px){
-        .footerContainer{
-            flex-direction: column;
-            align-items: center;
-            padding: 25px 15px 28px;
-            .footerHeaderBox, .footerLinkBox, .footerPhoneBox{
-                padding: 0 0 24px;
-            }
-            .workTime{
-                text-align: center;
-            }
-        }
+  @media screen and (max-width: 576px){
+    .footerContainer{
+      flex-direction: column;
+      align-items: center;
+      padding: 25px 15px 28px;
+      .footerHeaderBox, .footerLinkBox, .footerPhoneBox{
+        padding: 0 0 24px;
+      }
+      .workTime{
+        text-align: center;
+      }
     }
+  }
 }

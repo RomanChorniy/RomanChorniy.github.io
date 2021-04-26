@@ -267,7 +267,24 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: true,
         prevArrow: "<div class='prevBox'><img src='image/prev-arrow.svg' class='prev' alt='prev arrow'></div>",
-        nextArrow: "<div class='nextBox'><img src='image/next-arrow.svg' class='next' alt='next arrow'></div>"
+        nextArrow: "<div class='nextBox'><img src='image/next-arrow.svg' class='next' alt='next arrow'></div>",
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                    infinite: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            }
+        ]
     });
     $('.gallery__slider').slick({
         infinite: true,
@@ -277,7 +294,23 @@ $(document).ready(function () {
         prevArrow: "<div class='prevBox'><img src='image/prev-arrow.svg' class='prev' alt='prev arrow'></div>",
         nextArrow: "<div class='nextBox'><img src='image/next-arrow.svg' class='next' alt='next arrow'></div>",
         autoplay: true,
-
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                    infinite: true,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false
+                }
+            }
+        ]
     });
     $('.slider__vertical').slick({
         slidesToShow: 3,

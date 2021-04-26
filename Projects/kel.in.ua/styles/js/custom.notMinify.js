@@ -1,7 +1,7 @@
 (function ($) {
 
     $(function () {
-        // fancyboxInit();
+        fancyboxInit();
         buttonSignaturesImagesInit();
         sliderSlickInit();
         slowScroll();
@@ -12,9 +12,9 @@
         initCustomReadMore();
         faqComponent();
 
-        // window.lazyLoadOptions = new LazyLoad({
-        //     elements_selector: ".lazy"
-        // });
+        window.lazyLoadOptions = new LazyLoad({
+            elements_selector: ".lazy"
+        });
     });
 
     var slickArgs = {
@@ -244,18 +244,18 @@
         }
     }
 
-    // function fancyboxInit() {
-    //     $('.fancybox-link').fancybox({
-    //         touch: false
-    //     });
+    function fancyboxInit() {
+        $('.fancybox-link').fancybox({
+            touch: false
+        });
 
-    //     $('.fancybox-img-without-link').each(function () {
-    //         $(this).fancybox({
-    //             touch: false,
-    //             href: $(this).attr('src')
-    //         });
-    //     });
-    // }
+        $('.fancybox-img-without-link').each(function () {
+            $(this).fancybox({
+                touch: false,
+                href: $(this).attr('src')
+            });
+        });
+    }
 
     //Front-end script.
 
@@ -355,7 +355,6 @@ $(document).ready(function () {
         if (userBtn.contains('closeGroup')) userBtn.remove('closeGroup')
         else userBtn.add('closeGroup');
     });
-    console.log($('.mobile__nav::after'));
     $('.burgerMenu__openBtn').on('click', function () {
         $('.mobile__nav').css('display', 'block');
     });

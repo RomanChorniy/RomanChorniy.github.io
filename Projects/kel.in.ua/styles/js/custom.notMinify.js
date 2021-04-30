@@ -369,7 +369,6 @@ $(document).ready(function () {
     });
     $('body').on('click', function (e) {
         let userClick = e.target.classList;
-        console.log(userClick);
         if (userClick.contains('telephoneIcon')) {
             $('.telephoneList__dropdownMenu').css('display', 'block');
         }

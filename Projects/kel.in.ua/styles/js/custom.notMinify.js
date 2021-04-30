@@ -300,14 +300,14 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 3,
                     infinite: true,
-                    arrows: false
+                    arrows: true
                 }
             },
             {
                 breakpoint: 430,
                 settings: {
                     slidesToShow: 2,
-                    arrows: false
+                    arrows: true
                 }
             }
         ]
@@ -366,5 +366,22 @@ $(document).ready(function () {
     });
     $('.filterBlock .close__button').on('click', function () {
         $('.leftBar').css('display', 'none');
+    });
+    $('body').on('click', function (e) {
+        let userClick = e.target.classList;
+        console.log(userClick);
+        if (userClick.contains('telephoneIcon')) {
+            $('.telephoneList__dropdownMenu').css('display', 'block');
+        }
+        else {
+            $('.telephoneList__dropdownMenu').css('display', 'none');
+        }
+        if (userClick.contains('language_current')) {
+            $('.langMenu').css('display', 'block');
+        }
+        else {
+            $('.langMenu').css('display', 'none');
+        }
+
     });
 });

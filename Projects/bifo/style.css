@@ -1,0 +1,9 @@
+/*
+ Theme Name: Bifo
+ Version: 2.26
+ Author: Tamlier
+ */
+
+#header .languages .language{margin-left:5px}
+#header .languages .language.active{color:#ff5400}
+#header .bottom-header .text-right .languages .language{margin:0 5px}

@@ -1594,6 +1594,14 @@ body .margin-65 {
   .components .gallery .gallery__slider .photo {
     height: calc(150px + 75 * ((100vw - 300px) / (576 - 300)));
   }
+  .components .gallery .gallery__slider .prevBox, .components .gallery .gallery__slider .nextBox {
+    z-index: 1;
+    opacity: 1;
+    bottom: calc(90px + 38 * ((100vw - 300px) / (576 - 300)));
+  }
+  .components .gallery .gallery__slider .nextBox {
+    left: calc(100vw - 66px);
+  }
   .components .news .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

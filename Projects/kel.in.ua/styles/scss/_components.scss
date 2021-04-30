@@ -1248,6 +1248,14 @@
                .photo{
                    height: calc(150px +  75 * ((100vw - 300px) / (576 - 300)));
                }
+               .prevBox, .nextBox{
+                z-index: 1;
+                opacity: 1;
+                bottom: calc(90px +  38 * ((100vw - 300px) / (576 - 300)));
+               }
+               .nextBox {
+                    left: calc(100vw - 66px);
+               }
            } 
         }
         .news{

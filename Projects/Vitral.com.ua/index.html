@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="dynamicViewport" name="viewport" content="width=1140, user-scalable=1">
+    <script>
+        function changeViewport() {
+            var mvp = document.getElementById("dynamicViewport");
+
+            if (screen.width < 576) {
+                mvp.setAttribute("content", "width=device-width, initial-scale=1, user-scalable=1");
+            } else {
+                mvp.setAttribute("content", "width=1140, user-scalable=1");
+            }
+        }
+
+        changeViewport();
+
+        window.onresize = function (event) {
+            changeViewport();
+        };
+    </script>
+    <title>Vitra.com.ua Main</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/slick.css" />
+    <link rel="stylesheet" href="styles/css/slick-theme.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="styles/js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="styles/js/slick.min.js"></script>
+    <script src="styles/js/jquery.fancybox.min.js"></script>
+    <script src="styles/js/lazyload.min.js"></script>
+    <script src="styles/js/custom.notMinify.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header__container">
+            <div class="menu">
+                <div class="menuBtn">
+                    <div class="menuBtn__container">
+                        <div class="btn__title">menu</div>
+                        <div class="line__box">
+                            <div class="btn__line"></div>
+                            <div class="btn__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__window">
+                <div class="tovarNav">
+                    <div class="tovarNav__container">
+                        <div class="block">
+                            <div class="block__title">ОКНА</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Алюминиевые окна</a>
+                                <a href="" class="list__link">Пластиковые окна</a>
+                                <a href="" class="list__link">Окна для коттеджа</a>
+                                <a href="" class="list__link">Окна для квартиры</a>
+                                <a href="" class="list__link">Окна для балкона</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ВНУТРЕННИЕ ПЕРЕГОРОДКИ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Алюминиевые перегордки</a>
+                                <a href="" class="list__link">Пластиковые перегородки</a>
+                                <a href="" class="list__link">Стеклянные перегородки</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ДВЕРИ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Входные алюминиевые двери</a>
+                                <a href="" class="list__link">Входные пластиковые двери</a>
+                                <a href="" class="list__link">Входные панельные двери</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ВОРОТА И РОЛЛЕТЫ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Гаражные ворота</a>
+                                <a href="" class="list__link">Откатные ворота</a>
+                                <a href="" class="list__link">Панорамные ворота</a>
+                                <a href="" class="list__link">Оконные-дверные роллеты</a>
+                                <a href="" class="list__link">Витринные роллеты</a>
+                                <a href="" class="list__link">Роллетные ворота</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">РАЗДВИЖНЫЕ СИСТЕМЫ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Алюминиевые раздвижные системы</a>
+                                <a href="" class="list__link">Пластиковые раздвижные системы</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ФАСАДНЫЕ СИСТЕМЫ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Стоечно-ригельный фасад</a>
+                                <a href="" class="list__link">Спайдерный фасад</a>
+                                <a href="" class="list__link">Элементный фасад</a>
+                                <a href="" class="list__link">Вентилируемый фасад</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">СТЕКЛОПАКЕТЫ</div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">БЕЗРАМНОЕ ОСТЕКЛЕНИЕ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="siteNav">
+                    <div class="siteNav__container">
+                        <div class="block">
+                            <div class="block__title">УСЛУГИ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Конструкторское бюро</a>
+                                <a href="" class="list__link">Управление проектами</a>
+                                <a href="" class="list__link">Монтаж конструкций</a>
+                                <a href="" class="list__link">Замер конструкций</a>
+                                <a href="" class="list__link">Сервисное обслуживание</a>
+                                <a href="" class="list__link">Доставка продукции</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">КЛИЕНТАМ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Акции компании</a>
+                                <a href="" class="list__link">Наши проекты</a>
+                                <a href="" class="list__link">Видео</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ПАРТНЕРАМ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Архитекторам</a>
+                                <a href="" class="list__link">Дизайнерам</a>
+                                <a href="" class="list__link">Застройщикам</a>
+                                <a href="" class="list__link">Владельцам элитного жилья</a>
+                                <a href="" class="list__link">Владельцам бизнеса</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">КОМПАНИЯ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">О компании</a>
+                                <a href="" class="list__link">Производство</a>
+                                <a href="" class="list__link">Отзывы</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">КОНТАКТЫ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__box">
+                <div class="header__block">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="image/Logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="funcionality">
+                        <div class="telephone">
+                            <a href="tel:+380677705166">+380 67 770 51 66</a>
+                        </div>
+                        <div class="callback">
+                            <a href="" class="siteBtn callback__btn">Заказать звонок</a>
+                        </div>
+                        <div class="socials">
+                            <div class="socials_facebook">
+                                <a href="#" class="socials_link">
+                                    <img src="image/Facebook.svg" alt="Facebook">
+                                </a>
+                            </div>
+                            <div class="socials_instagram">
+                                <a href="#" class="socials_link">
+                                    <img src="image/Instagram.svg" alt="Instagram">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="language">
+                            <div class="language_ukr">
+                                <a href="#">Ук</a>
+                            </div>
+                            <div class="language_rus active">
+                                <a href="#">Ру</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="components">
+            <div id="component-1" class="component"></div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footerContainer">
+            <a class="footerHeaderBox" href="#">
+                <img src="image/" alt="jazz flora. Home decore" class="footerLogo">
+            </a>
+            <div class="footerLinkBox">
+                <a href="https://www.instagram.com/elena.kondratova_design/" class="linkContainer">
+                    <img src="image/Instagram.svg" alt="Instagram">
+                    <p>@elena.kondratova_design</p>
+                </a>
+            </div>
+            <div class="footerPhoneBox">
+                <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+                <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+                <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+            </div>
+            <div class="workTime">
+                <p class="workTime__text">Киев</p>
+                <p class="workTime__text">Пн-Пт 9:00-19:00</p>
+                <p class="workTime__text">Сб-Вс Выходной</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

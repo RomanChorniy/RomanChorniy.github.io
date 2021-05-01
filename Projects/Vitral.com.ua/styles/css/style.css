@@ -2138,7 +2138,6 @@ body .margin-65 {
 }
 #header .header__container .menu__window {
   position: absolute;
-  height: 100vh;
   top: -100vh;
   padding-top: 130px;
   width: 100%;
@@ -2155,12 +2154,12 @@ body .margin-65 {
 #header .header__container .menu__window .tovarNav {
   background-color: #fff;
   padding-top: 40px;
-  height: 53vh;
 }
 #header .header__container .menu__window .tovarNav .tovarNav__container {
   margin: 0 auto;
   width: 100%;
   max-width: 920px;
+  max-height: 410px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2170,7 +2169,6 @@ body .margin-65 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 46vh;
 }
 #header .header__container .menu__window .tovarNav .tovarNav__container .block {
   padding-bottom: 35px;
@@ -2202,10 +2200,12 @@ body .margin-65 {
 #header .header__container .menu__window .siteNav {
   background-color: #1E1E1E;
   padding-top: 40px;
+  padding-bottom: 140px;
 }
 #header .header__container .menu__window .siteNav .siteNav__container {
   width: 100%;
   max-width: 920px;
+  max-height: 309px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2216,7 +2216,6 @@ body .margin-65 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 28vh;
 }
 #header .header__container .menu__window .siteNav .siteNav__container .block {
   padding-bottom: 30px;

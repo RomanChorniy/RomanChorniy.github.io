@@ -416,7 +416,6 @@
       }
       .menu__window{
         position: absolute;
-        height: 100vh;
         top: -100vh;
         padding-top: 130px;
         width: 100%;
@@ -430,15 +429,14 @@
         .tovarNav{
           background-color: #fff;
           padding-top: 40px;
-          height: 53vh;
           .tovarNav__container{
             margin: 0 auto;
             width: 100%;
             max-width: 920px;
+            max-height: 410px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            height: 46vh;
             .block{
               padding-bottom: 35px;
               padding-right: 10px;
@@ -471,14 +469,15 @@
         .siteNav{
           background-color: #1E1E1E;
           padding-top: 40px;
+          padding-bottom: 140px;
           .siteNav__container{
             width: 100%;
             max-width: 920px;
+            max-height: 309px;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            height: 28vh;
             .block{
               padding-bottom: 30px;
               &__title{

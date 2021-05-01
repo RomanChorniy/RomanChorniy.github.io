@@ -265,4 +265,38 @@ $(document).ready(function () {
         $('.menu').toggleClass('menu_open');
         $('.menu__window').toggleClass('menu__window_open');
     });
+    $('.title__slider').slick({
+        infinite: false,
+        vertical: true,
+        verticalSwiping: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<div class="slick-prev"><img src="image/Arrow-down.svg" alt="prevArrow"></div>',
+        nextArrow: '<div class="slick-next"><img src="image/Arrow-down.svg" alt="nextArrow"></div>'
+    });
+    $('.title__slider').on('afterChange', function () {
+        let slides = $('.title__slider .slick-track').children().length;
+        var currentSlide = $('.title__slider').slick('slickCurrentSlide');
+        if (currentSlide == 0) {
+            $('.slick-prev').hide();
+            $('.slick-next').show();
+        }
+        else if (currentSlide == (slides - 1)) {
+            $('.slick-next').hide();
+            $('.slick-prev').show();
+        };
+        if (currentSlide > 0 && currentSlide < (slides - 1)) {
+            $('.slick-prev').show();
+            $('.slick-next').show();
+        };
+    });
+    let slides = $('.title__slider .slick-track').children().length;
+    var currentSlide = $('.title__slider').slick('slickCurrentSlide');
+    if (currentSlide == 0) {
+        $('.slick-prev').hide();
+    }
+    else if (currentSlide == (slides - 1)) {
+        $('.slick-next').hide();
+    }
 });

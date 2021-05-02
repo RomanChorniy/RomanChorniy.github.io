@@ -291,6 +291,7 @@ $(document).ready(function () {
             $('.slick-next').show();
         };
     });
+
     let slides = $('.title__slider .slick-track').children().length;
     var currentSlide = $('.title__slider').slick('slickCurrentSlide');
     if (currentSlide == 0) {
@@ -299,4 +300,6 @@ $(document).ready(function () {
     else if (currentSlide == (slides - 1)) {
         $('.slick-next').hide();
     }
+
+    $('.userForm__userTel').inputmask("+38 099 999 99 99");
 });

@@ -591,6 +591,112 @@ body .margin-65 {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+.components .contactForm .contactForm__container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  background: url();
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.components .contactForm .contactForm__container .contactForm__block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm {
+  color: #1e1e1e;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 350px;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm__title {
+  color: #ed3a4d;
+  font-size: 36px;
+  line-height: 105.5555555556%;
+  padding-bottom: 20px;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm__subtitle {
+  font-size: 16px;
+  line-height: 150%;
+  padding-bottom: 35px;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox {
+  padding-bottom: 35px;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .input__title {
+  display: block;
+  font-size: 13px;
+  line-height: 184.6153846154%;
+  margin-bottom: 5px;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input {
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  padding: 10px 0;
+  width: 100%;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input::-webkit-input-placeholder {
+  color: #c4c4c4;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input::placeholder {
+  color: #c4c4c4;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox:last-child {
+  padding-bottom: 0;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  margin: 0 15px;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox .userForm__selectList {
+  border: none;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox .userForm__selectList .marker {
+  display: none;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox .userForm__selectList option {
+  cursor: pointer;
+}
+.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox .userForm__selectList option:hover {
+  background-color: #ed3a4d;
+  color: #fff;
+}
+.components .contactForm .contactForm__container .contactForm__block .imageBox {
+  margin-bottom: 85px;
+}
+.components .contactForm .contactForm__container .contactForm__block .imageBox:last-child {
+  margin-bottom: 0;
+}
+.components .contactForm .contactForm__container .contactForm__block .imageBox:last-child img {
+  margin-left: auto;
+}
 @media screen and (max-width: 576px) {
   .components .component p {
     padding-left: 0 !important;

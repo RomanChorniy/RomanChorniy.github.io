@@ -351,7 +351,8 @@
       position: fixed;
       transform: translateX(-50%);
       width: 100%;
-      max-width: 1140px;
+      margin: 0 auto;
+      max-width: 1920px;
       height: 130px;
       display: flex;
       justify-content: flex-end;
@@ -421,7 +422,7 @@
         top: -1000%;
         padding-top: 130px;
         width: 100%;
-        max-width: 1140px;
+        max-width: 1920px;
         overflow: auto;
         transition: top 1s ease;
         z-index: 10;
@@ -434,7 +435,7 @@
           .tovarNav__container{
             margin: 0 auto;
             width: 100%;
-            max-width: 920px;
+            max-width: 1570px;
             max-height: 410px;
             display: flex;
             flex-wrap: wrap;
@@ -514,76 +515,58 @@
       .header__box{
         position: relative;
         background-color: #1E1E1E;
-        width: 48.68421052%;
+        flex-basis: 945px;
         padding: 0 15px;
-        display: flex;
         align-items: center;
         z-index: 11;
-      }
-      .header__block{
-        display: inline-flex;
-        justify-content: space-between;
-        .logo{
-          flex: 0 0 265px;
-          a{
-            display: block;
-            img{
+        .header__block {
+          align-items: center;
+          display: flex;
+          height: 100%;
+          justify-content: space-between;
+          .logo {
+            flex: 429px;
+            a img {
               margin: 0 auto;
             }
-          }          
-        }
-        .funcionality{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-content: space-between;
-          .telephone{
-            color: #e5e5e5;
-            font-size: 16px;
-            order: 1;
-            flex: 0 0 160px;
-            text-align: center;
           }
-          .callback{
-            order: 3;
-            align-self: flex-end;
-            .callback__btn{
-              border-color: #ED3A4D;
-              width: 160px;
-              height: 30px;
-              color: #fff;
-              text-transform: none;
-              flex: 0 0 160px;
-              &:hover{
-                background-color: #ED3A4D;
+          .funcionality {
+            align-items: center;
+            color: #e5e5e5;
+            display: flex;
+            flex: 516px;
+            justify-content: space-between;
+            .callback{
+              .callback__btn{
+                border-color: #ed3a4d;
+                width: 160px;
+                height: 30px;
+                color: #fff;
+                text-transform: none;
+                &:hover{
+                  background-color: #ed3a4d;
+                }
               }
             }
-          }
-          .socials{
-            display: flex;
-            justify-content: flex-end;
-            flex: 0 0 110px;
-            order: 4;
-            align-self: flex-end;
-            margin: 0 -7px;
-            .socials_link{
-              display: block;
-              padding: 0 7px;
-            }        
-          }
-          .language{
-            font-size: 12px;
-            color: #7b7b7b;
-            display: flex;
-            justify-content: flex-end;
-            margin: 0 -5px;
-            flex: 0 0 110px;
-            order: 2;
-            a{
-              margin: 0 5px;
+            .socials{
+              display: flex;
+              margin: 0 -7px;
+              .socials_link{
+                display: block;
+                padding: 0 7px;
+              }        
             }
-            .active{
-              color: #e5e5e5;
+            .language{
+              font-size: 12px;
+              color: #7b7b7b;
+              display: flex;
+              margin: 0 -5px;
+              a{
+                margin: 0 5px;
+              }
+              .active{
+                color: #e5e5e5;
+              }
             }
           }
         }

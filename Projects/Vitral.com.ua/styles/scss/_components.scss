@@ -385,6 +385,95 @@
         }
       }
     }
+    .partners {
+      background-color: #1e1e1e;
+      padding: 80px 15px;
+      &__container {
+        margin: 0 auto;
+        max-width: 1110px;
+        width: 100%;
+        .container__title {
+          color: #fff;
+          font-size: 36px;
+          padding-bottom: 50px;
+        }
+        .partners__slider {
+          .partners__item {
+            img {
+              margin: 0 auto;
+            }
+          }
+          .slick-arrow {
+            &::before{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .aboutUs {
+      background-color: #1e1e1e;
+      &__container {
+        color: #fff;
+        font-size: 36px;
+        margin: 0 auto;
+        max-width: 950px;
+        padding: 40px 0 100px;
+        width: 100%;
+        .container__title {
+          padding-bottom: 60px;
+        }
+        .conteiner__article {
+          padding-bottom: 80px;
+          .seeMore {
+            border-color: #fff;
+            color: #fff;
+            float: right;
+            width: 250px;
+            &:hover{
+              background-color: #fff;
+              color: #000;
+            }
+          }
+          .article__text {
+            font-size: 0.4444em;
+            line-height: 25 / 16 * 100%;
+            &__container {
+              max-width: 539px;
+              width: 100%;
+              padding-bottom: 10px;
+            }
+            &_hideText {
+              display: none;
+              overflow: hidden;
+              .seeMore {
+                display: flex;
+                float: none;
+                margin: 0 auto;
+                margin-top: 30px;
+              }
+            }
+          }
+        }
+        .aboutUs__slider {
+          .certificate {
+            &__photo {
+              margin: 0 15px;
+              a img {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+              }
+            }
+            .slick-arrow {
+              &::before{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
     
     @media screen and (max-width: 576px) {
         .component {

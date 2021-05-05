@@ -302,4 +302,23 @@ $(document).ready(function () {
     }
 
     $('.userForm__userTel').inputmask("+38 099 999 99 99");
+    $('.partners__slider').slick({
+        infinite: true,
+        slidesToShow: 5,
+        prevArrow: '<div class="slick-prev"><img src="image/Arrow-prev.svg" alt="prevArrow"></div>',
+        nextArrow: '<div class="slick-next"><img src="image/Arrow-next.svg" alt="nextArrow"></div>'
+    });
+
+    $('.aboutUs .seeMore').on('click', function () {
+        $('.article__text_hideText').toggleClass('visible');
+        $('.article__text_hideText').slideToggle('slow');
+        if ($('.article__text_hideText').hasClass('visible')) $('.aboutUs .seeMore').text('Свернуть')
+        else $('.aboutUs .seeMore').text('Подробнее');
+    });
+    $('.certificate').slick({
+        infinite: true,
+        slidesToShow: 5,
+        prevArrow: '<div class="slick-prev"><img src="image/Arrow-prev.svg" alt="prevArrow"></div>',
+        nextArrow: '<div class="slick-next"><img src="image/Arrow-next.svg" alt="nextArrow"></div>'
+    });
 });

@@ -315,6 +315,12 @@ $(document).ready(function () {
         if ($('.article__text_hideText').hasClass('visible')) $('.aboutUs .seeMore').text('Свернуть')
         else $('.aboutUs .seeMore').text('Подробнее');
     });
+    $('.aboutGoods .seeMore').on('click', function () {
+        $('.article__text_hideText').toggleClass('visible');
+        $('.article__text_hideText').slideToggle('slow');
+        if ($('.article__text_hideText').hasClass('visible')) $('.aboutGoods .seeMore').text('Свернуть')
+        else $('.aboutGoods .seeMore').text('Подробнее');
+    });
     $('.certificate').slick({
         infinite: true,
         slidesToShow: 5,

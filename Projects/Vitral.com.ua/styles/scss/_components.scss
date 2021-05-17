@@ -547,6 +547,151 @@
         }
       }
     }
+    .catalog {
+      border-bottom: 1px solid #1e1e1e;
+      .catalog__box {
+        border-top: 1px solid #e5e5e5;
+        margin: 0 auto;
+        max-width: 920px;
+        padding-top: 35px;
+        width: 100%;
+        .brandOffers {
+          font-size: 16px;
+          padding-bottom: 30px;
+          .brandOffers__title {
+            color: #1e1e1e;
+            font-size: 2.25em;
+            font-weight: 500;
+          }
+          .goodsCat {
+            .goodsCat__item {
+              display: flex;
+              flex-wrap: wrap;
+              margin: 0 -15px;
+              .card {
+                color: #1e1e1e;
+                border: 1px solid #f2f2f2;
+                margin: 15px;
+                max-width: 255px;
+                padding: 0 25px 25px;
+                width: 100%;
+                .card__front {
+                  .imageBox {
+                    width: 205px;
+                    height: 205px;
+                    margin-bottom: 20px;
+                    position: relative;
+                    .imageBox__image {
+                      width: 100%;
+                      height: 100%;
+                    }
+                    .imageBox_back {
+                      background-color: rgba($color: #fff, $alpha: .9);
+                      height: 100%;
+                      position: absolute;
+                      top: 0;
+                      width: 100%;
+                      z-index: -1;
+                      .image__link {
+                        display: block;
+                        .parameters {
+                          text-align: center;
+                          .parameters__item {
+                            padding-bottom: 10px;
+                            .parameter__name {
+                              font-size: 0.8125em;
+                              font-weight: 400;
+                            }
+                            &:last-child {
+                              padding-bottom: 0;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .card__title {
+                    font-size: 1.25em;
+                    text-align: center;
+                    padding-bottom: 20px;
+                  }
+                  .card__btn {
+                    .siteBtn {
+                      color: #1e1e1e;
+                      border-color: #1e1e1e;
+                      margin: 0 auto;
+                      max-width: 205px;
+                      width: 100%;
+                      &:hover {
+                        background-color: #ed3a4d;
+                      }
+                    }
+                  }
+                }
+                &:hover {
+                  .card__front {
+                    .imageBox {
+                      .imageBox_back {
+                        z-index: 1;
+                      }
+                    }
+                    .card__btn {
+                      .siteBtn {
+                        background-color: #ed3a4d;
+                        border-color: #ed3a4d;
+                        color: #fff;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .aboutGoods {
+      background-color: #1e1e1e;
+      &__container {
+        color: #fff;
+        font-size: 36px;
+        margin: 0 auto;
+        max-width: 950px;
+        padding: 70px 15px;
+        width: 100%;
+        .conteiner__article {
+          .seeMore {
+            border-color: #fff;
+            color: #fff;
+            float: right;
+            width: 250px;
+            &:hover{
+              background-color: #fff;
+              color: #000;
+            }
+          }
+          .article__text {
+            font-size: 0.4444em;
+            line-height: 25 / 16 * 100%;
+            &__container {
+              max-width: 539px;
+              width: 100%;
+              padding-bottom: 10px;
+            }
+            &_hideText {
+              display: none;
+              overflow: hidden;
+              .seeMore {
+                display: flex;
+                float: none;
+                margin: 0 auto;
+                margin-top: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
     
     @media screen and (max-width: 576px) {
         .component {

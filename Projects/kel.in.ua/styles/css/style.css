@@ -88,7 +88,6 @@ body .popup {
 }
 body .popup .text {
   max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 0 50px;
 }
@@ -587,12 +586,14 @@ body .margin-65 {
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__slider .cart .imageBox .cart__image {
   width: 100%;
+  height: 100%;
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__slider .cart .cart__title {
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 4px;
   color: #515151;
+  text-align: center;
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__slider .cart .cart__price {
   font-size: 16px;
@@ -982,6 +983,7 @@ body .margin-65 {
 }
 .components .catalog .leftBar .filterBlock .sizeBlock .sizeBlock__btn {
   display: block;
+  background-color: #fff;
   position: relative;
   height: 40px;
   width: 40px;
@@ -992,6 +994,7 @@ body .margin-65 {
 .components .catalog .leftBar .filterBlock .sizeBlock .sizeBlock__btn input {
   height: 0;
   position: absolute;
+  z-index: -1;
 }
 .components .catalog .leftBar .filterBlock .sizeBlock .sizeBlock__btn .btn__text {
   display: block;
@@ -1034,6 +1037,12 @@ body .margin-65 {
   margin: 0;
   overflow: hidden;
 }
+.components .catalog .filterResultBlock {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 15px;
+}
 .components .catalog .filterResultBlock .block__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1071,6 +1080,8 @@ body .margin-65 {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  position: relative;
+  background-color: #fff;
 }
 .components .catalog .filterResultBlock .sortirovkaBtn .text {
   color: #515151;
@@ -1079,6 +1090,8 @@ body .margin-65 {
 }
 .components .catalog .filterResultBlock .sortirovkaBtn input {
   height: 0;
+  position: relative;
+  z-index: -1;
 }
 .components .catalog .filterResultBlock .sortirovkaBtn input:checked + .sortirovkaBtn__arrow {
   -webkit-transform: rotate(180deg);
@@ -1142,6 +1155,7 @@ body .margin-65 {
   font-weight: 500;
   padding-bottom: 4px;
   color: #515151;
+  text-align: center;
 }
 .components .catalog .filterResultBlock .filterResultBlock__container .cart .cart__price {
   font-size: 16px;
@@ -1208,6 +1222,7 @@ body .margin-65 {
 .components .tovar .slider .slider__vertical .vertical__item {
   max-height: 190px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .components .tovar .slider .slider__vertical .vertical__item .item__image {
   width: 100%;
@@ -1307,10 +1322,12 @@ body .margin-65 {
   text-align: center;
   margin: 6px;
   cursor: pointer;
+  background-color: #fff;
 }
 .components .tovar .info .size__buttonBox .sizeBlock__btn input {
   height: 0;
   position: absolute;
+  z-index: -1;
 }
 .components .tovar .info .size__buttonBox .sizeBlock__btn .btn__text {
   display: block;
@@ -1461,6 +1478,7 @@ body .margin-65 {
   font-weight: 500;
   padding-bottom: 4px;
   color: #515151;
+  text-align: center;
 }
 .components .vuSmotreli .vuSmotreli__table .cart .cart__price {
   font-size: 16px;
@@ -1581,12 +1599,22 @@ body .margin-65 {
     width: 100%;
     max-width: 1110px;
   }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__slider .cart {
+    z-index: 1;
+    margin-bottom: -60px;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__slider .cart .cart__byuBtn {
+    display: block;
+  }
   .components .whatWeDo .whatWeDo__container .whatWeDo__slider .cart .cart__title {
     text-align: center;
   }
   .components .whatWeDo .whatWeDo__container .whatWeDo__slider .nextBox {
     left: auto;
     right: 0;
+  }
+  .components .whatWeDo .whatWeDo__container .whatWeDo__slider .prevBox, .components .whatWeDo .whatWeDo__container .whatWeDo__slider .nextBox {
+    z-index: 1;
   }
   .components .gallery {
     padding: 15px;
@@ -2196,6 +2224,9 @@ body .margin-65 {
 #header .header__container .header__titleBox .language:hover .langMenu {
   display: block;
 }
+#header .header__container .header__titleBox .show .langMenu, #header .header__container .header__titleBox .show .telephoneList__dropdownMenu {
+  display: block;
+}
 @media screen and (max-width: 576px) {
   #header .header__container {
     padding: 0 15px;
@@ -2226,7 +2257,7 @@ body .margin-65 {
   #header .header__container .header__titleBox .telephoneList {
     margin-right: 20px;
   }
-  #header .header__container .header__titleBox .telephoneList .phoneNumber:first-child, #header .header__container .header__titleBox .telephoneList .arrowDown {
+  #header .header__container .header__titleBox .telephoneList > .phoneNumber:first-child, #header .header__container .header__titleBox .telephoneList .arrowDown {
     display: none;
   }
   #header .header__container .header__titleBox .telephoneList .telephoneIcon {
@@ -2234,6 +2265,7 @@ body .margin-65 {
   }
   #header .header__container .header__titleBox .telephoneList .telephoneList__dropdownMenu {
     margin: 0;
+    padding-top: 50px;
     right: -28px;
     width: 213px;
   }

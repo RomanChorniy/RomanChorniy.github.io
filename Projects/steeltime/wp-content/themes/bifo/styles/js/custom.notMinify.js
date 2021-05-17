@@ -11,6 +11,8 @@
         initContactFormConversion();
         initCustomReadMore();
         faqComponent();
+        openTelMobile();
+        openMenuBurger();
 
         window.lazyLoadOptions = new LazyLoad({
             elements_selector: ".lazy"
@@ -102,7 +104,7 @@
             });
 
             btn.on('click', function (e) {
-                $('html, body').animate({scrollTop: 0});
+                $('html, body').animate({ scrollTop: 0 });
             });
         }
     }
@@ -257,4 +259,17 @@
         });
     }
 
+    function openTelMobile() {
+        $('.tel-mobile__title').on('click', function () {
+            $('.title__arrow').toggleClass('rotate');
+            $('.tel-mobile__list').toggleClass('show');
+        });
+    }
+    function openMenuBurger() {
+        $('.menu__icon').on('click', function () {
+            $('.navbar_menu').toggleClass('open');
+            if ($('.navbar_menu').hasClass('open')) $('.navbar_menu').css('display', 'block');
+            else $('.navbar_menu').css('display', 'none');
+        });
+    }
 })(jQuery);

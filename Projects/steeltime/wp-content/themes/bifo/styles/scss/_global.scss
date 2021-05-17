@@ -28,6 +28,10 @@ body {
 
     &:hover {
       text-decoration: none;
+      color: rgba($color: #00a5c6, $alpha: .5)
+    }
+    &:active {
+      color: #fe8300;
     }
   }
 
@@ -266,6 +270,22 @@ body {
     transition: .5s ease;
     padding: .4em;
     white-space: nowrap
+  }
+
+  .siteBtn {
+    background-color: #fe8300;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    &:hover {
+      background-color: #ff9839;
+      color: #fff;
+    }
+    &:active {
+      background-color: #ffc839;
+    }
   }
 
   @media (min-width: 577px) {

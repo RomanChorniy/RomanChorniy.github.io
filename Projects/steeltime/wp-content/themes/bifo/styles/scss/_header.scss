@@ -12,8 +12,6 @@
   .top-header {
     color: #2f5462;
     .header-wrapper {
-      padding-top: 15px;
-      padding-bottom: 15px;
 
       &.padding-top-header {
         padding-right: 30px;
@@ -94,9 +92,12 @@
       }
 
       .header-type-4 {
+        align-items: center;
+        height: 110px;
         .info {
+          width: calc(100% - 229px);
           .text-header-info {
-            display: flex;
+            display: none;
             justify-content: flex-end;
             align-items: center;
           }
@@ -127,26 +128,93 @@
         }
       }
     }
+    .top-header__blueline{
+      background-color: #2f5462;
+      color: #fff;
+      .bluline__container{
+        align-items: center;
+        display: flex;
+        font-size: 12px;
+        height: 45px;
+        .container__block{
+          align-items: center;
+          display: flex;
+          padding-right: 20px;
+          &:last-child {
+            padding-right: 0;
+          }
+          .block__icon{
+            padding-right: 7px;
+          }
+          .tel__numb {
+            padding-right: 15px;
+          }
+        }
+        .tel {
+          flex: 1;
+        }
+        .tel-mobile {
+          display: none;
+        }
+        .lang {
+          .lang__item {
+            padding: 0 4px;
+            border-bottom: 1px dotted transparent;
+            &:hover {
+              border-bottom-color: #fff;              
+            }
+          }
+          .active {
+            border-bottom-color: #fff;
+          }
+        }
+        .social{
+          display: flex;
+          flex: 0 0 70px;
+          justify-content: space-between;
+        }
+      }
+    }
   }
 
   .bottom-header {
     overflow: hidden;
-
+    background: url('../../../../../images/workers-wearing-industrial-uniforms-welded-iron-mask-steel-welding-plants.jpg') center / cover no-repeat;
+    width: 100%;
     .wrapper-size {
       position: relative;
-
-      .header-image-bg {
-        display: block;
-        position: absolute;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+      .text {
+        align-items: center;
+        display: flex;
+        height: 525px;
+        justify-content: start;
       }
-
-      .header-image-text {
-        .image-text {
-          padding: 0 65px;
-          margin: auto 0;
+      .title__container {
+        max-width: 636px;
+        width: 100%;
+        .title {
+          color: #00a5c6;
+          font-size: 48px;
+          font-weight: 700;
+          span {
+            color: #fff;
+            font-size: 36px;
+          }
+        }
+        .motto {
+          color: #fff;
+          font-size: 36px;
+          line-height: 50 / 36 * 100%;
+          text-transform: uppercase;
+          padding-bottom: 17px;
+        }
+        .siteBtn {
+          align-items: center;
+          display: flex;
+          height: 55px;
+          justify-content: center;
+          max-width: 275px;
+          text-transform: uppercase;
         }
       }
     }
@@ -155,7 +223,11 @@
   .navbar-wrapper {
     .navbar {
       padding: 10px 0;
-
+      .container {
+        .navbar_menu{
+          display: block;
+        }
+      }
       &.padding-navbar {
         padding-right: 30px;
         padding-left: 30px;
@@ -174,11 +246,19 @@
         .nav-item {
           letter-spacing: 0.5px;
           font-size: 13px;
-          margin-right: 40px;
+          margin-right: 30px;
           list-style-type: none;
+          padding: 0 10px;
+          
+          &:hover .nav-link{
+            color: #fe8300;
+          }
 
           .nav-link {
             display: inline-block;
+            color: #2f5462;
+            font-size: 14px;
+            font-weight: 700;
             padding: 0;
 
             &.dropdown-toggle {
@@ -188,13 +268,14 @@
             }
           }
 
-          .nav-link.active,
           .dropdown-item.active {
             color: #0056b3;
           }
 
           &.dropdown {
             margin-right: 20px;
+            position: relative;
+            
 
             .dropdown-toggle {
               display: inline-block;
@@ -203,25 +284,37 @@
 
             .dropdown-arrow {
               display: inline-block;
-              border-top: 0.4em solid;
-              border-right: 0.4em solid transparent;
-              border-bottom: 0;
-              border-left: 0.4em solid transparent;
               -webkit-transition: 0.3s;
               transition: 0.3s;
+              width: 14px;
+              height: 9px;
+              background: url(../../../../../images/arrow_down.svg) center top no-repeat;
             }
 
             .dropdown-menu {
-              margin: 0;
+              background-color: #2f5462;
+              border-radius: 0;
+              left: auto;
+              padding: 30px 20px 40px;
+
+              right: -1px;
+              top: 19px;
+              width: 250px;
 
               .dropdown-item {
+                color: #fff;
                 white-space: normal;
-                font-size: 13px;
-                padding-right: 20px;
-                padding-left: 20px;
-
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 17 / 14 * 100%;
+                padding: 0 0 20px;
+                &:last-child {
+                  padding-bottom: 0;
+                }
+                
                 &:hover {
                   background-color: unset;
+                  color: #fe8300;
                 }
 
                 &.active {
@@ -231,12 +324,19 @@
             }
 
             &.show {
+              background-color: #fe8300;
+              
+              
+              .nav-link {
+                color: #fff;
+              }
               .dropdown-arrow {
-                -moz-transform: rotate(180deg);
-                -ms-transform: rotate(180deg);
-                -webkit-transform: rotate(180deg);
-                -o-transform: rotate(180deg);
-                transform: rotate(180deg);
+                background: url(../../../../../images/arrow_up.svg) center top no-repeat;
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
               }
             }
           }
@@ -259,7 +359,7 @@
         }
 
         .d-flex {
-          display: block !important;
+          display: block;
         }
 
         .slug-or-name-company {
@@ -297,7 +397,7 @@
 
         .header-type-4 {
           .info {
-            width: 100% !important;
+            width: 100%;
 
             .text-header-info {
               display: block;
@@ -309,10 +409,154 @@
           }
         }
       }
+      .top-header__blueline {
+        .wrapper-size{
+          padding: 0 15px;
+          .bluline__container {
+            justify-content: space-between;
+            .address, .lang, .tel{
+              display: none;
+            }
+            .tel-mobile {
+              display: block;
+              position: relative;
+              z-index: 20;
+              .tel-mobile__title {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                .title__arrow {
+                  transform: rotate(180deg);
+                }
+                .rotate {
+                  transform: rotate(0deg);
+                }
+              }
+              .tel-mobile__list {
+                display: none;
+                padding: 20px 15px;
+                .tel__numb {
+                  padding: 0;
+                  padding-bottom: 20px;
+                  &:last-child {
+                    padding-bottom: 0;
+                  }
+                }
+              }
+              .show {
+                background-color: #2f5462;
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 90%;
+              }
+            }
+          }
+        }
+      }
+      .wrapper-size {
+        .header-wrapper {
+          .header-type-4 {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            .logo {
+              flex: 1;
+            }
+            .info {
+              width: auto;
+              .text-header-info {
+                display: none;
+              }
+              .navbar-wrapper {
+                .navbar {
+                  .container{
+                    justify-content: start;
+                    position: relative;
+                    button {
+                      border: none;
+                      .menu__icon {
+                        background: url('../../../../../images/menu.svg') center / cover no-repeat;
+                        display: block;
+                        height: 15px;
+                        width: 30px;
+                      }
+                    }
+                    .navbar_menu {
+                      position: absolute;
+                      display: none;
+                      top: -45px;
+                      left: -15px;
+                      background-color: #2f5462;
+                      padding: 30px 20px 60px;
+                      width: 136px;
+                      z-index: 10;
+                      .menu__icon {
+                        background: url('../../../../../images/menu.svg') center / cover no-repeat;
+                        display: block;
+                        width: 30px;
+                        height: 15px;
+                        margin-bottom: 5px;
+                      }
+                      .navbar-nav {
+                        .nav-item {
+                          padding: 15px 0 0;
+
+                          text-align: left;
+                          .nav-link {
+                            color: #fff;
+                            font-size: 9px;
+                          }
+                          .dropdown-arrow {
+                            display: none;
+                          }
+                        }
+                      }
+                      .navbar__lang {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 25px;
+                        width: 100%;
+                        max-width: 62px;
+                        .lang__item {
+                          a {
+                            color: #fff;
+                            font-size: 9px;
+                            font-weight: 700;
+                            text-transform: none;
+                          }
+                        }
+                      }
+                    }
+                    .open {
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     .bottom-header {
       .wrapper-size {
+        padding: 0 15px;
+        .text {
+          height: calc(338px + 187 * ((100vw - 300px) / (575 - 300)));
+          .title__container{
+            .title {
+              font-size: calc(28px + 20 * ((100vw - 300px) / (575 - 300)));
+              span {
+                font-size: calc(21px + 15 * ((100vw - 300px) / (575 - 300)));
+              }
+            }
+            .motto {
+              font-size: calc(22px + 14 * ((100vw - 300px) / (575 - 300)));
+            }
+          }
+        }
         .header-image-bg {
           display: none;
         }

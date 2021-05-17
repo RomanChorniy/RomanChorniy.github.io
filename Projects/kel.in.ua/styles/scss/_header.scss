@@ -445,7 +445,7 @@
             }
           }
         }
-        &:hover{
+        &:hover {
           .telephoneList__dropdownMenu{
             display: block;
           }
@@ -508,6 +508,11 @@
           }
         }
       }
+      .show {
+        .langMenu, .telephoneList__dropdownMenu {
+          display: block;
+        }
+      }
     }
   }
   @media screen and (max-width: 576px){
@@ -538,7 +543,7 @@
         }
         .telephoneList{
           margin-right: 20px;
-          .phoneNumber:first-child, .arrowDown{
+          & > .phoneNumber:first-child, .arrowDown{
             display: none;
           }
           .telephoneIcon{
@@ -546,6 +551,7 @@
           }
           .telephoneList__dropdownMenu{
             margin: 0;
+            padding-top: 50px;
             right: -28px;
             width: 213px;
           }

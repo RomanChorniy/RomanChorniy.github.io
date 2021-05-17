@@ -312,6 +312,13 @@ $(document).ready(function () {
             }
         ]
     });
+    $('.slider__big').slick({
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider__vertical',
+        arrows: false
+    });
     $('.slider__vertical').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -320,14 +327,8 @@ $(document).ready(function () {
         nextArrow: "<div class='nextBox'><img src='image/next-arrow.svg' class='next' alt='next arrow'></div>",
         vertical: true,
         verticalSwiping: true,
-        asNavFor: '.slider__big'
-    });
-    $('.slider__big').slick({
-        fade: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.slider__vertical',
-        arrows: false
+        asNavFor: '.slider__big',
+        focusOnSelect: true
     });
     $(function () {
         $("#slider-range").slider({
@@ -367,20 +368,17 @@ $(document).ready(function () {
     $('.filterBlock .close__button').on('click', function () {
         $('.leftBar').css('display', 'none');
     });
-    $('body').on('click', function (e) {
-        let userClick = e.target.classList;
-        if (userClick.contains('telephoneIcon')) {
-            $('.telephoneList__dropdownMenu').css('display', 'block');
-        }
-        else {
-            $('.telephoneList__dropdownMenu').css('display', 'none');
-        }
-        if (userClick.contains('language_current')) {
-            $('.langMenu').css('display', 'block');
-        }
-        else {
-            $('.langMenu').css('display', 'none');
-        }
+    $('.telephoneList').on('click', function () {
+        $('.telephoneList').toggleClass('show');
+    });
+    $(document).on('click', function (e) {
+        let div = $(".telephoneList");
+        let div2 = $(".language");
 
+        if (!div.is(e.target) && div.has(e.target).length === 0) div.removeClass('show');
+        if (!div2.is(e.target) && div2.has(e.target).length === 0) div2.removeClass('show');
+    });
+    $('.language').on('click', function () {
+        $('.language').toggleClass('show');
     });
 });

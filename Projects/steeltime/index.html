@@ -103,9 +103,6 @@
 <body
     class="home page-template page-template-templates page-template-components page-template-templatescomponents-php page page-id-366 logged-in admin-bar no-customize-support">
     <style>
-        body a:hover,
-        body a:hover span,
-        #header .navbar .navbar-nav .nav-item .nav-link.active,
         #header .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item.active,
         .languages .language.active {
             color: #404e61 !important
@@ -118,6 +115,74 @@
     </style>
     <header id="header">
         <div class="top-header">
+            <div class="top-header__blueline">
+                <div class="wrapper-size">
+                    <div class="bluline__container">
+                        <div class="tel container__block">
+                            <div class="block__icon">
+                                <img src="images/phone.svg" alt="phone">
+                            </div>
+                            <div class="tel__numb">
+                                <a href="tel:+380674452710">+38 067-445-27-10</a>
+                            </div>
+                            <div class="tel__numb">
+                                <a href="tel:+380442099868">+38 044-209-98-68</a>
+                            </div>
+                        </div>
+                        <div class="tel-mobile container__block">
+                            <div class="tel-mobile__title">
+                                <div class="block__icon">
+                                    <img src="images/phone.svg" alt="phone">
+                                </div>
+                                <div class="tel__numb">
+                                    <a href="#">+38 067-445-27-10</a>
+                                </div>
+                                <div class="title__arrow">
+                                    <img src="images/arrow_up.svg" alt="arrow_up">
+                                </div>
+                            </div>
+                            <div class="tel-mobile__list">
+                                <div class="tel__numb">
+                                    <a href="tel:+380674452710">+38 067-445-27-10</a>
+                                </div>
+                                <div class="tel__numb">
+                                    <a href="tel:+380674452710">+38 067-445-27-10</a>
+                                </div>
+                                <div class="tel__numb">
+                                    <a href="tel:+380674452710">+38 067-445-27-10</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address container__block">
+                            <div class="block__icon">
+                                <img src="images/location.svg" alt="location">
+                            </div>
+                            <div class="block__text">Київ, вул. Лебединська 4</div>
+                        </div>
+                        <div class="lang container__block">
+                            <div class="lang__item active">
+                                <a href="#">Укр</a>
+                            </div>
+                            <span>/</span>
+                            <div class="lang__item">
+                                <a href="#">Eng</a>
+                            </div>
+                        </div>
+                        <div class="social container__block">
+                            <div class="social__item">
+                                <a href="https://web.telegram.org/">
+                                    <img src="images/telegram.svg" alt="telegram">
+                                </a>
+                            </div>
+                            <div class="social__item">
+                                <a href="https://www.facebook.com/">
+                                    <img src="images/facebook.svg" alt="facebook">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="wrapper-size">
                 <div class="header-wrapper">
                     <div class="d-flex justify-content-between header-type-4">
@@ -125,21 +190,22 @@
                             <a href="http://steeltime.bifo-test.com"><img data-src="wp-content/uploads/2020/10/logo.png"
                                     alt="Logo" class="lazy img-fluid"></a>
                         </div>
-                        <div class="info" style="width: calc(100% - 229px);">
+                        <div class="info">
                             <div class="text-header-info">
                                 <div class="d-inline-block text-header"><a class="fancybox-link wrapper-icon-fos"
                                         data-scroll="disable" href="#contact-form-7-small-form"><img
                                             src="wp-content/uploads/2020/11/icon-fos.png" /></a></div>
                             </div>
-                            <div class="navbar-wrapper" style="">
+                            <div class="navbar-wrapper">
                                 <nav class="navbar navbar-expand-md">
                                     <div class="container justify-content-end p-0">
-                                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                                            data-target="#header-navbar" aria-controls="header-navbar"
-                                            aria-expanded="false" aria-label="Header Navbar">
-                                            <span class="navbar-toggler-icon"></span>
+                                        <button class="navbar-toggler collapsed burgerBtn" type="button"
+                                            data-toggle="collapse" aria-controls="header-navbar" aria-expanded="false"
+                                            aria-label="Header Navbar">
+                                            <span class="menu__icon"></span>
                                         </button>
-                                        <div class="navbar-collapse collapse justify-content-start" id="header-navbar">
+                                        <div class="navbar_menu collapse justify-content-start" id="header-navbar">
+                                            <div class="menu__icon display-none"></div>
                                             <ul class="navbar-nav">
                                                 <li class="nav-item active">
                                                     <a class="nav-link active"
@@ -152,7 +218,7 @@
                                                     <a class="nav-link dropdown-toggle" href="#" id="dropdown487"
                                                         aria-haspopup="true">Виробництво</a>
                                                     <span class="dropdown-arrow"></span>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdown487" style="">
+                                                    <div class="dropdown-menu" aria-labelledby="dropdown487">
                                                         <a class="dropdown-item" href="#">test</a>
                                                     </div>
                                                 </li>
@@ -160,14 +226,26 @@
                                                     <a class="nav-link dropdown-toggle" href="#" id="dropdown489"
                                                         aria-haspopup="true">Послуги</a>
                                                     <span class="dropdown-arrow"></span>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdown489" style="">
-                                                        <a class="dropdown-item" href="#">test</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdown489">
+                                                        <a class="dropdown-item" href="#">Плазмова різка металу</a>
+                                                        <a class="dropdown-item" href="#">різка металів стрічкопильним
+                                                            станком</a>
+                                                        <a class="dropdown-item" href="#">гнуття арматури</a>
+                                                        <a class="dropdown-item" href="#">токарні роботи</a>
                                                     </div>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="#">Контакти</a>
                                                 </li>
                                             </ul>
+                                            <div class="navbar__lang display-none">
+                                                <div class="lang__item">
+                                                    <a href="#">Укр</a>
+                                                </div>
+                                                <div class="lang__item">
+                                                    <a href="#">Eng</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </nav>
@@ -177,47 +255,46 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-header" style="background-color: #548394;">
+        <div class="bottom-header">
             <div class="wrapper-size">
-                <img class="lazy img-fluid d-block mx-auto image-desktop"
-                    data-src="wp-content/uploads/2020/07/метало-конструкції-та-вироби-з-металу-високої-якості.jpg"
-                    width="1110" height="440" alt="Головна - Steeltime" /><img
-                    class="lazy img-fluid d-block mx-auto image-mobile"
-                    data-src="wp-content/uploads/2021/02/шапка-моб-1.jpg" width="600" height="465"
-                    alt="Головна - Steeltime" />
+                <div class="text">
+                    <div class="title__container">
+                        <div class="title">ТОВ «СТіЛ ТАЙМ»<span> -</span></div>
+                        <div class="motto">готові виконати найскладніші замовлення</div>
+                        <div class="siteBtn">розрахувати вартість</div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <main id="main">
-        <div class="wrapper-size">
+        <div>
             <div class="components">
                 <div id="component-1" class="component">
-                    <div class="wysiwyg-image">
-                        <div class="row mr-0 ml-0 no-margin-wp block" style="background-color: #dedfdf; padding: 21px;">
-                            <div class="col-sm-7 text" style="padding: 0 21px 0 0">
-                                <h2 style="margin-bottom: 20px;"><span class="font-bold">про</span><br />
+                    <div class="aboutUs wysiwyg-image wrapper-size">
+                        <div class="row mr-0 ml-0 no-margin-wp block">
+                            <div class="col-sm-7 text">
+                                <h2><span class="font-bold">про</span><br />
                                     <span class="font-bold">компанію</span>
                                 </h2>
-                                <p><span class="font-regular" style="font-size: 18px;">Компанія ТОВ Стілтайм вже багато
+                                <p><span class="font-regular">Компанія ТОВ Стілтайм вже багато
                                         років займає лідируючі позиції на ринку металоконструкцій серед інших
                                         конкурентів в цій сфері. Ми виготовляємо різноманітні конструкції з металу
                                         (арматурні сітки і каркаси, закладні деталі і анкери, ворота та огорожі), а
                                         також надаємо послуги гнуття арматури і профільної труби, плазмової і газового
                                         різання листового металу.</span></p>
                                 <div class="custom-read-more">
-                                    <div class="text d-none" style="text-align: left;"><span class="font-regular"
-                                            style="font-size: 18px;">test test test test test test test test test test
+                                    <div class="text d-none"><span class="font-regular">test
+                                            test test test test test test test test test
                                             test test</span></div>
-                                    <div class="button-custom-read-more"
-                                        style="text-align: right; text-decoration: underline; margin-top: 20px; color: #00a5c6;">
-                                        <span class="font-regular" style="color: #00a5c6; font-size: 18px;">Далі</span>
+                                    <div class="button-custom-read-more">
+                                        <span class="font-regular">Далі</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-5 p-0 image-desktop">
-                                <img class="lazy img-fluid" style="margin: 0 0 0 auto;"
-                                    data-src="wp-content/uploads/2021/04/metall.jpg" width="428" height="290"
-                                    alt="Про компанию Стилтайм" />
+                                <img class="lazy img-fluid" data-src="wp-content/uploads/2021/04/metall.jpg" width="428"
+                                    height="290" alt="Про компанию Стилтайм" />
                             </div>
                             <div class="col-sm-5 p-0 image-mobile">
                                 <img class="lazy img-fluid mx-auto" data-src="wp-content/uploads/2021/04/metall.jpg"
@@ -226,62 +303,53 @@
                         </div>
                     </div>
                 </div>
-                <div id="component-2" class="component full-width"
-                    style="background-image: url(images2/pluses.jpg); height: 420px; background-repeat: no-repeat; background-position: center top; margin-bottom: 0px;">
+                <div id="component-2" class="component full-width">
                     <div class="service no-margin-wp">
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center wrapper-size">
                             <div class="col-sm-3 item">
-                                <div class="serviceBlock"
-                                    style="background-color: white; width: 220px; height: 280px; margin: 71px auto 0 0; padding-top: 68px;">
+                                <div class="serviceBlock">
                                     <div class="icon"><img class="lazy img-fluid mx-auto"
                                             data-src="wp-content/uploads/2021/04/ic_1.png" width="78" height="78"
                                             alt="Головна - Steeltime" /></div>
                                     <div class="text">
-                                        <p style="text-align: center; text-transform: uppercase; margin-top: 35px;">
-                                            <span class="font-bold" style="font-size: 15px; color: #2f5462;">Швидкі
-                                                терміни виробництва</span>
+                                        <p>
+                                            <span class="font-bold">Швидкі терміни виробництва</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 item">
-                                <div class="serviceBlock"
-                                    style="background-color: white; width: 220px; height: 280px; margin: 71px auto 0 auto; padding-top: 68px;">
+                                <div class="serviceBlock">
                                     <div class="icon"><img class="lazy img-fluid mx-auto"
                                             data-src="wp-content/uploads/2021/04/ic_2.png" width="66" height="76"
                                             alt="Головна - Steeltime" /></div>
                                     <div class="text">
-                                        <p style="text-align: center; text-transform: uppercase; margin-top: 35px;">
-                                            <span class="font-bold" style="font-size: 15px; color: #2f5462;">Власні
-                                                виробничі<br />площі</span>
+                                        <p>
+                                            <span class="font-bold">Власні виробничі<br />площі</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 item">
-                                <div class="serviceBlock"
-                                    style="background-color: white; width: 220px; height: 280px; margin: 71px auto 0 auto; padding-top: 68px;">
+                                <div class="serviceBlock">
                                     <div class="icon"><img class="lazy img-fluid mx-auto"
                                             data-src="wp-content/uploads/2021/04/ic_3.png" width="80" height="80"
                                             alt="Головна - Steeltime" /></div>
                                     <div class="text">
-                                        <p style="text-align: center; text-transform: uppercase; margin-top: 35px;">
-                                            <span class="font-bold" style="font-size: 15px; color: #2f5462;">Висока
-                                                якість виготовлених конструкцій</span>
+                                        <p>
+                                            <span class="font-bold">Висока якість виготовлених конструкцій</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 item">
-                                <div class="serviceBlock"
-                                    style="background-color: white; width: 220px; height: 280px; margin: 71px 0 0 auto; padding-top: 68px;">
+                                <div class="serviceBlock">
                                     <div class="icon"><img class="lazy img-fluid mx-auto"
                                             data-src="wp-content/uploads/2021/04/ic_4.png" width="80" height="80"
                                             alt="Головна - Steeltime" /></div>
                                     <div class="text">
-                                        <p style="text-align: center; text-transform: uppercase; margin-top: 35px;">
-                                            <span class="font-bold"
-                                                style="font-size: 15px; color: #2f5462;">Індивідуальний<br />підхід до
+                                        <p>
+                                            <span class="font-bold">Індивідуальний<br />підхід до
                                                 кожного<br />замовлення</span>
                                         </p>
                                     </div>
@@ -290,55 +358,49 @@
                         </div>
                     </div>
                 </div>
-                <div id="component-3" class="component full-width"
-                    style="background-image: url(images2/pluses.jpg); background-repeat: no-repeat; background-position: center -420px; margin-top: 0;">
-                    <div class="service no-margin-wp bg-padding"
-                        style="background-color: #fe8300; padding: 10px 0 5px;">
+                <div id="component-3" class="component full-width">
+                    <div class="service__subblock no-margin-wp bg-padding wrapper-size">
                         <div class="row justify-content-center">
                             <div class="col-sm-3 item">
-                                <div class="serviceBlock" style="width: 220px; margin: 0 auto 0 0;">
+                                <div class="serviceBlock">
                                     <div class="icon"></div>
                                     <div class="text">
-                                        <p style="text-align: center;"><span class="font-regular"
-                                                style="font-size: 50px; color: #ffffff;">10<sup>+</sup></span></p>
-                                        <p style="text-align: center; text-transform: uppercase; margin-top: -5px;">
-                                            <span style="font-size: 18px; color: #ffffff;">досвід</span>
+                                        <p><span class="font-regular">10<sup>+</sup></span></p>
+                                        <p>
+                                            <span>досвід</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 item">
-                                <div class="serviceBlock" style="width: 220px; margin: 0 auto 0 auto;">
+                                <div class="serviceBlock">
                                     <div class="icon"></div>
                                     <div class="text">
-                                        <p style="text-align: center;"><span class="font-regular"
-                                                style="font-size: 50px; color: #ffffff;">98<sup>+</sup></span></p>
-                                        <p style="text-align: center; text-transform: uppercase; margin-top: -5px;">
-                                            <span style="font-size: 18px; color: #ffffff;">об&#8217;єктів</span>
+                                        <p><span class="font-regular">98<sup>+</sup></span></p>
+                                        <p>
+                                            <span>об&#8217;єктів</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 item">
-                                <div class="serviceBlock" style="width: 220px; margin: 0 auto 0 auto;">
+                                <div class="serviceBlock">
                                     <div class="icon"></div>
                                     <div class="text">
-                                        <p style="text-align: center;"><span class="font-regular"
-                                                style="font-size: 50px; color: #ffffff;">200<sup>+</sup></span></p>
-                                        <p style="text-align: center; text-transform: uppercase; margin-top: -5px;">
-                                            <span style="font-size: 18px; color: #ffffff;">конструкцій</span>
+                                        <p><span class="font-regular">200<sup>+</sup></span></p>
+                                        <p>
+                                            <span>конструкцій</span>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 item">
-                                <div class="serviceBlock" style="width: 220px; margin: 0 0 0 auto;">
+                                <div class="serviceBlock">
                                     <div class="icon"></div>
                                     <div class="text">
-                                        <p style="text-align: center;"><span class="font-regular"
-                                                style="font-size: 50px; color: #ffffff;">52<sup>+</sup></span></p>
-                                        <p style="text-align: center; text-transform: uppercase; margin-top: -5px;">
-                                            <span style="font-size: 18px; color: #ffffff;">у роботі</span>
+                                        <p><span class="font-regular">52<sup>+</sup></span></p>
+                                        <p>
+                                            <span>у роботі</span>
                                         </p>
                                     </div>
                                 </div>
@@ -347,32 +409,31 @@
                     </div>
                 </div>
                 <div id="component-4" class="component mb-0">
-                    <div class="wysiwyg no-margin-wp">
-                        <h2 style="text-align: center;">Виробництво</h2>
+                    <div class="wysiwyg no-margin-wp wrapper-size production__title">
+                        <h2>Виробництво</h2>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
                     </div>
                 </div>
                 <div id="component-5" class="component mt-0">
-                    <div class="signatures-images component-with-button">
+                    <div class="signatures-images component-with-button wrapper-size production">
                         <div class="row justify-content-center">
                             <div class="col-sm-6 signature-image">
                                 <img class="lazy img-fluid d-block mx-auto image-desktop"
                                     data-src="wp-content/uploads/2021/04/img_1.jpg" width="458" height="195"
-                                    alt="КОнструкції сталеві будівельні" /> <img
+                                    alt="Конструкції сталеві будівельні" /> <img
                                     class="lazy img-fluid d-block mx-auto image-mobile"
                                     data-src="wp-content/uploads/2021/04/img_1.jpg" width="458" height="195"
                                     alt="КОнструкції сталеві будівельні" />
-                                <div class="no-margin-wp">
-                                    <p style="text-align: left; text-transform: uppercase; margin: 35px 0 25px;"><span
-                                            class="font-bold" style="font-size: 20px; color: #081f32;">Конструкції
+                                <div class="col__info no-margin-wp">
+                                    <p class="info__title"><span class="font-bold">Конструкції
                                             сталеві будівельні</span></p>
-                                    <p><span class="font-regular" style="color: #374a59;">Будівельні металеві
+                                    <p class="info__text"><span class="font-regular">Будівельні
+                                            металеві
                                             конструкції нашого виробництва використовуються у промисловому та цивільному
                                             будівництві будівель та споруд, цехів, складських комплексів, торгівельно –
                                             розважальних центрів та інших споруд.</span></p>
-                                    <ol class="font-regular"
-                                        style="color: #00a5c6; text-decoration: underline; margin-top: 20px;">
+                                    <ol class="font-regular">
                                         <li><span class="font-regular">Будівельні металоконструкції</span></li>
                                         <li><span class="font-regular">Нестандартні металоконструкції</span></li>
                                         <li><span class="font-regular">Нестандартні обладнання</span></li>
@@ -382,13 +443,11 @@
                                         <li><span class="font-regular">Опори ЛЕП</span></li>
                                     </ol>
                                     <div class="custom-read-more">
-                                        <div class="text d-none" style="text-align: left;"><span class="font-regular"
-                                                style="font-size: 16px;">test test test test test test test test test
+                                        <div class="text d-none"><span class="font-regular">test test test test test
+                                                test test test test
                                                 test test test</span></div>
-                                        <div class="button-custom-read-more"
-                                            style="text-align: right; text-decoration: underline; margin-top: 20px; color: #00a5c6;">
-                                            <span class="font-regular"
-                                                style="color: #00a5c6; font-size: 14px;">Далі</span>
+                                        <div class="button-custom-read-more">
+                                            <span class="font-regular">Далі</span>
                                         </div>
                                     </div>
                                 </div>
@@ -400,16 +459,14 @@
                                     class="lazy img-fluid d-block mx-auto image-mobile"
                                     data-src="wp-content/uploads/2021/04/img_2.jpg" width="458" height="195"
                                     alt="Дизайнерські сталеві вироби" />
-                                <div class="no-margin-wp">
-                                    <p style="text-align: left; text-transform: uppercase; margin: 35px 0 25px;"><span
-                                            class="font-bold" style="font-size: 20px; color: #081f32;">Дизайнерські
+                                <div class="no-margin-wp col__info">
+                                    <p class="info__title"><span class="font-bold">Дизайнерські
                                             сталеві вироби</span></p>
-                                    <p><span class="font-regular" style="color: #374a59;">Металевий декор вигідно
+                                    <p class="info__text"><span class="font-regular">Металевий декор вигідно
                                             виглядає в будь-яких стилях: будь то класика або hi-tech. Наприклад, ви
                                             можете замовити елегантний столик або витіюватий свічник, які підкреслять
                                             витонченість інтер’єру. </span></p>
-                                    <ol class="font-regular"
-                                        style="color: #00a5c6; text-decoration: underline; margin-top: 20px;">
+                                    <ol class="font-regular">
                                         <li><span class="font-regular">Лофт перегородки та меблі</span></li>
                                         <li><span class="font-regular">Ворота</span></li>
                                         <li><span class="font-regular">Огорожа</span></li>
@@ -419,13 +476,11 @@
                                         <li><span class="font-regular">Перила та поручні</span></li>
                                     </ol>
                                     <div class="custom-read-more">
-                                        <div class="text d-none" style="text-align: left;"><span class="font-regular"
-                                                style="font-size: 16px;">test test test test test test test test test
+                                        <div class="text d-none"><span class="font-regular">test test test test test
+                                                test test test test
                                                 test test test</span></div>
-                                        <div class="button-custom-read-more"
-                                            style="text-align: right; text-decoration: underline; margin-top: 20px; color: #00a5c6;">
-                                            <span class="font-regular"
-                                                style="color: #00a5c6; font-size: 14px;">Далі</span>
+                                        <div class="button-custom-read-more">
+                                            <span class="font-regular">Далі</span>
                                         </div>
                                     </div>
                                 </div>
@@ -434,59 +489,52 @@
                     </div>
                 </div>
                 <div id="component-6" class="component">
-                    <div class="wysiwyg no-margin-wp">
-                        <div class="row align-items-center">
+                    <div class="calcCost wysiwyg no-margin-wp">
+                        <div class="row align-items-center wrapper-size">
                             <div class="col-sm-7">
-                                <ul style="list-style-image: url('wp-content/uploads/2021/04/list.png');">
-                                    <li><span class="font-bold" style="color: #2f5462; font-size: 34px;">БЕЗКОШТОВНА
-                                            КОНСУЛЬТАЦІЯ</span></li>
-                                    <li><span class="font-bold" style="color: #2f5462; font-size: 34px;">ІНДИВІДУАЛЬНИЙ
-                                            ПІДХІД</span></li>
-                                    <li><span class="font-bold" style="color: #2f5462; font-size: 34px;">ТОЧНІ
-                                            ТЕРМІНИ</span></li>
+                                <ul>
+                                    <li><span class="font-bold">БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ</span></li>
+                                    <li><span class="font-bold">ІНДИВІДУАЛЬНИЙ ПІДХІД</span></li>
+                                    <li><span class="font-bold">ТОЧНІ ТЕРМІНИ</span></li>
                                 </ul>
                             </div>
-                            <div class="col-sm-5"><a class="fancybox-link"
-                                    style="width: 275px; max-width: 100%; padding: 12px 0; text-align: center; background: #FE8300; color: #fff; border: 1px; display: block; font-size: 14px;"
+                            <div class="col-sm-5 calcCost__btn"><a class="fancybox-link siteBtn"
                                     href="#contact-form-7-small-form" data-scroll="disable">РОЗРАХУВАТИ ВАРТІСТЬ</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="component-7" class="component mb-0">
-                    <div class="wysiwyg no-margin-wp">
-                        <h2 style="text-align: center;">Послуги по обробці металу</h2>
+                    <div class="serviceCart__title wysiwyg no-margin-wp wrapper-size">
+                        <h2>Послуги по обробці металу</h2>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
                     </div>
                 </div>
                 <div id="component-8" class="component mt-0">
-                    <div class="signatures-images component-with-button">
+                    <div class="serviceCart signatures-images component-with-button wrapper-size">
                         <div class="row justify-content-center">
                             <div class="col-sm-6 signature-image">
                                 <img class="lazy img-fluid d-block mx-auto image-desktop"
-                                    data-src="wp-content/uploads/2021/04/test-540x252.jpg" width="540" height="252"
+                                    data-src="images/Photogenica-PHX158799706 1.png" width="540" height="252"
                                     alt="Головна - Steeltime" /> <img
                                     class="lazy img-fluid d-block mx-auto image-mobile"
-                                    data-src="wp-content/uploads/2021/04/test-545x254.jpg" width="545" height="254"
+                                    data-src="images/Photogenica-PHX158799706 1.png" width="545" height="254"
                                     alt="Головна - Steeltime" />
                                 <div class="no-margin-wp">
                                     <div class="text-description">
-                                        <p style="text-align: left; text-transform: uppercase; margin: 35px 0 25px;">
-                                            <span class="font-bold" style="font-size: 20px; color: #081f32;">Плазмова
+                                        <p>
+                                            <span class="font-bold">Плазмова
                                                 різка металу</span>
                                         </p>
-                                        <p><span class="font-regular" style="color: #374a59;">Направлене місцеве
+                                        <p><span class="font-regular">Направлене місцеве
                                                 розпечення конкретної частини металевої заготовки називається плазмовим
                                                 різанням металу.</span></p>
                                         <div class="custom-read-more">
-                                            <div class="text d-none" style="text-align: left;"><span
-                                                    class="font-regular" style="font-size: 16px;">test test test test
+                                            <div class="text d-none"><span class="font-regular">test test test test
                                                     test test test test test test test test</span></div>
-                                            <div class="button-custom-read-more"
-                                                style="text-align: right; text-decoration: underline; margin-top: 20px; color: #00a5c6;">
-                                                <span class="font-regular"
-                                                    style="color: #00a5c6; font-size: 14px;">Далі</span>
+                                            <div class="button-custom-read-more">
+                                                <span class="font-regular">Далі</span>
                                             </div>
                                         </div>
                                     </div>
@@ -494,28 +542,25 @@
                             </div>
                             <div class="col-sm-6 signature-image">
                                 <img class="lazy img-fluid d-block mx-auto image-desktop"
-                                    data-src="wp-content/uploads/2021/04/test-540x252.jpg" width="540" height="252"
+                                    data-src="images/Photogenica-PHX158799706 2.png" width="540" height="252"
                                     alt="Головна - Steeltime" /> <img
                                     class="lazy img-fluid d-block mx-auto image-mobile"
-                                    data-src="wp-content/uploads/2021/04/test-545x254.jpg" width="545" height="254"
+                                    data-src="images/Photogenica-PHX158799706 2.png" width="545" height="254"
                                     alt="Головна - Steeltime" />
                                 <div class="no-margin-wp">
                                     <div class="text-description">
-                                        <p style="text-align: left; text-transform: uppercase; margin: 35px 0 25px;">
-                                            <span class="font-bold" style="font-size: 20px; color: #081f32;">різка
+                                        <p>
+                                            <span class="font-bold">різка
                                                 металів стрічкопильним станком</span>
                                         </p>
-                                        <p><span class="font-regular" style="color: #374a59;">&#8220;Міть1-03Н&#8221;
+                                        <p><span class="font-regular">&#8220;Міть1-03Н&#8221;
                                                 призначений для різання практично всіх основних металів: легких сплавів,
                                                 кольорових металів, конструкційних &#8230;</span></p>
                                         <div class="custom-read-more">
-                                            <div class="text d-none" style="text-align: left;"><span
-                                                    class="font-regular" style="font-size: 16px;">test test test test
+                                            <div class="text d-none"><span class="font-regular">test test test test
                                                     test test test test test test test test</span></div>
-                                            <div class="button-custom-read-more"
-                                                style="text-align: right; text-decoration: underline; margin-top: 20px; color: #00a5c6;">
-                                                <span class="font-regular"
-                                                    style="color: #00a5c6; font-size: 14px;">Далі</span>
+                                            <div class="button-custom-read-more">
+                                                <span class="font-regular">Далі</span>
                                             </div>
                                         </div>
                                     </div>
@@ -523,28 +568,25 @@
                             </div>
                             <div class="col-sm-6 signature-image">
                                 <img class="lazy img-fluid d-block mx-auto image-desktop"
-                                    data-src="wp-content/uploads/2021/04/test-540x252.jpg" width="540" height="252"
+                                    data-src="images/Photogenica-PHX158799706 3.png" width="540" height="252"
                                     alt="Головна - Steeltime" /> <img
                                     class="lazy img-fluid d-block mx-auto image-mobile"
-                                    data-src="wp-content/uploads/2021/04/test-545x254.jpg" width="545" height="254"
+                                    data-src="images/Photogenica-PHX158799706 3.png" width="545" height="254"
                                     alt="Головна - Steeltime" />
                                 <div class="no-margin-wp">
                                     <div class="text-description">
-                                        <p style="text-align: left; text-transform: uppercase; margin: 35px 0 25px;">
-                                            <span class="font-bold" style="font-size: 20px; color: #081f32;">Гнуття
+                                        <p>
+                                            <span class="font-bold">Гнуття
                                                 арматури</span>
                                         </p>
-                                        <p><span class="font-regular" style="color: #374a59;">Сьогодні арматура часто
+                                        <p><span class="font-regular">Сьогодні арматура часто
                                                 використовується для виробництва металоконструкцій найрізноманітніших
                                                 форм, а так само в інших сферах будівництва.</span></p>
                                         <div class="custom-read-more">
-                                            <div class="text d-none" style="text-align: left;"><span
-                                                    class="font-regular" style="font-size: 16px;">test test test test
+                                            <div class="text d-none"><span class="font-regular">test test test test
                                                     test test test test test test test test</span></div>
-                                            <div class="button-custom-read-more"
-                                                style="text-align: right; text-decoration: underline; margin-top: 20px; color: #00a5c6;">
-                                                <span class="font-regular"
-                                                    style="color: #00a5c6; font-size: 14px;">Далі</span>
+                                            <div class="button-custom-read-more">
+                                                <span class="font-regular">Далі</span>
                                             </div>
                                         </div>
                                     </div>
@@ -552,28 +594,25 @@
                             </div>
                             <div class="col-sm-6 signature-image">
                                 <img class="lazy img-fluid d-block mx-auto image-desktop"
-                                    data-src="wp-content/uploads/2021/04/test-540x252.jpg" width="540" height="252"
+                                    data-src="images/Photogenica-PHX158799706 4.png" width="540" height="252"
                                     alt="Головна - Steeltime" /> <img
                                     class="lazy img-fluid d-block mx-auto image-mobile"
-                                    data-src="wp-content/uploads/2021/04/test-545x254.jpg" width="545" height="254"
+                                    data-src="images/Photogenica-PHX158799706 4.png" width="545" height="254"
                                     alt="Головна - Steeltime" />
                                 <div class="no-margin-wp">
                                     <div class="text-description">
-                                        <p style="text-align: left; text-transform: uppercase; margin: 35px 0 25px;">
-                                            <span class="font-bold" style="font-size: 20px; color: #081f32;">токарні
+                                        <p>
+                                            <span class="font-bold">токарні
                                                 роботи</span>
                                         </p>
-                                        <p><span class="font-regular" style="color: #374a59;">Компанія ТОВ Стілтайм
+                                        <p><span class="font-regular">Компанія ТОВ Стілтайм
                                                 пропонує: нарізування різьблення, обрізання торців, виточування канавок,
                                                 накочення рифлень, свердління і зенкування.</span></p>
                                         <div class="custom-read-more">
-                                            <div class="text d-none" style="text-align: left;"><span
-                                                    class="font-regular" style="font-size: 16px;">test test test test
+                                            <div class="text d-none"><span class="font-regular">test test test test
                                                     test test test test test test test test</span></div>
-                                            <div class="button-custom-read-more"
-                                                style="text-align: right; text-decoration: underline; margin-top: 20px; color: #00a5c6;">
-                                                <span class="font-regular"
-                                                    style="color: #00a5c6; font-size: 14px;">Далі</span>
+                                            <div class="button-custom-read-more">
+                                                <span class="font-regular">Далі</span>
                                             </div>
                                         </div>
                                     </div>
@@ -583,105 +622,86 @@
                     </div>
                 </div>
                 <div id="component-9" class="component mb-0">
-                    <div class="wysiwyg no-margin-wp">
-                        <h2 style="text-align: center;">відгуки наших клієнтів</h2>
+                    <div class="wysiwyg no-margin-wp wrapper-size reviews__title">
+                        <h2>відгуки наших клієнтів</h2>
                         <p>&nbsp;</p>
                     </div>
                 </div>
-                <div id="component-10" class="component mt-0 full-width"
-                    style="background-image: url('images2/reviews.jpg'); height:  438px; background-repeat: no-repeat; background-position: center;">
+                <div id="component-10" class="component mt-0 full-width">
                     <div class="reviews signatures-images component-with-button">
-                        <div class="row justify-content-center">
-                            <div class="col-sm-4 signature-image" style="margin: 43px 0;">
+                        <div class="row justify-content-center wrapper-size">
+                            <div class="col-sm-4 signature-image">
                                 <div class="no-margin-wp">
-                                    <div class="review"
-                                        style="width: 302px; height: 352px; margin: 0px auto; opacity: 70%;">
-                                        <div class="row review__item flex-column justify-content-between"
-                                            style="position: relative;">
-                                            <div class="col review__item_text"
-                                                style="flex-basis: 65%; font-weight: 400;"><span class="font-regular"
-                                                    style="font-size: 18px; color: #1a1a18;">Хлопці майстри своєї
+                                    <div class="review">
+                                        <div class="row review__item flex-column justify-content-between">
+                                            <div class="col review__item_text"><span class="font-regular">Хлопці майстри
+                                                    своєї
                                                     справи! Зробили каркаси з нержавійки для столів. Ціни хороші,
                                                     терміни швидкі.</span></div>
-                                            <div class="col review__item_name" style="flex-basis: 35%;">
+                                            <div class="col review__item_name">
                                                 <div class="row align-items-center justify-content-center">
                                                     <div class="col-sm-3"><img class="alignnone size-full wp-image-424"
                                                             src="wp-content/uploads/2021/04/review_1.png" alt=""
                                                             width="62" height="62" /></div>
                                                     <div class="col-sm-9">
-                                                        <p style="text-align: left; text-transform: uppercase;"><span
-                                                                style="color: #1a1a18;">Анатолій Вітринський</span></p>
-                                                        <p><span class="font-regular"
-                                                                style="font-size: 14px; color: #1a1a18;">ТОВ
+                                                        <p><span>Анатолій Вітринський</span></p>
+                                                        <p><span class="font-regular">ТОВ
                                                                 ПроІнвестГруп</span></p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="line" style="position: absolute; height: 2px; background: #00A5C6;">
-                                        </div>
+                                        <div class="line"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 signature-image" style="margin: 43px 0;">
+                            <div class="col-sm-4 signature-image">
                                 <div class="no-margin-wp">
-                                    <div class="review"
-                                        style="width: 302px; height: 352px; margin: 0px auto; opacity: 70%;">
-                                        <div class="row review__item flex-column justify-content-between"
-                                            style="position: relative;">
-                                            <div class="col review__item_text"
-                                                style="flex-basis: 65%; font-weight: 400;"><span class="font-regular"
-                                                    style="font-size: 18px; color: #1a1a18;">Тут працюють справжні
+                                    <div class="review">
+                                        <div class="row review__item flex-column justify-content-between">
+                                            <div class="col review__item_text"><span class="font-regular">Тут працюють
+                                                    справжні
                                                     професіонали, всі замовлення виконані чітко, дуже якісно і в
                                                     заздалегідь обумовлені терміни.</span></div>
-                                            <div class="col review__item_name" style="flex-basis: 35%;">
+                                            <div class="col review__item_name">
                                                 <div class="row align-items-center justify-content-center">
                                                     <div class="col-sm-3"><img class="alignnone size-full wp-image-424"
                                                             src="wp-content/uploads/2021/04/review_2.png" alt=""
                                                             width="62" height="62" /></div>
                                                     <div class="col-sm-9">
-                                                        <p style="text-align: left; text-transform: uppercase;"><span
-                                                                style="color: #1a1a18;">Сергій</span></p>
-                                                        <p><span class="font-regular"
-                                                                style="font-size: 14px; color: #1a1a18;">м. Київ</span>
+                                                        <p><span>Сергій</span></p>
+                                                        <p><span class="font-regular">м. Київ</span>
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="line" style="position: absolute; height: 2px; background: #00A5C6;">
-                                        </div>
+                                        <div class="line"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 signature-image" style="margin: 43px 0;">
+                            <div class="col-sm-4 signature-image">
                                 <div class="no-margin-wp">
-                                    <div class="review"
-                                        style="width: 302px; height: 352px; margin: 0px auto; opacity: 70%;">
-                                        <div class="row review__item flex-column justify-content-between"
-                                            style="position: relative;">
-                                            <div class="col review__item_text"
-                                                style="flex-basis: 65%; font-weight: 400;"><span class="font-regular"
-                                                    style="font-size: 18px; color: #1a1a18;">Швидко, якісно і відмінний
+                                    <div class="review">
+                                        <div class="row review__item flex-column justify-content-between">
+                                            <div class="col review__item_text"><span class="font-regular">Швидко, якісно
+                                                    і відмінний
                                                     сервіс! Загалом, компанія залишила виключно позитивні враження після
                                                     себе. Рекомендуємо кожному!</span></div>
-                                            <div class="col review__item_name" style="flex-basis: 35%;">
+                                            <div class="col review__item_name">
                                                 <div class="row align-items-center justify-content-center">
                                                     <div class="col-sm-3"><img class="alignnone size-full wp-image-424"
                                                             src="wp-content/uploads/2021/04/review_3.png" alt=""
                                                             width="62" height="62" /></div>
                                                     <div class="col-sm-9">
-                                                        <p style="text-align: left; text-transform: uppercase;"><span
-                                                                style="color: #1a1a18;">Александр</span></p>
-                                                        <p><span class="font-regular"
-                                                                style="font-size: 14px; color: #1a1a18;">Харків</span>
+                                                        <p><span>Александр</span></p>
+                                                        <p><span class="font-regular">Харків</span>
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="line" style="position: absolute; height: 2px; background: #00A5C6;">
-                                        </div>
+                                        <div class="line"></div>
                                     </div>
                                 </div>
                             </div>
@@ -691,49 +711,72 @@
             </div>
         </div>
     </main>
-    <footer id="footer" style="color: #ffffff; ">
+    <footer id="footer">
         <div class="wrapper-size">
-            <div class="footer-wrapper" style="">
+            <div class="footer-wrapper">
                 <div class="row footer-type-1">
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 logoBlock">
                         <div class="no-margin-wp footer-margin-bottom">
-                            <p><span class="font-bold" style="font-size: 48px; color: #2f5462;">STEEL</span><span
-                                    class="font-bold" style="color: #65a6b3; font-size: 30px;">TIME</span></p>
+                            <p><span class="font-bold">STEEL</span><span class="font-bold">TIME</span></p>
                             <p>&nbsp;</p>
-                            <p><span class="font-regular" style="color: #374a59;">Металоконструкції будь-якої<br />
+                            <p class="motto"><span class="font-regular">Металоконструкції
+                                    будь-якої<br />
                                     складності,</span></p>
-                            <p><span class="font-regular" style="color: #374a59;"><br />
+                            <p><span class="font-regular"><br />
                                     Київ, Україна</span></p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2 footer__menu">
                         <div class="no-margin-wp">
-                            <ul
-                                style="list-style: none; text-transform: uppercase; line-height: 26px; padding-left: 0;">
-                                <li><span style="font-size: 14px; color: #374a59;">головна</span></li>
-                                <li><span style="font-size: 14px; color: #374a59;">про компанію</span></li>
-                                <li><span style="font-size: 14px; color: #374a59;">виробництво</span></li>
-                                <li><span style="font-size: 14px; color: #374a59;">послуги</span></li>
-                                <li><span style="font-size: 14px; color: #374a59;">контакти</span></li>
+                            <ul>
+                                <li><a href="#">головна</a></li>
+                                <li><a href="#">про компанію</a></li>
+                                <li><a href="#">виробництво</a></li>
+                                <li><a href="#">послуги</a></li>
+                                <li><a href="#">контакти</a></li>
                                 <li></li>
                                 <li></li>
                             </ul>
                             <p>&nbsp;</p>
-                            <div class="row m-0 justify-content-sm-start justify-content-center"><img
-                                    class="mr-2 size-full wp-image-480 alignleft"
-                                    src="wp-content/uploads/2021/04/telegram.png" alt="" width="30" height="30" /> <img
-                                    class="size-medium wp-image-481 alignleft"
-                                    src="wp-content/uploads/2021/04/facebppk.png" alt="" width="30" height="30" /></div>
+                            <div class="row m-0 justify-content-sm-start">
+                                <a href="https://web.telegram.org/"><img class="mr-2 size-full wp-image-480 alignleft"
+                                        src="wp-content/uploads/2021/04/telegram.png" alt="" width="30"
+                                        height="30" /></a>
+                                <a href="https://www.facebook.com/"><img class="size-medium wp-image-481 alignleft"
+                                        src="wp-content/uploads/2021/04/facebppk.png" alt="" width="30"
+                                        height="30" /></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-5 map"><iframe width="235" height="119" id="gmap_canvas" class="lazy"
+                    <div class="col-sm-4 map">
+                        <iframe width="235" height="119" id="gmap_canvas" class="lazy"
                             data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.427487963651!2d30.4741916157342!3d50.526218479485934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d25fade94fd3%3A0x6122142b0951308!2z0YPQuy4g0JvQtdCx0LXQtNC40L3RgdC60LDRjywgNCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1589288138070!5m2!1sru!2sua"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                        <div class="contact__link">
+                            <div class="link">
+                                <img src="images/phone_black.svg" alt="phone_black">
+                                <a href="tel:+380674452710">+38 (067) 445 - 27 - 10</a>
+                            </div>
+                            <div class="link">
+                                <img src="images/email_black.svg" alt="email_black">
+                                <a href="mailto:steeltime@ukr.net">steeltime@ukr.net</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between signature-bifo">
+                <div class="justify-content-between signature-bifo">
                     <div class="mb-0">© 2019 - 2021 Сайт розроблений і обслуговується компанією <a
                             class="d-inline-block" href="//bifo.kiev.ua/" rel="nofollow">
                             <strong>«Бізнес-Формула»</strong></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__blueline">
+            <div class="wrapper-size">
+                <div class="bluline__container">
+                    <div class="container__copyrights">© 2021 Сайт разработан и обслуживается компанией «Бизнес-Формула»
+                    </div>
                 </div>
             </div>
         </div>
@@ -752,6 +795,7 @@
     <script type='text/javascript' src='wp-content/themes/bifo/styles/js/lazyload.min.js?ver=1.80'></script>
     <script type='text/javascript' src='wp-content/themes/bifo/styles/js/slick.min.js?ver=1.80'></script>
     <script type='text/javascript' src='wp-content/themes/bifo/styles/js/custom.js?ver=1.80'></script>
+    <script type='text/javascript' src='wp-content/themes/bifo/styles/js/custom.notMinify.js?ver=1.80'></script>
 </body>
 
 </html>

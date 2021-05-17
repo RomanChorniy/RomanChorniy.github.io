@@ -830,7 +830,7 @@ body .margin-65 {
 .components .titleBlock .title__container .container_screen .contentBox .textBlock .textBlock__subtitle {
   line-height: 156.25%;
 }
-.components .BrandNav .BrandNav__box {
+.components .brandNav .brandNav__box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -844,10 +844,10 @@ body .margin-65 {
   max-width: 920px;
   width: 100%;
 }
-.components .BrandNav .BrandNav__box .box__item {
+.components .brandNav .brandNav__box .box__item {
   margin: 0 15px;
 }
-.components .BrandNav .BrandNav__box .box__item .item__link {
+.components .brandNav .brandNav__box .box__item .item__link {
   color: #1e1e1e;
   font-size: 14px;
 }

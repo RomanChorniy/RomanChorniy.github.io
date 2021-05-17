@@ -474,6 +474,79 @@
         }
       }
     }
+    .breadcrumb {
+      .breadcrumb__box{
+        padding: 29px 0;
+        .box__item{
+            display: inline;
+            font-size: 13px;
+            color: $textColor1;
+            &+.box__item::before{
+                padding: 4px;
+                color: $textColor1;
+                content: "/\00a0";
+            }
+            .box__itemLink{
+                color: $textColor1;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+      }
+    }
+    .titleBlock {
+      margin-top: -142px;
+      .title__container {
+        background: url(../../image/aluminumWindows.jpg) center / cover no-repeat;
+        .container_screen {
+          background-color: rgba($color: #1e1e1e, $alpha: .7);
+          margin: 0 auto;
+          max-width: 1140px;
+          padding: 0 15px;
+          width: 100%;
+          .contentBox {
+            margin: 0 auto;
+            max-width: 950px;
+            padding: 207px 15px 76px;
+            width: 100%;
+            .textBlock {
+              color: $textColor1;
+              font-size: 16px;
+              max-width: 525px;
+              width: 100%;
+              .textBlock__title {
+                font-size: 3em;
+                font-weight: 500;
+                padding-bottom: 20px;
+              }
+              .textBlock__subtitle {
+                line-height: 25 / 16 * 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .BrandNav {
+      .BrandNav__box {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        height: 60px;
+        margin: 0 auto;
+        max-width: 920px;
+        width: 100%;
+        .box__item {
+          margin: 0 15px;
+          .item__link {
+            color: #1e1e1e;
+            font-size: 14px;
+          }
+        }
+      }
+    }
     
     @media screen and (max-width: 576px) {
         .component {

@@ -1012,6 +1012,186 @@ body .margin-65 {
 .components .modelsLinkBar .modelsLinkBar__box .visite {
   color: #ed3a4d;
 }
+.components .technicalDetails {
+  background-color: #f6f6f6;
+  color: #1e1e1e;
+  font-size: 16px;
+}
+.components .technicalDetails .container .contentBox {
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 40px 0 50px;
+  width: 100%;
+}
+.components .technicalDetails .container .title {
+  font-size: 2.25em;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+.components .technicalDetails .container .infoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.components .technicalDetails .container .infoBox .parament {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 450px;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.components .technicalDetails .container .infoBox .parament__name {
+  font-size: 0.8125em;
+  font-weight: 400;
+  padding-right: 5px;
+}
+.components .technicalDetails .container .infoBox .parament__value {
+  font-size: 1.125em;
+}
+.components .technicalDetails .container .infoBox .parament:last-child {
+  padding-bottom: 0;
+}
+.components .warranty {
+  background-color: #1e1e1e;
+  font-size: 100px;
+}
+.components .warranty .container .contentBox {
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 70px 0 90px;
+  width: 100%;
+}
+.components .warranty .container .contentBox .warrantyBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.components .warranty .container .contentBox .warrantyBox .box__item .item__bigNumber {
+  color: #ed3a4d;
+  font-weight: 700;
+}
+.components .warranty .container .contentBox .warrantyBox .box__item .item__text {
+  color: #fff;
+  font-size: 0.24em;
+  font-weight: 400;
+}
+.components .productUsing {
+  background-color: #1e1e1e;
+}
+.components .productUsing .contentBox .productUsing__image {
+  display: block;
+  height: 400px;
+  width: 100%;
+}
+.components .mainProperties {
+  color: #1e1e1e;
+  font-size: 16px;
+  padding: 70px 0;
+}
+.components .mainProperties .container .contentBox {
+  margin: 0 auto;
+  max-width: 920px;
+  width: 100%;
+}
+.components .mainProperties .container .contentBox .title {
+  font-size: 2.25em;
+  padding-bottom: 60px;
+}
+.components .mainProperties .container .contentBox .infoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -20px;
+}
+.components .mainProperties .container .contentBox .infoBox .parament {
+  padding: 20px;
+  width: 33%;
+}
+.components .mainProperties .container .contentBox .infoBox .parament .parament__content {
+  width: 225px;
+}
+.components .mainProperties .container .contentBox .infoBox .parament .parament__content .parament__icon {
+  padding-bottom: 25px;
+}
+.components .mainProperties .container .contentBox .infoBox .parament .parament__content .parament__icon .icon__img img {
+  width: 100%;
+  max-width: 80px;
+}
+.components .mainProperties .container .contentBox .infoBox .parament .parament__content .parament__title {
+  font-size: 1.5em;
+}
+.components .mainProperties .container .contentBox .infoBox .parament .parament__content .line_pink {
+  background-color: #ed3a4d;
+  border: none;
+  display: inline-block;
+  height: 1px;
+  margin: 10px 0;
+  width: 80px;
+}
+.components .mainProperties .container .contentBox .infoBox .parament .parament__content .parament__text {
+  font-size: 0.875em;
+  font-weight: 400;
+}
+.components .saveProperties {
+  background-color: #f6f6f6;
+  color: #1e1e1e;
+  font-size: 16px;
+  padding: 60px 0 70px;
+}
+.components .saveProperties .container .contentBox {
+  margin: 0 auto;
+  max-width: 920px;
+  width: 100%;
+}
+.components .saveProperties .container .contentBox .contentBox__title {
+  font-size: 2.25em;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+.components .saveProperties .container .contentBox .savePropertiesBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.components .saveProperties .container .contentBox .savePropertiesBox .box__item {
+  text-align: center;
+  width: 33%;
+}
+.components .saveProperties .container .contentBox .savePropertiesBox .box__item .item__image {
+  padding-bottom: 20px;
+}
+.components .saveProperties .container .contentBox .savePropertiesBox .box__item .item__image img {
+  height: 310px;
+  margin: 0 auto;
+  max-width: 255px;
+  width: 100%;
+}
+.components .saveProperties .container .contentBox .savePropertiesBox .box__item .item__title {
+  color: #ed3a4d;
+  font-size: 2.25em;
+  padding-bottom: 15px;
+}
+.components .saveProperties .container .contentBox .savePropertiesBox .box__item .item__text {
+  font-size: 0.875em;
+  font-weight: 400;
+}
 @media screen and (max-width: 576px) {
   .components .component p {
     padding-left: 0 !important;

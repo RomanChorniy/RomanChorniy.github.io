@@ -716,8 +716,180 @@
         }
       }
     }
-    
-    
+    .technicalDetails {
+      background-color: #f6f6f6;
+      color: #1e1e1e;
+      font-size: 16px;
+      .container {
+        .contentBox {
+          margin: 0 auto;
+          max-width: 920px;
+          padding: 40px 0 50px;
+          width: 100%;
+        }
+        .title {
+          font-size: 2.25em;
+          font-weight: 500;
+          padding-bottom: 25px;
+        }
+        .infoBox {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .parament {
+            align-items: center;
+            display: flex;
+            max-width: 450px;
+            width: 100%;
+            padding-bottom: 5px;
+            &__name {
+              font-size: 0.8125em;
+              font-weight: 400;
+              padding-right: 5px;
+            }
+            &__value {
+              font-size: 1.125em;
+            }
+            &:last-child {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .warranty {
+      background-color: #1e1e1e;
+      font-size: 100px;
+      .container {
+        .contentBox {
+          margin: 0 auto;
+          max-width: 920px;
+          padding: 70px 0 90px;
+          width: 100%;
+          .warrantyBox {
+            display: flex;
+            justify-content: space-between;
+            .box__item {
+              .item__bigNumber {
+                color: #ed3a4d;
+                font-weight: 700;
+              }
+              .item__text {
+                color: #fff;
+                font-size: 0.24em;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+    .productUsing {
+      background-color: #1e1e1e;
+      .contentBox {
+        .productUsing__image {
+          display: block;
+          height: 400px;
+          width: 100%;
+        }
+      }
+    }
+    .mainProperties {
+      color: #1e1e1e;
+      font-size: 16px;
+      padding: 70px 0;
+      .container {
+        .contentBox {
+          margin: 0 auto;
+          max-width: 920px;
+          width: 100%;
+          .title {
+            font-size: 2.25em;
+            padding-bottom: 60px;
+          }
+          .infoBox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: -20px;
+            .parament {
+              padding: 20px;
+              width: 33%;
+              .parament__content {
+                width: 225px;
+                .parament__icon {
+                  padding-bottom: 25px;
+                  .icon__img {
+                    img {
+                      width: 100%;
+                      max-width: 80px;
+                    }
+                  }
+                }
+                .parament__title {
+                  font-size: 1.5em;
+                }
+                .line_pink {
+                  background-color: #ed3a4d;
+                  border: none;
+                  display: inline-block;
+                  height: 1px;
+                  margin: 10px 0;
+                  width: 80px;
+                }
+                .parament__text {
+                  font-size: 0.875em;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .saveProperties {
+      background-color: #f6f6f6;
+      color: #1e1e1e;
+      font-size: 16px;
+      padding: 60px 0 70px;
+      .container {
+        .contentBox {
+          margin: 0 auto;
+          max-width: 920px;
+          width: 100%;
+          .contentBox__title {
+            font-size: 2.25em;
+            font-weight: 500;
+            padding-bottom: 40px;
+          }
+          .savePropertiesBox {
+            display: flex;
+            .box__item {
+              text-align: center;
+              width: 33%;
+              .item__image {
+                padding-bottom: 20px;
+                img {
+                  height: 310px;
+                  margin: 0 auto;
+                  max-width: 255px;
+                  width: 100%;
+                }
+              }
+              .item__title {
+                color: #ed3a4d;
+                font-size: 2.25em;
+                padding-bottom: 15px;
+              }
+              .item__text {
+                font-size: 0.875em;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
     @media screen and (max-width: 576px) {
         .component {
             p {

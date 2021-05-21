@@ -262,8 +262,8 @@
 })(jQuery);
 $(document).ready(function () {
     $('.menuBtn__container').on('click', function () {
-        $('.menu').toggleClass('menu_open');
-        $('.menu__window').toggleClass('menu__window_open');
+        $('.header__container').toggleClass('menu_open');
+        // $('.menu__window').toggleClass('menu__window_open');
     });
     $('.title__slider').slick({
         infinite: false,

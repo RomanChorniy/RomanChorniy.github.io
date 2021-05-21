@@ -475,24 +475,30 @@
       }
     }
     .breadcrumb {
-      .breadcrumb__box{
+      height: 130px;
+      .breadcrumb__box {
         padding: 29px 0;
-        .box__item{
+        .box__item {
             display: inline;
             font-size: 13px;
             color: $textColor1;
-            &+.box__item::before{
+            &+.box__item::before {
                 padding: 4px;
                 color: $textColor1;
                 content: "/\00a0";
             }
-            .box__itemLink{
+            .box__itemLink {
                 color: $textColor1;
                 text-decoration: none;
-                &:hover{
+                &:hover {
                     text-decoration: underline;
                 }
             }
+        }
+      }
+      .breadcrumb__box_black {
+        .box__item, .box__item+.box__item::before, .box__item .box__itemLink {
+          color: #1e1e1e;
         }
       }
     }
@@ -692,6 +698,25 @@
         }
       }
     }
+    .modelsLinkBar {
+      background-color: #f2f2f2;
+      font-size: 16px;
+      .modelsLinkBar__box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 920px;
+        width: 100%;
+        .box__item {
+          margin: 0 10px;
+          padding: 23px 0;
+        }
+        .visite {
+          color: #ed3a4d;
+        }
+      }
+    }
+    
     
     @media screen and (max-width: 576px) {
         .component {

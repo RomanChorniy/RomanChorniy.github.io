@@ -21,14 +21,17 @@
             changeViewport();
         };
     </script>
-    <title>KEL. One</title>
+    <title>Vitra.com.ua One</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="styles/css/slick.css" />
     <link rel="stylesheet" href="styles/css/slick-theme.css">
+    <link rel="stylesheet" href="styles/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="styles/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
     <script src="styles/js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="styles/js/slick.min.js"></script>
     <script src="styles/js/jquery.fancybox.min.js"></script>
@@ -39,44 +42,161 @@
 <body>
     <header id="header">
         <div class="header__container">
-            <div class="header__titleBox">
-                <img src="image/logo.svg" alt="jazz flora. Home decore" class="titleImage">
-                <nav class="header__nav mobile__nav font-regular">
-                    <span class="ui-icon close__button"></span>
-                    <a href="#" class="navLink">главная</a>
-                    <a href="#" class="navLink">коллекции</a>
-                    <a href="#" class="navLink">фотопроекты</a>
-                    <a href="#" class="navLink">о нас</a>
-                    <a href="#" class="navLink">контакты</a>
-                </nav>
-                <div class="telephoneList">
-                    <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
-                    <img src="image/phone.svg" alt="phone.svg" class="telephoneIcon">
-                    <img src="image/down-arrow.svg" alt="down-arrow.svg" class="telephoneList__button arrowDown">
-                    <div class="telephoneList__dropdownMenu">
-                        <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
-                        <img src="image/down-arrow.svg" alt="down-arrow.svg" class="telephoneList__button arrowDown">
-                        <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
-                        <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
-                        <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
-                        <div class="workTime hide">
-                            <p>Пн-Пт 9-19</p>
-                            <p>Сб-Вс Выходной</p>
+            <div class="menu">
+                <div class="menuBtn">
+                    <div class="menuBtn__container">
+                        <div class="btn__title">menu</div>
+                        <div class="line__box">
+                            <div class="btn__line"></div>
+                            <div class="btn__line"></div>
                         </div>
-                        <button type="button" class="callback">Перезвоните мне</button>
                     </div>
                 </div>
-                <div class="language">
-                    <p class="language_current">Ру</p>
-                    <div class="langMenu">
-                        <a class="langMenu__item" href="#">Ру</a>
-                        <a class="langMenu__item" href="#">Ук</a>
+            </div>
+            <div class="menu__window">
+                <div class="tovarNav">
+                    <div class="tovarNav__container">
+                        <div class="block">
+                            <div class="block__title">ОКНА</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Алюминиевые окна</a>
+                                <a href="" class="list__link">Пластиковые окна</a>
+                                <a href="" class="list__link">Окна для коттеджа</a>
+                                <a href="" class="list__link">Окна для квартиры</a>
+                                <a href="" class="list__link">Окна для балкона</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ВНУТРЕННИЕ ПЕРЕГОРОДКИ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Алюминиевые перегордки</a>
+                                <a href="" class="list__link">Пластиковые перегородки</a>
+                                <a href="" class="list__link">Стеклянные перегородки</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ДВЕРИ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Входные алюминиевые двери</a>
+                                <a href="" class="list__link">Входные пластиковые двери</a>
+                                <a href="" class="list__link">Входные панельные двери</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ВОРОТА И РОЛЛЕТЫ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Гаражные ворота</a>
+                                <a href="" class="list__link">Откатные ворота</a>
+                                <a href="" class="list__link">Панорамные ворота</a>
+                                <a href="" class="list__link">Оконные-дверные роллеты</a>
+                                <a href="" class="list__link">Витринные роллеты</a>
+                                <a href="" class="list__link">Роллетные ворота</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">РАЗДВИЖНЫЕ СИСТЕМЫ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Алюминиевые раздвижные системы</a>
+                                <a href="" class="list__link">Пластиковые раздвижные системы</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ФАСАДНЫЕ СИСТЕМЫ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Стоечно-ригельный фасад</a>
+                                <a href="" class="list__link">Спайдерный фасад</a>
+                                <a href="" class="list__link">Элементный фасад</a>
+                                <a href="" class="list__link">Вентилируемый фасад</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">СТЕКЛОПАКЕТЫ</div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">БЕЗРАМНОЕ ОСТЕКЛЕНИЕ</div>
+                        </div>
                     </div>
                 </div>
-                <div class="burgerMenu__openBtn">
-                    <div class="burgerMenu__openBtn_line"></div>
-                    <div class="burgerMenu__openBtn_line"></div>
-                    <div class="burgerMenu__openBtn_line"></div>
+                <div class="siteNav">
+                    <div class="siteNav__container">
+                        <div class="block">
+                            <div class="block__title">УСЛУГИ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Конструкторское бюро</a>
+                                <a href="" class="list__link">Управление проектами</a>
+                                <a href="" class="list__link">Монтаж конструкций</a>
+                                <a href="" class="list__link">Замер конструкций</a>
+                                <a href="" class="list__link">Сервисное обслуживание</a>
+                                <a href="" class="list__link">Доставка продукции</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">КЛИЕНТАМ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Акции компании</a>
+                                <a href="" class="list__link">Наши проекты</a>
+                                <a href="" class="list__link">Видео</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">ПАРТНЕРАМ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">Архитекторам</a>
+                                <a href="" class="list__link">Дизайнерам</a>
+                                <a href="" class="list__link">Застройщикам</a>
+                                <a href="" class="list__link">Владельцам элитного жилья</a>
+                                <a href="" class="list__link">Владельцам бизнеса</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">КОМПАНИЯ</div>
+                            <div class="block__list">
+                                <a href="" class="list__link">О компании</a>
+                                <a href="" class="list__link">Производство</a>
+                                <a href="" class="list__link">Отзывы</a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block__title">КОНТАКТЫ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__box">
+                <div class="header__block">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="image/Logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="funcionality">
+                        <div class="telephone funcionality__item">
+                            <a href="tel:+380677705166">+380 67 770 51 66</a>
+                        </div>
+                        <div class="callback funcionality__item">
+                            <a href="" class="siteBtn callback__btn">Заказать звонок</a>
+                        </div>
+                        <div class="socials funcionality__item">
+                            <div class="socials_facebook">
+                                <a href="#" class="socials_link">
+                                    <img src="image/Facebook.svg" alt="Facebook">
+                                </a>
+                            </div>
+                            <div class="socials_instagram">
+                                <a href="#" class="socials_link">
+                                    <img src="image/Instagram.svg" alt="Instagram">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="language funcionality__item">
+                            <div class="language_ukr">
+                                <a href="#">Ук</a>
+                            </div>
+                            <div class="language_rus active">
+                                <a href="#">Ру</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,162 +205,90 @@
         <div class="components">
             <div id="component-1" class="component">
                 <nav class="breadcrumb container margin-65">
-                    <ul class="breadcrumb__box font-regular">
-                        <li class="box__item"><a class="box__itemLink" href="#">KEL</a></li>
-                        <li class="box__item"><a class="box__itemLink" href="#">Платья</a></li>
-                        <li class="box__item"><a class="box__itemLink" href="#">Вечерние платья</a></li>
-                        <li class="box__item active">Платье Эльза</li>
+                    <ul class="breadcrumb__box breadcrumb__box_black font-regular">
+                        <li class="box__item"><a class="box__itemLink" href="#">Vitral</a></li>
+                        <li class="box__item"><a class="box__itemLink" href="#">Алюминиевые окна</a></li>
+                        <li class="box__item active">Alutech</li>
                     </ul>
                 </nav>
             </div>
             <div id="component-2" class="component">
-                <div class="tovar container">
-                    <div class="slider">
-                        <div class="slider__vertical">
-                            <div class="vertical__item">
-                                <img src="image/dress4.png" alt="image4" class="item__image">
+                <div class="modelsLinkBar margin-65">
+                    <div class="container">
+                        <div class="modelsLinkBar__box">
+                            <div class="box__item visite">
+                                <a class="item__link" href="#">Alutech C48</a>
                             </div>
-                            <div class="vertical__item">
-                                <img src="image/dress4.png" alt="image4" class="item__image">
+                            <div class="box__item">
+                                <a class="item__link" href="#">Alutech W62</a>
                             </div>
-                            <div class="vertical__item">
-                                <img src="image/dress4.png" alt="image4" class="item__image">
+                            <div class="box__item">
+                                <a class="item__link" href="#">Alutech W62</a>
                             </div>
-                            <div class="vertical__item">
-                                <img src="image/dress4.png" alt="image4" class="item__image">
+                            <div class="box__item">
+                                <a class="item__link" href="#">Reynaers 18</a>
                             </div>
-                        </div>
-                        <div class="slider__big">
-                            <div class="big__item">
-                                <img src="image/dress4.png" alt="image4" class="big__item_image">
+                            <div class="box__item">
+                                <a class="item__link" href="#">Hoffmann 18</a>
                             </div>
-                            <div class="big__item">
-                                <img src="image/dress4.png" alt="image4" class="big__item_image">
+                            <div class="box__item">
+                                <a class="item__link" href="#">Hoffmann 18</a>
                             </div>
-                            <div class="big__item">
-                                <img src="image/dress4.png" alt="image4" class="big__item_image">
-                            </div>
-                            <div class="big__item">
-                                <img src="image/dress4.png" alt="image4" class="big__item_image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <p class="article">Артикул: <span class="article__number">2345677</span></p>
-                        <h2 class="tovarName font-regular">Платье “Эльза”</h2>
-                        <p class="price font-bold">8 500 <span class="price__currency font-regular">₴</span></p>
-                        <p class="color">Цвет: <span class="color__text">Капучино</span></p>
-                        <div class="size">
-                            <p class="size__title">Размер:</p>
-                            <div class="size__buttonBox">
-                                <label class="sizeBlock__btn">
-                                    <input type="checkbox" disabled>
-                                    <p class="btn__text">XS</p>
-                                </label>
-                                <label class="sizeBlock__btn">
-                                    <input type="checkbox">
-                                    <p class="btn__text">S</p>
-                                </label>
-                                <label class="sizeBlock__btn">
-                                    <input type="checkbox">
-                                    <p class="btn__text">M</p>
-                                </label>
-                                <label class="sizeBlock__btn">
-                                    <input type="checkbox">
-                                    <p class="btn__text">L</p>
-                                </label>
-                                <label class="sizeBlock__btn">
-                                    <input type="checkbox">
-                                    <p class="btn__text">XL</p>
-                                </label>
-                                <label class="sizeBlock__btn">
-                                    <input type="checkbox" disabled>
-                                    <p class="btn__text">XXL</p>
-                                </label>
-                                <label class="sizeBlock__btn">
-                                    <input type="checkbox" disabled>
-                                    <p class="btn__text">3XL</p>
-                                </label>
-                            </div>
-                            <button type="button" class="size__customButton siteBtn">Индивидуальный пошив</button>
-                        </div>
-                        <div class="composition">Состав: <span class="composition__text">100% полиестер</span></div>
-                        <div class="buyBox">
-                            <button type="button" class="toBasket siteBtn">в корзину</button>
-                            <button type="button" class="quickBuy siteBtn">Быстрая покупка</button>
-                        </div>
-                        <div class="description">
-                            Описание:
-                            <p class="description__text">Описание платья и его преимущества для определенной фигуры и
-                                для
-                                определенного мероприятия. Описание платья и его преимущества для определенной фигуры и
-                                для
-                                определенного мероприятия.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="component-3" class="component">
-                <div class="vuSmotreli container margin-65">
-                    <h3 class="vuSmotreli__title font-regular">Вы смотрели</h3>
-                    <div class="vuSmotreli__table">
-                        <div class="cart">
-                            <div class="imageBox">
-                                <img class="cart__image" src="image/dress1.png" alt="dress1">
-                            </div>
-                            <h6 class="cart__title">Платье “Эльза”</h6>
-                            <p class="cart__price"><b class="font-bold">4 800 <span>&#8372;</span></b> </p>
-                            <button type="button" class="siteBtn cart__byuBtn display-none">выбрать</button>
-                        </div>
-                        <div class="cart">
-                            <div class="imageBox">
-                                <img class="cart__image" src="image/dress2.png" alt="dress1">
-                            </div>
-                            <h6 class="cart__title">Платье “Эльза”</h6>
-                            <p class="cart__price"><b class="font-bold">4 800 <span>&#8372;</span></b> </p>
-                            <button type="button" class="siteBtn cart__byuBtn display-none">выбрать</button>
-                        </div>
-                        <div class="cart">
-                            <div class="imageBox">
-                                <img class="cart__image" src="image/dress3.png" alt="dress1">
-                            </div>
-                            <h6 class="cart__title">Платье “Эльза”</h6>
-                            <p class="cart__price"><b class="font-bold">4 800 <span>&#8372;</span></b> </p>
-                            <button type="button" class="siteBtn cart__byuBtn display-none">выбрать</button>
-                        </div>
-                        <div class="cart">
-                            <div class="imageBox">
-                                <img class="cart__image" src="image/dress4.png" alt="dress1">
-                            </div>
-                            <h6 class="cart__title">Платье “Эльза”</h6>
-                            <p class="cart__price"><b class="font-bold">4 800 <span>&#8372;</span></b> </p>
-                            <button type="button" class="siteBtn cart__byuBtn display-none">выбрать</button>
-                        </div>
+                <div class="modelsLinkBar margin-65">
+                    <div class="container">
+
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <footer id="footer">
-        <div class="footerContainer">
-            <a class="footerHeaderBox" href="#">
-                <img src="image/logo_white.svg" alt="jazz flora. Home decore" class="footerLogo">
-            </a>
-            <div class="footerLinkBox">
-                <a href="https://www.instagram.com/elena.kondratova_design/" class="linkContainer">
-                    <img src="image/Instagram.svg" alt="Instagram">
-                    <p>@elena.kondratova_design</p>
-                </a>
+        <div class="footer__container">
+            <div class="block">
+                <div class="title">
+                    <div class="title__logo">
+                        <img src="image/logo_black.svg" alt="logo">
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="social__container">
+                        <div class="social__link">
+                            <a href="#"><img src="image/facebook_black.svg" alt="facebook_black"></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="#"><img src="image/instagram_black.svg" alt="instagram_black"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="siteBtn footer__btn">Заказать звонок</div>
+                </div>
             </div>
-            <div class="footerPhoneBox">
-                <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
-                <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
-                <a href="tel:+380671234567" class="phoneNumber">+38 067 123 45 67</a>
+            <div class="block">
+                <div class="block__title">Контакты</div>
+                <div class="block__text"><a href="tel:+380677705166">+380 67 770 51 66</a></div>
+                <div class="block__text">Киев, ул. Драгоманова, 17</div>
+                <div class="block__text"><a href="mailto:vitral@gmail.com">vitral@gmail.com</a></div>
+                <div class="block__text">Пн-Пт: 1000-1800<br>Сб-Вс: Выходные</div>
             </div>
-            <div class="workTime">
-                <p class="workTime__text">Киев</p>
-                <p class="workTime__text">Пн-Пт 9:00-19:00</p>
-                <p class="workTime__text">Сб-Вс Выходной</p>
+            <div class="block">
+                <div class="block__title">КЛИЕНТАМ</div>
+                <div class="block__text"><a href="#">Акции компании</a></div>
+                <div class="block__text"><a href="#">Наши проекты</a></div>
+                <div class="block__text"><a href="#">Видео</a></div>
+            </div>
+            <div class="block">
+                <div class="block__title">ПАРТНЕРАМ</div>
+                <div class="block__text"><a href="#">Архитекторам</a></div>
+                <div class="block__text"><a href="#">Дизайнерам</a></div>
+                <div class="block__text"><a href="#">Застройщикам</a></div>
+                <div class="block__text"><a href="#">Владельцам элитного жилья</a></div>
+                <div class="block__text"><a href="#">Владельцам бизнеса</a></div>
             </div>
         </div>
     </footer>

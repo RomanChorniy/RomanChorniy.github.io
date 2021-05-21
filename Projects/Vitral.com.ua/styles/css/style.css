@@ -777,6 +777,9 @@ body .margin-65 {
 .components .aboutUs__container .aboutUs__slider .certificate .slick-arrow::before {
   display: none;
 }
+.components .breadcrumb {
+  height: 130px;
+}
 .components .breadcrumb .breadcrumb__box {
   padding: 29px 0;
 }
@@ -796,6 +799,9 @@ body .margin-65 {
 }
 .components .breadcrumb .breadcrumb__box .box__item .box__itemLink:hover {
   text-decoration: underline;
+}
+.components .breadcrumb .breadcrumb__box_black .box__item, .components .breadcrumb .breadcrumb__box_black .box__item + .box__item::before, .components .breadcrumb .breadcrumb__box_black .box__item .box__itemLink {
+  color: #1e1e1e;
 }
 .components .titleBlock {
   margin-top: -142px;
@@ -984,6 +990,27 @@ body .margin-65 {
   float: none;
   margin: 0 auto;
   margin-top: 30px;
+}
+.components .modelsLinkBar {
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+.components .modelsLinkBar .modelsLinkBar__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 920px;
+  width: 100%;
+}
+.components .modelsLinkBar .modelsLinkBar__box .box__item {
+  margin: 0 10px;
+  padding: 23px 0;
+}
+.components .modelsLinkBar .modelsLinkBar__box .visite {
+  color: #ed3a4d;
 }
 @media screen and (max-width: 576px) {
   .components .component p {
@@ -1306,32 +1333,20 @@ body .margin-65 {
   }
 }
 #header .header__container {
-  left: 50%;
+  left: calc(50% - 80px);
   position: fixed;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 100%;
+  top: 0;
   margin: 0 auto;
-  max-width: 1140px;
   height: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   z-index: 1000;
 }
 #header .header__container .menu {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 95px;
           flex: 0 0 95px;
-  -webkit-transition: flex-grow 1s ease, -webkit-box-flex 1s ease;
-  transition: flex-grow 1s ease, -webkit-box-flex 1s ease;
-  -o-transition: flex-grow 1s ease;
-  transition: flex-grow 1s ease;
-  transition: flex-grow 1s ease, -webkit-box-flex 1s ease, -ms-flex-positive 1s ease;
   z-index: 11;
 }
 #header .header__container .menu .menuBtn {
@@ -1372,49 +1387,6 @@ body .margin-65 {
 #header .header__container .menu .menuBtn .menuBtn__container .btn__line:last-child {
   margin-top: 7px;
 }
-#header .header__container .menu_open {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-#header .header__container .menu_open .menuBtn .menuBtn__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  padding: 0 30px;
-}
-#header .header__container .menu_open .menuBtn .menuBtn__container .btn__title {
-  font-size: 24px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  text-align: center;
-}
-#header .header__container .menu_open .menuBtn .menuBtn__container .line__box {
-  cursor: pointer;
-}
-#header .header__container .menu_open .menuBtn .menuBtn__container .btn__line {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  margin-top: 0;
-}
-#header .header__container .menu_open .menuBtn .menuBtn__container .btn__line:last-child {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  position: relative;
-  bottom: 10px;
-}
 #header .header__container .menu__window {
   position: absolute;
   top: -1000%;
@@ -1426,9 +1398,6 @@ body .margin-65 {
   -o-transition: top 1s ease;
   transition: top 1s ease;
   z-index: 10;
-}
-#header .header__container .menu__window_open {
-  top: 0;
 }
 #header .header__container .menu__window .tovarNav {
   background-color: #fff;
@@ -1524,8 +1493,8 @@ body .margin-65 {
 #header .header__container .header__box {
   position: relative;
   background-color: #1E1E1E;
-  -ms-flex-preferred-size: 555px;
-      flex-basis: 555px;
+  -ms-flex-preferred-size: 554px;
+      flex-basis: 554px;
   padding: 0 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1618,6 +1587,60 @@ body .margin-65 {
 }
 #header .header__container .header__box .header__block .funcionality .language .active {
   color: #e5e5e5;
+}
+#header .menu_open {
+  left: 50%;
+  max-width: 1140px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+#header .menu_open .menu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+#header .menu_open .menu .menuBtn .menuBtn__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 0 30px;
+}
+#header .menu_open .menu .menuBtn .menuBtn__container .btn__title {
+  font-size: 24px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  text-align: center;
+}
+#header .menu_open .menu .menuBtn .menuBtn__container .line__box {
+  cursor: pointer;
+}
+#header .menu_open .menu .menuBtn .menuBtn__container .btn__line {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: 0;
+}
+#header .menu_open .menu .menuBtn .menuBtn__container .btn__line:last-child {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: relative;
+  bottom: 10px;
+}
+#header .menu_open .menu__window {
+  top: 0;
 }
 @media screen and (max-width: 576px) {
   #header .header__container {
@@ -1754,7 +1777,7 @@ body .margin-65 {
           justify-content: space-between;
   margin: 0 auto;
   max-width: 1110px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   width: 100%;
 }
 #footer .footer__container .block {

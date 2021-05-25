@@ -1192,6 +1192,779 @@ body .margin-65 {
   font-size: 0.875em;
   font-weight: 400;
 }
+.components .designSolutions .container {
+  border-bottom: 1px solid #1e1e1e;
+}
+.components .designSolutions .container .contentBox {
+  color: #1e1e1e;
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 74px 0 84px;
+  width: 100%;
+}
+.components .designSolutions .container .contentBox .title {
+  font-size: 2.25em;
+  padding-bottom: 40px;
+}
+.components .designSolutions .container .contentBox .textBox {
+  padding-bottom: 30px;
+}
+.components .designSolutions .container .contentBox .textBox .text {
+  font-weight: 400;
+  line-height: 156.25%;
+  max-width: 539px;
+  width: 100%;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal {
+  display: none;
+  overflow: hidden;
+  padding: 50px 0 0;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem {
+  padding: 1px;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color {
+  height: 60px;
+  padding: 1px;
+  width: 60px;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1000 {
+  background-color: #cdba88;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1001 {
+  background-color: #d0b084;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1002 {
+  background-color: #d2aa6d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1003 {
+  background-color: #f9a800;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1004 {
+  background-color: #e49e00;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1005 {
+  background-color: #cb8e00;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1006 {
+  background-color: #e29000;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1007 {
+  background-color: #ff9900;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1011 {
+  background-color: #af804f;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1012 {
+  background-color: #ddaf27;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1013 {
+  background-color: #e3d9c6;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1014 {
+  background-color: #ddc49a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1015 {
+  background-color: #e6d2b5;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1016 {
+  background-color: #f1dd38;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1017 {
+  background-color: #f6a950;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1018 {
+  background-color: #faca30;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1019 {
+  background-color: #a48f7a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1020 {
+  background-color: #a08f65;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1021 {
+  background-color: #f6b600;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1023 {
+  background-color: #f7b500;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1024 {
+  background-color: #ba8f4c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1026 {
+  background-color: #ffff00;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1027 {
+  background-color: #a77f0e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1028 {
+  background-color: #ff9b00;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1032 {
+  background-color: #e2a300;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1033 {
+  background-color: #f99a1c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1034 {
+  background-color: #eb9c52;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_1037 {
+  background-color: #f09200;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2000 {
+  background-color: #da6e00;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2001 {
+  background-color: #ba481b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2002 {
+  background-color: #bf3922;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2003 {
+  background-color: #f67828;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2004 {
+  background-color: #e25303;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2005 {
+  background-color: #ff4d06;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2007 {
+  background-color: #ffb200;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2008 {
+  background-color: #ed6b21;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2009 {
+  background-color: #de5307;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2010 {
+  background-color: #d05d28;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2011 {
+  background-color: #e26e0e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_2012 {
+  background-color: #d5654d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3000 {
+  background-color: #a72920;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3001 {
+  background-color: #9b2423;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3002 {
+  background-color: #9b2321;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3003 {
+  background-color: #861a22;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3004 {
+  background-color: #6b1c23;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3005 {
+  background-color: #59191f;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3007 {
+  background-color: #3e2022;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3009 {
+  background-color: #6d342d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3011 {
+  background-color: #792423;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3012 {
+  background-color: #c6846d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3013 {
+  background-color: #972e25;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3014 {
+  background-color: #cb7375;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3015 {
+  background-color: #d8a0a6;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3016 {
+  background-color: #a63d2f;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3017 {
+  background-color: #cb555d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3018 {
+  background-color: #c73f4a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3020 {
+  background-color: #bb1e10;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3022 {
+  background-color: #cf6955;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3024 {
+  background-color: #ff2d21;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3026 {
+  background-color: #ff2a1b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3027 {
+  background-color: #ab273c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3028 {
+  background-color: #cc2c24;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_3031 {
+  background-color: #a63437;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4001 {
+  background-color: #816183;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4002 {
+  background-color: #8d3c4b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4003 {
+  background-color: #c4618c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4004 {
+  background-color: #651e38;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4005 {
+  background-color: #76689a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4006 {
+  background-color: #903373;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4007 {
+  background-color: #47243c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4008 {
+  background-color: #844c82;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4009 {
+  background-color: #9d8692;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_4010 {
+  background-color: #bc4077;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5000 {
+  background-color: #314f6f;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5001 {
+  background-color: #0f4c64;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5002 {
+  background-color: #00387b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5003 {
+  background-color: #1f3855;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5004 {
+  background-color: #191e28;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5005 {
+  background-color: #005387;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5007 {
+  background-color: #376b8c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5008 {
+  background-color: #2b3a44;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5009 {
+  background-color: #225f78;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5010 {
+  background-color: #004f7c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5011 {
+  background-color: #1a2b3c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5012 {
+  background-color: #0089b6;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5013 {
+  background-color: #193153;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5014 {
+  background-color: #637d96;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5015 {
+  background-color: #007cb0;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5017 {
+  background-color: #005b8c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5018 {
+  background-color: #058b8c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5019 {
+  background-color: #005e83;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5020 {
+  background-color: #00414b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5021 {
+  background-color: #007577;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5022 {
+  background-color: #222d5a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5023 {
+  background-color: #42698c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_5024 {
+  background-color: #6093ac;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6000 {
+  background-color: #3c7460;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6001 {
+  background-color: #366735;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6002 {
+  background-color: #325928;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6003 {
+  background-color: #50533c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6004 {
+  background-color: #024442;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6005 {
+  background-color: #114232;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6006 {
+  background-color: #3c392e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6007 {
+  background-color: #2c3222;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6008 {
+  background-color: #37342a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6009 {
+  background-color: #27352a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6010 {
+  background-color: #4d6f39;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6011 {
+  background-color: #6c7c59;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6012 {
+  background-color: #303d3a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6013 {
+  background-color: #7d765a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6014 {
+  background-color: #474135;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6015 {
+  background-color: #3d3d36;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6016 {
+  background-color: #00694c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6017 {
+  background-color: #587f40;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6018 {
+  background-color: #61993b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6019 {
+  background-color: #b9ceac;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6020 {
+  background-color: #37422f;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6021 {
+  background-color: #8a9977;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6022 {
+  background-color: #3a3327;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6024 {
+  background-color: #008351;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6025 {
+  background-color: #5e6e3b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6026 {
+  background-color: #005f4e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6027 {
+  background-color: #7ebab5;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6028 {
+  background-color: #315442;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6029 {
+  background-color: #006f3d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6032 {
+  background-color: #237f52;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6033 {
+  background-color: #46877f;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6034 {
+  background-color: #7aacac;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6037 {
+  background-color: #194d25;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_6038 {
+  background-color: #00b51a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7000 {
+  background-color: #7a888e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7001 {
+  background-color: #8c969d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7002 {
+  background-color: #817863;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7003 {
+  background-color: #7a7669;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7004 {
+  background-color: #9b9b9b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7005 {
+  background-color: #6c6e6b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7006 {
+  background-color: #766a5e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7008 {
+  background-color: #745e3d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7009 {
+  background-color: #5d6058;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7010 {
+  background-color: #585c56;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7011 {
+  background-color: #52595d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7012 {
+  background-color: #575d5e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7013 {
+  background-color: #575044;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7015 {
+  background-color: #4f5358;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7016 {
+  background-color: #383e42;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7021 {
+  background-color: #2f3234;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7022 {
+  background-color: #4c4a44;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7023 {
+  background-color: #808076;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7024 {
+  background-color: #45494e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7026 {
+  background-color: #374345;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7030 {
+  background-color: #928e85;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7031 {
+  background-color: #5b686d;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7032 {
+  background-color: #b5b0a1;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7033 {
+  background-color: #7f8274;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7034 {
+  background-color: #92886f;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7035 {
+  background-color: #c5c7c4;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7036 {
+  background-color: #979392;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7037 {
+  background-color: #7a7b7a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7038 {
+  background-color: #b0b0a9;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7039 {
+  background-color: #6b665e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7040 {
+  background-color: #989ea1;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7042 {
+  background-color: #8e9291;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7043 {
+  background-color: #4f5250;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7044 {
+  background-color: #b7b3a8;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7045 {
+  background-color: #8d9295;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7046 {
+  background-color: #7f868a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_7047 {
+  background-color: #c8c8c7;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8000 {
+  background-color: #89693e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8001 {
+  background-color: #9d622b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8002 {
+  background-color: #794d3e;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8003 {
+  background-color: #7e4b26;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8004 {
+  background-color: #8d4931;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8007 {
+  background-color: #70452a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8008 {
+  background-color: #724a25;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8011 {
+  background-color: #5a3826;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8012 {
+  background-color: #66332b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8014 {
+  background-color: #4a3526;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8015 {
+  background-color: #5e2f26;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8016 {
+  background-color: #4c2b20;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8017 {
+  background-color: #442f29;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8019 {
+  background-color: #3d3635;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8022 {
+  background-color: #1a1718;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8023 {
+  background-color: #a45729;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8024 {
+  background-color: #795038;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8025 {
+  background-color: #755847;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8028 {
+  background-color: #513a2a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_8029 {
+  background-color: #7f4031;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9001 {
+  background-color: #e9e0d2;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9002 {
+  background-color: #d7d5cb;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9003 {
+  background-color: #ecece7;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9004 {
+  background-color: #2b2b2c;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9005 {
+  background-color: #0e0e10;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9006 {
+  background-color: #a1a1a0;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9010 {
+  background-color: #f1ece1;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9011 {
+  background-color: #27292b;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9016 {
+  background-color: #f1f0ea;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9017 {
+  background-color: #2a292a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9018 {
+  background-color: #c8cbc4;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .color_9023 {
+  background-color: #797b7a;
+}
+.components .designSolutions .container .contentBox .textBox .colorRal .colors .colorItem .colorNum {
+  padding-top: 5px;
+  text-align: center;
+}
+.components .designSolutions .container .contentBox .textBox .hideBlock {
+  display: block;
+}
+.components .designSolutions .container .contentBox .blockBtn .siteBtn {
+  border-color: #1e1e1e;
+  color: #1e1e1e;
+  max-width: 255px;
+  width: 100%;
+}
+.components .designSolutions .container .contentBox .blockBtn .siteBtn:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.components .tovar .container .contentBox {
+  margin: 0 auto;
+  max-width: 920px;
+  width: 100%;
+}
+.components .tovar .container .tovarFild {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+}
+.components .tovar .container .tovarFild .info {
+  color: #1e1e1e;
+  font-size: 16px;
+  max-width: 570px;
+  width: 100%;
+  padding: 40px 0;
+}
+.components .tovar .container .tovarFild .info .infoBox {
+  padding: 0 15px;
+}
+.components .tovar .container .tovarFild .info .infoBox .title {
+  font-size: 2.25em;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+.components .tovar .container .tovarFild .info .infoBox .description {
+  font-weight: 400;
+  line-height: 156.25%;
+  padding-bottom: 30px;
+}
+.components .tovar .container .tovarFild .info .infoBox .tover_buy {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
+}
+.components .tovar .container .tovarFild .info .infoBox .tover_buy .price {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.components .tovar .container .tovarFild .info .infoBox .tover_buy .price .nameBox {
+  font-size: 0.875em;
+  font-weight: 400;
+  padding-right: 7px;
+}
+.components .tovar .container .tovarFild .info .infoBox .tover_buy .price .price__value {
+  font-size: 2.25em;
+  line-height: 1;
+  padding-right: 7px;
+}
+.components .tovar .container .tovarFild .info .infoBox .tover_buy .price .currency {
+  font-size: 1.125em;
+  white-space: nowrap;
+}
+.components .tovar .container .tovarFild .info .infoBox .tover_buy .buttonBox .siteBtn {
+  border-color: #1e1e1e;
+  color: #1e1e1e;
+  max-width: 255px;
+}
+.components .tovar .container .tovarFild .info .infoBox .tover_buy .buttonBox .siteBtn:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.components .tovar .container .tovarFild .info .infoBox .characteristics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.components .tovar .container .tovarFild .info .infoBox .characteristics .characteristics__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 33%;
+}
+.components .tovar .container .tovarFild .info .infoBox .characteristics .characteristics__item .item__name {
+  font-size: 0.8125em;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+.components .tovar .container .tovarFild .info .infoBox .characteristics .characteristics__item .item__value {
+  color: #ed3a4d;
+  font-size: 1.75em;
+}
+.components .tovar .container .tovarFild .image {
+  padding: 0 15px;
+}
+.components .tovar .container .tovarFild .image .image__item {
+  margin-right: -80px;
+}
 @media screen and (max-width: 576px) {
   .components .component p {
     padding-left: 0 !important;

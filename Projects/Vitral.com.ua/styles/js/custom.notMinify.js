@@ -327,4 +327,9 @@ $(document).ready(function () {
         prevArrow: '<div class="slick-prev"><img src="image/Arrow-prev.svg" alt="prevArrow"></div>',
         nextArrow: '<div class="slick-next"><img src="image/Arrow-next.svg" alt="nextArrow"></div>'
     });
+    $('.blockBtn').on('click', function () {
+        $('.colorRal').toggleClass('hideBlock');
+        if ($('.colorRal').hasClass('hideBlock')) $('.blockBtn .siteBtn').text('Скрыть цвета')
+        else $('.blockBtn .siteBtn').text('Смотреть цвета')
+    });
 });

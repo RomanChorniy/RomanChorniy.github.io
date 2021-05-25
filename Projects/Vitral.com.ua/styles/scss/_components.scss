@@ -890,6 +890,765 @@
         }
       }
     }
+    .designSolutions {
+      .container {
+        border-bottom: 1px solid #1e1e1e;
+        .contentBox {
+          color: #1e1e1e;
+          font-size: 16px;
+          margin: 0 auto;
+          max-width: 920px;
+          padding: 74px 0 84px;
+          width: 100%;
+          .title {
+            font-size: 2.25em;
+            padding-bottom: 40px;
+          }
+          .textBox {
+            padding-bottom: 30px;
+            .text {
+              font-weight: 400;
+              line-height: 25 / 16 * 100%;
+              max-width: 539px;
+              width: 100%;
+            }
+            .colorRal {
+              display: none;
+              overflow: hidden;
+              padding: 50px 0 0;
+              .title {
+                font-size: 1.5em;
+                font-weight: 500;
+              }
+              .colors {
+                display: flex;
+                flex-wrap: wrap;
+                .colorItem {
+                  padding: 1px;
+                  .color {
+                    height: 60px;
+                    padding: 1px;
+                    width: 60px;
+                    &_1000 {
+                      background-color: #cdba88;
+                    }
+                    &_1001 {
+                      background-color: #d0b084;
+                    }
+                    &_1002 {
+                      background-color: #d2aa6d;
+                    }
+                    &_1003 {
+                      background-color: #f9a800;
+                    }
+                    &_1004 {
+                      background-color: #e49e00;
+                    }
+                    &_1005 {
+                      background-color: #cb8e00;
+                    }
+                    &_1006 {
+                      background-color: #e29000;
+                    }
+                    &_1007 {
+                      background-color: #ff9900;
+                    }
+                    &_1011 {
+                      background-color: #af804f;
+                    }
+                    &_1012 {
+                      background-color: #ddaf27;
+                    }
+                    &_1013 {
+                      background-color: #e3d9c6;
+                    }
+                    &_1014 {
+                      background-color: #ddc49a;
+                    }
+                    &_1015 {
+                      background-color: #e6d2b5;
+                    }
+                    &_1016 {
+                      background-color: #f1dd38;
+                    }
+                    &_1017 {
+                      background-color: #f6a950;
+                    }
+                    &_1018 {
+                      background-color: #faca30;
+                    }
+                    &_1019 {
+                      background-color: #a48f7a;
+                    }
+                    &_1020 {
+                      background-color: #a08f65;
+                    }
+                    &_1021 {
+                      background-color: #f6b600;
+                    }
+                    &_1023 {
+                      background-color: #f7b500;
+                    }
+                    &_1024 {
+                      background-color: #ba8f4c;
+                    }
+                    &_1026 {
+                      background-color: #ffff00;
+                    }
+                    &_1027 {
+                      background-color: #a77f0e;
+                    }
+                    &_1028 {
+                      background-color: #ff9b00;
+                    }
+                    &_1032 {
+                      background-color: #e2a300;
+                    }
+                    &_1033 {
+                      background-color: #f99a1c;
+                    }
+                    &_1034 {
+                      background-color: #eb9c52;
+                    }
+                    &_1037 {
+                      background-color: #f09200;
+                    }
+                    &_2000 {
+                      background-color: #da6e00;
+                    }
+                    &_2001 {
+                      background-color: #ba481b;
+                    }
+                    &_2002 {
+                      background-color: #bf3922;
+                    }
+                    &_2003 {
+                      background-color: #f67828;
+                    }
+                    &_2004 {
+                      background-color: #e25303;
+                    }
+                    &_2005 {
+                      background-color: #ff4d06;
+                    }
+                    &_2007 {
+                      background-color: #ffb200;
+                    }
+                    &_2008 {
+                      background-color: #ed6b21;
+                    }
+                    &_2009 {
+                      background-color: #de5307;
+                    }
+                    &_2010 {
+                      background-color: #d05d28;
+                    }
+                    &_2011 {
+                      background-color: #e26e0e;
+                    }
+                    &_2012 {
+                      background-color: #d5654d;
+                    }
+                    &_3000 {
+                      background-color: #a72920;
+                    }
+                    &_3001 {
+                      background-color: #9b2423;
+                    }
+                    &_3002 {
+                      background-color: #9b2321;
+                    }
+                    &_3003 {
+                      background-color: #861a22;
+                    }
+                    &_3004 {
+                      background-color: #6b1c23;
+                    }
+                    &_3005 {
+                      background-color: #59191f;
+                    }
+                    &_3007 {
+                      background-color: #3e2022;
+                    }
+                    &_3009 {
+                      background-color: #6d342d;
+                    }
+                    &_3011 {
+                      background-color: #792423;
+                    }
+                    &_3012 {
+                      background-color: #c6846d;
+                    }
+                    &_3013 {
+                      background-color: #972e25;
+                    }
+                    &_3014 {
+                      background-color: #cb7375;
+                    }
+                    &_3015 {
+                      background-color: #d8a0a6;
+                    }
+                    &_3016 {
+                      background-color: #a63d2f;
+                    }
+                    &_3017 {
+                      background-color: #cb555d;
+                    }
+                    &_3018 {
+                      background-color: #c73f4a;
+                    }
+                    &_3020 {
+                      background-color: #bb1e10;
+                    }
+                    &_3022 {
+                      background-color: #cf6955;
+                    }
+                    &_3024 {
+                      background-color: #ff2d21;
+                    }
+                    &_3026 {
+                      background-color: #ff2a1b;
+                    }
+                    &_3027 {
+                      background-color: #ab273c;
+                    }
+                    &_3028 {
+                      background-color: #cc2c24;
+                    }
+                    &_3031 {
+                      background-color: #a63437;
+                    }
+                    &_4001 {
+                      background-color: #816183;
+                    }
+                    &_4002 {
+                      background-color: #8d3c4b;
+                    }
+                    &_4003 {
+                      background-color: #c4618c;
+                    }
+                    &_4004 {
+                      background-color: #651e38;
+                    }
+                    &_4005 {
+                      background-color: #76689a;
+                    }
+                    &_4006 {
+                      background-color: #903373;
+                    }
+                    &_4007 {
+                      background-color: #47243c;
+                    }
+                    &_4008 {
+                      background-color: #844c82;
+                    }
+                    &_4009 {
+                      background-color: #9d8692;
+                    }
+                    &_4010 {
+                      background-color: #bc4077;
+                    }
+                    &_5000 {
+                      background-color: #314f6f;
+                    }
+                    &_5001 {
+                      background-color: #0f4c64;
+                    }
+                    &_5002 {
+                      background-color: #00387b;
+                    }
+                    &_5003 {
+                      background-color: #1f3855;
+                    }
+                    &_5004 {
+                      background-color: #191e28;
+                    }
+                    &_5005 {
+                      background-color: #005387;
+                    }
+                    &_5007 {
+                      background-color: #376b8c;
+                    }
+                    &_5008 {
+                      background-color: #2b3a44;
+                    }
+                    &_5009 {
+                      background-color: #225f78;
+                    }
+                    &_5010 {
+                      background-color: #004f7c;
+                    }
+                    &_5011 {
+                      background-color: #1a2b3c;
+                    }
+                    &_5012 {
+                      background-color: #0089b6;
+                    }
+                    &_5013 {
+                      background-color: #193153;
+                    }
+                    &_5014 {
+                      background-color: #637d96;
+                    }
+                    &_5015 {
+                      background-color: #007cb0;
+                    }
+                    &_5017 {
+                      background-color: #005b8c;
+                    }
+                    &_5018 {
+                      background-color: #058b8c;
+                    }
+                    &_5019 {
+                      background-color: #005e83;
+                    }
+                    &_5020 {
+                      background-color: #00414b;
+                    }
+                    &_5021 {
+                      background-color: #007577;
+                    }
+                    &_5022 {
+                      background-color: #222d5a;
+                    }
+                    &_5023 {
+                      background-color: #42698c;
+                    }
+                    &_5024 {
+                      background-color: #6093ac;
+                    }
+                    &_6000 {
+                      background-color: #3c7460;
+                    }
+                    &_6001 {
+                      background-color: #366735;
+                    }
+                    &_6002 {
+                      background-color: #325928;
+                    }
+                    &_6003 {
+                      background-color: #50533c;
+                    }
+                    &_6004 {
+                      background-color: #024442;
+                    }
+                    &_6005 {
+                      background-color: #114232;
+                    }
+                    &_6006 {
+                      background-color: #3c392e;
+                    }
+                    &_6007 {
+                      background-color: #2c3222;
+                    }
+                    &_6008 {
+                      background-color: #37342a;
+                    }
+                    &_6009 {
+                      background-color: #27352a;
+                    }
+                    &_6010 {
+                      background-color: #4d6f39;
+                    }
+                    &_6011 {
+                      background-color: #6c7c59;
+                    }
+                    &_6012 {
+                      background-color: #303d3a;
+                    }
+                    &_6013 {
+                      background-color: #7d765a;
+                    }
+                    &_6014 {
+                      background-color: #474135;
+                    }
+                    &_6015 {
+                      background-color: #3d3d36;
+                    }
+                    &_6016 {
+                      background-color: #00694c;
+                    }
+                    &_6017 {
+                      background-color: #587f40;
+                    }
+                    &_6018 {
+                      background-color: #61993b;
+                    }
+                    &_6019 {
+                      background-color: #b9ceac;
+                    }
+                    &_6020 {
+                      background-color: #37422f;
+                    }
+                    &_6021 {
+                      background-color: #8a9977;
+                    }
+                    &_6022 {
+                      background-color: #3a3327;
+                    }
+                    &_6024 {
+                      background-color: #008351;
+                    }
+                    &_6025 {
+                      background-color: #5e6e3b;
+                    }
+                    &_6026 {
+                      background-color: #005f4e;
+                    }
+                    &_6027 {
+                      background-color: #7ebab5;
+                    }
+                    &_6028 {
+                      background-color: #315442;
+                    }
+                    &_6029 {
+                      background-color: #006f3d;
+                    }
+                    &_6032 {
+                      background-color: #237f52;
+                    }
+                    &_6033 {
+                      background-color: #46877f;
+                    }
+                    &_6034 {
+                      background-color: #7aacac;
+                    }
+                    &_6037 {
+                      background-color: #194d25;
+                    }
+                    &_6038 {
+                      background-color: #00b51a;
+                    }
+                    &_7000 {
+                      background-color: #7a888e;
+                    }
+                    &_7001 {
+                      background-color: #8c969d;
+                    }
+                    &_7002 {
+                      background-color: #817863;
+                    }
+                    &_7003 {
+                      background-color: #7a7669;
+                    }
+                    &_7004 {
+                      background-color: #9b9b9b;
+                    }
+                    &_7005 {
+                      background-color: #6c6e6b;
+                    }
+                    &_7006 {
+                      background-color: #766a5e;
+                    }
+                    &_7008 {
+                      background-color: #745e3d;
+                    }
+                    &_7009 {
+                      background-color: #5d6058;
+                    }
+                    &_7010 {
+                      background-color: #585c56;
+                    }
+                    &_7011 {
+                      background-color: #52595d;
+                    }
+                    &_7012 {
+                      background-color: #575d5e;
+                    }
+                    &_7013 {
+                      background-color: #575044;
+                    }
+                    &_7015 {
+                      background-color: #4f5358;
+                    }
+                    &_7016 {
+                      background-color: #383e42;
+                    }
+                    &_7021 {
+                      background-color: #2f3234;
+                    }
+                    &_7022 {
+                      background-color: #4c4a44;
+                    }
+                    &_7023 {
+                      background-color: #808076;
+                    }
+                    &_7024 {
+                      background-color: #45494e;
+                    }
+                    &_7026 {
+                      background-color: #374345;
+                    }
+                    &_7030 {
+                      background-color: #928e85;
+                    }
+                    &_7031 {
+                      background-color: #5b686d;
+                    }
+                    &_7032 {
+                      background-color: #b5b0a1;
+                    }
+                    &_7033 {
+                      background-color: #7f8274;
+                    }
+                    &_7034 {
+                      background-color: #92886f;
+                    }
+                    &_7035 {
+                      background-color: #c5c7c4;
+                    }
+                    &_7036 {
+                      background-color: #979392;
+                    }
+                    &_7037 {
+                      background-color: #7a7b7a;
+                    }
+                    &_7038 {
+                      background-color: #b0b0a9;
+                    }
+                    &_7039 {
+                      background-color: #6b665e;
+                    }
+                    &_7040 {
+                      background-color: #989ea1;
+                    }
+                    &_7042 {
+                      background-color: #8e9291;
+                    }
+                    &_7043 {
+                      background-color: #4f5250;
+                    }
+                    &_7044 {
+                      background-color: #b7b3a8;
+                    }
+                    &_7045 {
+                      background-color: #8d9295;
+                    }
+                    &_7046 {
+                      background-color: #7f868a;
+                    }
+                    &_7047 {
+                      background-color: #c8c8c7;
+                    }
+                    &_8000 {
+                      background-color: #89693e;
+                    }
+                    &_8001 {
+                      background-color: #9d622b;
+                    }
+                    &_8002 {
+                      background-color: #794d3e;
+                    }
+                    &_8003 {
+                      background-color: #7e4b26;
+                    }
+                    &_8004 {
+                      background-color: #8d4931;
+                    }
+                    &_8007 {
+                      background-color: #70452a;
+                    }
+                    &_8008 {
+                      background-color: #724a25;
+                    }
+                    &_8011 {
+                      background-color: #5a3826;
+                    }
+                    &_8012 {
+                      background-color: #66332b;
+                    }
+                    &_8014 {
+                      background-color: #4a3526;
+                    }
+                    &_8015 {
+                      background-color: #5e2f26;
+                    }
+                    &_8016 {
+                      background-color: #4c2b20;
+                    }
+                    &_8017 {
+                      background-color: #442f29;
+                    }
+                    &_8019 {
+                      background-color: #3d3635;
+                    }
+                    &_8022 {
+                      background-color: #1a1718;
+                    }
+                    &_8023 {
+                      background-color: #a45729;
+                    }
+                    &_8024 {
+                      background-color: #795038;
+                    }
+                    &_8025 {
+                      background-color: #755847;
+                    }
+                    &_8028 {
+                      background-color: #513a2a;
+                    }
+                    &_8029 {
+                      background-color: #7f4031;
+                    }
+                    &_9001 {
+                      background-color: #e9e0d2;
+                    }
+                    &_9002 {
+                      background-color: #d7d5cb;
+                    }
+                    &_9003 {
+                      background-color: #ecece7;
+                    }
+                    &_9004 {
+                      background-color: #2b2b2c;
+                    }
+                    &_9005 {
+                      background-color: #0e0e10;
+                    }
+                    &_9006 {
+                      background-color: #a1a1a0;
+                    }
+                    &_9010 {
+                      background-color: #f1ece1;
+                    }
+                    &_9011 {
+                      background-color: #27292b;
+                    }
+                    &_9016 {
+                      background-color: #f1f0ea;
+                    }
+                    &_9017 {
+                      background-color: #2a292a;
+                    }
+                    &_9018 {
+                      background-color: #c8cbc4;
+                    }
+                    &_9023 {
+                      background-color: #797b7a;
+                    }
+                  }
+                  .colorNum {
+                    padding-top: 5px;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+            .hideBlock {
+              display: block;
+            }
+          }
+          .blockBtn {
+            .siteBtn {
+              border-color: #1e1e1e;
+              color: #1e1e1e;
+              max-width: 255px;
+              width: 100%;
+              &:hover {
+                background-color: #1e1e1e;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .tovar {
+      .container {
+        .contentBox {
+          margin: 0 auto;
+          max-width: 920px;
+          width: 100%;
+        }
+        .tovarFild {
+          display: flex;
+          margin: 0 -15px;
+          .info {
+            color: #1e1e1e;
+            font-size: 16px;
+            max-width: 570px;
+            width: 100%;
+            padding: 40px 0;
+            .infoBox {
+              padding: 0 15px;
+              .title {
+                font-size: 2.25em;
+                font-weight: 500;
+                padding-bottom: 40px;
+              }
+              .description {
+                font-weight: 400;
+                line-height: 25 / 16 * 100%;
+                padding-bottom: 30px;
+              }
+              .tover_buy {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 40px;
+                .price {
+                  align-items: flex-end;
+                  display: flex;
+                  .nameBox {
+                    font-size: 0.875em;
+                    font-weight: 400;
+                    padding-right: 7px;
+                  }
+                  .price__value {
+                    font-size: 2.25em;
+                    line-height: 1;
+                    padding-right: 7px;
+                  }
+                  .currency {
+                    font-size: 1.125em;
+                    white-space: nowrap;
+                  }
+                }
+                .buttonBox {
+                  .siteBtn {
+                    border-color: #1e1e1e;
+                    color: #1e1e1e;
+                    max-width: 255px;
+                    &:hover {
+                      background-color: #1e1e1e;
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+              .characteristics {
+                display: flex;
+                flex-wrap: wrap;
+                .characteristics__item {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  padding-bottom: 30px;
+                  text-align: center;
+                  width: 33%;
+                  .item__name {
+                    font-size: 0.8125em;
+                    font-weight: 400;
+                    padding-bottom: 25px;
+                  }
+                  .item__value {
+                    color: #ed3a4d;
+                    font-size: 1.75em;
+                  }
+                }
+              }
+            }
+            
+          }
+          .image {
+            padding: 0 15px;
+            .image__item {
+              margin-right: -80px;
+            }
+          }
+        }
+      }
+    }
     @media screen and (max-width: 576px) {
         .component {
             p {
@@ -983,4 +1742,5 @@
             }
         }
     }
+    
 }

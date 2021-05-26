@@ -702,20 +702,21 @@ body .margin-65 {
   background-color: #1e1e1e;
   padding: 80px 15px;
 }
-.components .partners__container {
+.components .partners .container {
   margin: 0 auto;
   max-width: 1110px;
+  padding: 0 15px;
   width: 100%;
 }
-.components .partners__container .container__title {
+.components .partners .container .container__title {
   color: #fff;
   font-size: 36px;
   padding-bottom: 50px;
 }
-.components .partners__container .partners__slider .partners__item img {
+.components .partners .container .partners__slider .partners__item img {
   margin: 0 auto;
 }
-.components .partners__container .partners__slider .slick-arrow::before {
+.components .partners .container .partners__slider .slick-arrow::before {
   display: none;
 }
 .components .aboutUs {
@@ -2026,7 +2027,6 @@ body .margin-65 {
     padding: 15px;
   }
 }
-
 #header.fixed-header .top-header,
 #header.fixed-header .navbar-wrapper {
   position: fixed;
@@ -2294,12 +2294,20 @@ body .margin-65 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   z-index: 1000;
 }
 #header .header__container .menu {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 95px;
           flex: 0 0 95px;
+  -webkit-transition: flex-grow 0s ease, -webkit-box-flex 0s ease;
+  transition: flex-grow 0s ease, -webkit-box-flex 0s ease;
+  -o-transition: flex-grow 0s ease;
+  transition: flex-grow 0s ease;
+  transition: flex-grow 0s ease, -webkit-box-flex 0s ease, -ms-flex-positive 0s ease;
   z-index: 11;
 }
 #header .header__container .menu .menuBtn {
@@ -2312,7 +2320,7 @@ body .margin-65 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ED3A4D;
+  background-color: #ed3a4d;
   height: 100%;
 }
 #header .header__container .menu .menuBtn .menuBtn__container {
@@ -2347,9 +2355,9 @@ body .margin-65 {
   width: 100%;
   max-width: 1140px;
   overflow: auto;
-  -webkit-transition: top 1s ease;
-  -o-transition: top 1s ease;
-  transition: top 1s ease;
+  -webkit-transition: top 0s ease;
+  -o-transition: top 0s ease;
+  transition: top 0s ease;
   z-index: 10;
 }
 #header .header__container .menu__window .tovarNav {
@@ -2370,6 +2378,43 @@ body .margin-65 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+#header .header__container .menu__window .tovarNav .tovarNav__container .funcionality_mobile {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1e1e1e;
+  display: none;
+  color: #e5e5e5;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 -20px 20px;
+  padding: 20px;
+}
+#header .header__container .menu__window .tovarNav .tovarNav__container .funcionality_mobile .telephone a {
+  font-size: calc(12px + 4 * ((100vw - 300px) / (575 - 300)));
+}
+#header .header__container .menu__window .tovarNav .tovarNav__container .funcionality_mobile .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60px;
+}
+#header .header__container .menu__window .tovarNav .tovarNav__container .funcionality_mobile .language {
+  color: #7b7b7b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60px;
+}
+#header .header__container .menu__window .tovarNav .tovarNav__container .funcionality_mobile .language .active {
+  color: #e5e5e5;
 }
 #header .header__container .menu__window .tovarNav .tovarNav__container .block {
   padding-bottom: 35px;
@@ -2548,11 +2593,19 @@ body .margin-65 {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 #header .menu_open .menu {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-transition: flex-grow 1s ease, -webkit-box-flex 1s ease;
+  transition: flex-grow 1s ease, -webkit-box-flex 1s ease;
+  -o-transition: flex-grow 1s ease;
+  transition: flex-grow 1s ease;
+  transition: flex-grow 1s ease, -webkit-box-flex 1s ease, -ms-flex-positive 1s ease;
 }
 #header .menu_open .menu .menuBtn .menuBtn__container {
   display: -webkit-box;
@@ -2594,50 +2647,86 @@ body .margin-65 {
 }
 #header .menu_open .menu__window {
   top: 0;
+  -webkit-transition: top 1s ease;
+  -o-transition: top 1s ease;
+  transition: top 1s ease;
+}
+#header .menu_open .menu__window menu {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 @media screen and (max-width: 576px) {
   #header .header__container {
-    padding: 0 15px;
+    left: 0;
+    position: relative;
   }
-  #header .header__container .header__titleBox .header__nav {
-    display: none;
-  }
-  #header .header__container .header__titleBox .mobile__nav {
-    min-height: 100vh;
+  #header .header__container .header__box {
     width: 100%;
-    max-width: 300px;
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    background-color: #fff;
-    z-index: 2;
-    padding: 45px 15px 30px;
-    -webkit-box-shadow: 0 0 50px rgba(232, 157, 148, 0.8);
-            box-shadow: 0 0 50px rgba(232, 157, 148, 0.8);
   }
-  #header .header__container .header__titleBox .mobile__nav .close__button {
-    display: block;
+  #header .header__container .header__box .header__block .logo a img {
+    max-width: 175px;
+    width: 100%;
   }
-  #header .header__container .header__titleBox .mobile__nav .navLink {
-    display: block;
-    padding: 10px 0;
-  }
-  #header .header__container .header__titleBox .telephoneList {
-    margin-right: 20px;
-  }
-  #header .header__container .header__titleBox .telephoneList .phoneNumber:first-child, #header .header__container .header__titleBox .telephoneList .arrowDown {
+  #header .header__container .header__box .header__block .funcionality {
     display: none;
   }
-  #header .header__container .header__titleBox .telephoneList .telephoneIcon {
+  #header .header__container .menu {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    max-width: 95px;
+  }
+  #header .header__container .menu .menuBtn .menuBtn__container .btn__title {
+    -webkit-transition: padding-bottom 1s ease;
+    -o-transition: padding-bottom 1s ease;
+    transition: padding-bottom 1s ease;
+  }
+  #header .header__container .menu__window {
+    top: -10000%;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+  #header .header__container .menu__window .tovarNav .tovarNav__container, #header .header__container .menu__window .siteNav .siteNav__container {
+    max-height: none;
+    padding: 0 20px;
+  }
+  #header .header__container .menu__window .tovarNav .tovarNav__container .funcionality_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #header .menu_open {
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  #header .menu_open .menu {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  #header .menu_open .menu .menuBtn .menuBtn__container {
     display: block;
   }
-  #header .header__container .header__titleBox .telephoneList .telephoneList__dropdownMenu {
-    margin: 0;
-    right: -28px;
-    width: 213px;
+  #header .menu_open .menu .menuBtn .menuBtn__container .btn__title {
+    font-size: 14px;
+    padding-bottom: 20px;
+    -webkit-transition: padding-bottom 0.3s ease;
+    -o-transition: padding-bottom 0.3s ease;
+    transition: padding-bottom 0.3s ease;
   }
-  #header .header__container .header__titleBox .burgerMenu__openBtn {
-    display: block;
+  #header .menu_open .menu__window {
+    top: 0;
+  }
+  #header .menu_open .menu__window .tovarNav {
+    padding-top: 0;
   }
 }
 

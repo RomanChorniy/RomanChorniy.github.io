@@ -353,15 +353,16 @@
       margin: 0 auto;
       height: 130px;
       display: flex;
+      justify-content: start;
       z-index: 1000;
       .menu{
         flex: 0 0 95px;
-        // transition: flex-grow 1s ease;
+        transition: flex-grow 0s ease;
         .menuBtn{
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: #ED3A4D;
+          background-color: #ed3a4d;
           height: 100%;
           .menuBtn__container{
             cursor: pointer;
@@ -392,7 +393,7 @@
         width: 100%;
         max-width: 1140px;
         overflow: auto;
-        transition: top 1s ease;
+        transition: top 0s ease;
         z-index: 10;
         .tovarNav{
           background-color: #fff;
@@ -405,6 +406,32 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            .funcionality_mobile {
+              align-items: center;
+              background-color: #1e1e1e;
+              display: none;
+              color: #e5e5e5;
+              justify-content: space-around;
+              margin: 0 -20px 20px;
+              padding: 20px;
+              .telephone a {
+                font-size: calc(12px + 4 * ((100vw - 300px) / (575 - 300)));
+              }
+              .socials {
+                display: flex;
+                justify-content: space-between;
+                width: 60px;
+              }
+              .language {
+                color: #7b7b7b;
+                display: flex;
+                justify-content: space-between;
+                width: 60px;
+                .active {
+                  color: #e5e5e5;
+                }
+              }
+            }
             .block{
               padding-bottom: 35px;
               padding-right: 10px;
@@ -551,8 +578,10 @@
       max-width: 1140px;
       transform: translateX(-50%);
       width: 100%;
+      justify-content: flex-end;
       .menu {
         flex-grow: 1;
+        transition: flex-grow 1s ease;
         .menuBtn{
           .menuBtn__container{
             display: flex;
@@ -582,53 +611,82 @@
       }
       .menu__window {
         top: 0;
+        transition: top 1s ease;
+        menu {
+          flex-grow: 0;
+        }
       }
     }
   @media screen and (max-width: 576px){
-    .header__container{
-      padding: 0 15px;
-      .header__titleBox{
-        .header__nav{
-          display: none;
-        }
-        .mobile__nav{
-          min-height: 100vh;
-          width: 100%;
-          max-width: 300px;
-          position: absolute;
-          top: -15px;
-          left: -15px;
-          background-color: $mainColor1;
-          z-index: 2;
-          padding: 45px 15px 30px;
-          box-shadow: 0 0 50px rgba($color: $mainColor3, $alpha: .8 );
-          .close__button{
-            display: block;
+    .header__container {
+      left: 0;
+      position: relative;
+      .header__box {
+        width: 100%;
+        .header__block {
+          .logo {
+            a img {
+              max-width: 175px;
+              width: 100%;
+            }
           }
-          .navLink{
-            display: block;
-            padding: 10px 0;
-          }
-        }
-        .telephoneList{
-          margin-right: 20px;
-          .phoneNumber:first-child, .arrowDown{
+          .funcionality {
             display: none;
           }
-          .telephoneIcon{
-            display: block;
-          }
-          .telephoneList__dropdownMenu{
-            margin: 0;
-            right: -28px;
-            width: 213px;
+        }
+        
+      }
+      .menu {
+        flex: none;
+        width: 100%;
+        max-width: 95px;
+        .menuBtn {
+          .menuBtn__container {
+            .btn__title {
+              transition: padding-bottom 1s ease;
+            }
           }
         }
-        .burgerMenu__openBtn{
-          display: block;
+      }
+      .menu__window {
+        top: -10000%;
+        transition: none;
+        .tovarNav .tovarNav__container, .siteNav .siteNav__container{
+          max-height: none;
+          padding: 0 20px;
+        }
+        .tovarNav {
+          .tovarNav__container {
+            .funcionality_mobile {
+              display: flex;
+            }
+          }
         }
       }
     }
-  }
- 
+    .menu_open {
+      left: 0;
+      transform: none;
+      justify-content: start;
+      .menu {
+        flex: none;
+        .menuBtn {
+          .menuBtn__container {
+            display: block;
+            .btn__title {
+              font-size: 14px;
+              padding-bottom: 20px;
+              transition: padding-bottom .3s ease;
+            }
+          }
+        }
+      }
+      .menu__window {
+        top: 0;
+        .tovarNav {
+          padding-top: 0;
+        }
+      }
+    }
+  } 
 }

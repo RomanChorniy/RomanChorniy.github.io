@@ -388,9 +388,10 @@
     .partners {
       background-color: #1e1e1e;
       padding: 80px 15px;
-      &__container {
+      .container {
         margin: 0 auto;
         max-width: 1110px;
+        padding: 0 15px;
         width: 100%;
         .container__title {
           color: #fff;
@@ -1742,5 +1743,7 @@
             }
         }
     }
+    @media screen and (min-width: 1920px) {
     
+    }
 }

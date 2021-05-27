@@ -306,6 +306,7 @@
         background: url();
         display: flex;
         align-items: center;
+        position: relative;
         .contactForm__block{
           flex: 0 0 50%;
           .userForm{
@@ -503,16 +504,16 @@
         }
       }
     }
-    .titleBlock {
-      margin-top: -142px;
+    .titlePage {
+      margin-top: -195px;
       .title__container {
         background: url(../../image/aluminumWindows.jpg) center / cover no-repeat;
+        margin: 0 auto;
+        max-width: 1140px;
+        width: 100%;
         .container_screen {
           background-color: rgba($color: #1e1e1e, $alpha: .7);
-          margin: 0 auto;
-          max-width: 1140px;
           padding: 0 15px;
-          width: 100%;
           .contentBox {
             margin: 0 auto;
             max-width: 950px;
@@ -1742,8 +1743,248 @@
               }
             }
         }
-    }
-    @media screen and (min-width: 1920px) {
-    
+      .titleBlock {
+        margin-top: -195px;
+        .title__container {
+          .title__slider {
+            .slider__item {
+              .item__container {
+                .item__infoBox {
+                  flex: none;
+                  width: 100%;
+                  padding: 0 20px;
+                  .infoBox__title {
+                    font-size: calc(35px + 13 * ((100vw - 300px) / (575 - 300)));
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .contactForm {
+        .contactForm__container {
+          .forma {
+            background-color: rgba($color: #fff, $alpha: .8);
+            flex: none;
+            width: 100%;
+            margin-bottom: -65px;
+            padding: 30px 15px;
+            .userForm {
+              .inputbox {
+                .userForm__input {
+                  background-color: transparent;
+                }
+                .siteBtn {
+                  max-width: 350px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+          .imageBack {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            .imageBox {
+              .wokers {
+                width: 100%;
+              }
+            }
+          }
+          .contactForm__block {
+            .userForm{
+              .inputbox_flex {
+                .inputbox {
+                  flex: auto;
+                  padding-bottom: 35px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                }
+              }
+            }
+          }
+        }
+      }
+      .aboutUs {
+        .aboutUs__container {
+          padding: 30px 15px;
+          .conteiner__article {
+            display: flex;
+            flex-direction: column-reverse;
+            .seeMore {
+              float: none;
+            }
+            .article__text {
+              .article__text_hideText {
+                .seeMore{
+                  display: none;
+                }
+              }
+            }
+          }
+          .aboutUs__slider {
+            padding: 0 15px 0 24px;
+          }
+        }
+      }
+      .titlePage {
+        .title__container {
+          .container_screen {
+            .contentBox {
+              padding: 120px 15px 76px;
+              .textBlock {
+                font-size: calc(10px + 6 * ((100vw - 300px) / (575 - 300)));
+              }
+            }
+          }
+        }
+      }
+      .catalog {
+        .container {
+          .catalog__box {
+            .brandOffers {
+              .goodsCat {
+                .goodsCat__item {
+                  justify-content: center;
+                }
+              }
+            }
+          }
+        }
+      }
+      .aboutGoods {
+        .aboutGoods__container {
+          padding: 30px 15px;
+          .conteiner__article {
+            display: flex;
+            flex-direction: column-reverse;
+            .seeMore {
+              float: none;
+            }
+            .article__text {
+              .article__text_hideText {
+                .seeMore{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .modelsLinkBar {
+        .modelsLinkBar__box {
+          .box__item {
+            padding: 10px 0;
+          }
+        }
+      }
+      .tovar {
+        .container {
+          .contentBox {
+            .tovarFild {
+              flex-direction: column;
+              .info {
+                .infoBox {
+                  .tover_buy {
+                    flex-wrap: wrap;
+                    .buttonBox {
+                      margin: 10px 0;
+                    }
+                  }
+                  .characteristics {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .characteristics__item {
+                      width: 50%;
+                      min-width: 160px;
+                    }
+                  }
+                }
+              }
+              .image {
+                .image__item {
+                  margin-right: 0;
+                  img {
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 445px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .technicalDetails {
+        font-size: calc(13px + 3 * ((100vw - 300px) / (575 - 300)));
+      }
+      .warranty {
+        font-size: calc(50px + 50 * ((100vw - 300px) / (575 - 300)));
+        .container {
+          .contentBox {
+            padding: 30px 0 40px;
+            .warrantyBox {
+              flex-wrap: wrap;
+              justify-content: center;
+              .box__item {
+                width: 50%;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+      .productUsing {
+        .contentBox {
+          .productUsing__image {
+            height: auto;
+          }
+        }
+      }
+      .mainProperties {
+        font-size: calc(12px + 4 * ((100vw - 300px) / (575 - 300)));
+        .container {
+          .contentBox {
+            .infoBox {
+              justify-content: center;
+              .parament {
+                width: 50%;
+                min-width: 225px;
+              }
+            }
+          }
+        }
+      }
+      .saveProperties {
+        .container {
+          font-size: calc(13px + 3 * ((100vw - 300px) / (575 - 300)));
+          .contentBox {
+            .savePropertiesBox {
+              flex-wrap: wrap;
+              justify-content: center;
+              .box__item {
+                width: 50%;
+                min-width: 140px;
+                padding: 0 15px 20px;
+                .item__image {
+                  img {
+                    height: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .designSolutions {
+        .container {
+          .contentBox {
+            font-size: calc(12px + 4 * ((100vw - 300px) / (575 - 300)));
+          }
+        }
+      }
     }
 }

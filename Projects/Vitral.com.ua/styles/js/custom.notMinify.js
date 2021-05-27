@@ -291,6 +291,33 @@ $(document).ready(function () {
             $('.slick-next').show();
         };
     });
+    // $('.title__slider').on('afterChange', function (event, slick, currentSlide) {
+    //     console.log(currentSlide);
+    //     var item_length = $('.title__slider .slick-track > div').length;
+    //     console.log(item_length);
+
+    // });
+
+
+    // let item_length = $('.title__slider .slick-track > div').length - 1;
+    // function item_current() {
+    //     return $('.title__slider').on('afterChange', function (event, slick, currentSlide) {
+    //         console.log(currentSlide);
+    //         return currentSlide;
+    //     });
+    // }
+    // console.log(item_current());
+
+    // let mySlider = $('.title__slider');
+    // mySlider.mousewheel(function (e) {
+    //     e.preventDefault();
+
+    //     if (e.deltaY < 0) {
+    //         $(this).slick('slickNext');
+    //     } else {
+    //         $(this).slick('slickPrev');
+    //     }
+    // });
 
     let slides = $('.title__slider .slick-track').children().length;
     var currentSlide = $('.title__slider').slick('slickCurrentSlide');
@@ -306,7 +333,21 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 5,
         prevArrow: '<div class="slick-prev"><img src="image/Arrow-prev.svg" alt="prevArrow"></div>',
-        nextArrow: '<div class="slick-next"><img src="image/Arrow-next.svg" alt="nextArrow"></div>'
+        nextArrow: '<div class="slick-next"><img src="image/Arrow-next.svg" alt="nextArrow"></div>',
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.aboutUs .seeMore').on('click', function () {
@@ -325,7 +366,21 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 5,
         prevArrow: '<div class="slick-prev"><img src="image/Arrow-prev.svg" alt="prevArrow"></div>',
-        nextArrow: '<div class="slick-next"><img src="image/Arrow-next.svg" alt="nextArrow"></div>'
+        nextArrow: '<div class="slick-next"><img src="image/Arrow-next.svg" alt="nextArrow"></div>',
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     });
     $('.blockBtn').on('click', function () {
         $('.colorRal').toggleClass('hideBlock');

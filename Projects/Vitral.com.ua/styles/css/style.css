@@ -603,6 +603,7 @@ body .margin-65 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 .components .contactForm .contactForm__container .contactForm__block {
   -webkit-box-flex: 0;
@@ -804,37 +805,37 @@ body .margin-65 {
 .components .breadcrumb .breadcrumb__box_black .box__item, .components .breadcrumb .breadcrumb__box_black .box__item + .box__item::before, .components .breadcrumb .breadcrumb__box_black .box__item .box__itemLink {
   color: #1e1e1e;
 }
-.components .titleBlock {
-  margin-top: -142px;
+.components .titlePage {
+  margin-top: -195px;
 }
-.components .titleBlock .title__container {
+.components .titlePage .title__container {
   background: url(../../image/aluminumWindows.jpg) center/cover no-repeat;
-}
-.components .titleBlock .title__container .container_screen {
-  background-color: rgba(30, 30, 30, 0.7);
   margin: 0 auto;
   max-width: 1140px;
-  padding: 0 15px;
   width: 100%;
 }
-.components .titleBlock .title__container .container_screen .contentBox {
+.components .titlePage .title__container .container_screen {
+  background-color: rgba(30, 30, 30, 0.7);
+  padding: 0 15px;
+}
+.components .titlePage .title__container .container_screen .contentBox {
   margin: 0 auto;
   max-width: 950px;
   padding: 207px 15px 76px;
   width: 100%;
 }
-.components .titleBlock .title__container .container_screen .contentBox .textBlock {
+.components .titlePage .title__container .container_screen .contentBox .textBlock {
   color: #fff;
   font-size: 16px;
   max-width: 525px;
   width: 100%;
 }
-.components .titleBlock .title__container .container_screen .contentBox .textBlock .textBlock__title {
+.components .titlePage .title__container .container_screen .contentBox .textBlock .textBlock__title {
   font-size: 3em;
   font-weight: 500;
   padding-bottom: 20px;
 }
-.components .titleBlock .title__container .container_screen .contentBox .textBlock .textBlock__subtitle {
+.components .titlePage .title__container .container_screen .contentBox .textBlock .textBlock__subtitle {
   line-height: 156.25%;
 }
 .components .brandNav .brandNav__box {
@@ -2026,7 +2027,203 @@ body .margin-65 {
 .components .component .text-in-box .col-sm-3 .text {
     padding: 15px;
   }
+  .components .titleBlock {
+    margin-top: -195px;
+  }
+  .components .titleBlock .title__container .title__slider .slider__item .item__container .item__infoBox {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .components .titleBlock .title__container .title__slider .slider__item .item__container .item__infoBox .infoBox__title {
+    font-size: calc(35px + 13 * ((100vw - 300px) / (575 - 300)));
+  }
+  .components .contactForm .contactForm__container .forma {
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    margin-bottom: -65px;
+    padding: 30px 15px;
+  }
+  .components .contactForm .contactForm__container .forma .userForm .inputbox .userForm__input {
+    background-color: transparent;
+  }
+  .components .contactForm .contactForm__container .forma .userForm .inputbox .siteBtn {
+    max-width: 350px;
+    width: 100%;
+  }
+  .components .contactForm .contactForm__container .imageBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .components .contactForm .contactForm__container .imageBack .imageBox .wokers {
+    width: 100%;
+  }
+  .components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    padding-bottom: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .components .aboutUs .aboutUs__container {
+    padding: 30px 15px;
+  }
+  .components .aboutUs .aboutUs__container .conteiner__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .components .aboutUs .aboutUs__container .conteiner__article .seeMore {
+    float: none;
+  }
+  .components .aboutUs .aboutUs__container .conteiner__article .article__text .article__text_hideText .seeMore {
+    display: none;
+  }
+  .components .aboutUs .aboutUs__container .aboutUs__slider {
+    padding: 0 15px 0 24px;
+  }
+  .components .titlePage .title__container .container_screen .contentBox {
+    padding: 120px 15px 76px;
+  }
+  .components .titlePage .title__container .container_screen .contentBox .textBlock {
+    font-size: calc(10px + 6 * ((100vw - 300px) / (575 - 300)));
+  }
+  .components .catalog .container .catalog__box .brandOffers .goodsCat .goodsCat__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .components .aboutGoods .aboutGoods__container {
+    padding: 30px 15px;
+  }
+  .components .aboutGoods .aboutGoods__container .conteiner__article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .components .aboutGoods .aboutGoods__container .conteiner__article .seeMore {
+    float: none;
+  }
+  .components .aboutGoods .aboutGoods__container .conteiner__article .article__text .article__text_hideText .seeMore {
+    display: none;
+  }
+  .components .modelsLinkBar .modelsLinkBar__box .box__item {
+    padding: 10px 0;
+  }
+  .components .tovar .container .contentBox .tovarFild {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .components .tovar .container .contentBox .tovarFild .info .infoBox .tover_buy {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .components .tovar .container .contentBox .tovarFild .info .infoBox .tover_buy .buttonBox {
+    margin: 10px 0;
+  }
+  .components .tovar .container .contentBox .tovarFild .info .infoBox .characteristics {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .components .tovar .container .contentBox .tovarFild .info .infoBox .characteristics .characteristics__item {
+    width: 50%;
+    min-width: 160px;
+  }
+  .components .tovar .container .contentBox .tovarFild .image .image__item {
+    margin-right: 0;
+  }
+  .components .tovar .container .contentBox .tovarFild .image .image__item img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 445px;
+  }
+  .components .technicalDetails {
+    font-size: calc(13px + 3 * ((100vw - 300px) / (575 - 300)));
+  }
+  .components .warranty {
+    font-size: calc(50px + 50 * ((100vw - 300px) / (575 - 300)));
+  }
+  .components .warranty .container .contentBox {
+    padding: 30px 0 40px;
+  }
+  .components .warranty .container .contentBox .warrantyBox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .components .warranty .container .contentBox .warrantyBox .box__item {
+    width: 50%;
+    text-align: center;
+  }
+  .components .productUsing .contentBox .productUsing__image {
+    height: auto;
+  }
+  .components .mainProperties {
+    font-size: calc(12px + 4 * ((100vw - 300px) / (575 - 300)));
+  }
+  .components .mainProperties .container .contentBox .infoBox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .components .mainProperties .container .contentBox .infoBox .parament {
+    width: 50%;
+    min-width: 225px;
+  }
+  .components .saveProperties .container {
+    font-size: calc(13px + 3 * ((100vw - 300px) / (575 - 300)));
+  }
+  .components .saveProperties .container .contentBox .savePropertiesBox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .components .saveProperties .container .contentBox .savePropertiesBox .box__item {
+    width: 50%;
+    min-width: 140px;
+    padding: 0 15px 20px;
+  }
+  .components .saveProperties .container .contentBox .savePropertiesBox .box__item .item__image img {
+    height: auto;
+  }
+  .components .designSolutions .container .contentBox {
+    font-size: calc(12px + 4 * ((100vw - 300px) / (575 - 300)));
+  }
 }
+
 #header.fixed-header .top-header,
 #header.fixed-header .navbar-wrapper {
   position: fixed;
@@ -2878,20 +3075,32 @@ body .margin-65 {
   padding-bottom: 0;
 }
 @media screen and (max-width: 576px) {
-  #footer .footerContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 25px 15px 28px;
-  }
-  #footer .footerContainer .footerHeaderBox, #footer .footerContainer .footerLinkBox, #footer .footerContainer .footerPhoneBox {
-    padding: 0 0 24px;
-  }
-  #footer .footerContainer .workTime {
+  #footer .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 40px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
+  }
+  #footer .footer__container .block {
+    min-width: 185px;
+    width: 50%;
+    padding: 20px;
+  }
+  #footer .footer__container .block:first-child {
+    width: 50%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  #footer .footer__container .block:first-child .title, #footer .footer__container .block:first-child .social, #footer .footer__container .block:first-child .button {
+    padding-bottom: 10px;
+  }
+  #footer .footer__container .contacts {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }

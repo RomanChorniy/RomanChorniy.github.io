@@ -144,20 +144,27 @@
         }
       }
     }
-  @media screen and (max-width: 576px){
-    .footerContainer{
-      flex-direction: column;
-      align-items: center;
-      padding: 25px 15px 28px;
-      .footerHeaderBox, .footerLinkBox, .footerPhoneBox{
-        padding: 0 0 24px;
+  @media screen and (max-width: 576px) {
+    .footer__container {
+      flex-wrap: wrap;
+      padding: 40px 0;
+      justify-content: center;
+      text-align: center;
+      .block {
+        min-width: 185px;
+        width: 50%;
+        padding: 20px;
       }
-      .workTime{
-        text-align: center;
+      .block:first-child {
+        width: 50%;
+        justify-content: start;
+        .title, .social, .button {
+          padding-bottom: 10px;
+        }
+      }
+      .contacts {
+        order: 1;
       }
     }
-  }
-  @media screen and (min-width: 1920px) {
-    
   }
 }

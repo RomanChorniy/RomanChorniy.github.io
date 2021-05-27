@@ -309,71 +309,6 @@
         position: relative;
         .contactForm__block{
           flex: 0 0 50%;
-          .userForm{
-            color: #1e1e1e;
-            width: 100%;
-            margin: 0 auto;
-            max-width: 350px;
-            &__title{
-              color: #ed3a4d;
-              font-size: 36px;
-              line-height: 38 / 36 * 100%;
-              padding-bottom: 20px;
-            }
-            &__subtitle{
-              font-size: 16px;
-              line-height: 24 / 16 * 100%;
-              padding-bottom: 35px;
-            }
-            .inputbox{
-              padding-bottom: 35px;
-              .input__title{
-                display: block;
-                font-size: 13px;
-                line-height: 24 / 13 * 100%;
-                margin-bottom: 5px;
-              }
-              .userForm__input {
-                border: none;
-                border-bottom: 1px solid #000;
-                font-size: 18px;
-                padding: 10px 0;
-                width: 100%;
-                &::placeholder{
-                  color: #c4c4c4;
-                }
-              }
-              &:last-child{
-                padding-bottom: 0;
-              }
-            }
-            .inputbox_flex{
-              display: flex;
-              justify-content: space-between;
-              margin: 0 -15px;
-              .inputbox{
-                flex: 50%;
-                margin: 0 15px;
-                .userForm__selectList{
-                  border: none;
-                  border-bottom: 1px solid #000;
-                  cursor: pointer;
-                  padding: 10px 0;
-                  width: 100%;
-                  .marker{
-                    display: none;
-                  }
-                  option{
-                    cursor: pointer;
-                    &:hover{
-                      background-color: #ed3a4d;
-                      color: #fff;
-                    }
-                  }
-                }
-              }
-            }
-          }
           .imageBox{
             margin-bottom: 85px;
             &:last-child{
@@ -1788,17 +1723,6 @@
             width: 100%;
             margin-bottom: -65px;
             padding: 30px 15px;
-            .userForm {
-              .inputbox {
-                .userForm__input {
-                  background-color: transparent;
-                }
-                .siteBtn {
-                  max-width: 350px;
-                  width: 100%;
-                }
-              }
-            }
           }
           .imageBack {
             position: absolute;
@@ -1808,19 +1732,6 @@
             .imageBox {
               .wokers {
                 width: 100%;
-              }
-            }
-          }
-          .contactForm__block {
-            .userForm{
-              .inputbox_flex {
-                .inputbox {
-                  flex: auto;
-                  padding-bottom: 35px;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: space-between;
-                }
               }
             }
           }

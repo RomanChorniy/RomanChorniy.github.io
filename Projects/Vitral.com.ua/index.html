@@ -301,32 +301,32 @@
                 <div class="contactForm">
                     <div class="contactForm__container">
                         <div class="contactForm__block forma">
-                            <form action="" method="get" class="userForm">
-                                <div class="userForm__title">Остались вопросы?</div>
-                                <div class="userForm__subtitle">Получите бесплатную консультацию от наших
+                            <form action="" method="get" class="wpcf7-form">
+                                <div class="title-form">Остались вопросы?</div>
+                                <div class="subtitle-form">Получите бесплатную консультацию от наших
                                     профессионалов:</div>
-                                <div class="inputbox">
-                                    <label for="" class="input__title">Как вас зовут</label>
-                                    <input type="text" class="userForm__userName userForm__input" placeholder="Имя">
+                                <div class="row-form">
+                                    <label for="" class="">Как вас зовут</label>
+                                    <input type="text" class="userForm__userName" placeholder="Имя">
                                 </div>
-                                <div class="inputbox">
-                                    <label for="" class="input__title">Ваш номер телефона</label>
+                                <div class="row-form">
+                                    <label for="" class="">Ваш номер телефона</label>
                                     <input data-rule-minlength="10" data-rule-required="true" name="phone" type="text"
-                                        class="userForm__userTel userForm__input" placeholder="+38 0__ ___ __ __">
+                                        class="userForm__userTel" placeholder="+38 0__ ___ __ __">
                                 </div>
-                                <div class="inputbox_flex">
-                                    <div class="inputbox">
-                                        <label for="" class="input__title">Когда Вам позвонить</label>
-                                        <select name="" id="" class="userForm__userWorkTime userForm__selectList">
+                                <div class="row-form_flex">
+                                    <div class="row-form">
+                                        <label for="" class="">Когда Вам позвонить</label>
+                                        <select name="" id="" class="userForm__userWorkTime">
                                             <option value="" class="marker" selected>---</option>
                                             <option value="">Сегодня</option>
                                             <option value="">Завтра</option>
                                             <option value="">Послезавтра</option>
                                         </select>
                                     </div>
-                                    <div class="inputbox">
-                                        <label for="" class="input__title">Время</label>
-                                        <select name="" id="" class="userForm__userTime userForm__selectList">
+                                    <div class="row-form">
+                                        <label for="" class="">Время</label>
+                                        <select name="" id="" class="userForm__userTime">
                                             <option value="" class="marker" selected>__ – __</option>
                                             <option value="">09:00-10:00</option>
                                             <option value="">10:00-11:00</option>
@@ -340,8 +340,10 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="inputbox">
-                                    <a href="#" class="siteBtn">Отправить</a>
+                                <div class="row-form">
+                                    <div class="submit-button">
+                                        <input type="submit" value="Отправить">
+                                    </div>
                                 </div>
                             </form>
                         </div>

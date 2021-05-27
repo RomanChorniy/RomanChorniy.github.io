@@ -257,6 +257,166 @@ body div[id^=contact-form-7-] .wpcf7-form .wpcf7-response-output {
   max-width: 754px;
   border: unset;
 }
+body .wpcf7-form {
+  color: #1e1e1e;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 350px;
+}
+body .wpcf7-form.sent {
+  display: none;
+}
+body .wpcf7-form .title-form {
+  color: #ed3a4d;
+  font-size: 36px;
+  line-height: 105.5555555556%;
+  padding-bottom: 20px;
+}
+body .wpcf7-form .subtitle-form {
+  font-size: 16px;
+  line-height: 150%;
+  padding-bottom: 35px;
+}
+body .wpcf7-form .row-form {
+  max-width: 800px;
+  padding-bottom: 35px;
+}
+body .wpcf7-form .row-form label {
+  display: block;
+  font-size: 13px;
+  line-height: 184.6153846154%;
+  margin-bottom: 5px;
+}
+body .wpcf7-form .row-form label input,
+body .wpcf7-form .row-form label textarea {
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  padding: 10px 0;
+  width: 100%;
+}
+body .wpcf7-form .row-form label input::-webkit-input-placeholder, body .wpcf7-form .row-form label textarea::-webkit-input-placeholder {
+  color: #c4c4c4;
+}
+body .wpcf7-form .row-form label input:-ms-input-placeholder, body .wpcf7-form .row-form label textarea:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+body .wpcf7-form .row-form label input::-ms-input-placeholder, body .wpcf7-form .row-form label textarea::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+body .wpcf7-form .row-form label input::placeholder,
+body .wpcf7-form .row-form label textarea::placeholder {
+  color: #c4c4c4;
+}
+body .wpcf7-form .row-form label textarea {
+  height: 208px;
+  padding: 10px;
+}
+body .wpcf7-form .row-form label .wpcf7-not-valid-tip {
+  font-size: 14px;
+}
+body .wpcf7-form .row-form input,
+body .wpcf7-form .row-form textarea {
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  padding: 10px 0;
+  width: 100%;
+}
+body .wpcf7-form .row-form input::-webkit-input-placeholder, body .wpcf7-form .row-form textarea::-webkit-input-placeholder {
+  color: #c4c4c4;
+}
+body .wpcf7-form .row-form input:-ms-input-placeholder, body .wpcf7-form .row-form textarea:-ms-input-placeholder {
+  color: #c4c4c4;
+}
+body .wpcf7-form .row-form input::-ms-input-placeholder, body .wpcf7-form .row-form textarea::-ms-input-placeholder {
+  color: #c4c4c4;
+}
+body .wpcf7-form .row-form input::placeholder,
+body .wpcf7-form .row-form textarea::placeholder {
+  color: #c4c4c4;
+}
+body .wpcf7-form .row-form select {
+  border: none;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+}
+body .wpcf7-form .row-form select .marker {
+  display: none;
+}
+body .wpcf7-form .row-form select option {
+  cursor: pointer;
+}
+body .wpcf7-form .row-form select option:hover {
+  background-color: #ed3a4d;
+  color: #fff;
+}
+body .wpcf7-form .row-form .submit-button {
+  text-align: center;
+  margin-top: 10px;
+}
+body .wpcf7-form .row-form .submit-button input[type=submit] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+  outline: none;
+  width: 350px;
+  height: 50px;
+  font-size: 12px;
+  line-height: 140.6666666667%;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+body .wpcf7-form .row-form .submit-button input[type=submit]:hover {
+  background-color: #000;
+  color: #fff;
+}
+body .wpcf7-form .row-form .ajax-loader {
+  display: none;
+}
+body .wpcf7-form .row-form .ajax-loader.is-active {
+  display: inline-block;
+}
+body .wpcf7-form .row-form:last-child {
+  padding-bottom: 0;
+}
+body .wpcf7-form .row-form_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+}
+body .wpcf7-form .row-form_flex .row-form {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  margin: 0 15px;
+}
+body .wpcf7-form .wpcf7-response-output {
+  text-align: center;
+  max-width: 754px;
+  border: unset;
+}
 body .cf7sg-popup {
   position: relative;
 }
@@ -324,10 +484,48 @@ body .margin-65 {
     bottom: 50px;
   }
   body div[id^=contact-form-7-] {
-    padding: 40px 15px;
+    padding: 30px 15px;
+    width: 100%;
   }
   body div[id^=contact-form-7-] .wpcf7-form .row-form .submit-button input[type=submit] {
     width: 100%;
+    max-width: 350px;
+  }
+  body div[id^=contact-form-7-] .wpcf7-form .row-form_flex .row-form {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    padding-bottom: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .wpcf7-form .row-form .submit-button input[type=submit] {
+    width: 100%;
+    max-width: 350px;
+  }
+  body .wpcf7-form .row-form_flex .row-form {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    padding-bottom: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -609,86 +807,6 @@ body .margin-65 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm {
-  color: #1e1e1e;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 350px;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm__title {
-  color: #ed3a4d;
-  font-size: 36px;
-  line-height: 105.5555555556%;
-  padding-bottom: 20px;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm__subtitle {
-  font-size: 16px;
-  line-height: 150%;
-  padding-bottom: 35px;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox {
-  padding-bottom: 35px;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .input__title {
-  display: block;
-  font-size: 13px;
-  line-height: 184.6153846154%;
-  margin-bottom: 5px;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input {
-  border: none;
-  border-bottom: 1px solid #000;
-  font-size: 18px;
-  padding: 10px 0;
-  width: 100%;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input::-webkit-input-placeholder {
-  color: #c4c4c4;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input:-ms-input-placeholder {
-  color: #c4c4c4;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input::-ms-input-placeholder {
-  color: #c4c4c4;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox .userForm__input::placeholder {
-  color: #c4c4c4;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox:last-child {
-  padding-bottom: 0;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 -15px;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  margin: 0 15px;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox .userForm__selectList {
-  border: none;
-  border-bottom: 1px solid #000;
-  cursor: pointer;
-  padding: 10px 0;
-  width: 100%;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox .userForm__selectList .marker {
-  display: none;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox .userForm__selectList option {
-  cursor: pointer;
-}
-.components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox .userForm__selectList option:hover {
-  background-color: #ed3a4d;
-  color: #fff;
 }
 .components .contactForm .contactForm__container .contactForm__block .imageBox {
   margin-bottom: 85px;
@@ -2067,13 +2185,6 @@ body .margin-65 {
     margin-bottom: -65px;
     padding: 30px 15px;
   }
-  .components .contactForm .contactForm__container .forma .userForm .inputbox .userForm__input {
-    background-color: transparent;
-  }
-  .components .contactForm .contactForm__container .forma .userForm .inputbox .siteBtn {
-    max-width: 350px;
-    width: 100%;
-  }
   .components .contactForm .contactForm__container .imageBack {
     position: absolute;
     top: 0;
@@ -2082,22 +2193,6 @@ body .margin-65 {
   }
   .components .contactForm .contactForm__container .imageBack .imageBox .wokers {
     width: 100%;
-  }
-  .components .contactForm .contactForm__container .contactForm__block .userForm .inputbox_flex .inputbox {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
-    padding-bottom: 35px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .components .aboutUs .aboutUs__container {
     padding: 30px 15px;

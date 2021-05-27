@@ -552,6 +552,9 @@
             color: #1e1e1e;
             font-size: 14px;
           }
+          &:hover .item__link {
+            color: #ed3a4d;
+          }
         }
       }
     }
@@ -1747,6 +1750,21 @@
         margin-top: -195px;
         .title__container {
           .title__slider {
+            .fullGlassHouse {
+              background: url(../../image/fullGlassHouse_575px.jpg) center / cover no-repeat;
+            }
+            .aluminumWindows{
+              background: url(../../image/aluminumWindows_575px.jpg) center / cover no-repeat;
+            }
+            .slidingSystems{
+              background: url(../../image/slidingSystems_575px.jpg) center / cover no-repeat;
+            }
+            .internalPartitions{
+              background: url(../../image/internalPartitions_575px.jpg) center / cover no-repeat;
+            }
+            .gatesAndShutters{
+              background: url(../../image/gatesAndShutters_575px.jpg) center / cover no-repeat;
+            }
             .slider__item {
               .item__container {
                 .item__infoBox {
@@ -1832,6 +1850,7 @@
       }
       .titlePage {
         .title__container {
+          background: url(../../image/aluminumWindows_575px.jpg) center/cover no-repeat;
           .container_screen {
             .contentBox {
               padding: 120px 15px 76px;

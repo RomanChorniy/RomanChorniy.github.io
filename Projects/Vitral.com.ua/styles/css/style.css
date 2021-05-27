@@ -859,6 +859,9 @@ body .margin-65 {
   color: #1e1e1e;
   font-size: 14px;
 }
+.components .brandNav .brandNav__box .box__item:hover .item__link {
+  color: #ed3a4d;
+}
 .components .catalog {
   border-bottom: 1px solid #1e1e1e;
 }
@@ -2030,6 +2033,21 @@ body .margin-65 {
   .components .titleBlock {
     margin-top: -195px;
   }
+  .components .titleBlock .title__container .title__slider .fullGlassHouse {
+    background: url(../../image/fullGlassHouse_575px.jpg) center/cover no-repeat;
+  }
+  .components .titleBlock .title__container .title__slider .aluminumWindows {
+    background: url(../../image/aluminumWindows_575px.jpg) center/cover no-repeat;
+  }
+  .components .titleBlock .title__container .title__slider .slidingSystems {
+    background: url(../../image/slidingSystems_575px.jpg) center/cover no-repeat;
+  }
+  .components .titleBlock .title__container .title__slider .internalPartitions {
+    background: url(../../image/internalPartitions_575px.jpg) center/cover no-repeat;
+  }
+  .components .titleBlock .title__container .title__slider .gatesAndShutters {
+    background: url(../../image/gatesAndShutters_575px.jpg) center/cover no-repeat;
+  }
   .components .titleBlock .title__container .title__slider .slider__item .item__container .item__infoBox {
     -webkit-box-flex: 0;
         -ms-flex: none;
@@ -2101,6 +2119,9 @@ body .margin-65 {
   }
   .components .aboutUs .aboutUs__container .aboutUs__slider {
     padding: 0 15px 0 24px;
+  }
+  .components .titlePage .title__container {
+    background: url(../../image/aluminumWindows_575px.jpg) center/cover no-repeat;
   }
   .components .titlePage .title__container .container_screen .contentBox {
     padding: 120px 15px 76px;

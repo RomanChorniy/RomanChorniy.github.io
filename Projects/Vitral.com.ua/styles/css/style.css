@@ -732,7 +732,7 @@ body .margin-65 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 65px;
+  padding: 130px 65px 0;
   color: #fff;
 }
 .components .titleBlock .title__container .title__slider .slider__item .item__container .item__infoBox .infoBox__title {

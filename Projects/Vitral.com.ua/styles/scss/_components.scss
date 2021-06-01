@@ -1705,9 +1705,12 @@
                 .item__infoBox {
                   flex: none;
                   width: 100%;
-                  padding: 0 20px;
+                  padding: 130 20px 0;
                   .infoBox__title {
-                    font-size: calc(35px + 13 * ((100vw - 300px) / (575 - 300)));
+                    font-size: calc(20px + 28 * ((100vw - 300px) / (575 - 300)));
+                  }
+                  .infoBox__text {
+                    font-size: calc(10px + 6 * ((100vw - 300px) / (575 - 300)));
                   }
                 }
               }

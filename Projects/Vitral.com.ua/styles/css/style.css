@@ -700,7 +700,6 @@ body .margin-65 {
 }
 .components .titleBlock .title__container {
   width: 100%;
-  max-width: 1140px;
   margin: 0 auto;
 }
 .components .titleBlock .title__container .title__slider .slider__item {
@@ -718,9 +717,7 @@ body .margin-65 {
   height: 100%;
 }
 .components .titleBlock .title__container .title__slider .slider__item .item__container .item__infoBox {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 48.68421052%;
-          flex: 0 0 48.68421052%;
+  width: 48.68421052vw;
   background-color: rgba(30, 30, 30, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -929,7 +926,6 @@ body .margin-65 {
 .components .titlePage .title__container {
   background: url(../../image/aluminumWindows.jpg) center/cover no-repeat;
   margin: 0 auto;
-  max-width: 1140px;
   width: 100%;
 }
 .components .titlePage .title__container .container_screen {
@@ -1037,6 +1033,7 @@ body .margin-65 {
   display: block;
 }
 .components .catalog .catalog__box .brandOffers .goodsCat .goodsCat__item .card .card__front .imageBox .imageBox_back .image__link .parameters {
+  padding-top: 28px;
   text-align: center;
 }
 .components .catalog .catalog__box .brandOffers .goodsCat .goodsCat__item .card .card__front .imageBox .imageBox_back .image__link .parameters .parameters__item {
@@ -1078,7 +1075,7 @@ body .margin-65 {
 .components .aboutGoods__container {
   color: #fff;
   font-size: 36px;
-  margin: 0 auto;
+  margin: 0 auto -65px;
   max-width: 950px;
   padding: 70px 15px;
   width: 100%;
@@ -2166,12 +2163,15 @@ body .margin-65 {
   .components .titleBlock .title__container .title__slider .gatesAndShutters {
     background: url(../../image/gatesAndShutters_575px.jpg) center/cover no-repeat;
   }
+  .components .titleBlock .title__container .title__slider .slider__item .item__container {
+    margin-left: -1px;
+  }
   .components .titleBlock .title__container .title__slider .slider__item .item__container .item__infoBox {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
     width: 100%;
-    padding: 130 20px 0;
+    padding: 130px 20px 0;
   }
   .components .titleBlock .title__container .title__slider .slider__item .item__container .item__infoBox .infoBox__title {
     font-size: calc(20px + 28 * ((100vw - 300px) / (575 - 300)));
@@ -2309,16 +2309,19 @@ body .margin-65 {
     height: auto;
   }
   .components .mainProperties {
-    font-size: calc(12px + 4 * ((100vw - 300px) / (575 - 300)));
+    font-size: calc(8px + 8 * ((100vw - 300px) / (575 - 300)));
   }
   .components .mainProperties .container .contentBox .infoBox {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: -15px;
   }
   .components .mainProperties .container .contentBox .infoBox .parament {
     width: 50%;
-    min-width: 225px;
+  }
+  .components .mainProperties .container .contentBox .infoBox .parament .parament__content {
+    width: auto;
   }
   .components .saveProperties .container {
     font-size: calc(13px + 3 * ((100vw - 300px) / (575 - 300)));
@@ -2602,7 +2605,7 @@ body .margin-65 {
   }
 }
 #header .header__container {
-  left: calc(50% - 80px);
+  right: 0;
   position: fixed;
   top: 0;
   margin: 0 auto;
@@ -2616,9 +2619,7 @@ body .margin-65 {
   z-index: 1000;
 }
 #header .header__container .menu {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 95px;
-          flex: 0 0 95px;
+  width: 95px;
   -webkit-transition: flex-grow 0s ease, -webkit-box-flex 0s ease;
   transition: flex-grow 0s ease, -webkit-box-flex 0s ease;
   -o-transition: flex-grow 0s ease;
@@ -2665,12 +2666,13 @@ body .margin-65 {
   margin-top: 7px;
 }
 #header .header__container .menu__window {
+  background-color: #1e1e1e;
+  height: 100vh;
+  overflow: hidden;
   position: absolute;
   top: -1000%;
   padding-top: 130px;
   width: 100%;
-  max-width: 1140px;
-  overflow: auto;
   -webkit-transition: top 0s ease;
   -o-transition: top 0s ease;
   transition: top 0s ease;
@@ -2783,9 +2785,13 @@ body .margin-65 {
   padding-bottom: 30px;
 }
 #header .header__container .menu__window .siteNav .siteNav__container .block__title {
+  display: block;
   font-size: 16px;
   line-height: 125%;
   color: #9e9e9e;
+}
+#header .header__container .menu__window .siteNav .siteNav__container .block__title:hover {
+  color: #ed3a4d;
 }
 #header .header__container .menu__window .siteNav .siteNav__container .block__list .list__link {
   display: block;
@@ -2807,8 +2813,7 @@ body .margin-65 {
 #header .header__container .header__box {
   position: relative;
   background-color: #1E1E1E;
-  -ms-flex-preferred-size: 554px;
-      flex-basis: 554px;
+  width: 48.68421052vw;
   padding: 0 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2904,7 +2909,6 @@ body .margin-65 {
 }
 #header .menu_open {
   left: 50%;
-  max-width: 1140px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);

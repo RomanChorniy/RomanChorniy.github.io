@@ -347,7 +347,7 @@
     }
   // Front-end styles
     .header__container{
-      left: calc(50% - 80px);
+      right: 0;
       position: fixed;
       top: 0;
       margin: 0 auto;
@@ -356,7 +356,7 @@
       justify-content: start;
       z-index: 1000;
       .menu{
-        flex: 0 0 95px;
+        width: 95px;
         transition: flex-grow 0s ease;
         .menuBtn{
           display: flex;
@@ -387,12 +387,13 @@
         z-index: 11;
       }
       .menu__window{
+        background-color: #1e1e1e;
+        height: 100vh;
+        overflow: hidden;
         position: absolute;
         top: -1000%;
         padding-top: 130px;
         width: 100%;
-        max-width: 1140px;
-        overflow: auto;
         transition: top 0s ease;
         z-index: 10;
         .tovarNav{
@@ -476,9 +477,13 @@
             .block{
               padding-bottom: 30px;
               &__title{
+                display: block;
                 font-size: 16px;
                 line-height: 20 / 16 * 100%;
                 color: #9e9e9e;
+                &:hover {
+                  color: #ed3a4d;
+                }
               }
               &__list{
                 .list__link{
@@ -507,7 +512,7 @@
       .header__box{
         position: relative;
         background-color: #1E1E1E;
-        flex-basis: 554px;
+        width: 48.68421052vw;
         padding: 0 15px;
         align-items: center;
         z-index: 11;
@@ -575,7 +580,6 @@
     }
     .menu_open {
       left: 50%;
-      max-width: 1140px;
       transform: translateX(-50%);
       width: 100%;
       justify-content: flex-end;

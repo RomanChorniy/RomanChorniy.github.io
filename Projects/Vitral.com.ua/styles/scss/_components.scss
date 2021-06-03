@@ -221,7 +221,6 @@
     .titleBlock{
         .title__container{
             width: 100%;
-            max-width: 1140px;
             margin: 0 auto;
             .title__slider{
                 .slider__item{
@@ -233,7 +232,7 @@
                         justify-content: flex-end;
                         height: 100%;
                         .item__infoBox{
-                            flex: 0 0 48.68421052%;
+                            width: 48.68421052vw;
                             background-color: rgba($color: #1e1e1e, $alpha: .7);
                             display: flex;
                             justify-content: center;
@@ -444,7 +443,6 @@
       .title__container {
         background: url(../../image/aluminumWindows.jpg) center / cover no-repeat;
         margin: 0 auto;
-        max-width: 1140px;
         width: 100%;
         .container_screen {
           background-color: rgba($color: #1e1e1e, $alpha: .7);
@@ -541,6 +539,7 @@
                       .image__link {
                         display: block;
                         .parameters {
+                          padding-top: 28px;
                           text-align: center;
                           .parameters__item {
                             padding-bottom: 10px;
@@ -601,7 +600,7 @@
       &__container {
         color: #fff;
         font-size: 36px;
-        margin: 0 auto;
+        margin: 0 auto -65px;
         max-width: 950px;
         padding: 70px 15px;
         width: 100%;
@@ -1702,10 +1701,11 @@
             }
             .slider__item {
               .item__container {
+                margin-left: -1px;
                 .item__infoBox {
                   flex: none;
                   width: 100%;
-                  padding: 130 20px 0;
+                  padding: 130px 20px 0;
                   .infoBox__title {
                     font-size: calc(20px + 28 * ((100vw - 300px) / (575 - 300)));
                   }
@@ -1878,14 +1878,17 @@
         }
       }
       .mainProperties {
-        font-size: calc(12px + 4 * ((100vw - 300px) / (575 - 300)));
+        font-size: calc(8px + 8 * ((100vw - 300px) / (575 - 300)));
         .container {
           .contentBox {
             .infoBox {
               justify-content: center;
+              margin: -15px;
               .parament {
                 width: 50%;
-                min-width: 225px;
+                .parament__content {
+                  width: auto;
+                }
               }
             }
           }

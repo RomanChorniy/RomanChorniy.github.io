@@ -1542,6 +1542,7 @@ body .margin-65 {
 .components .aboutUsPage .container .imageTextBlock .description__title {
   font-family: "Times New Roman", Times, serif;
   font-size: 2.25em;
+  font-weight: 700;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
@@ -1553,10 +1554,6 @@ body .margin-65 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-.components .aboutUsPage .container .imageTextBlock:nth-child(n+3) .description__title {
-  font-weight: 500;
-  font-size: 2em;
 }
 .components .aboutUsPage .container .container__btn {
   padding: 20px 0 30px;

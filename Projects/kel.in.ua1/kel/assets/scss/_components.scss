@@ -988,6 +988,10 @@
                         }
                     }
                 }
+                .size__comment {
+                    padding-bottom: 20px;
+                    text-transform: none;
+                }
                 &__customButton{
                     width: 100%;
                     max-width: 201px;
@@ -1041,6 +1045,14 @@
                 }
                 .toBasket, .quickBuy{
                     font-size: 14px;
+                }
+                .questionBox {
+                    padding: 5px 1px 0 0;
+                    .question {
+                        padding: 10px;
+                        width: 100%;
+                        border-color: #000;
+                    }
                 }
             }
             .description{
@@ -1187,6 +1199,7 @@
                     &__title {
                         font-family: 'Times New Roman', Times, serif;
                         font-size: 2.25em;
+                        font-weight: 700;
                         padding-bottom: 20px;
                         text-transform: uppercase;
                     }
@@ -1196,14 +1209,6 @@
                 }
                 &:nth-child(odd){
                     flex-direction: row-reverse;
-                }
-                &:nth-child(n+3) {
-                    .description {
-                        &__title {
-                            font-weight: 500;
-                            font-size: 2em;
-                        }
-                    }
                 }
             }
             .container__btn {

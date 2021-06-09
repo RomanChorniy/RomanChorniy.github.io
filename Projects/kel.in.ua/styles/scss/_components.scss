@@ -1146,6 +1146,7 @@
                     &__title {
                         font-family: 'Times New Roman', Times, serif;
                         font-size: 2.25em;
+                        font-weight: 700;
                         padding-bottom: 20px;
                         text-transform: uppercase;
                     }
@@ -1155,14 +1156,6 @@
                 }
                 &:nth-child(odd){
                     flex-direction: row-reverse;
-                }
-                &:nth-child(n+3) {
-                    .description {
-                        &__title {
-                            font-weight: 500;
-                            font-size: 2em;
-                        }
-                    }
                 }
             }
             .container__btn {

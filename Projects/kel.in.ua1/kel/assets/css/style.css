@@ -1358,6 +1358,10 @@ body .margin-65 {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+.components .tovar .info .size .size__comment {
+  padding-bottom: 20px;
+  text-transform: none;
+}
 .components .tovar .info .size__customButton {
   width: 100%;
   max-width: 201px;
@@ -1417,6 +1421,14 @@ body .margin-65 {
 }
 .components .tovar .info .buyBox .toBasket, .components .tovar .info .buyBox .quickBuy {
   font-size: 14px;
+}
+.components .tovar .info .buyBox .questionBox {
+  padding: 5px 1px 0 0;
+}
+.components .tovar .info .buyBox .questionBox .question {
+  padding: 10px;
+  width: 100%;
+  border-color: #000;
 }
 .components .tovar .info .description .description__text {
   padding-top: 7px;
@@ -1579,6 +1591,7 @@ body .margin-65 {
 .components .aboutUsPage .container .imageTextBlock .description__title {
   font-family: "Times New Roman", Times, serif;
   font-size: 2.25em;
+  font-weight: 700;
   padding-bottom: 20px;
   text-transform: uppercase;
 }
@@ -1590,10 +1603,6 @@ body .margin-65 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-.components .aboutUsPage .container .imageTextBlock:nth-child(n+3) .description__title {
-  font-weight: 500;
-  font-size: 2em;
 }
 .components .aboutUsPage .container .container__btn {
   padding: 20px 0 30px;
@@ -2614,6 +2623,15 @@ div[rel=form_custom] .form_box .form_form .submit-button .wpcf7-submit:hover, di
   padding-bottom: 10px;
   font-size: 16px;
 }
+#footer .footerContainer .footerPhoneBox .linkBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -5px;
+}
+#footer .footerContainer .footerPhoneBox .linkBox .link {
+  padding: 0 5px;
+}
 #footer .footerContainer .workTime {
   color: #fff;
   font-size: 14px;
@@ -2637,5 +2655,13 @@ div[rel=form_custom] .form_box .form_form .submit-button .wpcf7-submit:hover, di
   }
   #footer .footerContainer .workTime {
     text-align: center;
+  }
+  #footer .footerContainer .footerLinkBox .title {
+    text-align: center;
+  }
+  #footer .footerContainer .footerPhoneBox .linkBox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

@@ -2502,6 +2502,9 @@ div[rel=form_custom] .form_box .form_form .submit-button .wpcf7-submit:hover, di
     right: -28px;
     width: 213px;
   }
+  #header .header__container .header__titleBox .telephoneList .telephoneList__dropdownMenu .phoneNumber {
+    font-size: 17px;
+  }
   #header .header__container .header__titleBox .burgerMenu__openBtn {
     display: block;
   }

@@ -238,7 +238,7 @@
                             display: flex;
                             justify-content: center;
                             flex-direction: column;
-                            padding: 130px 65px 0;
+                            padding: 100px 65px 0;
                             color: #fff;
                             .infoBox__title{
                                 font-size: 48px;
@@ -412,7 +412,7 @@
       }
     }
     .breadcrumb {
-      height: 130px;
+      height: 100px;
       .breadcrumb__box {
         padding: 29px 0;
         .box__item {
@@ -514,12 +514,21 @@
               flex-wrap: wrap;
               margin: 0 -15px;
               .card {
+                position: relative;
                 color: #1e1e1e;
                 border: 1px solid #f2f2f2;
                 margin: 15px;
                 max-width: 255px;
                 padding: 0 25px 25px;
                 width: 100%;
+                .card__link {
+                  position: absolute;
+                  display: block;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 2;
+                }
                 .card__front {
                   .imageBox {
                     width: 205px;
@@ -1706,7 +1715,7 @@
                 .item__infoBox {
                   flex: none;
                   width: 100%;
-                  padding: 130px 20px 0;
+                  padding: 100px 20px 0;
                   .infoBox__title {
                     font-size: calc(20px + 28 * ((100vw - 300px) / (575 - 300)));
                   }

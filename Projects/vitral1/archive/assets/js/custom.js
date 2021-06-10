@@ -263,7 +263,7 @@ var templateUrl = php_objects.templateUrl;
 
 })(jQuery);
 jQuery(document).ready(function () {
-    jQuery('.menuBtn__container').on('click', function () {
+    jQuery('.menuBtn').on('click', function () {
         jQuery('.header__container').toggleClass('menu_open');
     });
     jQuery('.title__slider').slick({
@@ -280,10 +280,7 @@ jQuery(document).ready(function () {
         responsive: [
             {
                 breakpoint: 575,
-                settings: {
-                    verticalSwiping: false,
-                    autoplaySpeed: 5000,
-                }
+                settings: 'unslick'
             }
         ]
     });
@@ -380,12 +377,6 @@ jQuery(document).ready(function () {
         ]
     });
 
-    jQuery('.aboutUs .seeMore').on('click', function () {
-        jQuery('.article__text_hideText').toggleClass('visible');
-        jQuery('.article__text_hideText').slideToggle('slow');
-        if (jQuery('.article__text_hideText').hasClass('visible')) jQuery('.aboutUs .seeMore').text('Свернуть')
-        else jQuery('.aboutUs .seeMore').text('Подробнее');
-    });
     jQuery('.aboutGoods .seeMore').on('click', function () {
         jQuery('.article__text_hideText').toggleClass('visible');
         jQuery('.article__text_hideText').slideToggle('slow');
@@ -400,12 +391,6 @@ jQuery(document).ready(function () {
         responsive: [
             {
                 breakpoint: 600,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 450,
                 settings: {
                     slidesToShow: 2
                 }

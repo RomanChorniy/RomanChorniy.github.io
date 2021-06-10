@@ -419,6 +419,45 @@ body {
   .cf7sg-popup {
     position: relative;
   }
+  div[rel="form_quick"] {
+    padding: 15px;
+    .form_box {
+      width: auto;
+      max-width: none;
+      min-width: 0px;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid #ed3a4d;
+      background-color: #000;
+      color: #fff;
+      .form_form {
+        .wpcf7 {
+          .wpcf7-form {
+            .row-form {
+              label {
+                color: #fff;
+                .wpcf7-text {
+                  padding-left: 5px;
+                  padding-right: 5px;
+                }
+              }
+            }
+            .submit-button {
+              .wpcf7-form-control {
+                border: 1px solid #ed3a4d;
+                outline: none;
+                cursor: pointer;
+              }
+            }
+            .wpcf7-response-output {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
 
   .display-none {
     display: none;

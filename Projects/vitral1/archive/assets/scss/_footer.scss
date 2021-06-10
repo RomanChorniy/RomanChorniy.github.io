@@ -105,6 +105,9 @@
         }
         &:not(:first-child) {
           justify-content: start;
+          a:hover {
+            text-decoration: underline;
+          }
         }
         .title {
           .title__logo{

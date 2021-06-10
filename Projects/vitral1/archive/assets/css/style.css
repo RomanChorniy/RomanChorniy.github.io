@@ -129,7 +129,7 @@ body .search-icon:before {
   right: 10px;
   height: 26px;
   width: 24px;
-  background-image: url("../../assets/images/search-icon.svg");
+  background-image: url("../../images/search-icon.svg");
 }
 body .font-regular {
   font-weight: normal !important;
@@ -143,7 +143,7 @@ body .scroll-top {
   top: 70%;
   width: 44px;
   height: 44px;
-  background-image: url("../../assets/images/scroll-to-top.png");
+  background-image: url("../../images/scroll-to-top.png");
   cursor: pointer;
   z-index: 9999999;
 }
@@ -419,6 +419,37 @@ body .wpcf7-form .wpcf7-response-output {
 }
 body .cf7sg-popup {
   position: relative;
+}
+body div[rel=form_quick] {
+  padding: 15px;
+}
+body div[rel=form_quick] .form_box {
+  width: auto;
+  max-width: none;
+  min-width: 0px;
+  display: inline-block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 1px solid #ed3a4d;
+  background-color: #000;
+  color: #fff;
+}
+body div[rel=form_quick] .form_box .form_form .wpcf7 .wpcf7-form .row-form label {
+  color: #fff;
+}
+body div[rel=form_quick] .form_box .form_form .wpcf7 .wpcf7-form .row-form label .wpcf7-text {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+body div[rel=form_quick] .form_box .form_form .wpcf7 .wpcf7-form .submit-button .wpcf7-form-control {
+  border: 1px solid #ed3a4d;
+  outline: none;
+  cursor: pointer;
+}
+body div[rel=form_quick] .form_box .form_form .wpcf7 .wpcf7-form .wpcf7-response-output {
+  color: #fff;
 }
 body .display-none {
   display: none;
@@ -730,7 +761,7 @@ body .margin-65 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 130px 65px 0;
+  padding: 100px 65px 0;
   color: #fff;
 }
 .components .titleBlock .title__container .title__slider .slider__item .item__container .item__infoBox .infoBox__title {
@@ -754,19 +785,19 @@ body .margin-65 {
   color: #000;
 }
 .components .titleBlock .title__container .title__slider .fullGlassHouse {
-  background: url(../../assets/images/fullGlassHouse.jpg) center/cover no-repeat;
+  background: url(../../image/fullGlassHouse.jpg) center/cover no-repeat;
 }
 .components .titleBlock .title__container .title__slider .aluminumWindows {
-  background: url(../../assets/images/aluminumWindows.jpg) center/cover no-repeat;
+  background: url(../../image/aluminumWindows.jpg) center/cover no-repeat;
 }
 .components .titleBlock .title__container .title__slider .slidingSystems {
-  background: url(../../assets/images/slidingSystems.jpg) center/cover no-repeat;
+  background: url(../../image/slidingSystems.jpg) center/cover no-repeat;
 }
 .components .titleBlock .title__container .title__slider .internalPartitions {
-  background: url(../../assets/images/internalPartitions.jpg) center/cover no-repeat;
+  background: url(../../image/internalPartitions.jpg) center/cover no-repeat;
 }
 .components .titleBlock .title__container .title__slider .gatesAndShutters {
-  background: url(../../assets/images/gatesAndShutters.jpg) center/cover no-repeat;
+  background: url(../../image/gatesAndShutters.jpg) center/cover no-repeat;
 }
 .components .titleBlock .title__container .title__slider .slick-next, .components .titleBlock .title__container .title__slider .slick-prev {
   top: auto;
@@ -896,7 +927,7 @@ body .margin-65 {
   display: none;
 }
 .components .breadcrumb {
-  height: 130px;
+  height: 100px;
 }
 .components .breadcrumb .breadcrumb__box {
   padding: 29px 0;
@@ -925,7 +956,7 @@ body .margin-65 {
   margin-top: -195px;
 }
 .components .titlePage .title__container {
-  background: url(../../assets/images/aluminumWindows.jpg) center/cover no-repeat;
+  background: url(../../image/aluminumWindows.jpg) center/cover no-repeat;
   margin: 0 auto;
   width: 100%;
 }
@@ -1005,12 +1036,21 @@ body .margin-65 {
   margin: 0 -15px;
 }
 .components .catalog .catalog__box .brandOffers .goodsCat .goodsCat__item .card {
+  position: relative;
   color: #1e1e1e;
   border: 1px solid #f2f2f2;
   margin: 15px;
   max-width: 255px;
   padding: 0 25px 25px;
   width: 100%;
+}
+.components .catalog .catalog__box .brandOffers .goodsCat .goodsCat__item .card .card__link {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 .components .catalog .catalog__box .brandOffers .goodsCat .goodsCat__item .card .card__front .imageBox {
   width: 205px;
@@ -2172,7 +2212,7 @@ body .margin-65 {
         -ms-flex: none;
             flex: none;
     width: 100%;
-    padding: 130px 20px 0;
+    padding: 100px 20px 0;
   }
   .components .titleBlock .title__container .title__slider .slider__item .item__container .item__infoBox .infoBox__title {
     font-size: calc(20px + 28 * ((100vw - 300px) / (575 - 300)));
@@ -2220,7 +2260,7 @@ body .margin-65 {
     padding: 0 15px 0 24px;
   }
   .components .titlePage .title__container {
-    background: url(../../assets/images/aluminumWindows_575px.jpg) center/cover no-repeat;
+    background: url(../../image/aluminumWindows_575px.jpg) center/cover no-repeat;
   }
   .components .titlePage .title__container .container_screen .contentBox {
     padding: 120px 15px 76px;
@@ -2610,7 +2650,7 @@ body .margin-65 {
   position: fixed;
   top: 0;
   margin: 0 auto;
-  height: 130px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2639,10 +2679,8 @@ body .margin-65 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ed3a4d;
-  height: 100%;
-}
-#header .header__container .menu .menuBtn .menuBtn__container {
   cursor: pointer;
+  height: 100%;
 }
 #header .header__container .menu .menuBtn .menuBtn__container .btn__title {
   color: #fff;
@@ -2671,8 +2709,8 @@ body .margin-65 {
   height: 100vh;
   overflow: hidden;
   position: absolute;
-  top: -1000%;
-  padding-top: 130px;
+  top: -3000%;
+  padding-top: 100px;
   width: 100%;
   -webkit-transition: top 0s ease;
   -o-transition: top 0s ease;
@@ -3192,6 +3230,9 @@ body .margin-65 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+}
+#footer .footer__container .block:not(:first-child) a:hover {
+  text-decoration: underline;
 }
 #footer .footer__container .block .title .title__logo img {
   margin: 0 auto;

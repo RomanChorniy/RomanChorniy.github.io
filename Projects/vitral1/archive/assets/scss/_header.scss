@@ -351,7 +351,7 @@
       position: fixed;
       top: 0;
       margin: 0 auto;
-      height: 130px;
+      height: 100px;
       display: flex;
       justify-content: start;
       z-index: 1000;
@@ -363,9 +363,9 @@
           justify-content: center;
           align-items: center;
           background-color: #ed3a4d;
+          cursor: pointer;
           height: 100%;
           .menuBtn__container{
-            cursor: pointer;
             .btn__title{
               color: #fff;
               font-size: 14px;
@@ -391,8 +391,8 @@
         height: 100vh;
         overflow: hidden;
         position: absolute;
-        top: -1000%;
-        padding-top: 130px;
+        top: -3000%;
+        padding-top: 100px;
         width: 100%;
         transition: top 0s ease;
         z-index: 10;

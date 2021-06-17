@@ -112,20 +112,35 @@
       top: 0;
       left: 0;
       z-index: 2;
+      .close__fild {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
       .navContainer {
+        position: relative;
         min-height: 100vh;
         width: 100%;
         max-width: 300px;
         background-color: $mainColor2;
         padding: 45px 15px 30px;
-        box-shadow: 0 0 50px rgba($color: $mainColor3, $alpha: 0.8);
+        box-shadow: 0 0 50px rgba($color: $mainColor2, $alpha: 0.8);
         .close__button {
           display: block;
+          color: $mainColor1;
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          font-size: 23px;
+          font-weight: 500;
         }
         .navLink {
           display: block;
           padding: 10px 0;
           color: $textColor1;
+          text-transform: uppercase;
         }
       }
     }
@@ -201,7 +216,6 @@
         display: none;
       }
       .mobile__nav {
-        display: block;
         .navContainer {
         }
       }

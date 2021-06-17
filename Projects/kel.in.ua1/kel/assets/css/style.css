@@ -1622,7 +1622,7 @@ body .margin-65 {
   text-transform: uppercase;
 }
 .components .aboutUsPage .container .imageTextBlock .description__text {
-  line-height: 125%;
+  line-height: 34px;
 }
 .components .aboutUsPage .container .imageTextBlock:nth-child(odd) {
   -webkit-box-orient: horizontal;

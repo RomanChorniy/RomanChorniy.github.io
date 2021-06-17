@@ -88,7 +88,6 @@ body .popup {
 }
 body .popup .text {
   max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 0 50px;
 }
@@ -1234,6 +1233,26 @@ p {
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
+}
+.header .header__container .mobile__nav {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 300px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background-color: #D7B46A;
+  z-index: 2;
+  padding: 45px 15px 30px;
+  -webkit-box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+}
+.header .header__container .mobile__nav .close__button {
+  display: block;
+}
+.header .header__container .mobile__nav .navLink {
+  display: block;
+  padding: 10px 0;
 }
 @media screen and (max-width: 576px) {
   .header {

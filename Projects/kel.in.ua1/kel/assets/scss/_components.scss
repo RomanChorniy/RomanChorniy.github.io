@@ -78,7 +78,7 @@
           padding-right: 30px;
 
           &:after {
-            content: "";
+            content: '';
             position: absolute;
             right: 5px;
             top: calc(50% - 10px);
@@ -194,7 +194,7 @@
         background-color: #f5f5f5;
 
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: 12px;
           left: 15px;
@@ -509,7 +509,7 @@
         & + .box__item::before {
           padding: 4px;
           color: $textColor3;
-          content: "/\00a0";
+          content: '/\00a0';
         }
         .box__itemLink {
           color: $textColor2;
@@ -692,7 +692,7 @@
               border: 1px solid #e5e5e5;
               position: relative;
               &::after {
-                content: "";
+                content: '';
                 position: absolute;
                 height: 1px;
                 width: calc(100% * 1.414);
@@ -989,7 +989,7 @@
               border: 1px solid #e5e5e5;
               position: relative;
               &::after {
-                content: "";
+                content: '';
                 position: absolute;
                 height: 1px;
                 width: calc(100% * 1.414);
@@ -1212,14 +1212,14 @@
           width: 66%;
           padding: 0 10px;
           &__title {
-            font-family: "Times New Roman", Times, serif;
+            font-family: 'Times New Roman', Times, serif;
             font-size: 2.25em;
             font-weight: 700;
             padding-bottom: 20px;
             text-transform: uppercase;
           }
           &__text {
-            line-height: 20 / 16 * 100%;
+            line-height: 34px;
           }
         }
         &:nth-child(odd) {
@@ -1676,8 +1676,8 @@
     }
   }
 }
-div[rel="form_custom"],
-div[rel="form_quick"] {
+div[rel='form_custom'],
+div[rel='form_quick'] {
   .form_box {
     background-color: #e5e5e5;
     .a_close_box {

@@ -1,8 +1,18 @@
 message_text = 'Викликів - 12\nБійка - 1\nКрадіжка - 2\nДТП із травмованими зі скриттям(розкрито ЄО 9637) - 1\nПорушення ПДр - 4\nДомашнє насильство - 2\nКонфлікт - 2\nПостанови ПДР - 4'
 message_text2 = 'Виклики -8\nПорушення ПДР-1\nПорушення тиші-1\nДтп б/п -2\nДомашнє насильство -1\nЗіх-2'
 zvit = {
-    ('Викликів', 'Виклики'): 0,
-    ('Порушення ПДР', 'Порушення ПДр'): 0
+    ('Викликів', 'викликів', 'виклики'): 0,
+    ('Порушення ПДР', 'порушення пдр'): 0,
+    ('Бійка', 'бійка'): 0,
+    ('Крадіжка', 'крадіжка'): 0,
+    ('ДТП із травмованими', 'дтп із травмованими'): 0,
+    ('Домашнє насильство', 'домашнє насильство'): 0,
+    ('Конфлікт', 'конфлікт'): 0,
+    ('Постанови ПДР', 'постанови пдр'): 0,
+    ('Порушення тиші', 'порушення тиші'): 0,
+    ('Дтп без травмованих', 'дтп без травмованих', 'дтп б/п'): 0,
+    ('Звернення інформаційного характеру',
+     'звернення інформаційного характеру', 'зіх'): 0,
 }
 print("\n" * 100)
 print('------------>start<----------------')
@@ -18,7 +28,7 @@ def creat_dict(text):
     list_data = meke_list(text)
     for i in list_data:
         i_smallList = i.split('-')
-        key = i_smallList[0].rstrip()
+        key = i_smallList[0].rstrip().lower()
         value = int(i_smallList[1])
         dict1[key] = value
     return dict1
@@ -56,14 +66,30 @@ def find_new_zvit_position(zvit, new_dict):
         # print('-додаємо елемент "', key_new_dict, '" до словника ЗВІТ', sep='')
 
 
-print(creat_dict(message_text))
-print(find_new_zvit_position(zvit, creat_dict(message_text)))
-print(creat_dict(message_text2))
-print(find_new_zvit_position(zvit, creat_dict(message_text2)))
-print('\n')
-print('Фінальний звіт')
-for key in zvit:
-    if type(key) == tuple:
-        print(key[0], zvit[key])
-        continue
-    print(key, zvit[key])
+def make_string_from_dict(dict1):
+    # Функція яка перетворить словник у текс для повідомлення у
+    # телеграм-бот
+    text = ''
+    find_new_zvit_position(zvit, creat_dict(message_text))
+    for key in dict1:
+        if type(key) == tuple:
+            text = text+key[0]+' - '+str(dict1[key])+'\n'
+            continue
+        text = text+key+' - '+str(dict1[key])+'\n'
+    print("Функція make_string_from_dict - виконана")
+
+
+make_string_from_dict(zvit)
+
+
+# print(creat_dict(message_text))
+# print(find_new_zvit_position(zvit, creat_dict(message_text)))
+# print(creat_dict(message_text2))
+# print(find_new_zvit_position(zvit, creat_dict(message_text2)))
+# print('\n')
+# print('Фінальний звіт')
+# for key in zvit:
+#     if type(key) == tuple:
+#         print(key[0], zvit[key])
+#         continue
+#     print(key, zvit[key])

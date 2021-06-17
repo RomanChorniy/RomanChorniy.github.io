@@ -509,6 +509,7 @@ body .margin-65 {
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
   text-align: start;
+  width: 50%;
 }
 .components .siteTitle .frontImage .titleBox .titleBox__text {
   padding-bottom: 5px;
@@ -622,7 +623,8 @@ body .margin-65 {
 .components .whatWeDo .whatWeDo__container .whatWeDo__slider .slick-list {
   padding-bottom: 60px;
 }
-.components .whatWeDo .whatWeDo__container .whatWeDo__slider .prevBox, .components .whatWeDo .whatWeDo__container .whatWeDo__slider .nextBox {
+.components .whatWeDo .whatWeDo__container .whatWeDo__slider .prevBox,
+.components .whatWeDo .whatWeDo__container .whatWeDo__slider .nextBox {
   z-index: -1;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
@@ -645,7 +647,8 @@ body .margin-65 {
           transform: translateY(-50%);
   cursor: pointer;
 }
-.components .whatWeDo .whatWeDo__container .whatWeDo__slider .prevBox:hover, .components .whatWeDo .whatWeDo__container .whatWeDo__slider .nextBox:hover {
+.components .whatWeDo .whatWeDo__container .whatWeDo__slider .prevBox:hover,
+.components .whatWeDo .whatWeDo__container .whatWeDo__slider .nextBox:hover {
   background-color: rgba(232, 157, 148, 0.8);
 }
 .components .whatWeDo .whatWeDo__container .whatWeDo__slider .prevBox {
@@ -660,7 +663,8 @@ body .margin-65 {
 .components .whatWeDo .whatWeDo__container .whatWeDo__slider .nextBox img {
   padding-left: 7px;
 }
-.components .whatWeDo .whatWeDo__container .whatWeDo__slider:hover .prevBox, .components .whatWeDo .whatWeDo__container .whatWeDo__slider:hover .nextBox {
+.components .whatWeDo .whatWeDo__container .whatWeDo__slider:hover .prevBox,
+.components .whatWeDo .whatWeDo__container .whatWeDo__slider:hover .nextBox {
   z-index: 1;
 }
 .components .gallery {
@@ -699,7 +703,8 @@ body .margin-65 {
   width: 100%;
   height: 100%;
 }
-.components .gallery .gallery__slider .prevBox, .components .gallery .gallery__slider .nextBox {
+.components .gallery .gallery__slider .prevBox,
+.components .gallery .gallery__slider .nextBox {
   z-index: -1;
   opacity: 0;
   border-radius: 50%;
@@ -723,7 +728,8 @@ body .margin-65 {
           transform: translateY(50%);
   cursor: pointer;
 }
-.components .gallery .gallery__slider .prevBox:hover, .components .gallery .gallery__slider .nextBox:hover {
+.components .gallery .gallery__slider .prevBox:hover,
+.components .gallery .gallery__slider .nextBox:hover {
   background-color: rgba(232, 157, 148, 0.8);
 }
 .components .gallery .gallery__slider .prevBox {
@@ -738,7 +744,8 @@ body .margin-65 {
 .components .gallery .gallery__slider .nextBox img {
   padding-left: 7px;
 }
-.components .gallery .gallery__slider:hover .prevBox, .components .gallery .gallery__slider:hover .nextBox {
+.components .gallery .gallery__slider:hover .prevBox,
+.components .gallery .gallery__slider:hover .nextBox {
   z-index: 1;
   opacity: 1;
 }
@@ -1224,16 +1231,23 @@ body .margin-65 {
 .components .tovar .slider .slider__vertical .vertical__item .item__image {
   width: 100%;
 }
-.components .tovar .slider .slider__vertical .prevBox, .components .tovar .slider .slider__vertical .nextBox {
+.components .tovar .slider .slider__vertical .prevBox,
+.components .tovar .slider .slider__vertical .nextBox {
   position: absolute;
   bottom: 0;
 }
-.components .tovar .slider .slider__vertical .prevBox .prev, .components .tovar .slider .slider__vertical .prevBox .next, .components .tovar .slider .slider__vertical .nextBox .prev, .components .tovar .slider .slider__vertical .nextBox .next {
+.components .tovar .slider .slider__vertical .prevBox .prev,
+.components .tovar .slider .slider__vertical .prevBox .next,
+.components .tovar .slider .slider__vertical .nextBox .prev,
+.components .tovar .slider .slider__vertical .nextBox .next {
   cursor: pointer;
   opacity: 0.2;
   width: 16px;
 }
-.components .tovar .slider .slider__vertical .prevBox .prev:hover, .components .tovar .slider .slider__vertical .prevBox .next:hover, .components .tovar .slider .slider__vertical .nextBox .prev:hover, .components .tovar .slider .slider__vertical .nextBox .next:hover {
+.components .tovar .slider .slider__vertical .prevBox .prev:hover,
+.components .tovar .slider .slider__vertical .prevBox .next:hover,
+.components .tovar .slider .slider__vertical .nextBox .prev:hover,
+.components .tovar .slider .slider__vertical .nextBox .next:hover {
   opacity: 0.5;
 }
 .components .tovar .slider .slider__vertical .prevBox {
@@ -1263,15 +1277,25 @@ body .margin-65 {
   width: 100%;
   max-width: 445px;
 }
-.components .tovar .info .article, .components .tovar .info .color, .components .tovar .info .size, .components .tovar .info .composition, .components .tovar .info .description {
+.components .tovar .info .article,
+.components .tovar .info .color,
+.components .tovar .info .size,
+.components .tovar .info .composition,
+.components .tovar .info .description {
   color: #8c8c8c;
   font-size: 12px;
 }
-.components .tovar .info .article:not(.article), .components .tovar .info .color:not(.article), .components .tovar .info .size:not(.article), .components .tovar .info .composition:not(.article), .components .tovar .info .description:not(.article) {
+.components .tovar .info .article:not(.article),
+.components .tovar .info .color:not(.article),
+.components .tovar .info .size:not(.article),
+.components .tovar .info .composition:not(.article),
+.components .tovar .info .description:not(.article) {
   font-size: 13px;
   text-transform: uppercase;
 }
-.components .tovar .info .color__text, .components .tovar .info .composition__text, .components .tovar .info .description__text {
+.components .tovar .info .color__text,
+.components .tovar .info .composition__text,
+.components .tovar .info .description__text {
   text-transform: none;
   color: #515151;
   font-size: 14px;
@@ -1419,7 +1443,8 @@ body .margin-65 {
   -o-transition: none;
   transition: none;
 }
-.components .tovar .info .buyBox .toBasket, .components .tovar .info .buyBox .quickBuy {
+.components .tovar .info .buyBox .toBasket,
+.components .tovar .info .buyBox .quickBuy {
   font-size: 14px;
 }
 .components .tovar .info .buyBox .questionBox {
@@ -1526,7 +1551,8 @@ body .margin-65 {
   padding: 15px;
   text-align: center;
 }
-.components .hentry .entry .wpcf7-form .wpcf7-text, .components .hentry .entry .wpcf7-form .wpcf7-textarea {
+.components .hentry .entry .wpcf7-form .wpcf7-text,
+.components .hentry .entry .wpcf7-form .wpcf7-textarea {
   width: 100%;
   max-width: 313px;
   border: none;
@@ -1636,7 +1662,8 @@ body .margin-65 {
   padding: 20px;
   border-radius: 5px;
 }
-.components .styleFormCustom #customer_details input, .components .styleFormCustom #customer_details textarea {
+.components .styleFormCustom #customer_details input,
+.components .styleFormCustom #customer_details textarea {
   height: 40px;
   width: 100%;
   background: #fff;
@@ -1649,6 +1676,9 @@ body .margin-65 {
   letter-spacing: 0.1em;
   color: #141402;
   border-radius: 0;
+}
+.components .styleFormCustom #customer_details textarea {
+  height: 120px;
 }
 .components .styleFormCustom #customer_details .selection .select2-selection {
   border: none;
@@ -1698,6 +1728,9 @@ body .margin-65 {
 }
 .components form.checkout_coupon .button:hover {
   background-color: rgba(232, 157, 148, 0.5);
+}
+.components .woocommerce .woocommerce-order .woocommerce-order-details .woocommerce-table .wc-item-meta .wc-item-meta-label + p {
+  line-height: normal;
 }
 @media screen and (max-width: 576px) {
   .components .component p {
@@ -1805,7 +1838,8 @@ body .margin-65 {
   .components .gallery .gallery__slider .photo {
     height: calc(150px + 75 * ((100vw - 300px) / (576 - 300)));
   }
-  .components .gallery .gallery__slider .prevBox, .components .gallery .gallery__slider .nextBox {
+  .components .gallery .gallery__slider .prevBox,
+.components .gallery .gallery__slider .nextBox {
     z-index: 1;
     opacity: 1;
     bottom: calc(90px + 38 * ((100vw - 300px) / (576 - 300)));
@@ -1973,31 +2007,59 @@ body .margin-65 {
   .components .aboutUsPage {
     font-size: calc(10px + 6 * ((100vw - 300px) / (576 - 300)));
   }
-  .components .aboutUsPage .container .imageTextBlock, .components .aboutUsPage .container .imageTextBlock:nth-child(odd) {
+  .components .aboutUsPage .container .imageTextBlock,
+.components .aboutUsPage .container .imageTextBlock:nth-child(odd) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .components .aboutUsPage .container .imageTextBlock .image, .components .aboutUsPage .container .imageTextBlock:nth-child(odd) .image {
+  .components .aboutUsPage .container .imageTextBlock .image,
+.components .aboutUsPage .container .imageTextBlock:nth-child(odd) .image {
     padding: 15px;
     width: 100%;
   }
-  .components .aboutUsPage .container .imageTextBlock .description, .components .aboutUsPage .container .imageTextBlock:nth-child(odd) .description {
+  .components .aboutUsPage .container .imageTextBlock .description,
+.components .aboutUsPage .container .imageTextBlock:nth-child(odd) .description {
     width: 100%;
+  }
+  .components .woocommerce .woocommerce-order .order_details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: -20px;
+    padding-bottom: 3em;
+  }
+  .components .woocommerce .woocommerce-order .order_details li {
+    width: 46%;
+    padding-bottom: 20px;
+    border-left: 1px dashed #d3ced2;
+    border-right: 1px dashed #d3ced2;
+    margin: 0;
   }
 }
 
-div[rel=form_custom] .form_box, div[rel=form_quick] .form_box {
+div[rel=form_custom] .form_box,
+div[rel=form_quick] .form_box {
   background-color: #e5e5e5;
 }
-div[rel=form_custom] .form_box .a_close_box, div[rel=form_quick] .form_box .a_close_box {
+div[rel=form_custom] .form_box .a_close_box,
+div[rel=form_quick] .form_box .a_close_box {
   background-color: #E89D94;
 }
-div[rel=form_custom] .form_box .a_close_box:hover, div[rel=form_quick] .form_box .a_close_box:hover {
+div[rel=form_custom] .form_box .a_close_box:hover,
+div[rel=form_quick] .form_box .a_close_box:hover {
   background-color: rgba(232, 157, 148, 0.5);
 }
-div[rel=form_custom] .form_box .form_form .wpcf7-text, div[rel=form_custom] .form_box .form_form .wpcf7-textarea, div[rel=form_quick] .form_box .form_form .wpcf7-text, div[rel=form_quick] .form_box .form_form .wpcf7-textarea {
+div[rel=form_custom] .form_box .form_form .wpcf7-text,
+div[rel=form_custom] .form_box .form_form .wpcf7-textarea,
+div[rel=form_quick] .form_box .form_form .wpcf7-text,
+div[rel=form_quick] .form_box .form_form .wpcf7-textarea {
   width: 100%;
   padding: 0 10px;
   border: none;
@@ -2005,20 +2067,24 @@ div[rel=form_custom] .form_box .form_form .wpcf7-text, div[rel=form_custom] .for
   outline: none;
   background-color: #fff;
 }
-div[rel=form_custom] .form_box .form_form .wpcf7-text, div[rel=form_quick] .form_box .form_form .wpcf7-text {
+div[rel=form_custom] .form_box .form_form .wpcf7-text,
+div[rel=form_quick] .form_box .form_form .wpcf7-text {
   height: 30px;
 }
-div[rel=form_custom] .form_box .form_form .submit-button, div[rel=form_quick] .form_box .form_form .submit-button {
+div[rel=form_custom] .form_box .form_form .submit-button,
+div[rel=form_quick] .form_box .form_form .submit-button {
   text-align: center;
   padding-top: 15px;
 }
-div[rel=form_custom] .form_box .form_form .submit-button .wpcf7-submit, div[rel=form_quick] .form_box .form_form .submit-button .wpcf7-submit {
+div[rel=form_custom] .form_box .form_form .submit-button .wpcf7-submit,
+div[rel=form_quick] .form_box .form_form .submit-button .wpcf7-submit {
   background-color: #E89D94;
   color: #fff;
   border: none;
   outline: none;
 }
-div[rel=form_custom] .form_box .form_form .submit-button .wpcf7-submit:hover, div[rel=form_quick] .form_box .form_form .submit-button .wpcf7-submit:hover {
+div[rel=form_custom] .form_box .form_form .submit-button .wpcf7-submit:hover,
+div[rel=form_quick] .form_box .form_form .submit-button .wpcf7-submit:hover {
   background-color: rgba(232, 157, 148, 0.5);
 }
 
